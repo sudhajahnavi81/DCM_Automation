@@ -36,6 +36,19 @@ namespace DCM.POM
             }
         }
 
+        public static void clear(By element1)
+        {
+            try
+            {
+                Initialize.GetDriver().FindElement(element1).Clear();
+            }
+            catch (NoSuchElementException)
+            {
+                Console.WriteLine("Element with locator: '" + element1 + "' was not found in current context page.");
+                throw;
+            }
+        }
+
         public static void click(By element)
         {
             try
@@ -149,12 +162,15 @@ namespace DCM.POM
             Initialize.GetDriver().Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
         }
 
-        public static void Enterkey()
+        public static void Enterkey(By ele)
+        {
+            Initialize.driver.FindElement(ele).SendKeys(Keys.Enter);
+        }
+        public static void TabKey()
         {
             Actions builder = new Actions(Initialize.driver);
-            builder.SendKeys(Keys.Enter);
+            builder.SendKeys(Keys.Tab);
         }
-
         public static void elementToBeClickable(By element)
         {
             try
@@ -194,6 +210,22 @@ namespace DCM.POM
 
             AutoItX.ControlSetText(winTitle, "", idEditBox, file);
             AutoItX.ControlClick(winTitle, "", idBtnLoad);
+        }
+
+        public static string FieldText(By ele)
+        {
+
+
+            String elevalue = (String)((((IJavaScriptExecutor)Initialize.driver)).ExecuteScript("return arguments[0].value", Initialize.driver.FindElement(ele)));
+            return elevalue;
+            
+        }
+
+        public static void JSExe(By element)
+        {
+            IWebElement element1 = Initialize.driver.FindElement(element);
+            IJavaScriptExecutor executor = (IJavaScriptExecutor)Initialize.driver;
+            executor.ExecuteScript("arguments[0].click()", element1);
         }
 
     }

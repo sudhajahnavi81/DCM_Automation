@@ -7,7 +7,7 @@ Feature: DCM Automation
 Scenario: login into DCM. search and select practice from dashboard
 	Given Enter practice name into search practice textbox and select searched practice.
 	| name                            |
-	| Bailey Medical Center - EM 3201 |
+	| Bay Medical Center - EM 3150 |
 	Then models should show from selected practice
 
 
@@ -22,7 +22,7 @@ Scenario: Verify Floor Plan popup from Dashboard
 
 Scenario: Create model 
 	Given click on create model tab from dashboard and click on Create Model using Free Form from popup
-	And enter vlaues into Practice Metrics fields and click on next button or click on Arrivals/ESL
+	And enter vlaues into Practice Metrics fields and click on next button or click on Arrivals/ESI
 	| Area2 | Area3 | Forecasted Annual Arrivals (walkouts included) | Current LWBS rate (walkouts) | Admit Percentage % |
 	| FT    | PIT   | 80000                                          | 3                            | 12                 |
 	When Arrivals/ESL tab opens enter vlaues into fileds and click on next button or click on Length of Stay

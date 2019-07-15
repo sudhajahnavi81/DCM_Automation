@@ -85,7 +85,7 @@ this.ScenarioInitialize(scenarioInfo);
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "name"});
             table1.AddRow(new string[] {
-                        "Bailey Medical Center - EM 3201"});
+                        "Bay Medical Center - EM 3150"});
 #line 8
  testRunner.Given("Enter practice name into search practice textbox and select searched practice.", ((string)(null)), table1, "Given ");
 #line 11
@@ -122,6 +122,54 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("click on Floor Plan link and verify View, delete and upload floor plan", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 20
  testRunner.Then("verify uploaded image", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Create model")]
+        public virtual void CreateModel()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create model", null, ((string[])(null)));
+#line 23
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 24
+ testRunner.Given("click on create model tab from dashboard and click on Create Model using Free For" +
+                    "m from popup", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Area2",
+                        "Area3",
+                        "Forecasted Annual Arrivals (walkouts included)",
+                        "Current LWBS rate (walkouts)",
+                        "Admit Percentage %"});
+            table2.AddRow(new string[] {
+                        "FT",
+                        "PIT",
+                        "80000",
+                        "3",
+                        "12"});
+#line 25
+ testRunner.And("enter vlaues into Practice Metrics fields and click on next button or click on Ar" +
+                    "rivals/ESL", ((string)(null)), table2, "And ");
+#line 28
+ testRunner.When("Arrivals/ESL tab opens enter vlaues into fileds and click on next button or click" +
+                    " on Length of Stay", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 29
+ testRunner.And("Length of Stay tab opens enter vlaues into fileds and click on next button or cli" +
+                    "ck on Shifts", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 30
+ testRunner.When("Shifts tab opens enter vlaues into fileds and click on next button or click on Cl" +
+                    "inician Productivity", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 31
+ testRunner.And("Clinician Productivity tab opens enter vlaues into fileds and click on next butto" +
+                    "n or click on Clinician Cost", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 32
+ testRunner.When("Clinician Cost tab opens enter vlaues into fileds and click on next button or cli" +
+                    "ck on Save Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 33
+ testRunner.Then("Model should be saved with values enter into save model popup.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

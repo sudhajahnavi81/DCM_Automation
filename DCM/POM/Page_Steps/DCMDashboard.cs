@@ -17,11 +17,12 @@ namespace DCM.POM.Page_Steps
 
         public static void PracticeSearch(string practice)
         {
+            Thread.Sleep(10000);
             WaitForElement(Page_Objects.practicepopup_txtbox);
-            click(Page_Objects.practicepopup_txtbox);
+            JSExe(Page_Objects.practicepopup_txtbox);
             Type(practice, Page_Objects.practicepopup_txtbox);
             WaitForElement(Page_Objects.practicepopup_linktext);
-            click(Page_Objects.practicepopup_linktext);
+            JSExe(Page_Objects.practicepopup_linktext);
             WaitForElement(Page_Objects.viewgraphs);
         }
 
@@ -38,9 +39,9 @@ namespace DCM.POM.Page_Steps
         {
 
 
-            Thread.Sleep(30000);
+            Thread.Sleep(15000);
             click(Page_Objects.OpModelHistory);
-            Thread.Sleep(30000);
+            Thread.Sleep(10000);
             WaitForElement(Page_Objects.OKbtn);
             Console.WriteLine("Previous Operational Model(s) :");
             Console.WriteLine("Current Operational Model :" + GetText(Page_Objects.currentmodelhistory));
@@ -60,13 +61,13 @@ namespace DCM.POM.Page_Steps
         public static void Floorplan()
         {
 
-            Thread.Sleep(30000);
+            Thread.Sleep(20000);
             click(Page_Objects.FloorPlan);
             WaitForElement(Page_Objects.uploadFloorPlanbtn);
             Thread.Sleep(1000);
             click(Page_Objects.uploadFloorPlanbtn);
             Thread.Sleep(1000);
-            uploadfile(@"C:\Users\sunil\Documents\ShareX\Screenshots\2019-06\Floorplan.png", "Open","Edit1", "Button1");
+            uploadfile(@"C:\Users\sunil\Floorplan.png", "Open","Edit1", "Button1");
 
             //AutoItX.ControlFocus("open", "", "Edit1");
             //upload(Page_Objects.uploadFloorPlanbtn, "Floorplan");

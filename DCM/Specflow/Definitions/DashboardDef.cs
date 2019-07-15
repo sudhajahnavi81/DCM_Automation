@@ -23,7 +23,7 @@ namespace DCM.Specflow.Definitions
             string name = table.name;
 
             DCMDashboard.PracticeSearch(name);
-            ;
+            
         }
 
         [Then(@"models should show from selected practice")]

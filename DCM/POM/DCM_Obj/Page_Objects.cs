@@ -99,13 +99,13 @@ namespace DCM.POM.DCM_Objects
         public static By Shifts_tab = By.XPath("/html/body/app-root/div/div/app-input/div/div[2]/tabset/ul/li[4]/a/span");
         public static By addShifts = By.XPath("//li[2]//button[1]");
         public static By Shiftpopup = By.Id("mat-dialog-1");
-        public static By selectalldays = By.XPath("//*[@id=\"mat-dialog-1\"]/app-add-edit-shift/div/div[2]/div[2]/div[3]/label/span");
-        public static By fromDropdown = By.XPath("//*[@id=\"mat-dialog-1\"]/app-add-edit-shift/div/div[2]/div[3]/div/div[1]/div/div/ng-select/div/div/div[2]/input");
+        public static By selectalldays = By.XPath("//span[contains(text(),'Select All')]");
+        public static By fromDropdown = By.XPath("//*[starts-with(@id,'mat-dialog-')]/app-add-edit-shift/div/div[2]/div[3]/div/div[1]/div/div/ng-select/div/div/div[2]/input");
         public static By fromtime = By.XPath("//span[contains(text(),'00:00')]");
-        public static By toTimeDropdown = By.XPath("//*[@id=\"mat-dialog-1\"]/app-add-edit-shift/div/div[2]/div[3]/div/div[2]/div/div/ng-select/div/div/div[2]/input");
+        public static By toTimeDropdown = By.XPath("//*[starts-with(@id,'mat-dialog-')]/app-add-edit-shift/div/div[2]/div[3]/div/div[2]/div/div/ng-select/div/div/div[2]/input");
         public static By toTime = By.XPath("//*[@class='ng-option ng-option-selected ng-star-inserted ng-option-marked']/div/span[contains(text(),'06:00')]");
-        public static By copytoProposed = By.XPath("//*[@id=\"mat-dialog-1\"]/app-add-edit-shift/div/div[2]/div[4]/label/span");
-        public static By saveShiftPopup = By.XPath("//*[@id=\"mat-dialog-1\"]/app-add-edit-shift/div/div[3]/div/button[1]");
+        public static By copytoProposed = By.XPath("//span[contains(text(),'Copy over to Proposed')]");
+        public static By saveShiftPopup = By.XPath("//*[starts-with(@id,'mat-dialog-')]/app-add-edit-shift/div/div[3]/div/button[1]");
         public static By dropdownmenu = By.XPath("//div[@class='ng-option ng-star-inserted']");
         public static By Todropdownmenu = By.XPath("//div[@id='a1c36111a55b']");
 

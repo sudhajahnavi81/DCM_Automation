@@ -87,16 +87,19 @@ namespace DCM.POM.Page_Steps
         {
             WaitForElement(Page_Objects.addShifts);
             click(Page_Objects.addShifts);
-            WaitForElement(Page_Objects.Shiftpopup);
-            click(Page_Objects.Shiftpopup);
-            click(Page_Objects.selectalldays);
-            click(Page_Objects.fromDropdown);
+            Thread.Sleep(10000);
+            //WaitForElement(Page_Objects.Shiftpopup);
+            //click(Page_Objects.Shiftpopup);
+            Thread.Sleep(10000);
+            JSExe(Page_Objects.selectalldays);
+            Thread.Sleep(10000);
+            JSExe(Page_Objects.fromDropdown);
             Type(FromTime,Page_Objects.fromDropdown);
             Enterkey(Page_Objects.fromDropdown);
             Type(ToTime,Page_Objects.toTimeDropdown);
             Enterkey(Page_Objects.toTimeDropdown);
-            click(Page_Objects.copytoProposed);
-            click(Page_Objects.saveShiftPopup);
+            JSExe(Page_Objects.copytoProposed);
+            JSExe(Page_Objects.saveShiftPopup);
 
 
             JSExe(Page_Objects.shifts_next);
@@ -142,12 +145,11 @@ namespace DCM.POM.Page_Steps
         public static void SaveModel()
         {
 
-        
             click(Page_Objects.save);
             //click(savepopup);
-            Random r = new Random();
-            int num = r.Next();
-            Type(num.ToString(), Page_Objects.modelName);
+            DateTime now = DateTime.Now;
+            String modelName = "Automation_" + now.ToString("MM/dd/yyyy hh:mm tt");
+            Type(modelName.ToString(), Page_Objects.modelName);
             click(Page_Objects.modelSave);
         }
 

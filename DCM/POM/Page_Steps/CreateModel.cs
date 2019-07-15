@@ -151,6 +151,7 @@ namespace DCM.POM.Page_Steps
             String modelName = "Automation_" + now.ToString("MM/dd/yyyy hh:mm tt");
             Type(modelName.ToString(), Page_Objects.modelName);
             click(Page_Objects.modelSave);
+            click(Page_Objects.OKbtn);
         }
 
     }   

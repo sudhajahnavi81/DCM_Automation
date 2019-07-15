@@ -154,6 +154,7 @@ namespace DCM.Specflow.Definitions
         public void ThenModelShouldBeSavedWithValuesEnterIntoSaveModelPopup_()
         {
             CreateModel.SaveModel();
+            
         }
 
     }

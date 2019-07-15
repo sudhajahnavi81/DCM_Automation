@@ -7,7 +7,7 @@ Feature: DCM Automation
 Scenario: 01 login into DCM. search and select practice from dashboard
 	Given Enter practice name into search practice textbox and select searched practice.
 	| name                            |
-	| Bay Medical Center - EM 3150 |
+	| Bailey Medical Center - EM 3201 |
 	Then models should show from selected practice
 
 

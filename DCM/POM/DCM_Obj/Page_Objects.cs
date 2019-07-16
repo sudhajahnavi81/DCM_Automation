@@ -171,8 +171,7 @@ namespace DCM.POM.DCM_Objects
 
         //logout
 
-        public static By username = By.XPath("//span[@class='userName']");
-        public static By logout = By.XPath("//a[@class='dropdown-item']");
+        public static By Logout = By.XPath("//span[@class='userName']//div//a//i");
 
 
     }

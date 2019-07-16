@@ -45,9 +45,7 @@ namespace DCM.POM.Page_Steps
 
         public static void DCMlogout()
         {
-            Console.WriteLine("User " + (GetText(Page_Objects.username)) + " Logout");
-            click(Page_Objects.username);
-            click(Page_Objects.logout);
+            click(Page_Objects.Logout);
         }
 
 

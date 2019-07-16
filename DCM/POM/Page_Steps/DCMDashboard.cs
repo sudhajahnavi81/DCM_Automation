@@ -60,7 +60,8 @@ namespace DCM.POM.Page_Steps
 
         public static void Floorplan()
         {
-            Thread.Sleep(15000);
+
+            Thread.Sleep(20000);
             click(Page_Objects.FloorPlan);
             WaitForElement(Page_Objects.uploadFloorPlanbtn);
             Thread.Sleep(1000);

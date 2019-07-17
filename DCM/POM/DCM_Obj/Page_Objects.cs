@@ -34,7 +34,7 @@ namespace DCM.POM.DCM_Objects
         public static By viewgraphs = By.XPath("//button[@class='btn btn-primary-default btn-primary-shadow']");
         public static By DashboardGrid = By.XPath("//th[@class='mat-header-cell ng-tns-c12-20 cdk-column-ModelName mat-column-ModelName ng-star-inserted']");
         public static By DCMVersion = By.XPath("//div[@class='d-inline mr-2']//span");
-        public static By firstmodelname = By.XPath("//div[contains(@class,'dashTitleBar move-tooltip-right white-space')]");
+        public static By firstmodelname = By.XPath("//div[contains(@class,'dashboard-sec-subbar  dashTitleBar move-tooltip-right white-space')]");
 
 
         //Operational model history

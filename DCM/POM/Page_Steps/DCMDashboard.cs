@@ -24,6 +24,7 @@ namespace DCM.POM.Page_Steps
             WaitForElement(Page_Objects.practicepopup_linktext);
             JSExe(Page_Objects.practicepopup_linktext);
             WaitForElement(Page_Objects.viewgraphs);
+            click(Page_Objects.Appname);
         }
 
         public static void Verifypractice()
@@ -37,9 +38,8 @@ namespace DCM.POM.Page_Steps
         public static void OperationalHistroy()
 
         {
-
-
-            Thread.Sleep(15000);
+            click(Page_Objects.Appname);
+            Thread.Sleep(20000);
             click(Page_Objects.OpModelHistory);
             Thread.Sleep(10000);
             WaitForElement(Page_Objects.OKbtn);
@@ -60,7 +60,7 @@ namespace DCM.POM.Page_Steps
 
         public static void Floorplan()
         {
-
+            click(Page_Objects.Appname);
             Thread.Sleep(20000);
             click(Page_Objects.FloorPlan);
             WaitForElement(Page_Objects.uploadFloorPlanbtn);

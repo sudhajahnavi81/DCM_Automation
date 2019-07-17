@@ -31,6 +31,7 @@
         <ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
             <li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
                         <li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+                <li class='waves-effect'><a href='#!' onclick="configureView(-1)" view='testrunner-logs-view'><i class='material-icons'>note</i></a></li>
         </ul>
 
         <!-- report name -->
@@ -43,7 +44,7 @@
         <ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 
             <a>
-                <span class='suite-start-time label blue darken-3'>7/16/2019 9:26:02 PM India Standard Time</span>
+                <span class='suite-start-time label blue darken-3'>7/17/2019 9:39:36 PM India Standard Time</span>
             </a>
             <a>
                 <span class="label blue darken-3">3.1.0</span>
@@ -116,9 +117,9 @@
 
 <div id='test-view-charts' class='subview-full'>
     <div id='charts-row' class='row nm-v nm-h'>
-        <div class='col s12 m6 l6 np-h'>
+        <div class='col s12 m4 l4 np-h'>
             <div class='card-panel nm-v'>
-                <div class='left panel-name'>Tests</div>
+                <div class='left panel-name'>Classes</div>
                 <div class='chart-box'>
                     <canvas id='parent-analysis' width='100' height='80'></canvas>
                 </div>
@@ -126,26 +127,40 @@
                     <span><span class='strong'>15</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong'>0</span> test(s) failed, <span class='strong'>0</span> others
+                    <span class='strong'>1</span> test(s) failed, <span class='strong'>0</span> others
                 </div>
             </div>
         </div>
 
-            <div class='col s12 m6 l6 np-h'>
+            <div class='col s12 m4 l4 np-h'>
                 <div class='card-panel nm-v'>
-                    <div class='left panel-name'>Steps</div>
+                    <div class='left panel-name'>Tests</div>
                     <div class='chart-box'>
                         <canvas id='child-analysis' width='100' height='80'></canvas>
                     </div>
                     <div class='block text-small'>
-                        <span><span class='strong'>4</span> step(s) passed</span>
+                        <span><span class='strong'>0</span> step(s) passed</span>
                     </div>
                     <div class='block text-small'>
-                        <span class='strong'>0</span> step(s) failed, <span class='strong'>0</span> others
+                        <span class='strong'>1</span> step(s) failed, <span class='strong'>0</span> others
                     </div>
                 </div>
             </div>
 
+            <div class='col s12 m4 l4 np-h'>
+                <div class='card-panel nm-v'>
+                    <div class='left panel-name'>Steps</div>
+                    <div class='chart-box'>
+                        <canvas id='grandchild-analysis' width='100' height='80'></canvas>
+                    </div>
+                    <div class='block text-small'>
+                        <span><span class='strong'>1</span> step(s) passed</span>
+                    </div>
+                    <div class='block text-small'>
+                        <span class='strong'>1</span> step(s) failed, <span class='strong'>0</span> others
+                    </div>
+                </div>
+            </div>
     </div>
 </div>
     <div class='subview-left left'>
@@ -159,13 +174,13 @@
                     <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='1'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:26:03 PM</span>
+                            <span class='test-time'>7/17/2019 9:39:36 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:26:03 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:26:03 PM</span>
+                                    <span class='label start-time'>7/17/2019 9:39:36 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:39:36 PM</span>
                                     <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
 
@@ -174,13 +189,13 @@
                     <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='2'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:26:25 PM</span>
+                            <span class='test-time'>7/17/2019 9:39:49 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:26:25 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:26:25 PM</span>
+                                    <span class='label start-time'>7/17/2019 9:39:49 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:39:49 PM</span>
                                     <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
 
@@ -189,13 +204,13 @@
                     <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='3'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:26:26 PM</span>
+                            <span class='test-time'>7/17/2019 9:39:49 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:26:26 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:26:26 PM</span>
+                                    <span class='label start-time'>7/17/2019 9:39:49 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:39:49 PM</span>
                                     <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
 
@@ -204,13 +219,13 @@
                     <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='4'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:26:27 PM</span>
+                            <span class='test-time'>7/17/2019 9:39:49 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:26:27 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:26:27 PM</span>
+                                    <span class='label start-time'>7/17/2019 9:39:49 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:39:49 PM</span>
                                     <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
 
@@ -219,36 +234,36 @@
                     <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='5'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:26:30 PM</span>
+                            <span class='test-time'>7/17/2019 9:39:52 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:26:30 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:26:30 PM</span>
+                                    <span class='label start-time'>7/17/2019 9:39:52 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:39:52 PM</span>
                                     <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
 
                         </div>
                     </li>
-                    <li class='test displayed active has-leaf pass' status='pass' bdd='bdd' test-id='6'>
+                    <li class='test displayed active has-leaf fail' status='fail' bdd='bdd' test-id='6'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:26:30 PM</span>
-                            <span class='test-status right pass'>Pass</span>
+                            <span class='test-time'>7/17/2019 9:39:52 PM</span>
+                            <span class='test-status right fail'>Fail</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:26:30 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:26:31 PM</span>
-                                    <span class='label time-taken grey lighten-1 white-text'>00:00:01.3260759</span>
+                                    <span class='label start-time'>7/17/2019 9:39:52 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:40:43 PM</span>
+                                    <span class='label time-taken grey lighten-1 white-text'>00:00:50.7209011</span>
                                 </div>
                                     <ul class='collapsible node-list' data-collapsible='accordion'>
-                                            <li class='node level-1 pass' status='pass' test-id='7'>
+                                            <li class='node level-1 fail' status='fail' test-id='7'>
                                                 <div class='collapsible-header'>
-                                                    <div class='node-name'>01 login into DCM. search and select practice from dashboard</div>
-                                                    <span class='node-time'>7/16/2019 9:26:31 PM</span>
-                                                    <span class='test-status right pass'>Pass</span>
+                                                    <div class='node-name'>02 verify Operational Model History</div>
+                                                    <span class='node-time'>7/17/2019 9:39:53 PM</span>
+                                                    <span class='test-status right fail'>Fail</span>
                                                 </div>
                                                 <div class='collapsible-body'>
                                                     <div class='node-steps'>
@@ -261,6 +276,18 @@
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
+                                                                    <tr class='log' status='error'>
+                                                                        <td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+                                                                        <td class='timestamp'>7/17/2019 9:40:43 PM</td>
+                                                                        <td class='step-details'><pre>Multiple failures or warnings in test:
+  1)   Expected string length 32 but was 18. Strings differ at index 18.
+  Expected: "NewImport_07082019 (Operational)"
+  But was:  "NewImport_07082019"
+  -----------------------------^
+
+  2) 
+</pre></td>
+                                                                    </tr>
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -270,55 +297,46 @@
 
                         </div>
                     </li>
-                    <li class='test displayed active has-leaf pass' status='pass' bdd='bdd' test-id='8'>
+                    <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='8'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:26:48 PM</span>
+                            <span class='test-time'>7/17/2019 9:39:53 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:26:48 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:26:51 PM</span>
-                                    <span class='label time-taken grey lighten-1 white-text'>00:00:02.8581635</span>
+                                    <span class='label start-time'>7/17/2019 9:39:53 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:39:53 PM</span>
+                                    <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
-                                    <ul class='collapsible node-list' data-collapsible='accordion'>
-                                            <li class='node level-1 pass' status='pass' test-id='9'>
-                                                <div class='collapsible-header'>
-                                                    <div class='node-name'>02 verify Operational Model History</div>
-                                                    <span class='node-time'>7/16/2019 9:26:51 PM</span>
-                                                    <span class='test-status right pass'>Pass</span>
-                                                </div>
-                                                <div class='collapsible-body'>
-                                                    <div class='node-steps'>
-                                                        <table class='bordered table-results'>
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Status</th>
-                                                                    <th>Timestamp</th>
-                                                                    <th>Details</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                    </ul>
+
+                        </div>
+                    </li>
+                    <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='9'>
+                        <div class='test-heading'>
+                            <span class='test-name'>DCM Automation</span>
+                            <span class='test-time'>7/17/2019 9:40:30 PM</span>
+                            <span class='test-status right pass'>Pass</span>
+                        </div>
+                        <div class='test-content hide'>
+                                <div class='test-time-info'>
+                                    <span class='label start-time'>7/17/2019 9:40:30 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:40:30 PM</span>
+                                    <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
+                                </div>
 
                         </div>
                     </li>
                     <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='10'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:27:06 PM</span>
+                            <span class='test-time'>7/17/2019 9:40:40 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:27:06 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:27:06 PM</span>
+                                    <span class='label start-time'>7/17/2019 9:40:40 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:40:40 PM</span>
                                     <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
 
@@ -327,13 +345,13 @@
                     <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='11'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:27:16 PM</span>
+                            <span class='test-time'>7/17/2019 9:40:40 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:27:16 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:27:16 PM</span>
+                                    <span class='label start-time'>7/17/2019 9:40:40 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:40:40 PM</span>
                                     <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
 
@@ -342,13 +360,13 @@
                     <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='12'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:27:17 PM</span>
+                            <span class='test-time'>7/17/2019 9:40:40 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:27:17 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:27:17 PM</span>
+                                    <span class='label start-time'>7/17/2019 9:40:40 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:40:40 PM</span>
                                     <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
 
@@ -357,106 +375,58 @@
                     <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='13'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:27:17 PM</span>
+                            <span class='test-time'>7/17/2019 9:40:40 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:27:17 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:27:17 PM</span>
+                                    <span class='label start-time'>7/17/2019 9:40:40 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:40:40 PM</span>
                                     <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
 
                         </div>
                     </li>
-                    <li class='test displayed active has-leaf pass' status='pass' bdd='bdd' test-id='14'>
+                    <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='15'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:27:17 PM</span>
+                            <span class='test-time'>7/17/2019 9:40:42 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:27:17 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:27:17 PM</span>
-                                    <span class='label time-taken grey lighten-1 white-text'>00:00:00.0180010</span>
+                                    <span class='label start-time'>7/17/2019 9:40:42 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:40:42 PM</span>
+                                    <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
-                                    <ul class='collapsible node-list' data-collapsible='accordion'>
-                                            <li class='node level-1 pass' status='pass' test-id='15'>
-                                                <div class='collapsible-header'>
-                                                    <div class='node-name'>03 Verify Floor Plan popup from Dashboard</div>
-                                                    <span class='node-time'>7/16/2019 9:27:17 PM</span>
-                                                    <span class='test-status right pass'>Pass</span>
-                                                </div>
-                                                <div class='collapsible-body'>
-                                                    <div class='node-steps'>
-                                                        <table class='bordered table-results'>
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Status</th>
-                                                                    <th>Timestamp</th>
-                                                                    <th>Details</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                    </ul>
 
                         </div>
                     </li>
-                    <li class='test displayed active has-leaf pass' status='pass' bdd='bdd' test-id='16'>
+                    <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='16'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:27:37 PM</span>
+                            <span class='test-time'>7/17/2019 9:40:42 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:27:37 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:27:37 PM</span>
-                                    <span class='label time-taken grey lighten-1 white-text'>00:00:00.1380079</span>
+                                    <span class='label start-time'>7/17/2019 9:40:42 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:40:42 PM</span>
+                                    <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
-                                    <ul class='collapsible node-list' data-collapsible='accordion'>
-                                            <li class='node level-1 pass' status='pass' test-id='17'>
-                                                <div class='collapsible-header'>
-                                                    <div class='node-name'>04 Create model</div>
-                                                    <span class='node-time'>7/16/2019 9:27:37 PM</span>
-                                                    <span class='test-status right pass'>Pass</span>
-                                                </div>
-                                                <div class='collapsible-body'>
-                                                    <div class='node-steps'>
-                                                        <table class='bordered table-results'>
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Status</th>
-                                                                    <th>Timestamp</th>
-                                                                    <th>Details</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                    </ul>
 
                         </div>
                     </li>
-                    <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='18'>
+                    <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='17'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:27:37 PM</span>
+                            <span class='test-time'>7/17/2019 9:40:43 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:27:37 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:27:37 PM</span>
+                                    <span class='label start-time'>7/17/2019 9:40:43 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:40:43 PM</span>
                                     <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
 
@@ -465,13 +435,13 @@
                     <li class='test displayed active  pass' status='pass' bdd='bdd' test-id='19'>
                         <div class='test-heading'>
                             <span class='test-name'>DCM Automation</span>
-                            <span class='test-time'>7/16/2019 9:27:37 PM</span>
+                            <span class='test-time'>7/17/2019 9:40:43 PM</span>
                             <span class='test-status right pass'>Pass</span>
                         </div>
                         <div class='test-content hide'>
                                 <div class='test-time-info'>
-                                    <span class='label start-time'>7/16/2019 9:27:37 PM</span>
-                                    <span class='label end-time'>7/16/2019 9:27:37 PM</span>
+                                    <span class='label start-time'>7/17/2019 9:40:43 PM</span>
+                                    <span class='label end-time'>7/17/2019 9:40:43 PM</span>
                                     <span class='label time-taken grey lighten-1 white-text'>00:00:00</span>
                                 </div>
 
@@ -551,30 +521,30 @@
         <div class='row'>
             <div class='col s2'>
                 <div class='card-panel r'>
- <span>Tests</span>                     <div class='panel-lead'>15</div>
+ <span>Tests</span>                     <div class='panel-lead'>16</div>
                 </div>
             </div>
             <div class='col s2'>
                 <div class='card-panel r'>
- <span>Steps</span>                     <div class='panel-lead'>4</div>
+ <span>Steps</span>                     <div class='panel-lead'>1</div>
                 </div>
             </div>
             <div class='col s2'>
                 <div class='card-panel r'>
                     Start
-                    <div class='panel-lead'>7/16/2019 9:26:02 PM</div>
+                    <div class='panel-lead'>7/17/2019 9:39:36 PM</div>
                 </div>
             </div>
             <div class='col s2'>
                 <div class='card-panel r'>
                     End
-                    <div class='panel-lead'>7/16/2019 9:27:42 PM</div>
+                    <div class='panel-lead'>7/17/2019 9:40:43 PM</div>
                 </div>
             </div>
             <div class='col s2'>
                 <div class='card-panel r'>
                     Time Taken
-                    <div class='panel-lead'>00:01:40.1757297</div>
+                    <div class='panel-lead'>00:01:06.4688018</div>
                 </div>
             </div>
 
@@ -586,6 +556,21 @@
             
 
 
+    <div id='testrunner-logs-view' class='view hide'>
+        <div class='card-panel transparent np-v'>
+            <h5>TestRunner Logs</h5>
+
+            <div class='card-panel'>
+<pre>Multiple failures or warnings in test:
+  1)   Expected string length 32 but was 18. Strings differ at index 18.
+  Expected: "NewImport_07082019 (Operational)"
+  But was:  "NewImport_07082019"
+  -----------------------------^
+
+  2) 
+</pre>            </div>
+        </div>        
+    </div>
 <!-- exception view -->
 
 		</div>
@@ -594,22 +579,22 @@
 		<script>
 			var statusGroup = {
 			    passParent: 15,
-			    failParent: 0,
+			    failParent: 1,
 			    fatalParent: 0,
 			    errorParent: 0,
 			    warningParent: 0,
 			    skipParent: 0,
 				
-			    passChild: 4,
-			    failChild: 0,
+			    passChild: 0,
+			    failChild: 1,
 			    fatalChild: 0,
 			    errorChild: 0,
 			    warningChild: 0,
 			    skipChild: 0,
 			    infoChild: 0,
 				
-			    passGrandChild: 0,
-			    failGrandChild: 0,
+			    passGrandChild: 1,
+			    failGrandChild: 1,
 			    fatalGrandChild: 0,
 			    errorGrandChild: 0,
 			    warningGrandChild: 0,

@@ -75,9 +75,11 @@ namespace DCM.Specflow.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("01 login into DCM. search and select practice from dashboard")]
+        [NUnit.Framework.CategoryAttribute("test")]
         public virtual void _01LoginIntoDCM_SearchAndSelectPracticeFromDashboard()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 login into DCM. search and select practice from dashboard", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 login into DCM. search and select practice from dashboard", null, new string[] {
+                        "test"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();

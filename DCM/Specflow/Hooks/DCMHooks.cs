@@ -13,6 +13,8 @@ using AventStack.ExtentReports.Gherkin.Model;
 using System.Reflection;
 using BoDi;
 using OpenQA.Selenium.Remote;
+using AventStack.ExtentReports.Model;
+using NUnit.Framework;
 
 namespace DCM.Specflow.Hooks
 {
@@ -26,6 +28,7 @@ namespace DCM.Specflow.Hooks
         private static ExtentTest scenario;
         private static ExtentReports extent;
         private static KlovReporter klov;
+        private object Test;
         private readonly IObjectContainer _objectContainer;
 
         
@@ -98,15 +101,17 @@ namespace DCM.Specflow.Hooks
 
         }
         [AfterStep]
+
+      
+
         public void InsertReportingSteps()
         {
 
             var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
 
-            PropertyInfo pInfo = typeof(ScenarioContext).GetProperty("TestStatus", BindingFlags.Instance | BindingFlags.NonPublic);
-            MethodInfo getter = pInfo.GetGetMethod(nonPublic: true);
-            object TestResult = getter.Invoke(ScenarioContext.Current, null);
+            var pendingDef = ScenarioContext.Current.ScenarioExecutionStatus.ToString();
 
+         
 
             if (ScenarioContext.Current.TestError == null)
             {
@@ -118,19 +123,31 @@ namespace DCM.Specflow.Hooks
                     scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text);
                 else if (stepType == "And")
                     scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
+
+                 
+
+
+
             }
             else if (ScenarioContext.Current.TestError != null)
             {
                 if (stepType == "Given")
-                    scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.InnerException);
+                    scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError);
                 else if (stepType == "When")
-                    scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.InnerException);
+                    scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError);
                 else if (stepType == "Then")
-                    scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.Message);
+                    scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError);
+
+                var error = ScenarioContext.Current.TestError;
+                var errormessage = "<pre>" + error.Message + "</pre>";
+
+                extent.AddTestRunnerLogs(errormessage);
+                scenario.Log(Status.Error, errormessage);
+                
             }
 
             //Pending Status
-            if (TestResult.ToString() == "StepDefinitionPending")
+            if (pendingDef == "StepDefinitionPending")
             {
                 if (stepType == "Given")
                     scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
@@ -140,7 +157,30 @@ namespace DCM.Specflow.Hooks
                     scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
 
             }
-            extent.Flush();
+
+            //if (ScenarioContext.Current.TestError != null)
+            //{
+            //    var error = ScenarioContext.Current.TestError;
+            //    var errormessage = "<pre>" + error.Message + "</pre>";
+
+            //    extent.AddTestRunnerLogs(errormessage);
+            //    scenario.Log(Status.Error, errormessage);
+            //    scenario.Fail(errormessage);
+
+            //}
+            if (ScenarioContext.Current.TestError != null)
+            {
+                extent.Flush();
+            }
+            if (ScenarioContext.Current.TestError == null)
+            {
+                extent.Flush();
+            }
+            if (pendingDef == "StepDefinitionPending")
+            {
+                extent.Flush();
+            }
+             
         }
         [BeforeScenario]
         public void Init()
@@ -153,8 +193,8 @@ namespace DCM.Specflow.Hooks
         public static void Afterfeature()
         {
             DCM_Login.DCMlogout();
-            driver.Close();
-            extent.Flush();
+            driver.Quit();
+            //extent.Flush();
         }
     }
 }

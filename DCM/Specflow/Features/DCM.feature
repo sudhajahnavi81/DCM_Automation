@@ -3,7 +3,7 @@
 Feature: DCM Automation
 	DCM login with Chrome browser and verify DCM functionality 
 
-
+@test
 Scenario: 01 login into DCM. search and select practice from dashboard
 	Given Enter practice name into search practice textbox and select searched practice.
 	| name                            |

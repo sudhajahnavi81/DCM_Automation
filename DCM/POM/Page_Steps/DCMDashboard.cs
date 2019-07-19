@@ -17,14 +17,14 @@ namespace DCM.POM.Page_Steps
 
         public static void PracticeSearch(string practice)
         {
-            Thread.Sleep(10000);
+            Thread.Sleep(30000);
             WaitForElement(Page_Objects.practicepopup_txtbox);
             JSExe(Page_Objects.practicepopup_txtbox);
             Type(practice, Page_Objects.practicepopup_txtbox);
             WaitForElement(Page_Objects.practicepopup_linktext);
             JSExe(Page_Objects.practicepopup_linktext);
             WaitForElement(Page_Objects.viewgraphs);
-            click(Page_Objects.Appname);
+            
         }
 
         public static void Verifypractice()
@@ -38,7 +38,7 @@ namespace DCM.POM.Page_Steps
         public static void OperationalHistroy()
 
         {
-            click(Page_Objects.Appname);
+            
             Thread.Sleep(20000);
             click(Page_Objects.OpModelHistory);
             Thread.Sleep(10000);

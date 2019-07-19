@@ -157,5 +157,31 @@ namespace DCM.Specflow.Definitions
             
         }
 
+
+        // Edit Model Details 
+
+        [Given(@"Select model other then operational model and click on edit model details button")]
+        public void GivenSelectModelOtherThenOperationalModelAndClickOnEditModelDetailsButton()
+        {
+            CreateModel.EditModelDetail();
+        }
+
+        [Given(@"select operationa check box to make operationa model")]
+        public void GivenSelectOperationaCheckBoxToMakeOperationaModel()
+        {
+            CreateModel.EMDOperationalcheck();
+        }
+
+        //[Then(@"verify operation model history")]
+        //public void ThenVerifyOperationModelHistory()
+        //{
+        //    ScenarioContext.Current.Pending();
+        //}
+
+
+
+
+
+
     }
 }

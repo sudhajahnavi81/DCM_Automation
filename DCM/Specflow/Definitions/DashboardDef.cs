@@ -41,6 +41,8 @@ namespace DCM.Specflow.Definitions
             DCMDashboard.OperationalHistroy();
         }
 
+
+        [Then(@"verify operation model history")]
         [Then(@"verify current operational model name and privious opearation model names")]
         public void ThenVerifyCurrentOperationalModelNameAndPriviousOpearationModelNames()
         {

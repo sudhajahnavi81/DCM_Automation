@@ -50,7 +50,9 @@ Scenario: 04 Create model
 
 	Then Model should be saved with values enter into save model popup.
 
-
-
+	Scenario: 05 Edit Model Details 
+	Given Select model other then operational model and click on edit model details button
+	And select operationa check box to make operationa model
+	Then verify operation model history
 
 	

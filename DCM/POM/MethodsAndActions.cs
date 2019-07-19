@@ -87,7 +87,7 @@ namespace DCM.POM
 
                 WebDriverWait wait = new WebDriverWait(Initialize.driver, TimeSpan.FromMinutes(3));
                 //IWebElement myDynamicElement = wait.Until<IWebElement>(d => d.FindElement(element));
-                wait.Until(ExpectedConditions.ElementIsVisible(element));
+                wait.Until(ExpectedConditions.ElementToBeClickable(element));
                 return Initialize.driver.FindElement(element);
             }
             catch (NoSuchElementException)
@@ -133,7 +133,7 @@ namespace DCM.POM
         {
             try
             {
-                return Find(locator).Text;
+                return Initialize.GetDriver().FindElement(locator).Text;
             }
             catch (NoSuchElementException)
             {
@@ -171,6 +171,14 @@ namespace DCM.POM
             Actions builder = new Actions(Initialize.driver);
             builder.SendKeys(Keys.Tab);
         }
+
+        public static void Spacebar()
+        {
+            Actions builder = new Actions(Initialize.driver);
+            builder.SendKeys(Keys.Space);
+        }
+
+
         public static void elementToBeClickable(By element)
         {
             try

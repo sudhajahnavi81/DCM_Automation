@@ -46,6 +46,8 @@ namespace DCM.POM.Page_Steps
         public static void DCMlogout()
         {
             click(Page_Objects.Logout);
+            click(Page_Objects.Signout);
+
         }
 
 

@@ -45,6 +45,7 @@ namespace DCM.POM.Page_Steps
 
         public static void DCMlogout()
         {
+            Thread.Sleep(10000);
             click(Page_Objects.Logout);
             click(Page_Objects.Signout);
 

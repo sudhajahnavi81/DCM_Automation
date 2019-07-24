@@ -17,6 +17,7 @@ using AventStack.ExtentReports.Model;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
 
+
 namespace DCM.Specflow.Hooks
 {
 
@@ -28,6 +29,7 @@ namespace DCM.Specflow.Hooks
         public static IWebDriver driver;
         private static ExtentTest featureName;
         private static ExtentTest scenario;
+        private static ExtentTest test;
         private static ExtentReports extent;
         private readonly IObjectContainer _objectContainer;
 
@@ -36,19 +38,25 @@ namespace DCM.Specflow.Hooks
         public Initialize(IObjectContainer objectContainer)
         {
             _objectContainer = objectContainer;
+           
         }
 
 
         [BeforeTestRun]
         public static void InitializeReport()
         {
+
             //Initialize Extent report before test starts
             var htmlReporter = new ExtentHtmlReporter(@"D:\DCMAutomation\DCM\ExtentReport.html");
-            htmlReporter.Configuration().Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
+            htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
             //Attach report to reporter
             extent = new ExtentReports();
             
             extent.AttachReporter(htmlReporter);
+            extent.AddSystemInfo("Host Name", "Sunil");
+            extent.AddSystemInfo("Environment", "QA");
+            extent.AddSystemInfo("User Name", "Sunil Desai");
+            htmlReporter.LoadConfig(@"D:\DCMAutomation\DCM\" + "extent-config.xml");
         }
 
         [AfterTestRun]
@@ -62,11 +70,12 @@ namespace DCM.Specflow.Hooks
         [BeforeFeature]
         public static IWebDriver GetDriver()
         {
-            //Create dynamic feature name
-            featureName = extent.CreateTest<Feature>(FeatureContext.Current.FeatureInfo.Title);
-
+            
+                
             if (driver == null)
             {
+                featureName = extent.CreateTest<Feature>(FeatureContext.Current.FeatureInfo.Title);
+
                 if (FeatureContext.Current.FeatureInfo.Tags.Contains("chrome"))
                 {
                     driver = new ChromeDriver();
@@ -95,7 +104,7 @@ namespace DCM.Specflow.Hooks
         [AfterStep]
         public void InsertReportingSteps()
         {
-
+            
             var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
 
             var pendingDef = ScenarioContext.Current.ScenarioExecutionStatus.ToString();
@@ -105,7 +114,10 @@ namespace DCM.Specflow.Hooks
             if (ScenarioContext.Current.TestError == null)
             {
                 if (stepType == "Given")
-                    scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
+                {
+                   scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
+                    scenario.Log(Status.Pass);
+                }
                 else if (stepType == "When")
                     scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text);
                 else if (stepType == "Then")
@@ -125,18 +137,18 @@ namespace DCM.Specflow.Hooks
             else if (ScenarioContext.Current.TestError != null)
             {
                 if (stepType == "Given")
-                    scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError);
+                    scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.InnerException);
                 else if (stepType == "When")
-                    scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError);
+                    scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.InnerException);
                 else if (stepType == "Then")
-                    scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError);
+                    scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.Message);
 
-                //var error = ScenarioContext.Current.TestError;
-                //var errormessage = "<pre>" + error.Message + "</pre>";
+                var error = ScenarioContext.Current.TestError;
+                var errormessage = "<pre>" + error.Message + "</pre>";
 
-                //extent.AddTestRunnerLogs(errormessage);
-                //scenario.Log(Status.Error, errormessage);
-                
+                extent.AddTestRunnerLogs(errormessage);
+                scenario.Log(Status.Error, errormessage);
+
             }
 
             //Pending Status
@@ -157,44 +169,44 @@ namespace DCM.Specflow.Hooks
                 //scenario.Log(Status.Skip, skipmsg);
             }
 
-            var status = TestContext.CurrentContext.Result.Outcome.Status;
-            var stacktrace = "<pre>" + TestContext.CurrentContext.Result.StackTrace + "<pre>";
-            var errorMessage = TestContext.CurrentContext.Result.Message;
-            Status logstatus;
-            try
-            {
+            //var status = TestContext.CurrentContext.Result.Outcome.Status;
+            //var stacktrace = "<pre>" + TestContext.CurrentContext.Result.StackTrace + "<pre>";
+            //var errorMessage = TestContext.CurrentContext.Result.Message;
+            //Status logstatus;
+            //try
+            //{
                 
-                switch (status)
-                {
-                    case TestStatus.Failed:
-                        logstatus = Status.Fail;
-                        // string screenShotPath = Capture(driver, TestContext.CurrentContext.Test.Name);
-                        scenario.Log(Status.Error, "Test ended with" + logstatus);
-                        // scenario.Log(logstatus, 'Snapshot below: ” +_test.AddScreenCaptureFromPath(screenShotPath));
-                        break;
-                    case TestStatus.Skipped:
-                        logstatus = Status.Skip;
-                        scenario.Log(Status.Skip, "Test ended with" + logstatus);
-                        break;
-                    default:
-                        logstatus = Status.Pass;
-                        scenario.Log(Status.Error, "Test ended with" + logstatus);
-                        break;
-                }
-                extent.Flush();
-            }
-            catch (Exception e)
-            {
-                throw (e);
-            }
-            extent.Flush();
+            //    switch (status)
+            //    {
+            //        case TestStatus.Failed:
+            //            logstatus = Status.Fail;
+            //            // string screenShotPath = Capture(driver, TestContext.CurrentContext.Test.Name);
+            //            scenario.Log(Status.Error, "Test ended with" + logstatus);
+            //            // scenario.Log(logstatus, 'Snapshot below: ” +_test.AddScreenCaptureFromPath(screenShotPath));
+            //            break;
+            //        case TestStatus.Skipped:
+            //            logstatus = Status.Skip;
+            //            scenario.Log(Status.Skip, "Test ended with" + logstatus);
+            //            break;
+            //        default:
+            //            logstatus = Status.Pass;
+            //            scenario.Log(Status.Error, "Test ended with" + logstatus);
+            //            break;
+            //    }
+            //    extent.Flush();
+            //}
+            //catch (Exception e)
+            //{
+            //    throw (e);
+            //}
+           
 
 
         }
         [BeforeScenario]
         public void Init()
         {
-            
+
             //Create dynamic scenario name
             scenario = featureName.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
         }

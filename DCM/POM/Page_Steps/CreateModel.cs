@@ -151,7 +151,7 @@ namespace DCM.POM.Page_Steps
             String modelName = "Automation_" + now.ToString("MM/dd/yyyy hh:mm tt");
             Type(modelName.ToString(), Page_Objects.modelName);
             click(Page_Objects.modelSave);
-            Thread.Sleep(10000);
+            Thread.Sleep(20000);
             click(Page_Objects.OKbtn);
         }
 
@@ -159,12 +159,16 @@ namespace DCM.POM.Page_Steps
         public static void EditModelDetail()
         {
             Thread.Sleep(30000);
+            click(Page_Objects.dashboard);
+            Thread.Sleep(15000);
             click(Page_Objects.EditModelDetails);
             
         }
 
         public static void EMDOperationalcheck()
         {
+            Thread.Sleep(5000);
+           
             click(Page_Objects.EMD_ModeCategory_Operational);
             click(Page_Objects.OKbtn);
             Thread.Sleep(5000);

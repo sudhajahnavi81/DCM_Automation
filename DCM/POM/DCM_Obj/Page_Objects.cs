@@ -48,12 +48,17 @@ namespace DCM.POM.DCM_Objects
 
         // dashboard graph
 
+        public static By dashboard = By.XPath("//a[contains(text(),'Dashboard')]");
         public static By selectGraphDropdown = By.XPath("//ng-select[@class='select-medium ng-select-field ng-select ng-select-single ng-select-searchable ng-untouched ng-pristine ng-valid ng-select-opened ng-select-bottom']//input");
+        public static By selectDay = By.XPath("//ng-select[@class='select-small ng-select-field ng-select ng-select-single ng-select-searchable ng-pristine ng-valid ng-select-bottom ng-touched ng-select-opened']//input");
+
+
+
 
         //floor plan
         public static By FloorPlan = By.XPath("//div[@class='floorplan']");
         public static By viewFloorPlan = By.XPath("//span[@class='floor-view floor-btn']");
-        public static By deleteFloorPlan = By.XPath("//span[@class='floor-del floor-btn']");
+        public static By deleteFloorPlan = By.XPath("//li[1]//div[1]//div[3]//span[1]//i[1]");
         public static By uploadFloorPlanbtn = By.XPath("//button[@class='btn btn-upld ng-star-inserted']");
         public static By cancelnobtn = By.XPath("//button[@class='btn btn-danger']");
         public static By floorplanName = By.XPath("//ul[@class='floor-list']//li[1]//div[1]//div[1]//span[1]");

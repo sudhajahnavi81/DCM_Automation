@@ -39,7 +39,7 @@ namespace DCM.POM.Page_Steps
 
         {
             
-            Thread.Sleep(20000);
+            Thread.Sleep(30000);
             click(Page_Objects.OpModelHistory);
             Thread.Sleep(10000);
             WaitForElement(Page_Objects.OKbtn);

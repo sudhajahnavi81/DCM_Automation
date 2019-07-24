@@ -16,7 +16,7 @@ using OpenQA.Selenium.Remote;
 using AventStack.ExtentReports.Model;
 using NUnit.Framework;
 using NUnit.Framework.Interfaces;
-
+using AventStack.ExtentReports.MarkupUtils;
 
 namespace DCM.Specflow.Hooks
 {
@@ -33,7 +33,7 @@ namespace DCM.Specflow.Hooks
         private static ExtentReports extent;
         private readonly IObjectContainer _objectContainer;
 
-        
+        public static ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(@"D:\DCMAutomation\DCM\ExtentReport.html");
 
         public Initialize(IObjectContainer objectContainer)
         {
@@ -47,7 +47,7 @@ namespace DCM.Specflow.Hooks
         {
 
             //Initialize Extent report before test starts
-            var htmlReporter = new ExtentHtmlReporter(@"D:\DCMAutomation\DCM\ExtentReport.html");
+            
             htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
             //Attach report to reporter
             extent = new ExtentReports();
@@ -116,7 +116,9 @@ namespace DCM.Specflow.Hooks
                 if (stepType == "Given")
                 {
                    scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text);
-                    scenario.Log(Status.Pass);
+                    //htmlReporter.Config.CSS = ".Blue-text { color: #fff !important; }";
+
+
                 }
                 else if (stepType == "When")
                     scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text);

@@ -27,7 +27,7 @@ namespace DCM.POM
         {
             try
             {
-                Initialize.GetDriver().FindElement(element1).SendKeys(element);
+                Initialize.driver.FindElement(element1).SendKeys(element);
             }
             catch (NoSuchElementException)
             {
@@ -40,7 +40,7 @@ namespace DCM.POM
         {
             try
             {
-                Initialize.GetDriver().FindElement(element1).Clear();
+                Initialize.driver.FindElement(element1).Clear();
             }
             catch (NoSuchElementException)
             {
@@ -53,7 +53,7 @@ namespace DCM.POM
         {
             try
             {
-                Initialize.GetDriver().FindElement(element).Click();
+                Initialize.driver.FindElement(element).Click();
             }
             catch (NoSuchElementException)
             {
@@ -66,7 +66,7 @@ namespace DCM.POM
         {
             try
             {
-               if (!pageTitle.Equals(Initialize.GetDriver().Title))
+               if (!pageTitle.Equals(Initialize.driver.Title))
                 {
                     throw new InvalidOperationException("This page is not " + pageTitle + ". The title is: " + Initialize.driver.Title);
                 }
@@ -100,13 +100,13 @@ namespace DCM.POM
 
         public static void movepointer()
         {
-            Initialize.GetDriver().SwitchTo().Window(Initialize.GetDriver().WindowHandles.Last());
+            Initialize.driver.SwitchTo().Window(Initialize.driver.WindowHandles.Last());
         }
 
         public static bool IsElementPresent(By locator, string expectedText)
         {
             try { 
-            IList<IWebElement> subelements = Initialize.GetDriver().FindElements(locator);
+            IList<IWebElement> subelements = Initialize.driver.FindElements(locator);
             for (int i = 0; i < subelements.Count; i++)
             {
 
@@ -133,7 +133,7 @@ namespace DCM.POM
         {
             try
             {
-                return Initialize.GetDriver().FindElement(locator).Text;
+                return Initialize.driver.FindElement(locator).Text;
             }
             catch (NoSuchElementException)
             {
@@ -148,7 +148,7 @@ namespace DCM.POM
             try { 
             WebDriverWait wait = new WebDriverWait(Initialize.driver, TimeSpan.FromSeconds(15));
             wait.Until(ExpectedConditions.ElementIsVisible(locator));
-            return Initialize.GetDriver().FindElement(locator);
+            return Initialize.driver.FindElement(locator);
             }
             catch (NoSuchElementException)
             {
@@ -159,7 +159,7 @@ namespace DCM.POM
 
         public static void wait()
         {
-            Initialize.GetDriver().Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
+            Initialize.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
         }
 
         public static void Enterkey(By ele)
@@ -198,7 +198,7 @@ namespace DCM.POM
         {
             try
             {
-                IWebElement upload = Initialize.GetDriver().FindElement(element);
+                IWebElement upload = Initialize.driver.FindElement(element);
                 upload.SendKeys(path);
             }
             catch (NoSuchElementException)

@@ -38,7 +38,36 @@ namespace DCM.Specflow.Hooks
         public Initialize(IObjectContainer objectContainer)
         {
             _objectContainer = objectContainer;
-           
+            
+            {
+
+
+                if (driver == null)
+                {
+                 
+
+                    if (FeatureContext.Current.FeatureInfo.Tags.Contains("chrome"))
+                    {
+                        driver = new ChromeDriver();
+
+                    }
+                    else if (FeatureContext.Current.FeatureInfo.Tags.Contains("IE"))
+                    {
+                        driver = new InternetExplorerDriver();
+
+                    }
+
+                    driver.Navigate().GoToUrl("https://dcmqa.evhc.net/v2");
+                    driver.Manage().Window.Maximize();
+                    DCM_Login.LoginDCM();
+                    DCM_Login.twofa();
+                    //DCM_Login.DCMoktalogo();
+
+                }
+
+
+
+            }
         }
 
 
@@ -47,8 +76,8 @@ namespace DCM.Specflow.Hooks
         {
 
             //Initialize Extent report before test starts
-            
-            htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
+
+            htmlReporter.Config.Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Standard;
             //Attach report to reporter
             extent = new ExtentReports();
             
@@ -62,41 +91,20 @@ namespace DCM.Specflow.Hooks
         [AfterTestRun]
         public static void TearDownReport()
         {
+            
+
+            //DCM_Login.DCMlogout();
+            //driver.Quit();
             //Flush report once test completes
             extent.Flush();
         }
 
 
         [BeforeFeature]
-        public static IWebDriver GetDriver()
+        public static void BeforeFeature()
         {
-            
-                
-            if (driver == null)
-            {
-                featureName = extent.CreateTest<Feature>(FeatureContext.Current.FeatureInfo.Title);
-
-                if (FeatureContext.Current.FeatureInfo.Tags.Contains("chrome"))
-                {
-                    driver = new ChromeDriver();
-                    
-                }
-                else if (FeatureContext.Current.FeatureInfo.Tags.Contains("IE"))
-                {
-                    driver = new InternetExplorerDriver();
-                    
-                }
-
-                driver.Navigate().GoToUrl("https://dcmqa.evhc.net/v2");
-                driver.Manage().Window.Maximize();
-                DCM_Login.LoginDCM();
-                DCM_Login.twofa();
-                //DCM_Login.DCMoktalogo();
-
-            }
-             return driver;
-            
-
+            //Create dynamic feature name
+            featureName = extent.CreateTest<Feature>(FeatureContext.Current.FeatureInfo.Title);
         }
 
 
@@ -139,14 +147,14 @@ namespace DCM.Specflow.Hooks
             else if (ScenarioContext.Current.TestError != null)
             {
                 if (stepType == "Given")
-                    scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.InnerException);
+                    scenario.CreateNode<Given>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.Message);
                 else if (stepType == "When")
-                    scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.InnerException);
+                    scenario.CreateNode<When>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.Message);
                 else if (stepType == "Then")
                     scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.Message);
 
                 var error = ScenarioContext.Current.TestError;
-                var errormessage = "<pre>" + error.Message + "</pre>";
+                var errormessage = "<b>" + error.Message + "</b>";
 
                 extent.AddTestRunnerLogs(errormessage);
                 scenario.Log(Status.Error, errormessage);
@@ -212,6 +220,7 @@ namespace DCM.Specflow.Hooks
             //Create dynamic scenario name
             scenario = featureName.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
         }
+        [Scope(Feature = "Create Model")]
     [AfterFeature]
         public static void Afterfeature()
         {

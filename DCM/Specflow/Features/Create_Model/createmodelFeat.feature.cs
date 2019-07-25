@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace DCM.Specflow.Features
+namespace DCM.Specflow.Features.Create_Model
 {
     using TechTalk.SpecFlow;
     
@@ -18,22 +18,22 @@ namespace DCM.Specflow.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("DCM Automation")]
+    [NUnit.Framework.DescriptionAttribute("createmodel")]
     [NUnit.Framework.CategoryAttribute("chrome")]
     [NUnit.Framework.CategoryAttribute("SanityTest")]
-    public partial class DCMAutomationFeature
+    public partial class CreatemodelFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "DCM.feature"
+#line 1 "createmodelFeat.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "DCM Automation", "\tDCM login with Chrome browser and verify DCM functionality ", ProgrammingLanguage.CSharp, new string[] {
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "createmodel", "\t\tDCM login with Chrome browser and verify DCM functionality ", ProgrammingLanguage.CSharp, new string[] {
                         "chrome",
                         "SanityTest"});
             testRunner.OnFeatureStart(featureInfo);
@@ -74,125 +74,72 @@ namespace DCM.Specflow.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("01 login into DCM. search and select practice from dashboard")]
-        [NUnit.Framework.CategoryAttribute("test")]
-        public virtual void _01LoginIntoDCM_SearchAndSelectPracticeFromDashboard()
+        [NUnit.Framework.DescriptionAttribute("031 Create model")]
+        [NUnit.Framework.CategoryAttribute("mytag")]
+        public virtual void _031CreateModel()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 login into DCM. search and select practice from dashboard", null, new string[] {
-                        "test"});
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("031 Create model", null, new string[] {
+                        "mytag"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line hidden
-            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                        "name"});
-            table1.AddRow(new string[] {
-                        "Bay Medical Center - EM 3150"});
 #line 8
- testRunner.Given("Enter practice name into search practice textbox and select searched practice.", ((string)(null)), table1, "Given ");
-#line 11
- testRunner.Then("models should show from selected practice", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("02 verify Operational Model History")]
-        public virtual void _02VerifyOperationalModelHistory()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 verify Operational Model History", null, ((string[])(null)));
-#line 15
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 16
- testRunner.Given("click on operational model history", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 17
- testRunner.Then("verify current operational model name and privious opearation model names", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("03 Verify Floor Plan popup from Dashboard")]
-        public virtual void _03VerifyFloorPlanPopupFromDashboard()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03 Verify Floor Plan popup from Dashboard", null, ((string[])(null)));
-#line 20
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 21
- testRunner.Given("click on Floor Plan link and verify View, delete and upload floor plan", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 22
- testRunner.Then("verify uploaded image", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("04 Create model")]
-        public virtual void _04CreateModel()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04 Create model", null, ((string[])(null)));
-#line 26
-this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 27
  testRunner.Given("click on create model tab from dashboard and click on Create Model using Free For" +
                     "m from popup", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
                         "Area2",
                         "Area3",
                         "Forecasted_Annual_Arrivals",
                         "Current_LWBS_rate",
                         "Admit_Percentage"});
-            table2.AddRow(new string[] {
+            table8.AddRow(new string[] {
                         "FT",
                         "PIT",
                         "80000",
                         "3",
                         "12"});
-#line 28
+#line 9
  testRunner.And("enter vlaues into Practice Metrics fields and click on next button or click on Ar" +
-                    "rivals/ESL", ((string)(null)), table2, "And ");
+                    "rivals/ESL", ((string)(null)), table8, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
                         "FT_ESI_3",
                         "PIT_ESI_3"});
-            table3.AddRow(new string[] {
+            table9.AddRow(new string[] {
                         "20",
                         "5"});
-#line 32
+#line 13
  testRunner.When("Arrivals/ESL tab opens enter vlaues into fileds and click on next button or click" +
-                    " on Length of Stay", ((string)(null)), table3, "When ");
+                    " on Length of Stay", ((string)(null)), table9, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
                         "Overall_Admit_LOS",
                         "Overall_Arrival_To_Admit_Decision",
                         "Main_Discharge_LOS",
                         "FT_Discharge_LOS",
                         "PIT_Discharge_LOS"});
-            table4.AddRow(new string[] {
+            table10.AddRow(new string[] {
                         "120",
                         "60",
                         "90",
                         "30",
                         "30"});
-#line 36
+#line 17
  testRunner.And("Length of Stay tab opens enter vlaues into fileds and click on next button or cli" +
-                    "ck on Shifts", ((string)(null)), table4, "And ");
+                    "ck on Shifts", ((string)(null)), table10, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
                         "From_Time",
                         "To_Time"});
-            table5.AddRow(new string[] {
+            table11.AddRow(new string[] {
                         "01:00",
                         "08:00"});
-#line 40
+#line 21
  testRunner.When("Shifts tab opens enter vlaues into fileds and click on next button or click on Cl" +
-                    "inician Productivity", ((string)(null)), table5, "When ");
+                    "inician Productivity", ((string)(null)), table11, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
                         "main_phy_pph",
                         "main_app_pph",
                         "main_PhyFirstHour",
@@ -205,7 +152,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "PIT_App_PPH",
                         "PIT_PhyfirstHour",
                         "PIT_AppFirstHour"});
-            table6.AddRow(new string[] {
+            table12.AddRow(new string[] {
                         "1.5",
                         "1",
                         "1",
@@ -218,41 +165,23 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 44
+#line 25
  testRunner.And("Clinician Productivity tab opens enter vlaues into fileds and click on next butto" +
-                    "n or click on Clinician Cost", ((string)(null)), table6, "And ");
+                    "n or click on Clinician Cost", ((string)(null)), table12, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
                         "Average_Cost_per_Physician_Hour",
                         "Average_Cost_per_APP_Hour",
                         "Average_Cost_per_Scribe_Hour"});
-            table7.AddRow(new string[] {
+            table13.AddRow(new string[] {
                         "20",
                         "60",
                         "20"});
-#line 47
+#line 28
  testRunner.When("Clinician Cost tab opens enter vlaues into fileds and click on next button or cli" +
-                    "ck on Save Button", ((string)(null)), table7, "When ");
-#line 51
+                    "ck on Save Button", ((string)(null)), table13, "When ");
+#line 32
  testRunner.Then("Model should be saved with values enter into save model popup.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("05 Edit Model Details")]
-        public virtual void _05EditModelDetails()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05 Edit Model Details", null, ((string[])(null)));
-#line 53
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 54
- testRunner.Given("Select model other then operational model and click on edit model details button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 55
- testRunner.And("select operationa check box to make operationa model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 56
- testRunner.Then("verify operation model history", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

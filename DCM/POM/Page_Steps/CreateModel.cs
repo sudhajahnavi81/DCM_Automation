@@ -90,9 +90,9 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(10000);
             //WaitForElement(Page_Objects.Shiftpopup);
             //click(Page_Objects.Shiftpopup);
-            Thread.Sleep(10000);
+            
             JSExe(Page_Objects.selectalldays);
-            Thread.Sleep(10000);
+            Thread.Sleep(5000);
             JSExe(Page_Objects.fromDropdown);
             Type(FromTime,Page_Objects.fromDropdown);
             Enterkey(Page_Objects.fromDropdown);
@@ -158,9 +158,9 @@ namespace DCM.POM.Page_Steps
 
         public static void EditModelDetail()
         {
-            Thread.Sleep(30000);
-            click(Page_Objects.dashboard);
             Thread.Sleep(15000);
+            click(Page_Objects.dashboard);
+            Thread.Sleep(10000);
             click(Page_Objects.EditModelDetails);
             
         }
@@ -174,7 +174,7 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(5000);
             //TabKey();
             click(Page_Objects.Yesbtn);
-            Thread.Sleep(10000);
+            Thread.Sleep(5000);
             DCMDashboard.OperationalHistroy();
         }
 

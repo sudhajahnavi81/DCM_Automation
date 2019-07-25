@@ -39,7 +39,7 @@ namespace DCM.POM.Page_Steps
 
         {
             
-            Thread.Sleep(30000);
+            Thread.Sleep(20000);
             click(Page_Objects.OpModelHistory);
             Thread.Sleep(10000);
             WaitForElement(Page_Objects.OKbtn);
@@ -61,7 +61,7 @@ namespace DCM.POM.Page_Steps
         public static void Floorplan()
         {
             click(Page_Objects.Appname);
-            Thread.Sleep(20000);
+            Thread.Sleep(15000);
             click(Page_Objects.FloorPlan);
             WaitForElement(Page_Objects.uploadFloorPlanbtn);
             Thread.Sleep(1000);
@@ -78,7 +78,7 @@ namespace DCM.POM.Page_Steps
             click(Page_Objects.viewFloorPlan);
            Thread.Sleep(10000);
             click(Page_Objects.OKbtn);
-            Thread.Sleep(10000);
+            Thread.Sleep(8000);
             Console.WriteLine("Name of deleted Floorplan :" + MethodsAndActions.GetText(Page_Objects.floorplanName));
             //WaitForElement(Page_Objects.deleteFloorPlan);
             click(Page_Objects.deleteFloorPlan);

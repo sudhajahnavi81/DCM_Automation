@@ -42,8 +42,8 @@ namespace DCM.Specflow.Definitions
         }
 
 
-        [Then(@"verify operation model history")]
-        [Then(@"verify current operational model name and privious opearation model names")]
+        [Then(@"verify operational model history")]
+        [Then(@"verify current operational model name and previous operational model names")]
         public void ThenVerifyCurrentOperationalModelNameAndPriviousOpearationModelNames()
         {
 

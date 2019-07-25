@@ -22,7 +22,7 @@ namespace DCM.Specflow.Definitions
             CreateModel.verifyCreateModel();
         }
 
-        [Given(@"enter vlaues into Practice Metrics fields and click on next button or click on Arrivals/ESL")]
+        [Given(@"enter values into Practice Metrics fields and click on next button or click on Arrivals/ESL")]
         public void GivenEnterVlauesIntoPracticeMetricsFieldsAndClickOnNextButtonOrClickOnArrivalsESL(Table table)
         {
             // fatching values from feature table
@@ -58,7 +58,7 @@ namespace DCM.Specflow.Definitions
             
         }
 
-        [When(@"Arrivals/ESL tab opens enter vlaues into fileds and click on next button or click on Length of Stay")]
+        [When(@"Arrivals/ESL tab opens enter values into fields and click on next button or click on Length of Stay")]
         public void WhenArrivalsESLTabOpensEnterVlauesIntoFiledsAndClickOnNextButtonOrClickOnLengthOfStay(Table table)
         {
 
@@ -82,7 +82,7 @@ namespace DCM.Specflow.Definitions
 
         }
 
-        [When(@"Length of Stay tab opens enter vlaues into fileds and click on next button or click on Shifts")]
+        [When(@"Length of Stay tab opens enter values into fields and click on next button or click on Shifts")]
         public void WhenLengthOfStayTabOpensEnterVlauesIntoFiledsAndClickOnNextButtonOrClickOnShifts(Table table)
         {
             dynamic LOSDetails = table.CreateDynamicInstance();
@@ -95,7 +95,7 @@ namespace DCM.Specflow.Definitions
             CreateModel.LengthDfStay(OAL, OAAD, MDL, FDL, PDL);
         }
 
-        [When(@"Shifts tab opens enter vlaues into fileds and click on next button or click on Clinician Productivity")]
+        [When(@"Shifts tab opens enter values into fields and click on next button or click on Clinician Productivity")]
         public void WhenShiftsTabOpensEnterVlauesIntoFiledsAndClickOnNextButtonOrClickOnClinicianProductivity(Table table)
         {
             dynamic Shifts = table.CreateDynamicInstance();
@@ -114,7 +114,7 @@ namespace DCM.Specflow.Definitions
             CreateModel.Shifts(FromTime, ToTime);
         }
 
-        [When(@"Clinician Productivity tab opens enter vlaues into fileds and click on next button or click on Clinician Cost")]
+        [When(@"Clinician Productivity tab opens enter values into fields and click on next button or click on Clinician Cost")]
         public void WhenClinicianProductivityTabOpensEnterVlauesIntoFiledsAndClickOnNextButtonOrClickOnClinicianCost(Table table)
         {
 
@@ -138,7 +138,7 @@ namespace DCM.Specflow.Definitions
 
         }
 
-        [When(@"Clinician Cost tab opens enter vlaues into fileds and click on next button or click on Save Button")]
+        [When(@"Clinician Cost tab opens enter vlaues into fields and click on next button or click on Save Button")]
         public void WhenClinicianCostTabOpensEnterVlauesIntoFiledsAndClickOnNextButtonOrClickOnSaveButton(Table table)
         {
             dynamic CC = table.CreateDynamicInstance();
@@ -166,7 +166,7 @@ namespace DCM.Specflow.Definitions
             CreateModel.EditModelDetail();
         }
 
-        [Given(@"select operationa check box to make operationa model")]
+        [Given(@"select operational check box to make operational model")]
         public void GivenSelectOperationaCheckBoxToMakeOperationaModel()
         {
             CreateModel.EMDOperationalcheck();

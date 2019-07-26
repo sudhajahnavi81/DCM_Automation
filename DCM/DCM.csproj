@@ -301,10 +301,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Specflow\Features\A_DCM_Header\Headers.feature" />
     <None Include="Specflow\Features\Create_Model\createmodel.feature" />
     <None Include="data\data.xlsx" />
     <None Include="packages.config" />
-    <None Include="Specflow\Features\A_Dashboard\DCM.feature" />
+    <None Include="Specflow\Features\B_Dashboard\DCM.feature" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />

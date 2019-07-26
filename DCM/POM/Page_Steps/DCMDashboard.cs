@@ -24,7 +24,10 @@ namespace DCM.POM.Page_Steps
             WaitForElement(Page_Objects.practicepopup_linktext);
             JSExe(Page_Objects.practicepopup_linktext);
             WaitForElement(Page_Objects.viewgraphs);
-            
+            Thread.Sleep(10000);
+            Console.WriteLine("tooltip" + Graphtooltip(Page_Objects.D_hr_graphbarone, Page_Objects.D_hr_graphbarone));
+            Thread.Sleep(10000);
+
         }
 
         public static void Verifypractice()

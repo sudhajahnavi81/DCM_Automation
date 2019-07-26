@@ -236,5 +236,19 @@ namespace DCM.POM
             executor.ExecuteScript("arguments[0].click()", element1);
         }
 
+        public static string Graphtooltip(By element, By element1)
+        {
+            var bar = Initialize.driver.FindElement(element);
+            Actions builder = new Actions(Initialize.driver);
+
+            builder.ClickAndHold().MoveToElement(bar);
+            builder.MoveToElement(bar).Build().Perform();
+
+            return GetText(element1);
+        }
+
+
+
+
     }
 }

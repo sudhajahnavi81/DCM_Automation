@@ -20,10 +20,3 @@ Scenario: 03 Verify Floor Plan popup from Dashboard
 	Given click on Floor Plan link and verify View, delete and upload floor plan
 	Then verify uploaded image
 
-
-Scenario: 04 Edit Model Details 
-	Given Select model other then operational model and click on edit model details button
-	And select operational check box to make operational model
-	Then verify operational model history
-
-	

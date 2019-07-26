@@ -183,6 +183,10 @@ namespace DCM.POM.DCM_Objects
         public static By clinicianpro_next = By.XPath("//div[2]/tabset/div/tab[5]/div/div[2]/span");
         public static By clinicianco_next = By.XPath("//div[2]/tabset/div/tab[5]/div/div[2]/span");
 
+        //Graph
+        public static By D_graphtooltip = By.CssSelector("#Hourly > svg > g.dxc-series-group > g:nth-child(1) > g > rect:nth-child(1)");
+        public static By D_hr_graphbarone = By.XPath("//*[@class='dxc-series-group']//rect");
+
 
 
         //logout

@@ -51,6 +51,20 @@ Scenario: 04 Create model
 	Then Model should be saved with values enter into save model popup.
 
 
-
-
+Scenario: 05 
+	Given click on create model tab from dashboard and click on Create Model using Wizard from popup
+	And enter value into "What is the Forecasted Annual Arrivals (walkouts included) of your Emergency Department?" question and hit hit enter
+	| What is the Forecasted Annual Arrivals (walkouts included) of your Emergency Department? |
+	| 80000    |
 	
+	When "What's your current walkout (Left without Triage or Left without being seen) percentage?" question appeared then enter the value in textbox and hit enter
+	| What's your current walkout (Left without Triage or Left without being seen) percentage? |
+	| 3                                                                                       |
+
+	And "What percentage of patients get admitted?" question appeared then enter the value in text box and hit enter
+	| What percentage of patients get admitted? |
+	| 20                                        |
+
+	When "How many patients come to your Emergency Department each month? Each hour during the week?" question appeared and click on "Apply Data Benchmarking Average pattern"
+	And Arrivals pop up will get appeared and click on OK button
+

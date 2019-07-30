@@ -90,9 +90,9 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(10000);
             //WaitForElement(Page_Objects.Shiftpopup);
             //click(Page_Objects.Shiftpopup);
-            Thread.Sleep(10000);
+            
             JSExe(Page_Objects.selectalldays);
-            Thread.Sleep(10000);
+            Thread.Sleep(5000);
             JSExe(Page_Objects.fromDropdown);
             Type(FromTime,Page_Objects.fromDropdown);
             Enterkey(Page_Objects.fromDropdown);
@@ -151,7 +151,34 @@ namespace DCM.POM.Page_Steps
             String modelName = "Automation_" + now.ToString("MM/dd/yyyy hh:mm tt");
             Type(modelName.ToString(), Page_Objects.modelName);
             click(Page_Objects.modelSave);
+            Thread.Sleep(20000);
+            click(Page_Objects.OKbtn);
         }
+
+
+        public static void EditModelDetail()
+        {
+            Thread.Sleep(15000);
+            click(Page_Objects.dashboard);
+            Thread.Sleep(10000);
+            click(Page_Objects.EditModelDetails);
+            
+        }
+
+        public static void EMDOperationalcheck()
+        {
+            Thread.Sleep(5000);
+           
+            click(Page_Objects.EMD_ModeCategory_Operational);
+            click(Page_Objects.OKbtn);
+            Thread.Sleep(5000);
+            //TabKey();
+            click(Page_Objects.Yesbtn);
+            Thread.Sleep(5000);
+            DCMDashboard.OperationalHistroy();
+        }
+
+        
 
     }   
 }

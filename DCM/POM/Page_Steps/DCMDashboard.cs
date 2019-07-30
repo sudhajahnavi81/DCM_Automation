@@ -17,13 +17,17 @@ namespace DCM.POM.Page_Steps
 
         public static void PracticeSearch(string practice)
         {
-            Thread.Sleep(10000);
+            Thread.Sleep(30000);
             WaitForElement(Page_Objects.practicepopup_txtbox);
             JSExe(Page_Objects.practicepopup_txtbox);
             Type(practice, Page_Objects.practicepopup_txtbox);
             WaitForElement(Page_Objects.practicepopup_linktext);
             JSExe(Page_Objects.practicepopup_linktext);
             WaitForElement(Page_Objects.viewgraphs);
+            Thread.Sleep(10000);
+            Console.WriteLine("tooltip" + Graphtooltip(Page_Objects.D_hr_graphbarone, Page_Objects.D_hr_graphbarone));
+            Thread.Sleep(10000);
+
         }
 
         public static void Verifypractice()
@@ -37,9 +41,8 @@ namespace DCM.POM.Page_Steps
         public static void OperationalHistroy()
 
         {
-
-
-            Thread.Sleep(15000);
+            
+            Thread.Sleep(20000);
             click(Page_Objects.OpModelHistory);
             Thread.Sleep(10000);
             WaitForElement(Page_Objects.OKbtn);
@@ -60,8 +63,8 @@ namespace DCM.POM.Page_Steps
 
         public static void Floorplan()
         {
-
-            Thread.Sleep(20000);
+            click(Page_Objects.Appname);
+            Thread.Sleep(15000);
             click(Page_Objects.FloorPlan);
             WaitForElement(Page_Objects.uploadFloorPlanbtn);
             Thread.Sleep(1000);
@@ -78,7 +81,7 @@ namespace DCM.POM.Page_Steps
             click(Page_Objects.viewFloorPlan);
            Thread.Sleep(10000);
             click(Page_Objects.OKbtn);
-            Thread.Sleep(10000);
+            Thread.Sleep(8000);
             Console.WriteLine("Name of deleted Floorplan :" + MethodsAndActions.GetText(Page_Objects.floorplanName));
             //WaitForElement(Page_Objects.deleteFloorPlan);
             click(Page_Objects.deleteFloorPlan);

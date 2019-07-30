@@ -34,26 +34,31 @@ namespace DCM.POM.DCM_Objects
         public static By viewgraphs = By.XPath("//button[@class='btn btn-primary-default btn-primary-shadow']");
         public static By DashboardGrid = By.XPath("//th[@class='mat-header-cell ng-tns-c12-20 cdk-column-ModelName mat-column-ModelName ng-star-inserted']");
         public static By DCMVersion = By.XPath("//div[@class='d-inline mr-2']//span");
-        public static By firstmodelname = By.XPath("//div[contains(@class,'dashTitleBar move-tooltip-right white-space')]");
+        public static By firstmodelname = By.XPath("//div[contains(@class,'dashboard-sec-subbar  dashTitleBar move-tooltip-right white-space')]");
 
 
         //Operational model history
 
         public static By OpModelHistory = By.XPath("//div[@class='model-history ml-2']");
-        public static By currentmodelhistory = By.XPath("//body/div[@class='cdk-overlay-container']/div[@class='cdk-global-overlay-wrapper']/div[@id='cdk-overlay-0']/mat-dialog-container[@id='mat-dialog-0']/app-operational-model-history[@class='ng-star-inserted']/div[@class='dialog-box']/div[@class='dialog-box-content pb-5 pl-4 pr-4']/div[@class='ng-star-inserted']/div[@class='table-responsive']/table[@class='table']/tbody/tr[1]/td");
-        public static By Previouslastmodel = By.XPath("//body//div[@class='ng-star-inserted']//div[@class='ng-star-inserted']//tr[1]/td[1]");
-        public static By Previous2ndlastmodel = By.XPath("//div[@class='cdk-overlay-container']//tr[2]//td[1]");
-        public static By Previous3rdlastmodel = By.XPath("//div[@class='cdk-overlay-container']//tr[3]//td[1]");
+        public static By currentmodelhistory = By.XPath("//*[starts-with(@id,'mat-dialog-')]/app-operational-model-history/div/div[2]/div/div[2]/table/tbody/tr/td[1]");
+        public static By Previouslastmodel = By.XPath("//*[starts-with(@id,'mat-dialog-')]/app-operational-model-history/div/div[2]/div/div[3]/div[2]/table/tbody/tr[1]/td[1]");
+        public static By Previous2ndlastmodel = By.XPath("//*[starts-with(@id,'mat-dialog-')]/app-operational-model-history/div/div[2]/div/div[3]/div[2]/table/tbody/tr[2]/td[1]");
+        public static By Previous3rdlastmodel = By.XPath("//*[starts-with(@id,'mat-dialog-')]/app-operational-model-history/div/div[2]/div/div[3]/div[2]/table/tbody/tr[3]/td[1]");
         public static By OKbtn = By.XPath("//button[@class='btn btn-primary']");
 
         // dashboard graph
 
+        public static By dashboard = By.XPath("//a[contains(text(),'Dashboard')]");
         public static By selectGraphDropdown = By.XPath("//ng-select[@class='select-medium ng-select-field ng-select ng-select-single ng-select-searchable ng-untouched ng-pristine ng-valid ng-select-opened ng-select-bottom']//input");
+        public static By selectDay = By.XPath("//ng-select[@class='select-small ng-select-field ng-select ng-select-single ng-select-searchable ng-pristine ng-valid ng-select-bottom ng-touched ng-select-opened']//input");
+
+
+
 
         //floor plan
         public static By FloorPlan = By.XPath("//div[@class='floorplan']");
         public static By viewFloorPlan = By.XPath("//span[@class='floor-view floor-btn']");
-        public static By deleteFloorPlan = By.XPath("//span[@class='floor-del floor-btn']");
+        public static By deleteFloorPlan = By.XPath("//li[1]//div[1]//div[3]//span[1]//i[1]");
         public static By uploadFloorPlanbtn = By.XPath("//button[@class='btn btn-upld ng-star-inserted']");
         public static By cancelnobtn = By.XPath("//button[@class='btn btn-danger']");
         public static By floorplanName = By.XPath("//ul[@class='floor-list']//li[1]//div[1]//div[1]//span[1]");
@@ -148,12 +153,23 @@ namespace DCM.POM.DCM_Objects
         public static By Cost_Per_App_Hour = By.XPath("//tab[@class='tab-pane active']//div[2]//div[1]//div[1]//div[1]//div[1]//input[1]");
         public static By Cost_Per_Scribe_Hour = By.XPath("//tab[@class='tab-pane active']//div[3]//div[1]//div[1]//div[1]//div[1]//input[1]");
 
+
+        //Edit Model Details
+
+        public static By EditModelDetails = By.XPath("//tr[2]//td[6]//button[3]");
+        public static By EMD_ModelName = By.XPath("//input[@placeholder='modelName']");
+        public static By EMD_ModelType_Selected = By.XPath("//*[starts-with(@id,'mat-dialog-')]/app-edit-model-dialog/div/div[2]/div[2]/div/div/ng-select/div/div/div[2]/span[2]");
+        public static By EMD_ModeCategory_Operational = By.XPath("//span[contains(text(),'Set Model as Current Operational/Deployed model')]");
+        public static By EMD_ModelCategory_Edu = By.XPath("//span[contains(text(),'Set Model as Educational or Test model')]");
+
+
         //Save
 
         public static By save = By.XPath("//i[@id='saveBtn']");
         public static By savepopup = By.XPath("//mat-dialog-container[@id='mat-dialog-4']");
         public static By modelName = By.XPath("//input[@placeholder='Enter Model Name']");
         public static By modelSave = By.XPath("//button[@id='popupSaveBtn']");
+        public static By Yesbtn = By.XPath("//button[contains(text(),'Yes')]");
 
 
 
@@ -166,6 +182,10 @@ namespace DCM.POM.DCM_Objects
         public static By shifts_next = By.XPath("//div[2]/tabset/div/tab[4]/div[1]/div[2]/span");
         public static By clinicianpro_next = By.XPath("//div[2]/tabset/div/tab[5]/div/div[2]/span");
         public static By clinicianco_next = By.XPath("//div[2]/tabset/div/tab[5]/div/div[2]/span");
+
+        //Graph
+        public static By D_graphtooltip = By.CssSelector("#Hourly > svg > g.dxc-series-group > g:nth-child(1) > g > rect:nth-child(1)");
+        public static By D_hr_graphbarone = By.XPath("//*[@class='dxc-series-group']//rect");
 
 
         //Create model using Wizard
@@ -262,7 +282,8 @@ namespace DCM.POM.DCM_Objects
 
         //logout
 
-        public static By Logout = By.XPath("//span[@class='userName']//div//a//i");
+        public static By Logout = By.XPath("//span[@class='userName']");
+        public static By Signout = By.XPath("//a[@class='dropdown-item']");
 
 
     }

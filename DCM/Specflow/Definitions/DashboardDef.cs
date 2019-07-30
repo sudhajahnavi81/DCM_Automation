@@ -9,6 +9,7 @@ using NUnit.Framework;
 using DCM.POM;
 using DCM.POM.DCM_Objects;
 using OpenQA.Selenium;
+using AventStack.ExtentReports.Model;
 
 namespace DCM.Specflow.Definitions
 {
@@ -40,7 +41,9 @@ namespace DCM.Specflow.Definitions
             DCMDashboard.OperationalHistroy();
         }
 
-        [Then(@"verify current operational model name and privious opearation model names")]
+
+        [Then(@"verify operational model history")]
+        [Then(@"verify current operational model name and previous operational model names")]
         public void ThenVerifyCurrentOperationalModelNameAndPriviousOpearationModelNames()
         {
 
@@ -49,16 +52,22 @@ namespace DCM.Specflow.Definitions
             var CurrentOPModel = MethodsAndActions.GetText(Page_Objects.currentmodelhistory);
             try
             {
-                Assert.AreEqual(selectmodel, CurrentOPModel + " (Operational)");
+                Assert.AreEqual(selectmodel, CurrentOPModel);
+               // Assert.That(CurrentOPModel, Is.Null, "Operational Model is not equal to current operational model of history");
                 Console.WriteLine("Operational Model is equal to current operational model of history");
 
 
             }
             catch (AssertionException)
             {
-                Console.WriteLine("No operational model found for selected practice");
+                Assert.Fail();
+                //Console.WriteLine("No operational model found for selected practice");
             }
-            DCMDashboard.okbtn();
+            finally
+            {
+                DCMDashboard.okbtn();
+            }
+            
 
 
         }

@@ -188,6 +188,97 @@ namespace DCM.POM.DCM_Objects
         public static By D_hr_graphbarone = By.XPath("//*[@id='Hourly']/svg/g[8]/g[1]/g/rect[3]");
 
 
+        //Create model using Wizard
+               
+        public static By clkcreatemodel = By.XPath("//a[contains(text(),'Create Model')]");
+
+        public static By createmodelusingwizardbtn = By.XPath("//mat-dialog-container[starts-with (@id,'mat-dialog-')]/app-create-model-dialog/div/div[2]/ul/li[1]/a");                                                  
+        public static By ForecastedAnnualArrivals = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[2]/div[2]/input");
+        public static By Invalidinput_popup = By.XPath("//mat-dialog-container[@id='mat-dialog-11']");
+        public static By Invalidinput_popupOK = By.XPath("//button[@class='btn btn-primary']");
+        public static By currentwalkoutpercentage = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[3]/div[2]/input");
+        public static By addmittedpatientspercentage = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[4]/div[3]/input");
+        public static By databenchmarkingaverage = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[5]/div/ul/li[3]");
+        public static By enterdatamanually = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[5]/div/ul/li[2]");
+        public static By importdata = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[5]/div/ul/li[1]");
+        public static By arrivalspopup = By.Id("mat-dialog-5");
+        public static By clktoviewarrivals = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[5]/div/ul/li[4]");
+        public static By ESI_databenchmarking = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[6]/div/ul/li[2]");
+        public static By ESI_entermanually = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[6]/div/ul/li[1]");
+        public static By clktoviewESI = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[6]/div/ul/li[3]");
+        public static By LOSforaddmittedpatients = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[7]/div[2]/input[1]");
+        public static By LOSdischargedpatients = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[8]/div[2]/input");
+        public static By LOSArrivaltoadmitdecisiontime = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[9]/div[2]/input[1]");
+        public static By Shft_entermanually = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[10]/div/ul/li[2]");
+        public static By Shft_popup = By.Id("mat-dialog-4");
+        public static By Shft_Addbtn = By.XPath("//li[2]//button[1]");
+        public static By Shft_Addeditpopup = By.XPath("//mat-dialog-container[@id='mat-dialog-5']");
+        public static By Shft_Selectallchkbx = By.XPath("//span[contains(text(),'Select All')]");
+        public static By Shft_currentFromdd = By.XPath("/html[1]/body[1]/div[1]/div[4]/div[1]/mat-dialog-container[1]/app-add-edit-shift[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]");
+        public static By shft_selectcurrentfromtime = By.XPath("//span[contains(text(),'01:30')]");
+        public static By Shft_currentTodd = By.XPath("//*[starts-with(@id,'mat-dialog')]/app-add-edit-shift/div/div[2]/div[3]/div/div[2]/div/div/ng-select/div/div/div[2]/input");
+        public static By shft_selectcurrenttotime = By.XPath("//span[contains(text(),'18:00')]");
+        public static By Shft_proposedFromdd = By.XPath("//div[@class='pt-4 border-bottom pb-4']//div[@class='row center-align mt-1']//div[1]//div[1]//div[1]//ng-select[1]//div[1]//div[1]//div[2]//input[1]");
+        public static By shft_selectproposedfromtime = By.XPath("//span[contains(text(),'05:00')]");
+        public static By Shft_proposedTodd = By.XPath("//div[@class='pt-4 border-bottom pb-4']//div[2]//div[1]//div[1]//ng-select[1]//div[1]//div[1]//div[2]//input[1]");
+        public static By shft_selectproposedtotime = By.XPath("//span[contains(text(),'19:00')]");
+        public static By Shft_copytoprpsdchkbx = By.XPath("//span[contains(text(),'Copy over to Proposed')]");
+
+        public static By Shft_txtduplicateshifts = By.XPath("//*[starts-with(@id,'mat-dialog')]/app-add-edit-shift/div/div[2]/div[6]/div[1]/div/div/input");
+
+        public static By Shft_Addscribeshiftchkbx = By.XPath("//span[contains(text(),'Add Scribe shift')]");
+
+        public static By Shft_Savebtn = By.XPath("//button[contains(text(),'Save')]");
+        public static By Shft_cancelbtn = By.XPath("//button[@class='btn btn-danger']");
+        public static By shft_12houeswarning_Yes = By.XPath("//*[starts-with(@id,'mat-dialog')]/app-shiftswarning/div/div[3]/div/button[1]");
+        public static By Shft_popupOKbtn = By.XPath("//*[starts-with(@id,'mat-dialog')]/app-wizard-shift-table/div/div/div[3]/div/mat-dialog-actions/button");
+        
+        public static By Avgcostperphyhour = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[11]/div[2]/input");
+
+        public static By AvgcostperAPPhour = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[12]/div[2]/input[1]");
+
+        public static By scribecost_lnkcontinue = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[13]/div/ul/li[2]");
+        public static By scribecost_lnkchangeavecst = By.XPath("//li[contains(text(),'Yes, I want to change the average cost per Scribe')]");
+        public static By scribecost_txtbxchangecost = By.XPath("//input[@class='ans-sec w-100 ng-pristine ng-valid ng-touched']");
+        public static By Phy_patientsperhour = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[14]/div[2]/input[1]");
+        public static By APP_patientsperhour = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[15]/div[2]/input[1]");
+        public static By APP_Coefficient = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[16]/div[2]/ul[1]/li[2]");
+
+        public static By Scribecoefficient_lnkcontinue = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[16]/div[2]/ul/li[2]");
+        public static By Scribecoefficient_lnkchangevalue = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[16]/div[2]/ul[1]/li[1]");
+
+        public static By Scribecoefficient_txtbxchangevalue = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[16]/div[3]/div[1]/input[1]");
+
+        public static By Phy_firsthour = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[17]/div[2]/input[1]");
+        public static By App_firsthour = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[18]/div[2]/input[1]");
+
+        public static By Lnknothatsall = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[19]/div[1]/ul[1]/li[1]");
+
+        public static By ClinicalWorkDistribution_popup = By.XPath("//mat-dialog-container[@id='mat-dialog-6']");
+        public static By ClinicalWorkDistribution_popupOKbtn = By.XPath("//button[@class='btn btn-primary']");
+
+        public static By Requiredwarningpopup = By.XPath("//mat-dialog-container[@id='mat-dialog-7']");
+
+        public static By Requiredwarningpopup_save = By.XPath("//button[@class='btn btn-primary ng-star-inserted']");
+        public static By Requiredwarningpopup_cancel = By.XPath("//button[contains(@class,'btn btn-danger')]");
+
+        public static By Savemodel_popup = By.XPath("//mat-dialog-container[@id='mat-dialog-9']");
+
+        public static By Successpopup_Ok = By.XPath("//*[starts-with(@id,'mat-dialog')]/inputsavealertdialog/div/div[3]/div/mat-dialog-actions/button");
+
+        //*[@id="mat-dialog-8"]
+
+
+
+
+
+
+
+
+
+
+
+
 
         //logout
 

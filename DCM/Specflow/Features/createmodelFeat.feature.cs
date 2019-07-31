@@ -83,7 +83,60 @@ namespace DCM.Specflow.Features
 #line 6
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 7
+#line hidden
+            TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
+                        "name"});
+            table14.AddRow(new string[] {
+                        "Bay Medical Center - EM 3150"});
+#line 8
+ testRunner.Given("Enter practice name into search practice textbox and select searched practice.", ((string)(null)), table14, "Given ");
+#line 11
+ testRunner.Then("models should show from selected practice", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("02 verify Operational Model History")]
+        public virtual void _02VerifyOperationalModelHistory()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 verify Operational Model History", null, ((string[])(null)));
+#line 15
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 16
+ testRunner.Given("click on operational model history", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 17
+ testRunner.Then("verify current operational model name and privious opearation model names", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("03 Verify Floor Plan popup from Dashboard")]
+        public virtual void _03VerifyFloorPlanPopupFromDashboard()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03 Verify Floor Plan popup from Dashboard", null, ((string[])(null)));
+#line 20
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 21
+ testRunner.Given("click on Floor Plan link and verify View, delete and upload floor plan", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 22
+ testRunner.Then("verify uploaded image", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("04 Create model")]
+        public virtual void _04CreateModel()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04 Create model", null, ((string[])(null)));
+#line 26
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 27
  testRunner.Given("click on create model tab from dashboard and click on Create Model using Free For" +
                     "m from popup", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
@@ -182,6 +235,53 @@ this.ScenarioInitialize(scenarioInfo);
                     "ck on Save Button", ((string)(null)), table6, "When ");
 #line 31
  testRunner.Then("Model should be saved with values enter into save model popup.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("05")]
+        public virtual void _05()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05", null, ((string[])(null)));
+#line 54
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 55
+ testRunner.Given("click on create model tab from dashboard and click on Create Model using Wizard f" +
+                    "rom popup", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
+                        "What is the Forecasted Annual Arrivals (walkouts included) of your Emergency Depa" +
+                            "rtment?"});
+            table21.AddRow(new string[] {
+                        "80000"});
+#line 56
+ testRunner.And("enter value into \"What is the Forecasted Annual Arrivals (walkouts included) of y" +
+                    "our Emergency Department?\" question and hit hit enter", ((string)(null)), table21, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
+                        "What\'s your current walkout (Left without Triage or Left without being seen) perc" +
+                            "entage?"});
+            table22.AddRow(new string[] {
+                        "3"});
+#line 60
+ testRunner.When("\"What\'s your current walkout (Left without Triage or Left without being seen) per" +
+                    "centage?\" question appeared then enter the value in textbox and hit enter", ((string)(null)), table22, "When ");
+#line hidden
+            TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
+                        "What percentage of patients get admitted?"});
+            table23.AddRow(new string[] {
+                        "20"});
+#line 64
+ testRunner.And("\"What percentage of patients get admitted?\" question appeared then enter the valu" +
+                    "e in text box and hit enter", ((string)(null)), table23, "And ");
+#line 68
+ testRunner.When("\"How many patients come to your Emergency Department each month? Each hour during" +
+                    " the week?\" question appeared and click on \"Apply Data Benchmarking Average patt" +
+                    "ern\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 69
+ testRunner.And("Arrivals pop up will get appeared and click on OK button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }

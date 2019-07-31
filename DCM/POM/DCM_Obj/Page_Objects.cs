@@ -185,7 +185,7 @@ namespace DCM.POM.DCM_Objects
 
         //Graph
         public static By D_graphtooltip = By.CssSelector("#Hourly > svg > g.dxc-series-group > g:nth-child(1) > g > rect:nth-child(1)");
-        public static By D_hr_graphbarone = By.XPath("//*[@class='dxc-series-group']//rect");
+        public static By D_hr_graphbarone = By.XPath("//*[@id='Hourly']/svg/g[8]/g[1]/g/rect[3]");
 
 
 

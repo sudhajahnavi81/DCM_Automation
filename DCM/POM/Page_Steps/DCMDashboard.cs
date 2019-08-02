@@ -25,7 +25,7 @@ namespace DCM.POM.Page_Steps
             JSExe(Page_Objects.practicepopup_linktext);
             WaitForElement(Page_Objects.viewgraphs);
             Thread.Sleep(10000);
-            Console.WriteLine("tooltip" + Graphtooltip(Page_Objects.D_hr_graphbarone, Page_Objects.D_hr_graphbarone));
+           // Console.WriteLine("tooltip" + Graphtooltip(Page_Objects.D_hr_graphbarone, Page_Objects.D_hr_graphbarone));
             Thread.Sleep(10000);
 
         }
@@ -99,6 +99,8 @@ namespace DCM.POM.Page_Steps
             click(Page_Objects.cancelnobtn);
 
         }
+
+       
 
 
     }

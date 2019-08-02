@@ -24,7 +24,7 @@ namespace DCM.data
         //public static excel.Range x1range = x1WorkSheet.UsedRange;
 
         public static string un1 = "sunil.desai@shcr.com";
-        public static string psw = "Sheridan@04";
+        public static string psw = "Sheridan@4";
         public static string otpKeyStr = "UBEBMMWQ7P5STVNV";
 
 

@@ -4,8 +4,8 @@ Feature: Dashboard
 	DCM login with Chrome browser and verify DCM functionality 
 
 @test
-Scenario: 01 login into DCM. search and select practice from dashboard
-	Given Enter practice name into search practice textbox and select searched practice.
+Scenario: 01 login stringo DCM. search and select practice from dashboard
+	Given Enter practice name stringo search practice textbox and select searched practice.
 	| name                         |
 	| Bay Medical Center - EM 3150 |
 	Then models should show from selected practice

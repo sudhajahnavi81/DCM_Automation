@@ -90,8 +90,8 @@ this.ScenarioInitialize(scenarioInfo);
             table8.AddRow(new string[] {
                         "80000"});
 #line 9
- testRunner.And("enter value into What is the Forecasted Annual Arrivals (walkouts included) of yo" +
-                    "ur Emergency Department? question and hit hit enter", ((string)(null)), table8, "And ");
+ testRunner.And("enter value stringo What is the Forecasted Annual Arrivals (walkouts included) of" +
+                    " your Emergency Department? question and hit hit enter", ((string)(null)), table8, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
                         "Current_Walkout_Percentage"});

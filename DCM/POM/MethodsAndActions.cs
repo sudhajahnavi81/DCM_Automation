@@ -9,8 +9,8 @@ using System.Threading.Tasks;
 using DCM.POM.DCM_Objects;
 using OpenQA.Selenium.Remote;
 using DCM.Specflow.Hooks;
-using OpenQA.Selenium.Interactions;
 using AutoIt;
+using OpenQA.Selenium.Interactions;
 
 namespace DCM.POM
 {
@@ -98,7 +98,7 @@ namespace DCM.POM
 
         }
 
-        public static void movepointer()
+        public static void movepostringer()
         {
             Initialize.driver.SwitchTo().Window(Initialize.driver.WindowHandles.Last());
         }
@@ -210,16 +210,16 @@ namespace DCM.POM
             }
         }
 
-        public static void uploadfile(string file, string winTitle, string idEditBox, string idBtnLoad)
+        public static void uploadfile(string file, string wstringitle, string idEditBox, string idBtnLoad)
         {
 
             AutoItX.Init();
 
-            AutoItX.WinWait(winTitle);
-            AutoItX.WinActivate(winTitle);
+            AutoItX.WinWait(wstringitle);
+            AutoItX.WinActivate(wstringitle);
 
-            AutoItX.ControlSetText(winTitle, "", idEditBox, file);
-            AutoItX.ControlClick(winTitle, "", idBtnLoad);
+            AutoItX.ControlSetText(wstringitle, "", idEditBox, file);
+            AutoItX.ControlClick(wstringitle, "", idBtnLoad);
         }
 
         public static string FieldText(By ele)
@@ -252,7 +252,7 @@ namespace DCM.POM
 
         public static void mouseHoverJScript(By elem)
         {
-            //String mouseOverScript = "if(document.createEvent){var evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover', true, false);"
+            //String mouseOverScript = "if(document.createEvent){string evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover', true, false);"
             //        + " arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
             //((IJavaScriptExecutor)Initialize.driver).ExecuteScript(mouseOverScript, element);
 

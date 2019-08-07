@@ -297,11 +297,13 @@
     <Compile Include="POM\Page_Steps\CreateModelusingWizard.cs" />
     <Compile Include="POM\Page_Steps\DCMDashboard.cs" />
     <Compile Include="POM\Page_Steps\DCM_Login.cs" />
+    <Compile Include="POM\Page_Steps\ViewAnalysis.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Specflow\Definitions\CreateModelDef.cs" />
     <Compile Include="Specflow\Definitions\CreateModelusingWizardDEF.cs" />
     <Compile Include="Specflow\Definitions\LogoutDef.cs" />
+    <Compile Include="Specflow\Definitions\ViewAnalysisDef.cs" />
     <Compile Include="Specflow\Hooks\DCMHooks.cs" />
     <Compile Include="Specflow\Definitions\DashboardDef.cs" />
     <Compile Include="Specflow\Definitions\LoginStepsDef.cs" />
@@ -313,6 +315,7 @@
     <None Include="Specflow\Features\Create_Model\createmodel.feature" />
     <None Include="data\data.xlsx" />
     <None Include="packages.config" />
+    <None Include="Specflow\Features\View Analysis\ViewAnalysis.feature" />
     <None Include="Specflow\Features\wizard\CreateModelwithWizard.feature" />
     <None Include="Specflow\Features\B_Dashboard\DCM.feature" />
     <None Include="Specflow\Features\z_logout\logout.feature" />

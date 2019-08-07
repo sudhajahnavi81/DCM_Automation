@@ -100,8 +100,8 @@ this.ScenarioInitialize(scenarioInfo);
                         "3",
                         "12"});
 #line 9
- testRunner.And("enter values into Practice Metrics fields and click on next button or click on Ar" +
-                    "rivals/ESL", ((string)(null)), table2, "And ");
+ testRunner.And("enter values stringo Practice Metrics fields and click on next button or click on" +
+                    " Arrivals/ESL", ((string)(null)), table2, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                         "FT_ESI_3",
@@ -110,8 +110,8 @@ this.ScenarioInitialize(scenarioInfo);
                         "20",
                         "5"});
 #line 13
- testRunner.When("Arrivals/ESL tab opens enter values into fields and click on next button or click" +
-                    " on Length of Stay", ((string)(null)), table3, "When ");
+ testRunner.When("Arrivals/ESL tab opens enter values stringo fields and click on next button or cl" +
+                    "ick on Length of Stay", ((string)(null)), table3, "When ");
 #line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
                         "Overall_Admit_LOS",
@@ -126,8 +126,8 @@ this.ScenarioInitialize(scenarioInfo);
                         "30",
                         "30"});
 #line 17
- testRunner.And("Length of Stay tab opens enter values into fields and click on next button or cli" +
-                    "ck on Shifts", ((string)(null)), table4, "And ");
+ testRunner.And("Length of Stay tab opens enter values stringo fields and click on next button or " +
+                    "click on Shifts", ((string)(null)), table4, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
                         "From_Time",
@@ -136,8 +136,8 @@ this.ScenarioInitialize(scenarioInfo);
                         "01:00",
                         "08:00"});
 #line 21
- testRunner.When("Shifts tab opens enter values into fields and click on next button or click on Cl" +
-                    "inician Productivity", ((string)(null)), table5, "When ");
+ testRunner.When("Shifts tab opens enter values stringo fields and click on next button or click on" +
+                    " Clinician Productivity", ((string)(null)), table5, "When ");
 #line hidden
             TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
                         "main_phy_pph",
@@ -166,8 +166,8 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1"});
 #line 25
- testRunner.And("Clinician Productivity tab opens enter values into fields and click on next butto" +
-                    "n or click on Clinician Cost", ((string)(null)), table6, "And ");
+ testRunner.And("Clinician Productivity tab opens enter values stringo fields and click on next bu" +
+                    "tton or click on Clinician Cost", ((string)(null)), table6, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
                         "Average_Cost_per_Physician_Hour",
@@ -178,10 +178,10 @@ this.ScenarioInitialize(scenarioInfo);
                         "60",
                         "20"});
 #line 28
- testRunner.When("Clinician Cost tab opens enter vlaues into fields and click on next button or cli" +
-                    "ck on Save Button", ((string)(null)), table7, "When ");
+ testRunner.When("Clinician Cost tab opens enter vlaues stringo fields and click on next button or " +
+                    "click on Save Button", ((string)(null)), table7, "When ");
 #line 32
- testRunner.Then("Model should be saved with values enter into save model popup.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("Model should be saved with values enter stringo save model popup.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

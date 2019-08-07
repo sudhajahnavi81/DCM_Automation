@@ -15,14 +15,14 @@ namespace DCM.Specflow.Definitions
         [Given(@"click on logout from dashboard")]
         public void GivenClickOnLogoutFromDashboard()
         {
-            Console.WriteLine("Logout user name:" + MethodsAndActions.GetText(Page_Objects.Logout));
+            Console.WriteLine("Logout user name:" +  GetText(Page_Objects.Logout));
         }
 
         [Then(@"user should get logout from DCM and browser should get closed")]
         public void ThenUserShouldGetLogoutFromDCMAndBrowserShouldGetClosed()
         {
-            string username = MethodsAndActions.GetText(Page_Objects.Logout);
-            string usernamelogin = MethodsAndActions.GetText(Page_Objects.signIn);
+            string username =  GetText(Page_Objects.Logout);
+            string usernamelogin =  GetText(Page_Objects.signIn);
             Assert.AreEqual(username, usernamelogin);
         }
 

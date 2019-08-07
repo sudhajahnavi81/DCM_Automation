@@ -1,0 +1,9 @@
+{
+  "name": "test-protractor",
+  "version": "0.0.0",
+  "description": "TestProtractor",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}

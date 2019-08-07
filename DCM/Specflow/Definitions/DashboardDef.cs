@@ -26,7 +26,7 @@ namespace DCM.Specflow.Definitions
 
             DCMDashboard.PracticeSearch(name);
             Thread.Sleep(1000);
-            CreateModel.graphdetails();
+            //CreateModel.graphdetails();
 
 
         }
@@ -53,7 +53,7 @@ namespace DCM.Specflow.Definitions
 
 
             var selectmodel = MethodsAndActions.GetText(Page_Objects.firstmodelname);
-            var CurrentOPModel = MethodsAndActions.GetText(Page_Objects.currentmodelhistory);
+            var CurrentOPModel = MethodsAndActions.GetText(Page_Objects.currentmodelhistory) +" (Operational)";
             try
             {
                 Assert.AreEqual(selectmodel, CurrentOPModel);

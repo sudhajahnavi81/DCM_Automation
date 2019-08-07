@@ -15,7 +15,6 @@ using BoDi;
 using OpenQA.Selenium.Remote;
 using AventStack.ExtentReports.Model;
 using NUnit.Framework;
-using NUnit.Framework.Interfaces;
 using AventStack.ExtentReports.MarkupUtils;
 
 namespace DCM.Specflow.Hooks
@@ -53,7 +52,7 @@ namespace DCM.Specflow.Hooks
                     }
                     else if (FeatureContext.Current.FeatureInfo.Tags.Contains("IE"))
                     {
-                        driver = new InternetExplorerDriver();
+                        driver = new stringernetExplorerDriver();
 
                     }
 
@@ -113,9 +112,9 @@ namespace DCM.Specflow.Hooks
         public void InsertReportingSteps()
         {
             
-            var stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
+            string stepType = ScenarioStepContext.Current.StepInfo.StepDefinitionType.ToString();
 
-            var pendingDef = ScenarioContext.Current.ScenarioExecutionStatus.ToString();
+            string pendingDef = ScenarioContext.Current.ScenarioExecutionStatus.ToString();
             
 
 
@@ -136,8 +135,8 @@ namespace DCM.Specflow.Hooks
                     scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
 
 
-                //var Pass = ScenarioContext.Current.ScenarioInfo;
-                //var passmessage = "<pre>" + Pass.Title + "</pre>";
+                //string Pass = ScenarioContext.Current.ScenarioInfo;
+                //string passmessage = "<pre>" + Pass.Title + "</pre>";
 
                 //extent.AddTestRunnerLogs(passmessage);
                 //scenario.Log(Status.Error, passmessage);
@@ -153,8 +152,8 @@ namespace DCM.Specflow.Hooks
                 else if (stepType == "Then")
                     scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Fail(ScenarioContext.Current.TestError.Message);
 
-                var error = ScenarioContext.Current.TestError;
-                var errormessage = "<b>" + error.Message + "</b>";
+                string error = ScenarioContext.Current.TestError;
+                string errormessage = "<b>" + error.Message + "</b>";
 
                 extent.AddTestRunnerLogs(errormessage);
                 scenario.Log(Status.Error, errormessage);
@@ -172,16 +171,16 @@ namespace DCM.Specflow.Hooks
                     scenario.CreateNode<Then>(ScenarioStepContext.Current.StepInfo.Text).Skip("Step Definition Pending");
               
 
-                //var skip = ScenarioContext.Current.ScenarioInfo;
-                //var skipmsg = "<pre>" + skip.Title + "</pre>";
+                //string skip = ScenarioContext.Current.ScenarioInfo;
+                //string skipmsg = "<pre>" + skip.Title + "</pre>";
 
                 //extent.AddTestRunnerLogs(skipmsg);
                 //scenario.Log(Status.Skip, skipmsg);
             }
 
-            //var status = TestContext.CurrentContext.Result.Outcome.Status;
-            //var stacktrace = "<pre>" + TestContext.CurrentContext.Result.StackTrace + "<pre>";
-            //var errorMessage = TestContext.CurrentContext.Result.Message;
+            //string status = TestContext.CurrentContext.Result.Outcome.Status;
+            //string stacktrace = "<pre>" + TestContext.CurrentContext.Result.StackTrace + "<pre>";
+            //string errorMessage = TestContext.CurrentContext.Result.Message;
             //Status logstatus;
             //try
             //{

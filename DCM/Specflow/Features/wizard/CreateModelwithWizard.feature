@@ -6,7 +6,7 @@ Feature: CreateModelwithWizard
 
 Scenario: 01
 	Given click on create model tab from dashboard and click on Create Model using Wizard from popup
-	And enter value into What is the Forecasted Annual Arrivals (walkouts included) of your Emergency Department? question and hit hit enter
+	And enter value stringo What is the Forecasted Annual Arrivals (walkouts included) of your Emergency Department? question and hit hit enter
 	| FAA_Wizard|
 	| 80000    |
 	

@@ -30,3 +30,5 @@ Scenario: 01 Create model
 	| 20                              | 60                        | 20                           |
 
 	Then Model should be saved with values enter into save model popup.
+
+

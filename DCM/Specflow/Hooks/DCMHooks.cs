@@ -220,7 +220,7 @@ namespace DCM.Specflow.Hooks
             //Create dynamic scenario name
             scenario = featureName.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
         }
-        [Scope(Feature = "CreateModelwithWizard")]
+        [Scope(Feature = "Logout")]
     [AfterFeature]
         public static void Afterfeature()
         {

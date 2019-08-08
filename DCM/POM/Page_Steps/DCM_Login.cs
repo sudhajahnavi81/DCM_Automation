@@ -25,9 +25,9 @@ namespace DCM.POM.Page_Steps
         public static void twofa()
         {
             Thread.Sleep(1000);
-            string otpKeyBytes = Base32Encoding.ToBytes(Exceldata.otpKeyStr);
-            string totp = new Totp(otpKeyBytes);
-            string twoFactorCode = totp.ComputeTotp();
+            var otpKeyBytes = Base32Encoding.ToBytes(Exceldata.otpKeyStr);
+            var totp = new Totp(otpKeyBytes);
+            var twoFactorCode = totp.ComputeTotp();
             Type(twoFactorCode,Page_Objects.oktatwofa);
             click(Page_Objects.oktaverify);
             Thread.Sleep(1000);
@@ -39,7 +39,7 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(10000);
             click(Page_Objects.DCMoktalogo);
             Thread.Sleep(30000);
-            movepostringer();
+            movepointer();
             
         }
 

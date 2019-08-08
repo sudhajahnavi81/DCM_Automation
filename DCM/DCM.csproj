@@ -304,6 +304,12 @@
     <Compile Include="Specflow\Definitions\CreateModelusingWizardDEF.cs" />
     <Compile Include="Specflow\Definitions\LogoutDef.cs" />
     <Compile Include="Specflow\Definitions\ViewAnalysisDef.cs" />
+    <Compile Include="Specflow\Features\View Analysis\ViewAnalysis.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewAnalysis.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Specflow\Definitions\ViewAnalysisDef.cs" />
     <Compile Include="Specflow\Hooks\DCMHooks.cs" />
     <Compile Include="Specflow\Definitions\DashboardDef.cs" />
     <Compile Include="Specflow\Definitions\LoginStepsDef.cs" />
@@ -315,6 +321,10 @@
     <None Include="Specflow\Features\Create_Model\createmodel.feature" />
     <None Include="data\data.xlsx" />
     <None Include="packages.config" />
+    <None Include="Specflow\Features\View Analysis\ViewAnalysis.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ViewAnalysis.feature.cs</LastGenOutput>
+    </None>
     <None Include="Specflow\Features\View Analysis\ViewAnalysis.feature" />
     <None Include="Specflow\Features\wizard\CreateModelwithWizard.feature" />
     <None Include="Specflow\Features\B_Dashboard\DCM.feature" />

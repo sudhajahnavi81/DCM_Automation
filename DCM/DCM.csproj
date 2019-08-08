@@ -311,8 +311,7 @@
     <None Include="Specflow\Features\Create_Model\createmodel.feature" />
     <None Include="data\data.xlsx" />
     <None Include="packages.config" />
-    <None Include="Specflow\Features\CreateModelwithWizard.feature" />
-    <None Include="Specflow\Features\DCM.feature" />
+    <None Include="Specflow\Features\Wizard\CreateModelwithWizard.feature" />
     <None Include="Specflow\Features\B_Dashboard\DCM.feature" />
   </ItemGroup>
   <ItemGroup>

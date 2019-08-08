@@ -70,7 +70,7 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(1000);
             click(Page_Objects.uploadFloorPlanbtn);
             Thread.Sleep(1000);
-            uploadfile(@"C:\Users\sunil\Floorplan.png", "Open","Edit1", "Button1");
+            uploadfile(@"D:\Floorplan\Floorplan.png", "Open","Edit1", "Button1");
 
             //AutoItX.ControlFocus("open", "", "Edit1");
             //upload(Page_Objects.uploadFloorPlanbtn, "Floorplan");

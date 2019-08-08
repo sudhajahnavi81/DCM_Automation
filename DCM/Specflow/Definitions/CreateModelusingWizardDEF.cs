@@ -15,12 +15,12 @@ namespace DCM.Specflow.Definitions
            CreateModelusingWizard.WizardOpen();
         }
 
-        [Given(@"enter value into What is the Forecasted Annual Arrivals \(walkouts included\) of your Emergency Department\? question and hit hit enter")]
-        public void GivenEnterValueIntoWhatIsTheForecastedAnnualArrivalsWalkoutsIncludedOfYourEmergencyDepartmentQuestionAndHitHitEnter(Table table)
+        [Given(@"enter value stringo What is the Forecasted Annual Arrivals \(walkouts included\) of your Emergency Department\? question and hit hit enter")]
+        public void GivenEnterValuestringoWhatIsTheForecastedAnnualArrivalsWalkoutsIncludedOfYourEmergencyDepartmentQuestionAndHitHitEnter(Table table)
         {
             dynamic FAAW = table.CreateDynamicInstance();
 
-            int FAA = FAAW.FAA_Wizard;
+            string FAA = FAAW.FAA_Wizard;
             Thread.Sleep(2000);
             CreateModelusingWizard.EnterFAA(FAA);
             
@@ -28,11 +28,11 @@ namespace DCM.Specflow.Definitions
         }
 
         [When(@"What's your current walkout \(Left without Triage or Left without being seen\) percentage\? question appeared then enter the value in textbox and hit enter")]
-        public void WhenWhatSYourCurrentWalkoutLeftWithoutTriageOrLeftWithoutBeingSeenPercentageQuestionAppearedThenEnterTheValueInTextboxAndHitEnter(Table table)
+        public void WhenWhatSYourCurrentWalkoutLeftWithoutTriageOrLeftWithoutBeingSeenPercentageQuestionAppearedThenEnterTheValuestringextboxAndHitEnter(Table table)
         {
             dynamic CWPW = table.CreateDynamicInstance();
 
-            int CWP = CWPW.Current_Walkout_Percentage;
+            string CWP = CWPW.Current_Walkout_Percentage;
             Thread.Sleep(2000);
             CreateModelusingWizard.EnterCWP(CWP);
 
@@ -44,10 +44,10 @@ namespace DCM.Specflow.Definitions
         //public void WhenVerifyYourForecastedAnnualVolumeWithoutWalkoutsIsCalculatedToValue()
         //{
             
-        //    int FAA = FAA_Wizard;
-        //    int Forecasted_Annual_Volume = (() - ((FAA * LWBS) / 100));
+        //    string FAA = FAA_Wizard;
+        //    string Forecasted_Annual_Volume = (() - ((FAA * LWBS) / 100));
         //    String total = Forecasted_Annual_Volume.ToString();
-        //    string UItotal = MethodsAndActions.FieldText(Page_Objects.F_Annual_Voulme);
+        //    string UItotal =  FieldText(Page_Objects.F_Annual_Voulme);
 
         //    if (UItotal.ToLower() == total.ToLower())
         //    {
@@ -65,11 +65,11 @@ namespace DCM.Specflow.Definitions
         //}
 
         [When(@"What percentage of patients get admitted\?  question appeared then enter the value in text box and hit enter")]
-        public void WhenWhatPercentageOfPatientsGetAdmittedQuestionAppearedThenEnterTheValueInTextBoxAndHitEnter(Table table)
+        public void WhenWhatPercentageOfPatientsGetAdmittedQuestionAppearedThenEnterTheValuestringextBoxAndHitEnter(Table table)
         {
             dynamic APPW = table.CreateDynamicInstance();
 
-            int APP = APPW.Admitted_patients_percentage;
+            string APP = APPW.Admitted_patients_percentage;
             CreateModelusingWizard.EnterAPP(APP);
 
         }
@@ -88,28 +88,28 @@ namespace DCM.Specflow.Definitions
         }
 
         [When(@"What is the Length of Stay \(in minutes\) for Admitted patients in your Emergency Department\?  question appeared, enter the value in textbox and press enter")]
-        public void WhenWhatIsTheLengthOfStayInMinutesForAdmittedPatientsInYourEmergencyDepartmentQuestionAppearedEnterTheValueInTextboxAndPressEnter(Table table)
+        public void WhenWhatIsTheLengthOfStayInMinutesForAdmittedPatientsInYourEmergencyDepartmentQuestionAppearedEnterTheValuestringextboxAndPressEnter(Table table)
         {
             dynamic LOSAPW = table.CreateDynamicInstance();
-            int LOSAP = LOSAPW.Los_for_Addmitted_patients;
+            string LOSAP = LOSAPW.Los_for_Addmitted_patients;
             CreateModelusingWizard.EnterLOSAP(LOSAP);
 
 
         }
 
         [When(@"What is the Length of Stay \(in minutes\) for Discharged patients in your Emergency Department\? question appeared enter the value in textbox and press enter")]
-        public void WhenWhatIsTheLengthOfStayInMinutesForDischargedPatientsInYourEmergencyDepartmentQuestionAppearedEnterTheValueInTextboxAndPressEnter(Table table)
+        public void WhenWhatIsTheLengthOfStayInMinutesForDischargedPatientsInYourEmergencyDepartmentQuestionAppearedEnterTheValuestringextboxAndPressEnter(Table table)
         {
             dynamic LOSDPW = table.CreateDynamicInstance();
-            int LOSDP = LOSDPW.Los_for_Discharged_patients;
+            string LOSDP = LOSDPW.Los_for_Discharged_patients;
             CreateModelusingWizard.EnterLOSDP(LOSDP);
         }
 
         [When(@"What is your Arrival to Admit Decision time \(in minutes\)\?  question appeared, enter the value in textbox and press enter")]
-        public void WhenWhatIsYourArrivalToAdmitDecisionTimeInMinutesQuestionAppearedEnterTheValueInTextboxAndPressEnter(Table table)
+        public void WhenWhatIsYourArrivalToAdmitDecisionTimeInMinutesQuestionAppearedEnterTheValuestringextboxAndPressEnter(Table table)
         {
             dynamic LOSAADTW = table.CreateDynamicInstance();
-            int LOSAADT = LOSAADTW.Arrival_to_admit_decision_time;
+            string LOSAADT = LOSAADTW.Arrival_to_admit_decision_time;
             CreateModelusingWizard.EnterAADT(LOSAADT);
         }
 
@@ -117,10 +117,10 @@ namespace DCM.Specflow.Definitions
         public void WhenWhatIsYourTypicalStaffingPatternAppearedClickOnIDLikeToEnterTheDataManuallyAndShiftsPopUpDisplayedThenAddShiftsManuallyAndClickOnOKToClosePopUp(Table table)
         {
             dynamic DSW = table.CreateDynamicInstance();
-            int DS = DSW.Duplicate_Shifts;
-            int CTT = DSW.Current_To_Time;
-            int PFT = DSW.Proposed_From_Time;
-            int PTT = DSW.Proposed_To_Time;
+            string DS = DSW.Duplicate_Shifts;
+            string CTT = DSW.Current_To_Time;
+            string PFT = DSW.Proposed_From_Time;
+            string PTT = DSW.Proposed_To_Time;
             CreateModelusingWizard.EnterShiftsmanually(DS,CTT,PFT,PTT);
         }
 
@@ -132,30 +132,30 @@ namespace DCM.Specflow.Definitions
         //}
 
         [When(@"What is your average cost \(in dollars\) per Physician hours\? Please enter (.*) in case of no cost\.  question appeared, enter the value in textbox and press enter")]
-        public void WhenWhatIsYourAverageCostInDollarsPerPhysicianHoursPleaseEnterInCaseOfNoCost_QuestionAppearedEnterTheValueInTextboxAndPressEnter(int p0, Table table)
+        public void WhenWhatIsYourAverageCostInDollarsPerPhysicianHoursPleaseEnterInCaseOfNoCost_QuestionAppearedEnterTheValuestringextboxAndPressEnter(string p0, Table table)
         {
             Thread.Sleep(2000);
             dynamic PACPHW = table.CreateDynamicInstance();
-            int PC = PACPHW.Phy_cost;
+            string PC = PACPHW.Phy_cost;
             CreateModelusingWizard.EnterPhycost(PC);
         }
 
         [When(@"If you use Advanced Practice Providers \(APPs\), what is your average cost \(in dollars\) per APP hours\? Please enter (.*) in case of no cost\.  question appeared, enter the value in textbox and press enter")]
-        public void WhenIfYouUseAdvancedPracticeProvidersAPPsWhatIsYourAverageCostInDollarsPerAPPHoursPleaseEnterInCaseOfNoCost_QuestionAppearedEnterTheValueInTextboxAndPressEnter(int p0, Table table)
+        public void WhenIfYouUseAdvancedPracticeProvidersAPPsWhatIsYourAverageCostInDollarsPerAPPHoursPleaseEnterInCaseOfNoCost_QuestionAppearedEnterTheValuestringextboxAndPressEnter(string p0, Table table)
         {
             dynamic AACPHW = table.CreateDynamicInstance();
-            int AC = AACPHW.APP_cost;
+            string AC = AACPHW.APP_cost;
             CreateModelusingWizard.EnterAPPCost(AC);
         }
 
         [When(@"We have defaulted your average cost \(in dollars\) per Scribe hours to \$(.*)\. Do you want to change\?  question appeared then click on  No, I want to continue with the default average cost per Scribe hours\.")]
-        public void WhenWeHaveDefaultedYourAverageCostInDollarsPerScribeHoursTo_DoYouWantToChangeQuestionAppearedThenClickOnNoIWantToContinueWithTheDefaultAverageCostPerScribeHours_(int p0)
+        public void WhenWeHaveDefaultedYourAverageCostInDollarsPerScribeHoursTo_DoYouWantToChangeQuestionAppearedThenClickOnNoIWantToContinueWithTheDefaultAverageCostPerScribeHours_(string p0)
         {
             CreateModelusingWizard.Selectdefaultscribecost();
         }
 
         [When(@"How many patients does your Physicians see per hour \(PPH\)\?  question appeared, enter the value in textbox and press enter")]
-        public void WhenHowManyPatientsDoesYourPhysiciansSeePerHourPPHQuestionAppearedEnterTheValueInTextboxAndPressEnter(Table table)
+        public void WhenHowManyPatientsDoesYourPhysiciansSeePerHourPPHQuestionAppearedEnterTheValuestringextboxAndPressEnter(Table table)
         {
             dynamic TPPW = table.CreateDynamicInstance();
             double TPP = TPPW.Targeted_Phy_PPH;
@@ -163,7 +163,7 @@ namespace DCM.Specflow.Definitions
         }
 
         [When(@"How many patients does your APPs see per hour \(PPH\)\?  question appeared, enter the value in textbox and press enter and verify the  Your APP coefficient calculates to  value")]
-        public void WhenHowManyPatientsDoesYourAPPsSeePerHourPPHQuestionAppearedEnterTheValueInTextboxAndPressEnterAndVerifyTheYourAPPCoefficientCalculatesToValue(Table table)
+        public void WhenHowManyPatientsDoesYourAPPsSeePerHourPPHQuestionAppearedEnterTheValuestringextboxAndPressEnterAndVerifyTheYourAPPCoefficientCalculatesToValue(Table table)
         {
             dynamic TAPW = table.CreateDynamicInstance();
             double TAP = TAPW.Targeted_APP_PPH;
@@ -171,24 +171,24 @@ namespace DCM.Specflow.Definitions
         }
 
         [When(@"We have defaulted your Scribe coefficient \(efficiency of providers Scribes increase in percent\) to (.*)%\. Do you want to change\?  question appeared then click on  No, I want to continue with the default Scribe coefficient\.")]
-        public void WhenWeHaveDefaultedYourScribeCoefficientEfficiencyOfProvidersScribesIncreaseInPercentTo_DoYouWantToChangeQuestionAppearedThenClickOnNoIWantToContinueWithTheDefaultScribeCoefficient_(int p0)
+        public void WhenWeHaveDefaultedYourScribeCoefficientEfficiencyOfProvidersScribesIncreaseInPercentTo_DoYouWantToChangeQuestionAppearedThenClickOnNoIWantToContinueWithTheDefaultScribeCoefficient_(string p0)
         {
             CreateModelusingWizard.Selectdefaultscribecoeff();
         }
 
         [When(@"Do your Physicians have a higher than average PPH during their first hour of the work\? If YES, please enter the PPH during the first hour\. If NO, please enter (.*)\.  question appeared, enter the value in textbox and press enter")]
-        public void WhenDoYourPhysiciansHaveAHigherThanAveragePPHDuringTheirFirstHourOfTheWorkIfYESPleaseEnterThePPHDuringTheFirstHour_IfNOPleaseEnter_QuestionAppearedEnterTheValueInTextboxAndPressEnter(int p0, Table table)
+        public void WhenDoYourPhysiciansHaveAHigherThanAveragePPHDuringTheirFirstHourOfTheWorkIfYESPleaseEnterThePPHDuringTheFirstHour_IfNOPleaseEnter_QuestionAppearedEnterTheValuestringextboxAndPressEnter(string p0, Table table)
         {
             dynamic PFHW = table.CreateDynamicInstance();
-            int PF = PFHW.Phy_First_hour;
+            string PF = PFHW.Phy_First_hour;
             CreateModelusingWizard.EnterPHYFH(PF);
         }
 
         [When(@"Do your APPs have a higher than average PPH during their first hour of the work\? If YES, please enter the PPH during the first hour\. If NO, please enter (.*)\.  question appeared, enter the value in textbox and press enter")]
-        public void WhenDoYourAPPsHaveAHigherThanAveragePPHDuringTheirFirstHourOfTheWorkIfYESPleaseEnterThePPHDuringTheFirstHour_IfNOPleaseEnter_QuestionAppearedEnterTheValueInTextboxAndPressEnter(int p0, Table table)
+        public void WhenDoYourAPPsHaveAHigherThanAveragePPHDuringTheirFirstHourOfTheWorkIfYESPleaseEnterThePPHDuringTheFirstHour_IfNOPleaseEnter_QuestionAppearedEnterTheValuestringextboxAndPressEnter(string p0, Table table)
         {
             dynamic AFHW = table.CreateDynamicInstance();
-            int AF = AFHW.APP_First_hour;
+            string AF = AFHW.APP_First_hour;
             CreateModelusingWizard.EnterAPPFH(AF);
         }
 

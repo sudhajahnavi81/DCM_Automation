@@ -22,7 +22,7 @@ namespace DCM.POM.Page_Steps
 
         }
 
-        public static void EnterFAA(int FAA)
+        public static void EnterFAA(string FAA)
         {
             Type(FAA.ToString(), Page_Objects.ForecastedAnnualArrivals);
 
@@ -30,14 +30,14 @@ namespace DCM.POM.Page_Steps
 
         }
 
-        public static void EnterCWP(int CWP)
+        public static void EnterCWP(string CWP)
         {
 
             Type(CWP.ToString(), Page_Objects.currentwalkoutpercentage);
             Enterkey(Page_Objects.currentwalkoutpercentage);
         }
 
-        public static void EnterAPP(int APP)
+        public static void EnterAPP(string APP)
         {
 
             Type(APP.ToString(), Page_Objects.addmittedpatientspercentage);
@@ -60,21 +60,21 @@ namespace DCM.POM.Page_Steps
             click(Page_Objects.OKbtn);
         }
 
-        public static void EnterLOSAP(int LOSAP)
+        public static void EnterLOSAP(string LOSAP)
         {
             Thread.Sleep(1000);
             Type(LOSAP.ToString(), Page_Objects.LOSforaddmittedpatients);
             Enterkey(Page_Objects.LOSforaddmittedpatients);
         }
 
-        public static void EnterLOSDP(int LOSDP)
+        public static void EnterLOSDP(string LOSDP)
         {
             Thread.Sleep(1000);
             Type(LOSDP.ToString(), Page_Objects.LOSdischargedpatients);
             Enterkey(Page_Objects.LOSdischargedpatients);
         }
 
-        public static void EnterAADT(int AAD)
+        public static void EnterAADT(string AAD)
         {
             Thread.Sleep(1000);
             Type(AAD.ToString(), Page_Objects.LOSArrivaltoadmitdecisiontime);
@@ -82,7 +82,7 @@ namespace DCM.POM.Page_Steps
 
         }
 
-        public static void EnterShiftsmanually(int DS, int CTT, int PFT, int PTT)
+        public static void EnterShiftsmanually(string DS, string CTT, string PFT, string PTT)
         {
             Thread.Sleep(3000);
             click(Page_Objects.Shft_entermanually);
@@ -117,7 +117,7 @@ namespace DCM.POM.Page_Steps
 
         }
 
-        public static void EnterPhycost(int PC)
+        public static void EnterPhycost(string PC)
         {
             Thread.Sleep(1000);
             Type(PC.ToString(), Page_Objects.Avgcostperphyhour);
@@ -125,7 +125,7 @@ namespace DCM.POM.Page_Steps
 
         }
 
-        public static void EnterAPPCost(int AC)
+        public static void EnterAPPCost(string AC)
         {
             Thread.Sleep(1000);
             Type(AC.ToString(), Page_Objects.AvgcostperAPPhour);
@@ -164,7 +164,7 @@ namespace DCM.POM.Page_Steps
 
         }
 
-        public static void EnterPHYFH(int PFH)
+        public static void EnterPHYFH(string PFH)
         {
             Thread.Sleep(1000);
             Type(PFH.ToString(), Page_Objects.Phy_firsthour);
@@ -172,7 +172,7 @@ namespace DCM.POM.Page_Steps
 
         }
 
-        public static void EnterAPPFH(int AFH)
+        public static void EnterAPPFH(string AFH)
         {
             Thread.Sleep(1000);
             Type(AFH.ToString(), Page_Objects.App_firsthour);

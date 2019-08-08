@@ -10,6 +10,7 @@ using DCM.POM;
 using DCM.POM.DCM_Objects;
 using OpenQA.Selenium;
 using AventStack.ExtentReports.Model;
+using System.Threading;
 
 namespace DCM.Specflow.Definitions
 {
@@ -24,7 +25,10 @@ namespace DCM.Specflow.Definitions
             string name = table.name;
 
             DCMDashboard.PracticeSearch(name);
-            
+            Thread.Sleep(1000);
+            //CreateModel.graphdetails();
+
+
         }
 
         [Then(@"models should show from selected practice")]
@@ -49,7 +53,7 @@ namespace DCM.Specflow.Definitions
 
 
             var selectmodel = MethodsAndActions.GetText(Page_Objects.firstmodelname);
-            var CurrentOPModel = MethodsAndActions.GetText(Page_Objects.currentmodelhistory);
+            var CurrentOPModel = MethodsAndActions.GetText(Page_Objects.currentmodelhistory) +" (Operational)";
             try
             {
                 Assert.AreEqual(selectmodel, CurrentOPModel);

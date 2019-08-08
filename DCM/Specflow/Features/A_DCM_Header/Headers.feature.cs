@@ -74,11 +74,11 @@ namespace DCM.Specflow.Features.A_DCM_Header
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("01 login into DCM. search and select practice from dashboard")]
+        [NUnit.Framework.DescriptionAttribute("01 login stringo DCM. search and select practice from dashboard")]
         [NUnit.Framework.CategoryAttribute("test")]
-        public virtual void _01LoginIntoDCM_SearchAndSelectPracticeFromDashboard()
+        public virtual void _01LoginStringoDCM_SearchAndSelectPracticeFromDashboard()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 login into DCM. search and select practice from dashboard", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 login stringo DCM. search and select practice from dashboard", null, new string[] {
                         "test"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);
@@ -89,7 +89,8 @@ this.ScenarioInitialize(scenarioInfo);
             table1.AddRow(new string[] {
                         "Bay Medical Center - EM 3150"});
 #line 8
- testRunner.Given("Enter practice name into search practice textbox and select searched practice.", ((string)(null)), table1, "Given ");
+ testRunner.Given("Enter practice name stringo search practice textbox and select searched practice." +
+                    "", ((string)(null)), table1, "Given ");
 #line 11
  testRunner.Then("models should show from selected practice", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

@@ -178,7 +178,14 @@ namespace DCM.POM.Page_Steps
             DCMDashboard.OperationalHistroy();
         }
 
-        
+        public static void graphdetails()
+        {
+            mouseHoverJScript(Page_Objects.graphhover);
+           string tooltip = GetText(Page_Objects.tooltip);
+            Console.WriteLine("tooltip : " + tooltip);
+
+
+        }
 
     }   
 }

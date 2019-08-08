@@ -26,7 +26,7 @@ namespace DCM.Specflow.Features.Wizard
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "Wizard.feature"
+#line 1 "CreateModelwithWizard.feature.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
@@ -74,10 +74,10 @@ namespace DCM.Specflow.Features.Wizard
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("01")]
-        public virtual void _01()
+        [NUnit.Framework.DescriptionAttribute("01 Create model using wizard")]
+        public virtual void _01CreateModelUsingWizard()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Create model using wizard", null, ((string[])(null)));
 #line 7
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();

@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace DCM.Specflow.Features.Z_Logout
+namespace DCM.Specflow.Features.ViewAnalysis
 {
     using TechTalk.SpecFlow;
     
@@ -18,20 +18,24 @@ namespace DCM.Specflow.Features.Z_Logout
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("logout DCM")]
-    public partial class LogoutDCMFeature
+    [NUnit.Framework.DescriptionAttribute("ViewAnalysis")]
+    [NUnit.Framework.CategoryAttribute("chrome")]
+    [NUnit.Framework.CategoryAttribute("RegressionTest")]
+    public partial class ViewAnalysisFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "Logout.feature"
+#line 1 "ViewAnalysis.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "logout DCM", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "ViewAnalysis", "\tVerify View analysis tab calculations", ProgrammingLanguage.CSharp, new string[] {
+                        "chrome",
+                        "RegressionTest"});
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -70,19 +74,25 @@ namespace DCM.Specflow.Features.Z_Logout
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Logout from DCM")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void LogoutFromDCM()
+        [NUnit.Framework.DescriptionAttribute("verify Forecasted Monthly Arrival Data and Actual Monthly Arrival Data in Monthly" +
+            " Arrivals under patient volume tab")]
+        [NUnit.Framework.CategoryAttribute("VA")]
+        public virtual void VerifyForecastedMonthlyArrivalDataAndActualMonthlyArrivalDataInMonthlyArrivalsUnderPatientVolumeTab()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Logout from DCM", null, new string[] {
-                        "mytag"});
-#line 5
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("verify Forecasted Monthly Arrival Data and Actual Monthly Arrival Data in Monthly" +
+                    " Arrivals under patient volume tab", null, new string[] {
+                        "VA"});
+#line 7
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 6
- testRunner.Given("click on logout from dashboard", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 7
- testRunner.Then("user should get logout from DCM and browser should get closed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 8
+ testRunner.Given("Edit Model and go to practice matrics and Arrivals/esi tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 9
+ testRunner.And("Calculate Forecasted Monthly Arrival Data and Actual Monthly Arrival Data based o" +
+                    "n practice matrics and Arrivals/esi", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 10
+ testRunner.Then("now compare calcuated Forecasted Monthly Arrival Data and Actual Monthly Arrival " +
+                    "Data with data in Monthly Arrivals under patient volume tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

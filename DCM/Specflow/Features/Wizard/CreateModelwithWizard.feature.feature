@@ -4,7 +4,7 @@ Feature: CreateModelwithWizard
 	DCM login with Chrome browser and Create model using Wizard
 
 
-Scenario: 01
+Scenario: 01 Create model using wizard
 	Given click on create model tab from dashboard and click on Create Model using Wizard from popup
 	And enter value into What is the Forecasted Annual Arrivals (walkouts included) of your Emergency Department? question and hit hit enter
 	| FAA_Wizard|

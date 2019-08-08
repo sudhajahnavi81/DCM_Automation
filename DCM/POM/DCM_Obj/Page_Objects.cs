@@ -302,10 +302,8 @@ namespace DCM.POM.DCM_Objects
         //*[@id="mat-dialog-8"]
 
 
-        //graph tool tip
 
-        public static By graphhover = By.XPath("//*[name()='svg']/*[name()='g']/*[name()='g' and @fill='#0faee9']/[name()='rect' and @transform='translate(0,0)']rect[1]");
-        public static By tooltip = By.XPath("//body//div[@class='dxc-tooltip']//div//div[1]");
+
 
 
 

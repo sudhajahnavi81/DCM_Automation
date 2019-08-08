@@ -9,19 +9,19 @@ using System.Threading.Tasks;
 using DCM.POM.DCM_Objects;
 using OpenQA.Selenium.Remote;
 using DCM.Specflow.Hooks;
-using AutoIt;
 using OpenQA.Selenium.Interactions;
+using AutoIt;
 
 namespace DCM.POM
 {
 
-
-    public class MethodsAndActions
+    
+    public  class MethodsAndActions 
     {
 
 
-
-
+        
+        
 
         public static void Type(string element, By element1)
         {
@@ -66,7 +66,7 @@ namespace DCM.POM
         {
             try
             {
-                if (!pageTitle.Equals(Initialize.driver.Title))
+               if (!pageTitle.Equals(Initialize.driver.Title))
                 {
                     throw new InvalidOperationException("This page is not " + pageTitle + ". The title is: " + Initialize.driver.Title);
                 }
@@ -98,30 +98,29 @@ namespace DCM.POM
 
         }
 
-        public static void movepostringer()
+        public static void movepointer()
         {
             Initialize.driver.SwitchTo().Window(Initialize.driver.WindowHandles.Last());
         }
 
         public static bool IsElementPresent(By locator, string expectedText)
         {
-            try
+            try { 
+            IList<IWebElement> subelements = Initialize.driver.FindElements(locator);
+            for (int i = 0; i < subelements.Count; i++)
             {
-                IList<IWebElement> subelements = Initialize.driver.FindElements(locator);
-                for (int i = 0; i < subelements.Count; i++)
+
+                //Console.Write(subelements[i].Text);
+
+                if (subelements[i].Text == expectedText)
                 {
-
-                    //Console.Write(subelements[i].Text);
-
-                    if (subelements[i].Text == expectedText)
-                    {
-                        Console.Write("Element Found " + subelements[i].Text);
-                        return true;
-
-                    }
+                    Console.Write("Element Found " + subelements[i].Text);
+                    return true;
 
                 }
-                return false;
+
+            }
+            return false;
             }
             catch (NoSuchElementException)
             {
@@ -146,11 +145,10 @@ namespace DCM.POM
         public static IWebElement Find(By locator)
         {
 
-            try
-            {
-                WebDriverWait wait = new WebDriverWait(Initialize.driver, TimeSpan.FromSeconds(15));
-                wait.Until(ExpectedConditions.ElementIsVisible(locator));
-                return Initialize.driver.FindElement(locator);
+            try { 
+            WebDriverWait wait = new WebDriverWait(Initialize.driver, TimeSpan.FromSeconds(15));
+            wait.Until(ExpectedConditions.ElementIsVisible(locator));
+            return Initialize.driver.FindElement(locator);
             }
             catch (NoSuchElementException)
             {
@@ -187,7 +185,7 @@ namespace DCM.POM
             {
                 WebDriverWait wait = new WebDriverWait(Initialize.driver, TimeSpan.FromSeconds(15));
                 wait.Until(ExpectedConditions.ElementToBeClickable(element));
-
+                
             }
             catch (NoSuchElementException)
             {
@@ -196,7 +194,7 @@ namespace DCM.POM
             }
         }
 
-        public static void upload(By element, string path)
+        public static void upload(By element , string path)
         {
             try
             {
@@ -210,16 +208,16 @@ namespace DCM.POM
             }
         }
 
-        public static void uploadfile(string file, string wstringitle, string idEditBox, string idBtnLoad)
+        public static void uploadfile(string file, string winTitle, string idEditBox, string idBtnLoad)
         {
 
             AutoItX.Init();
 
-            AutoItX.WinWait(wstringitle);
-            AutoItX.WinActivate(wstringitle);
+            AutoItX.WinWait(winTitle);
+            AutoItX.WinActivate(winTitle);
 
-            AutoItX.ControlSetText(wstringitle, "", idEditBox, file);
-            AutoItX.ControlClick(wstringitle, "", idBtnLoad);
+            AutoItX.ControlSetText(winTitle, "", idEditBox, file);
+            AutoItX.ControlClick(winTitle, "", idBtnLoad);
         }
 
         public static string FieldText(By ele)
@@ -228,7 +226,7 @@ namespace DCM.POM
 
             String elevalue = (String)((((IJavaScriptExecutor)Initialize.driver)).ExecuteScript("return arguments[0].value", Initialize.driver.FindElement(ele)));
             return elevalue;
-
+            
         }
 
         public static void JSExe(By element)
@@ -250,19 +248,7 @@ namespace DCM.POM
         }
 
 
-        public static void mouseHoverJScript(By elem)
-        {
-            //String mouseOverScript = "if(document.createEvent){string evObj = document.createEvent('MouseEvents');evObj.initEvent('mouseover', true, false);"
-            //        + " arguments[0].dispatchEvent(evObj);} else if(document.createEventObject) { arguments[0].fireEvent('onmouseover');}";
-            //((IJavaScriptExecutor)Initialize.driver).ExecuteScript(mouseOverScript, element);
 
-             IWebElement element = Initialize.driver.FindElement(elem);
-
-             Actions action = new Actions(Initialize.driver);
-            action.MoveToElement(element).ClickAndHold().MoveByOffset(1, 1).Perform();
-        }
-
-       
 
     }
 }

@@ -220,13 +220,33 @@ namespace DCM.POM
             AutoItX.ControlClick(winTitle, "", idBtnLoad);
         }
 
+        public static double FieldTextToDouble(By ele)
+        {
+           return Convert.ToDouble(FieldText(ele));
+        }
+
         public static string FieldText(By ele)
         {
 
+            var input = Initialize.driver.FindElement(ele).GetAttribute("value");
+            return input;
+            //IJavaScriptExecutor executor = (IJavaScriptExecutor)Initialize.driver;
+            //return (String)executor.ExecuteScript("return $('" + ele + "').val();");
 
-            String elevalue = (String)((((IJavaScriptExecutor)Initialize.driver)).ExecuteScript("return arguments[0].value", Initialize.driver.FindElement(ele)));
-            return elevalue;
-            
+
+
+            //IWebElement demoDiv = Initialize.driver.FindElement(ele);
+
+            //IJavaScriptExecutor executor = (IJavaScriptExecutor)Initialize.driver;
+
+            //demoDiv.GetAttribute("innerHTML");
+            //executor.ExecuteScript("return arguments[0].innerHTML", demoDiv);
+
+            //demoDiv.GetAttribute("textContent");
+            //executor.ExecuteScript("return arguments[0].textContent", demoDiv);
+
+            //return Int32.Parse(demoDiv.ToString());
+
         }
 
         public static void JSExe(By element)
@@ -235,6 +255,7 @@ namespace DCM.POM
             IJavaScriptExecutor executor = (IJavaScriptExecutor)Initialize.driver;
             executor.ExecuteScript("arguments[0].click()", element1);
         }
+
 
         public static string Graphtooltip(By element, By element1)
         {
@@ -247,7 +268,18 @@ namespace DCM.POM
             return GetText(element1);
         }
 
+        public static void directlink(string url)
+        {
+            Initialize.driver.Navigate().GoToUrl(url);
+            Initialize.driver.Manage().Window.Maximize();
+            
+        }
 
+        public static string Geturl()
+        {
+            String URL = Initialize.driver.Url;
+            return URL;          
+        }
 
 
     }

@@ -136,11 +136,11 @@ namespace DCM.Specflow.Hooks
                     scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
 
 
-                //var Pass = ScenarioContext.Current.ScenarioInfo;
-                //var passmessage = "<pre>" + Pass.Title + "</pre>";
+                var Pass = ScenarioContext.Current.ScenarioInfo;
+                var passmessage = "<pre>" + Pass.Title + "</pre>";
 
-                //extent.AddTestRunnerLogs(passmessage);
-                //scenario.Log(Status.Error, passmessage);
+                extent.AddTestRunnerLogs(passmessage);
+                scenario.Log(Status.Pass, passmessage);
 
 
             }

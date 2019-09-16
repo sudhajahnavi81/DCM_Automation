@@ -88,10 +88,14 @@ namespace DCM.POM.DCM_Objects
         public static By segmentation_by_ESI_value = By.XPath("//*[@id=\"segmentation-data\"]/div[1]/div/div/div[2]/ul/li[1]");
         public static By ESI3_FT = By.XPath("//*[@id=\"segmentation-data\"]/div[2]/table[2]/tbody/tr[2]/td[4]/div/div/input");
         public static By ESI3_PIT = By.XPath("//*[@id=\"segmentation-data\"]/div[2]/table[2]/tbody/tr[3]/td[4]/div/div/input");
-        public static By january = By.XPath("//*[stats-with(@id,'jan')]");
+        public static By january = By.XPath("//a[@class='btn-month-label pb-2 d-block'][contains(text(),'JAN')]/following::input[1]");
         public static By AE_Actual_Annual_Volume = By.XPath("//*[@id='arrivals-data']/app-actual-monthly-arrival/div[1]/div/div[2]/div/div");
         public static By AE_Forcasted_Annual_Volume = By.XPath("//*[@id='arrivals-data']/app-actual-monthly-arrival/div[2]/app-forecasted-monthly-arrival/div/div/div[2]/div/div");
-
+        public static By JAN_forcasted_monthlyArriavl = By.XPath("//app-forecasted-monthly-arrival//div[@class='row']//div[1]//div[1]//a[contains(text(),'JAN')]/following::input[1]");
+       
+        
+        
+        
         //Actual Hourly Arrivals By Day Of Week 
 
         public static By sunday_0 = By.XPath("//div[@class='weekly-timeline']//div[1]//div[2]//app-input-child[1]//div[1]//div[1]//div[1]//input[1]");
@@ -119,7 +123,167 @@ namespace DCM.POM.DCM_Objects
         public static By sunday_22 = By.XPath("//div[@class='weekly-timeline']//div[1]//div[2]//app-input-child[1]//div[1]//div[1]//div[23]//input[1]");
         public static By sunday_23 = By.XPath("//div[@class='weekly-timeline']//div[1]//div[2]//app-input-child[1]//div[1]//div[1]//div[24]//input[1]");
 
-        
+
+        public static By Monday_0 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[1]//input[1]");
+        public static By Monday_1 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[2]//input[1]");
+        public static By Monday_2 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[3]//input[1]");
+        public static By Monday_3 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[4]//input[1]");
+        public static By Monday_4 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[5]//input[1]");
+        public static By Monday_5 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[6]//input[1]");
+        public static By Monday_6 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[7]//input[1]");
+        public static By Monday_7 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[8]//input[1]");
+        public static By Monday_8 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[9]//input[1]");
+        public static By Monday_9 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[10]//input[1]");
+        public static By Monday_10 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[11]//input[1]");
+        public static By Monday_11 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[12]//input[1]");
+        public static By Monday_12 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[13]//input[1]");
+        public static By Monday_13 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[14]//input[1]");
+        public static By Monday_14 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[15]//input[1]");
+        public static By Monday_15 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[16]//input[1]");
+        public static By Monday_16 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[17]//input[1]");
+        public static By Monday_17 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[18]//input[1]");
+        public static By Monday_18 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[19]//input[1]");
+        public static By Monday_19 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[20]//input[1]");
+        public static By Monday_20 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[21]//input[1]");
+        public static By Monday_21 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[22]//input[1]");
+        public static By Monday_22 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[23]//input[1]");
+        public static By Monday_23 = By.XPath("//div[@class='weekly-timeline']//div[2]//div[2]//app-input-child[1]//div[1]//div[1]//div[24]//input[1]");
+
+
+        public static By Tuesday_0 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[1]//input[1]");
+        public static By Tuesday_1 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[2]//input[1]");
+        public static By Tuesday_2 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[3]//input[1]");
+        public static By Tuesday_3 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[4]//input[1]");
+        public static By Tuesday_4 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[5]//input[1]");
+        public static By Tuesday_5 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[6]//input[1]");
+        public static By Tuesday_6 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[7]//input[1]");
+        public static By Tuesday_7 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[8]//input[1]");
+        public static By Tuesday_8 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[9]//input[1]");
+        public static By Tuesday_9 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[10]//input[1]");
+        public static By Tuesday_10 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[11]//input[1]");
+        public static By Tuesday_11 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[12]//input[1]");
+        public static By Tuesday_12 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[13]//input[1]");
+        public static By Tuesday_13 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[14]//input[1]");
+        public static By Tuesday_14 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[15]//input[1]");
+        public static By Tuesday_15 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[16]//input[1]");
+        public static By Tuesday_16 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[17]//input[1]");
+        public static By Tuesday_17 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[18]//input[1]");
+        public static By Tuesday_18 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[19]//input[1]");
+        public static By Tuesday_19 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[20]//input[1]");
+        public static By Tuesday_20 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[21]//input[1]");
+        public static By Tuesday_21 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[22]//input[1]");
+        public static By Tuesday_22 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[23]//input[1]");
+        public static By Tuesday_23 = By.XPath("//div[@class='weekly-timeline']//div[3]//div[2]//app-input-child[1]//div[1]//div[1]//div[24]//input[1]");
+
+
+        public static By wednesday_0 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[1]//input[1]");
+        public static By wednesday_1 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[2]//input[1]");
+        public static By wednesday_2 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[3]//input[1]");
+        public static By wednesday_3 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[4]//input[1]");
+        public static By wednesday_4 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[5]//input[1]");
+        public static By wednesday_5 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[6]//input[1]");
+        public static By wednesday_6 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[7]//input[1]");
+        public static By wednesday_7 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[8]//input[1]");
+        public static By wednesday_8 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[9]//input[1]");
+        public static By wednesday_9 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[10]//input[1]");
+        public static By wednesday_10 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[11]//input[1]");
+        public static By wednesday_11 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[12]//input[1]");
+        public static By wednesday_12 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[13]//input[1]");
+        public static By wednesday_13 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[14]//input[1]");
+        public static By wednesday_14 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[15]//input[1]");
+        public static By wednesday_15 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[16]//input[1]");
+        public static By wednesday_16 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[17]//input[1]");
+        public static By wednesday_17 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[18]//input[1]");
+        public static By wednesday_18 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[19]//input[1]");
+        public static By wednesday_19 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[20]//input[1]");
+        public static By wednesday_20 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[21]//input[1]");
+        public static By wednesday_21 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[22]//input[1]");
+        public static By wednesday_22 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[23]//input[1]");
+        public static By wednesday_23 = By.XPath("//div[@class='weekly-timeline']//div[4]//div[2]//app-input-child[1]//div[1]//div[1]//div[24]//input[1]");
+
+
+        public static By Thursday_0 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[1]//input[1]");
+        public static By Thursday_1 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[2]//input[1]");
+        public static By Thursday_2 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[3]//input[1]");
+        public static By Thursday_3 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[4]//input[1]");
+        public static By Thursday_4 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[5]//input[1]");
+        public static By Thursday_5 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[6]//input[1]");
+        public static By Thursday_6 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[7]//input[1]");
+        public static By Thursday_7 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[8]//input[1]");
+        public static By Thursday_8 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[9]//input[1]");
+        public static By Thursday_9 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[10]//input[1]");
+        public static By Thursday_10 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[11]//input[1]");
+        public static By Thursday_11 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[12]//input[1]");
+        public static By Thursday_12 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[13]//input[1]");
+        public static By Thursday_13 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[14]//input[1]");
+        public static By Thursday_14 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[15]//input[1]");
+        public static By Thursday_15 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[16]//input[1]");
+        public static By Thursday_16 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[17]//input[1]");
+        public static By Thursday_17 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[18]//input[1]");
+        public static By Thursday_18 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[19]//input[1]");
+        public static By Thursday_19 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[20]//input[1]");
+        public static By Thursday_20 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[21]//input[1]");
+        public static By Thursday_21 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[22]//input[1]");
+        public static By Thursday_22 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[23]//input[1]");
+        public static By Thursday_23 = By.XPath("//div[@class='weekly-timeline']//div[5]//div[2]//app-input-child[1]//div[1]//div[1]//div[24]//input[1]");
+
+
+
+        public static By Friday_0 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[1]//input[1]");
+        public static By Friday_1 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[2]//input[1]");
+        public static By Friday_2 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[3]//input[1]");
+        public static By Friday_3 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[4]//input[1]");
+        public static By Friday_4 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[5]//input[1]");
+        public static By Friday_5 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[6]//input[1]");
+        public static By Friday_6 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[7]//input[1]");
+        public static By Friday_7 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[8]//input[1]");
+        public static By Friday_8 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[9]//input[1]");
+        public static By Friday_9 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[10]//input[1]");
+        public static By Friday_10 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[11]//input[1]");
+        public static By Friday_11 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[12]//input[1]");
+        public static By Friday_12 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[13]//input[1]");
+        public static By Friday_13 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[14]//input[1]");
+        public static By Friday_14 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[15]//input[1]");
+        public static By Friday_15 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[16]//input[1]");
+        public static By Friday_16 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[17]//input[1]");
+        public static By Friday_17 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[18]//input[1]");
+        public static By Friday_18 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[19]//input[1]");
+        public static By Friday_19 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[20]//input[1]");
+        public static By Friday_20 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[21]//input[1]");
+        public static By Friday_21 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[22]//input[1]");
+        public static By Friday_22 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[23]//input[1]");
+        public static By Friday_23 = By.XPath("//div[@class='weekly-timeline']//div[6]//div[2]//app-input-child[1]//div[1]//div[1]//div[24]//input[1]");
+
+
+
+        public static By Saturday_0 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[1]//input[1]");
+        public static By Saturday_1 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[2]//input[1]");
+        public static By Saturday_2 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[3]//input[1]");
+        public static By Saturday_3 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[4]//input[1]");
+        public static By Saturday_4 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[5]//input[1]");
+        public static By Saturday_5 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[6]//input[1]");
+        public static By Saturday_6 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[7]//input[1]");
+        public static By Saturday_7 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[8]//input[1]");
+        public static By Saturday_8 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[9]//input[1]");
+        public static By Saturday_9 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[10]//input[1]");
+        public static By Saturday_10 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[11]//input[1]");
+        public static By Saturday_11 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[12]//input[1]");
+        public static By Saturday_12 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[13]//input[1]");
+        public static By Saturday_13 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[14]//input[1]");
+        public static By Saturday_14 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[15]//input[1]");
+        public static By Saturday_15 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[16]//input[1]");
+        public static By Saturday_16 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[17]//input[1]");
+        public static By Saturday_17 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[18]//input[1]");
+        public static By Saturday_18 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[19]//input[1]");
+        public static By Saturday_19 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[20]//input[1]");
+        public static By Saturday_20 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[21]//input[1]");
+        public static By Saturday_21 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[22]//input[1]");
+        public static By Saturday_22 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[23]//input[1]");
+        public static By Saturday_23 = By.XPath("//div[@class='weekly-timeline']//div[7]//div[2]//app-input-child[1]//div[1]//div[1]//div[24]//input[1]");
+
+
+
+
 
 
 
@@ -304,12 +468,18 @@ namespace DCM.POM.DCM_Objects
 
 
 
+        //View Analysis
 
 
+        public static By ViewAnalysis_Tab = By.XPath("//a[contains(text(),'View Analysis')]");
+        public static By PV_MA_ForcastedMonthlyArrival_Jan = By.XPath("//div[@class='forecasted-monthly-arrival-data pt-4']//label[@class='d-block m-0'][contains(text(),'JAN')]/following::input[1]");
+        public static By PV_MA_ActualMonthlyArrival_Jan = By.XPath("//div[@class='actual-monthly-arrival-data pt-4']//label[@class='d-block m-0'][contains(text(),'JAN')]/following::input[1]");
+       
 
+            // Weekly Arriaval
 
-
-
+        public static By Weekly_ArrivalTab = By.XPath("//div[@id='mat-tab-label-2-1']");
+        public static By PV_WA_EachDayofWeek_Sun = By.XPath("//tab[@class='active tab-pane']//td[1]//label[contains(text(),'SUN')]/following::input[1]");
 
 
 
@@ -317,7 +487,10 @@ namespace DCM.POM.DCM_Objects
 
         public static By Logout = By.XPath("//span[@class='userName']");
         public static By Signout = By.XPath("//a[@class='dropdown-item']");
+        public static By Oktalogout = By.XPath("//span[@class='option-selected-text']");
+        public static By OktaSignout = By.XPath("//p[contains(text(),'Sign out')]");
 
+        
 
     }
 }

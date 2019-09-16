@@ -38,7 +38,7 @@ namespace DCM.Specflow.Definitions
                 // verifying calculation of Forecasted Annual Volume
                 int Forecasted_Annual_Volume = ((F_Annual_arrivals) - ((F_Annual_arrivals * LWBS) / 100));
                 String total = Forecasted_Annual_Volume.ToString();
-            string UItotal = MethodsAndActions.FieldText(Page_Objects.F_Annual_Voulme);
+            string UItotal = MethodsAndActions.FieldText(Page_Objects.F_Annual_Voulme).ToString();
 
             if(UItotal.ToLower() == total.ToLower())
             {

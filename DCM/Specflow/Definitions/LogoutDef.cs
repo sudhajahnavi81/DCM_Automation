@@ -7,10 +7,11 @@ using DCM.POM.DCM_Objects;
 using DCM.POM;
 using NUnit.Framework;
 
+
 namespace DCM.Specflow.Definitions
 {
     [Binding]
-    public sealed class LogoutDef
+    public sealed class LogoutDef : MethodsAndActions
     {
         [Given(@"click on logout from dashboard")]
         public void GivenClickOnLogoutFromDashboard()

@@ -74,13 +74,13 @@ namespace DCM.Specflow.Features.ViewAnalysis
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("verify Forecasted Monthly Arrival Data and Actual Monthly Arrival Data in Monthly" +
-            " Arrivals under patient volume tab")]
+        [NUnit.Framework.DescriptionAttribute("01 verify Forecasted Monthly Arrival Data and Actual Monthly Arrival Data calcula" +
+            "tion")]
         [NUnit.Framework.CategoryAttribute("VA")]
-        public virtual void VerifyForecastedMonthlyArrivalDataAndActualMonthlyArrivalDataInMonthlyArrivalsUnderPatientVolumeTab()
+        public virtual void _01VerifyForecastedMonthlyArrivalDataAndActualMonthlyArrivalDataCalculation()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("verify Forecasted Monthly Arrival Data and Actual Monthly Arrival Data in Monthly" +
-                    " Arrivals under patient volume tab", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 verify Forecasted Monthly Arrival Data and Actual Monthly Arrival Data calcula" +
+                    "tion", null, new string[] {
                         "VA"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);
@@ -93,6 +93,21 @@ this.ScenarioInitialize(scenarioInfo);
 #line 10
  testRunner.Then("now compare calcuated Forecasted Monthly Arrival Data and Actual Monthly Arrival " +
                     "Data with data in Monthly Arrivals under patient volume tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("02 verify Forecasted Daily Arrivals -BY Day Of Week calculation")]
+        public virtual void _02VerifyForecastedDailyArrivals_BYDayOfWeekCalculation()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 verify Forecasted Daily Arrivals -BY Day Of Week calculation", null, ((string[])(null)));
+#line 13
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 14
+  testRunner.Then("compare calcuated Forecasted Daily Arrivals -BY Day Of Week with data in weekly A" +
+                    "rrivals under patient volume tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

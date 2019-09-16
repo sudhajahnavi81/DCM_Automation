@@ -49,6 +49,9 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(10000);
             click(Page_Objects.Logout);
             click(Page_Objects.Signout);
+            Thread.Sleep(5000);
+            click(Page_Objects.Oktalogout);
+            click(Page_Objects.OktaSignout);
 
         }
 

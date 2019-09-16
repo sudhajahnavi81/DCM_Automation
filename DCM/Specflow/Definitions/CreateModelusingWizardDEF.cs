@@ -15,7 +15,7 @@ namespace DCM.Specflow.Definitions
            CreateModelusingWizard.WizardOpen();
         }
 
-        [Given(@"enter value stringo What is the Forecasted Annual Arrivals \(walkouts included\) of your Emergency Department\? question and hit hit enter")]
+        [Given(@"enter value into What is the Forecasted Annual Arrivals \(walkouts included\) of your Emergency Department\? question and hit hit enter")]
         public void GivenEnterValuestringoWhatIsTheForecastedAnnualArrivalsWalkoutsIncludedOfYourEmergencyDepartmentQuestionAndHitHitEnter(Table table)
         {
             dynamic FAAW = table.CreateDynamicInstance();

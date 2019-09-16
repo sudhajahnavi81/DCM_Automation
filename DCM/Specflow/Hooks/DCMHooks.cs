@@ -85,7 +85,7 @@ namespace DCM.Specflow.Hooks
             extent.AddSystemInfo("Host Name", "Sunil");
             extent.AddSystemInfo("Environment", "QA");
             extent.AddSystemInfo("User Name", "Sunil Desai");
-            htmlReporter.LoadConfig(@"C:\Users\nehal\source\repos\DCMAutomation\DCM\" + "extent-config.xml");
+            htmlReporter.LoadConfig(@"D:\DCMAutomation\DCM\" + "extent-config.xml");
         }
 
         [AfterTestRun]
@@ -136,11 +136,11 @@ namespace DCM.Specflow.Hooks
                     scenario.CreateNode<And>(ScenarioStepContext.Current.StepInfo.Text);
 
 
-                //var Pass = ScenarioContext.Current.ScenarioInfo;
-                //var passmessage = "<pre>" + Pass.Title + "</pre>";
+                var Pass = ScenarioContext.Current.ScenarioInfo;
+                var passmessage = "<pre>" + Pass.Title + "</pre>";
 
-                //extent.AddTestRunnerLogs(passmessage);
-                //scenario.Log(Status.Error, passmessage);
+                extent.AddTestRunnerLogs(passmessage);
+                scenario.Log(Status.Pass, passmessage);
 
 
             }
@@ -220,7 +220,7 @@ namespace DCM.Specflow.Hooks
             //Create dynamic scenario name
             scenario = featureName.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
         }
-        [Scope(Feature = "CreateModelwithWizard")]
+        [Scope(Feature = "logout DCM")]
     [AfterFeature]
         public static void Afterfeature()
         {

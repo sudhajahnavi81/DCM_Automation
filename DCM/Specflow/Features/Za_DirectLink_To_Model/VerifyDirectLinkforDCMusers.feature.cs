@@ -19,7 +19,6 @@ namespace DCM.Specflow.Features.Za_DirectLink_To_Model
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
     [NUnit.Framework.DescriptionAttribute("Verify DirectLink to model for DCM users")]
-    [NUnit.Framework.CategoryAttribute("chrome")]
     public partial class VerifyDirectLinkToModelForDCMUsersFeature
     {
         
@@ -32,8 +31,7 @@ namespace DCM.Specflow.Features.Za_DirectLink_To_Model
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Verify DirectLink to model for DCM users", "\t\tVerify with Full access and Viewer role", ProgrammingLanguage.CSharp, new string[] {
-                        "chrome"});
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Verify DirectLink to model for DCM users", "\t\tlogin user must have access of other\'s private model", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -72,191 +70,24 @@ namespace DCM.Specflow.Features.Za_DirectLink_To_Model
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("01 Verify direct link to edit input tab of other\'s private model")]
+        [NUnit.Framework.DescriptionAttribute("Verify direct link to edit input tab of other\'s private model")]
         [NUnit.Framework.CategoryAttribute("Task:46137")]
-        public virtual void _01VerifyDirectLinkToEditInputTabOfOthersPrivateModel()
+        public virtual void VerifyDirectLinkToEditInputTabOfOthersPrivateModel()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Verify direct link to edit input tab of other\'s private model", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify direct link to edit input tab of other\'s private model", null, new string[] {
                         "Task:46137"});
-#line 6
+#line 5
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 7
- testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
                         "link"});
-            table26.AddRow(new string[] {
+            table23.AddRow(new string[] {
                         "https://dcmqa.evhc.net/v2/input?modelId=4258"});
-#line 8
- testRunner.And("Click on below link and login to open edit input tab of other\'s private model", ((string)(null)), table26, "And ");
-#line 12
- testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("02 Verify direct link to View Analysis tab of other\'s private model")]
-        public virtual void _02VerifyDirectLinkToViewAnalysisTabOfOthersPrivateModel()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 Verify direct link to View Analysis tab of other\'s private model", null, ((string[])(null)));
-#line 14
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 15
- testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-            TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
-                        "link"});
-            table27.AddRow(new string[] {
-                        "https://dcmqa.evhc.net/v2/analysis?modelId=4295"});
-#line 16
- testRunner.And("Click on below link and login to open View Analysis tab of other\'s private model", ((string)(null)), table27, "And ");
-#line 20
- testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("03 Verify direct link to Sensitivity Analysis tab of other\'s private model")]
-        public virtual void _03VerifyDirectLinkToSensitivityAnalysisTabOfOthersPrivateModel()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03 Verify direct link to Sensitivity Analysis tab of other\'s private model", null, ((string[])(null)));
-#line 22
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 23
- testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-            TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
-                        "link"});
-            table28.AddRow(new string[] {
-                        "https://dcmqa.evhc.net/v2/sensitivityanalysis?modelId=4258"});
-#line 24
- testRunner.And("Click on below link and login to open Sensitivity Analysis tab of other\'s private" +
-                    " model", ((string)(null)), table28, "And ");
-#line 28
- testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("04 Verify direct link to Executive Summary tab of other\'s private model")]
-        public virtual void _04VerifyDirectLinkToExecutiveSummaryTabOfOthersPrivateModel()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04 Verify direct link to Executive Summary tab of other\'s private model", null, ((string[])(null)));
-#line 30
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 31
- testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-            TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
-                        "link"});
-            table29.AddRow(new string[] {
-                        "https://dcmqa.evhc.net/v2/executivesummary?modelId=4258"});
-#line 32
- testRunner.And("Click on below link and login to open Executive Summary tab of other\'s private mo" +
-                    "del", ((string)(null)), table29, "And ");
-#line 36
- testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("05 Verify direct link to edit input tab using Viewer role")]
-        [NUnit.Framework.CategoryAttribute("viewer_role")]
-        public virtual void _05VerifyDirectLinkToEditInputTabUsingViewerRole()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05 Verify direct link to edit input tab using Viewer role", null, new string[] {
-                        "viewer_role"});
-#line 42
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 43
- testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-            TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
-                        "link"});
-            table30.AddRow(new string[] {
-                        "https://dcmqa.evhc.net/v2/input?modelId=4258"});
-#line 44
- testRunner.And("Click on below link and login to open edit input tab using Viewer role", ((string)(null)), table30, "And ");
-#line 48
- testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("06 Verify direct link to View Analysis tab using Viewer role")]
-        public virtual void _06VerifyDirectLinkToViewAnalysisTabUsingViewerRole()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("06 Verify direct link to View Analysis tab using Viewer role", null, ((string[])(null)));
-#line 50
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 51
- testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-            TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
-                        "link"});
-            table31.AddRow(new string[] {
-                        "https://dcmqa.evhc.net/v2/analysis?modelId=4295"});
-#line 52
- testRunner.And("Click on below link and login to open View Analysis tab using Viewer role", ((string)(null)), table31, "And ");
-#line 56
- testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("07 Verify direct link to Sensitivity Analysis tab using Viewer role")]
-        public virtual void _07VerifyDirectLinkToSensitivityAnalysisTabUsingViewerRole()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("07 Verify direct link to Sensitivity Analysis tab using Viewer role", null, ((string[])(null)));
-#line 58
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 59
- testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-            TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
-                        "link"});
-            table32.AddRow(new string[] {
-                        "https://dcmqa.evhc.net/v2/sensitivityanalysis?modelId=4258"});
-#line 60
- testRunner.And("Click on below link and login to open Sensitivity Analysis tab using Viewer role", ((string)(null)), table32, "And ");
-#line 64
- testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("08 Verify direct link to Executive Summary tab using Viewer role")]
-        public virtual void _08VerifyDirectLinkToExecutiveSummaryTabUsingViewerRole()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("08 Verify direct link to Executive Summary tab using Viewer role", null, ((string[])(null)));
-#line 66
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 67
- testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-            TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
-                        "link"});
-            table33.AddRow(new string[] {
-                        "https://dcmqa.evhc.net/v2/executivesummary?modelId=4258"});
-#line 68
- testRunner.And("Click on below link and login to open Executive Summary tab using Viewer role", ((string)(null)), table33, "And ");
-#line 72
- testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 6
+ testRunner.Given("Click on below link and login to open edit input tab of other\'s private model", ((string)(null)), table23, "Given ");
+#line 10
+ testRunner.Then("Verify edit input tab for logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

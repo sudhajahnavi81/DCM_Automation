@@ -92,6 +92,46 @@ this.ScenarioInitialize(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("02 Update model name, model type and model category from Dashboard")]
+        public virtual void _02UpdateModelNameModelTypeAndModelCategoryFromDashboard()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 Update model name, model type and model category from Dashboard", null, ((string[])(null)));
+#line 12
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line hidden
+            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                        "UpdateMN"});
+            table3.AddRow(new string[] {
+                        "_Updated"});
+#line 13
+ testRunner.Given("Click on Edit mnodel details at any non operational model and update model name m" +
+                    "odel type and model category and click on save", ((string)(null)), table3, "Given ");
+#line 16
+ testRunner.Then("verify model details updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("03 Delete model")]
+        public virtual void _03DeleteModel()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03 Delete model", null, ((string[])(null)));
+#line 18
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 19
+ testRunner.Given("click on Delete model icon and click on yes at confirmation pop up and click ok y" +
+                    "es", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 20
+ testRunner.Then("verify success message displayed and verify model has been removed from the dashb" +
+                    "oard", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

@@ -80,12 +80,12 @@ namespace DCM.Specflow.Features.Za_DirectLink_To_Model
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line hidden
-            TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
                         "link"});
-            table21.AddRow(new string[] {
+            table23.AddRow(new string[] {
                         "https://dcmqa.evhc.net/v2/input?modelId=4258"});
 #line 6
- testRunner.Given("Click on below link and login to open edit input tab of other\'s private model", ((string)(null)), table21, "Given ");
+ testRunner.Given("Click on below link and login to open edit input tab of other\'s private model", ((string)(null)), table23, "Given ");
 #line 10
  testRunner.Then("Verify edit input tab for logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

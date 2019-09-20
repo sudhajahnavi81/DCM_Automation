@@ -35,8 +35,13 @@ namespace DCM.POM.DCM_Objects
         public static By DashboardGrid = By.XPath("//th[@class='mat-header-cell ng-tns-c12-20 cdk-column-ModelName mat-column-ModelName ng-star-inserted']");
         public static By DCMVersion = By.XPath("//div[@class='d-inline mr-2']//span");
         public static By firstmodelname = By.XPath("//div[contains(@class,'dashboard-sec-subbar  dashTitleBar move-tooltip-right white-space')]");
-
-
+        public static By OU = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/app-header[1]/div[1]/app-topbar[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]");
+        public static By State = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/app-header[1]/div[1]/app-topbar[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]");
+        public static By City = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/app-header[1]/div[1]/app-topbar[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[3]/div[1]/ng-select[1]/div[1]/div[1]/div[2]/input[1]");
+        public static By ouid = By.XPath("//span[contains(text(),'Southeast')]");
+        public static By stateid = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/app-header[1]/div[1]/app-topbar[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/ng-select[1]/ng-dropdown-panel[1]/div[1]/div[2]/div[1]");
+        public static By cityid = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/app-header[1]/div[1]/app-topbar[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[3]/div[1]/ng-select[1]/ng-dropdown-panel[1]/div[1]/div[2]/div[1]");
+        public static By selectedpractice = By.XPath("//input[@placeholder='Select Practice']");
         //Operational model history
 
         public static By OpModelHistory = By.XPath("//div[@class='model-history ml-2']");
@@ -62,6 +67,15 @@ namespace DCM.POM.DCM_Objects
         public static By uploadFloorPlanbtn = By.XPath("//button[@class='btn btn-upld ng-star-inserted']");
         public static By cancelnobtn = By.XPath("//button[@class='btn btn-danger']");
         public static By floorplanName = By.XPath("//ul[@class='floor-list']//li[1]//div[1]//div[1]//span[1]");
+
+
+        //Delete model
+        public static By lastmodelname = By.XPath("//table[@class='mat-elevation-z8 mat-table']/tbody/tr[10]/td[1]");
+        public static By Deletemodelicon = By.XPath("/html/body/app-root/div/div/div/app-dashboard/div/div[2]/app-dashboard-model-list/div/table/tbody/tr[10]/td[6]/span");
+        public static By deleteconfirmpopup_OK = By.XPath("//button[@class='btn btn-primary']");
+        public static By deletedmessage = By.XPath("//mat-dialog-content[@class='mat-dialog-content']");
+        public static By successpopup_OK = By.XPath("//button[@class='btn btn-primary']");
+
 
         //create Model
         public static By Appname = By.XPath("//div[@class='d-inline mr-2']");
@@ -311,6 +325,20 @@ namespace DCM.POM.DCM_Objects
         public static By dropdownmenu = By.XPath("//div[@class='ng-option ng-star-inserted']");
         public static By Todropdownmenu = By.XPath("//div[@id='a1c36111a55b']");
 
+        public static By importshiftbtn = By.XPath("//li[1]//button[1]//img[1]");
+        public static By ShiftImportPhyCheckbox = By.XPath("//label[@class='label-checkbx d-inline-block mb-1']//span[contains(text(),'Physician')]");
+        public static By ShiftImportAPPCheckbox = By.XPath("//label[@class='label-checkbx d-inline-block mb-1']//span[contains(text(),'APP')]");
+        public static By ShiftImportScribeCheckbox = By.XPath("//span[contains(text(),'Scribe')]");
+        public static By shiftDatePickerBtn = By.XPath("//button[@class='mat-icon-button'][@tabindex='0']");
+        //("//button[@class='mat-icon-button']");
+        public static By ShiftRetrieve = By.XPath("//button[@class='btn btn-primary btn-retrive']");
+        public static By arrivaldata_dropdown_Import = By.XPath("//li[contains(text(),'Import Data')]");
+        public static By arrivaldata_dropdown_datepicker = By.XPath("//*[@id='mat-dialog-1']/app-import-data/div/div[2]/div/div[1]/div/mat-form-field/div/div[1]/div[2]/mat-datepicker-toggle/button");
+
+        public static By Calendar_yeararrow = By.XPath("//div[@class='mat-calendar-arrow']");
+        public static By Calendar_dropdown_year = By.XPath("//mat-multi-year-view[@class='ng-star-inserted']//table//tbody//tr/td[3]/div[contains(text(),'2018')]");
+        public static By Calendar_dropdown_month = By.XPath("//div[contains(text(),'JAN')]");
+        public static By Calendar_dropdown_day = By.XPath("//div[contains(text(),'14')]");
 
         //clinician productivity
 
@@ -356,13 +384,18 @@ namespace DCM.POM.DCM_Objects
         public static By EditModelDetails = By.XPath("//tr[2]//td[6]//button[3]");
         public static By EMD_ModelName = By.XPath("//input[@placeholder='modelName']");
         public static By EMD_ModelType_Selected = By.XPath("//*[starts-with(@id,'mat-dialog-')]/app-edit-model-dialog/div/div[2]/div[2]/div/div/ng-select/div/div/div[2]/span[2]");
+        public static By EMD_Modeltype = By.XPath("/html[1]/body[1]/div[2]/div[2]/div[1]/mat-dialog-container[1]/app-edit-model-dialog[1]/div[1]/div[2]/div[2]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[3]/input[1]");
+        public static By EMD_Modeltype_private = By.XPath("//span[contains(text(),'Private')]");
+        public static By EMD_Modeltype_public = By.XPath("//span[contains(text(),'Public')]");
         public static By EMD_ModeCategory_Operational = By.XPath("//span[contains(text(),'Set Model as Current Operational/Deployed model')]");
         public static By EMD_ModelCategory_Edu = By.XPath("//span[contains(text(),'Set Model as Educational or Test model')]");
-
-
+        public static By EMD_Modeldetails_Save = By.XPath("/html[1]/body[1]/div[2]/div[2]/div[1]/mat-dialog-container[1]/app-edit-model-dialog[1]/div[1]/div[3]/div[1]/button[1]");
+        public static By Updatedmodelname = By.XPath("/html/body/app-root/div/div/div/app-dashboard/div/div[2]/app-dashboard-model-list/div/table/tbody/tr[2]/td[1]");
+        public static By Updatedmodeltype = By.XPath("/html/body/app-root/div/div/div/app-dashboard/div/div[2]/app-dashboard-model-list/div/table/tbody/tr[2]/td[5]");
+        
         //Save
 
-        public static By save = By.XPath("//i[@id='saveBtn']");
+        public static By save = By.XPath("//i[@id='saveBtn']"); 
         public static By savepopup = By.XPath("//mat-dialog-container[@id='mat-dialog-4']");
         public static By modelName = By.XPath("//input[@placeholder='Enter Model Name']");
         public static By modelSave = By.XPath("//button[@id='popupSaveBtn']");

@@ -55,7 +55,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">9/19/2019 8:25:45 PM</span>
+                    <span class="badge badge-primary">9/20/2019 2:32:36 PM</span>
                 </a>
             </li>
         </ul>
@@ -110,7 +110,7 @@
 											<i class="fa fa-exclamation-circle"></i>
 										</a>
 										<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-											<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																																																							<div class="dropdown-divider"></div>
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>																																																																		<div class="dropdown-divider"></div>
 											<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 										</ul>
 									</li>
@@ -118,25 +118,25 @@
                             </div>
                             <div class="test-list-wrapper scrollable">
                                 <ul class="test-list-item">
-										<li class="test-item" status="fail" author="" device="" tag=""> 
-											<div class="status-avatar fail-bg">
-												<i class="fa fa-times text-white"></i>
+										<li class="test-item" status="pass" author="" device="" tag=""> 
+											<div class="status-avatar pass-bg">
+												<i class="fa fa-check text-white"></i>
 											</div>
 											<div class="open-test">
 												<div class="test-detail"> 
 													<p class="name">Dashboard</p> 
-													<p class="duration text-sm">0h:2m:3s+839ms</p> 
-													<span class="datetime">20:25:45 PM</span>
+													<p class="duration text-sm">0h:1m:59s+502ms</p> 
+													<span class="datetime">14:32:36 PM</span>
 												</div>
 											</div>
 											<div class="test-contents d-none">
 												<div class="detail-head">
 													<div class="p-v-10 d-inline-block">	
 														<div class="info">
-															<h5 class="test-status text-fail">Dashboard</h5>
-															<span class='badge badge-success'>9/19/2019 8:25:45 PM</span>
-															<span class='badge badge-danger'>9/19/2019 8:27:49 PM</span>
-															<span class='badge badge-default'>0h:2m:3s+839ms</span>
+															<h5 class="test-status text-pass">Dashboard</h5>
+															<span class='badge badge-success'>9/20/2019 2:32:36 PM</span>
+															<span class='badge badge-danger'>9/20/2019 2:34:35 PM</span>
+															<span class='badge badge-default'>0h:1m:59s+502ms</span>
 														</div>
 																											</div>
 												</div>
@@ -145,21 +145,26 @@
 	<div class="card">
 		<div class="card-header" role="tab">
 			<h5 class="card-title pl-3">
-				<div class="node">03 Verify Floor Plan popup from Dashboard</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
+				<div class="node">01 Update model name, model type and model category from Dashboard</div>
+				<div class="status-avatar float-left pass-bg">
+					<i class="fa fa-check text-white"></i>
 				</div>
 			</h5>
 		</div>
 				<div class="collapse">
 					<div class="card-body">
 							<div class="d-flex align-items-center justify-content-start given" title="">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>click on Floor Plan link and verify View, delete and upload floor plan</span>
+								<span>Click on Edit mnodel details at any non operational model and update model name model type and model category and click on save</span>
 							</div>
-			<div class="details">Timed out after 60 seconds</div>
+							<div class="d-flex align-items-center justify-content-start then" title="">
+								<span class="alert-icon pass-bg">
+									<i class="fa fa-check text-white"></i>
+								</span>
+								<span>verify model details updated</span>
+							</div>
 					</div>
 				</div>
 	</div>

@@ -252,7 +252,7 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(15000);
             click(Page_Objects.dashboard);
             Thread.Sleep(10000);
-            click(Page_Objects.EditModelDetails);
+            click(Page_Objects.EditEDUModelDetails);
             
         }
 

@@ -404,12 +404,13 @@ namespace DCM.POM.DCM_Objects
 
         //Edit Model Details
 
-        public static By EditModelDetails = By.XPath("//tr[2]//td[6]//button[3]");
+        public static By EditEDUModelDetails = By.XPath("//td[@class='model-name mat-cell cdk-column-ModelName mat-column-ModelName ng-star-inserted']//sub[contains(text(),'(Educational)')][1]//following::td[5]//button[3]");
+        public static By EditModelDetails = By.XPath("//td[@class='model-name mat-cell cdk-column-ModelName mat-column-ModelName ng-star-inserted']//sub[contains(text(),'(Operational)')]//following::td[5]//button[3]");
         public static By EMD_ModelName = By.XPath("//input[@placeholder='modelName']");
         public static By EMD_ModelType_Selected = By.XPath("//*[starts-with(@id,'mat-dialog-')]/app-edit-model-dialog/div/div[2]/div[2]/div/div/ng-select/div/div/div[2]/span[2]");
         public static By EMD_Modeltype = By.XPath("/html[1]/body[1]/div[2]/div[2]/div[1]/mat-dialog-container[1]/app-edit-model-dialog[1]/div[1]/div[2]/div[2]/div[1]/div[1]/ng-select[1]/div[1]/div[1]/div[3]/input[1]");
-        public static By EMD_Modeltype_private = By.XPath("//span[contains(text(),'Private')]");
-        public static By EMD_Modeltype_public = By.XPath("//span[contains(text(),'Public')]");
+        public static By EMD_Modeltype_private = By.XPath("//span[@class='ng-option-label ng-star-inserted'][contains(text(),'Private')]");
+        public static By EMD_Modeltype_public = By.XPath("//span[@class='ng-option-label ng-star-inserted'][contains(text(),'Public')]");
         public static By EMD_ModeCategory_Operational = By.XPath("//span[contains(text(),'Set Model as Current Operational/Deployed model')]");
         public static By EMD_ModelCategory_Edu = By.XPath("//span[contains(text(),'Set Model as Educational or Test model')]");
         public static By EMD_Modeldetails_Save = By.XPath("/html[1]/body[1]/div[2]/div[2]/div[1]/mat-dialog-container[1]/app-edit-model-dialog[1]/div[1]/div[3]/div[1]/button[1]");

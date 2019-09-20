@@ -74,11 +74,11 @@ namespace DCM.Specflow.Features.B_Dashboard
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("01 Edit Model Details")]
+        [NUnit.Framework.DescriptionAttribute("02 Edit Model Details")]
         [NUnit.Framework.CategoryAttribute("test")]
-        public virtual void _01EditModelDetails()
+        public virtual void _02EditModelDetails()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Edit Model Details", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 Edit Model Details", null, new string[] {
                         "test"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);
@@ -94,10 +94,10 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("02 Update model name, model type and model category from Dashboard")]
-        public virtual void _02UpdateModelNameModelTypeAndModelCategoryFromDashboard()
+        [NUnit.Framework.DescriptionAttribute("01 Update model name, model type and model category from Dashboard")]
+        public virtual void _01UpdateModelNameModelTypeAndModelCategoryFromDashboard()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 Update model name, model type and model category from Dashboard", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Update model name, model type and model category from Dashboard", null, ((string[])(null)));
 #line 12
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();

@@ -85,7 +85,7 @@ namespace DCM.Specflow.Hooks
             extent.AddSystemInfo("Host Name", "Sunil");
             extent.AddSystemInfo("Environment", "QA");
             extent.AddSystemInfo("User Name", "Sunil Desai");
-            htmlReporter.LoadConfig(@"C:\Users\nehal\source\repos\DCMAutomation\DCM\" + "extent-config.xml");
+            htmlReporter.LoadConfig(@"D:\DCMAutomation\DCM\" + "extent-config.xml");
         }
 
         [AfterTestRun]

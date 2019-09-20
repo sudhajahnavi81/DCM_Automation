@@ -178,7 +178,21 @@ namespace DCM.Specflow.Definitions
         //    ScenarioContext.Current.Pending();
         //}
 
+        [When(@"Arrivals/ESL tab opens import data and enter values into fields and click on next button or click on Length of Stay")]
+        public void WhenArrivalsESLTabOpensImportDataAndEnterValuesIntoFieldsAndClickOnNextButtonOrClickOnLengthOfStay(Table table)
+        {
+            dynamic AEDetails = table.CreateDynamicInstance();
 
+            int FTESI3 = AEDetails.FT_ESI_3;
+            int PITESI3 = AEDetails.PIT_ESI_3;
+            CreateModel.ArrivalESI_import(FTESI3, PITESI3);
+        }
+
+        [When(@"Shifts tab opens import values into fields and click on next button or click on Clinician Productivity")]
+        public void WhenShiftsTabOpensImportValuesIntoFieldsAndClickOnNextButtonOrClickOnClinicianProductivity()
+        {
+            CreateModel.Shifts_Import();
+        }
 
 
 

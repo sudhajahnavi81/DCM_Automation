@@ -225,7 +225,7 @@ namespace DCM.Specflow.Hooks
         public static void Afterfeature()
         {
             DCM_Login.DCMlogout();
-            driver.Quit();
+            //driver.Quit();
             extent.Flush();
         }
     }

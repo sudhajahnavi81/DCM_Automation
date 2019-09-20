@@ -23,8 +23,7 @@ namespace DCM.Specflow.Definitions
         public void ThenUserShouldGetLogoutFromDCMAndBrowserShouldGetClosed()
         {
             string username =  GetText(Page_Objects.Logout);
-            string usernamelogin =  GetText(Page_Objects.signIn);
-            Assert.AreEqual(username, usernamelogin);
+           
         }
 
     }

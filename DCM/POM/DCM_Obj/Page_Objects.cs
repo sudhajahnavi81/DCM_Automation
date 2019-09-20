@@ -58,7 +58,7 @@ namespace DCM.POM.DCM_Objects
         //floor plan
         public static By FloorPlan = By.XPath("//div[@class='floorplan']");
         public static By viewFloorPlan = By.XPath("//span[@class='floor-view floor-btn']");
-        public static By deleteFloorPlan = By.XPath("//li[1]//div[1]//div[3]//span[1]//i[1]");
+        public static By deleteFloorPlan = By.XPath("//span[contains(text(),'Floorplan')]//following::div[2]/span[1]/i[1]");
         public static By uploadFloorPlanbtn = By.XPath("//button[@class='btn btn-upld ng-star-inserted']");
         public static By cancelnobtn = By.XPath("//button[@class='btn btn-danger']");
         public static By floorplanName = By.XPath("//ul[@class='floor-list']//li[1]//div[1]//div[1]//span[1]");
@@ -72,11 +72,11 @@ namespace DCM.POM.DCM_Objects
         //Practice Metrics
 
         public static By additem = By.XPath("//span[@class='add-items']");
-        public static By area2 = By.XPath("/html/body/app-root/div/div/app-input/div/div[2]/tabset/div/tab[1]/app-practice-metrics/div/div/div/div/div[1]/div[2]/div/div/input");
-        public static By area3 = By.XPath("/html/body/app-root/div/div/app-input/div/div[2]/tabset/div/tab[1]/app-practice-metrics/div/div/div/div/div[1]/div[3]/div/div/input");
-        public static By F_Annual_arrivals = By.XPath("/html/body/app-root/div/div/app-input/div/div[2]/tabset/div/tab[1]/app-practice-metrics/div/div/div/div/div[2]/div[1]/div/div/div/input");
-        public static By LWBS = By.XPath("//div[@class='col-sm-5 offset-sm-1']//div[2]//div[1]//div[1]//div[1]//input[1]");
-        public static By F_Annual_Voulme = By.XPath("/html/body/app-root/div/div/app-input/div/div[2]/tabset/div/tab[1]/app-practice-metrics/div/div/div/div/div[2]/div[3]/div/div/div/input");
+        public static By area2 = By.XPath("//label[contains(text(),'Area 2')]//following::div/input");
+        public static By area3 = By.XPath("//label[contains(text(),'Area 3')]//following::div/input");
+        public static By F_Annual_arrivals = By.XPath("//label[contains(text(),'Forecasted Annual Arrivals (walkouts included)')]//following::div/div/input");
+        public static By LWBS = By.XPath("//label[contains(text(),'Current LWBS rate (walkouts)')]//following::div/div/input");
+        public static By F_Annual_Voulme = By.XPath("//label[@class='d-block'][contains(text(),'Forecasted Annual Volume')]//following::div/div/input");
         public static By admitPercentage = By.XPath("//tab[@class='active tab-pane']//div[4]//div[1]//div[1]//div[1]//input[1]");
 
 
@@ -84,6 +84,15 @@ namespace DCM.POM.DCM_Objects
 
         public static By arrivaldata_dropdown = By.XPath("//*[@id=\"arrivals-data\"]/div/div[1]/div/div/div[1]");
         public static By arrivaldata_dropdown_value = By.XPath("//*[@id=\"arrivals-data\"]/div/div[1]/div/div/div[2]/ul/li[2]");
+        public static By arrivaldata_dropdown_Import = By.XPath("//li[contains(text(),'Import Data')]");
+        public static By arrivaldata_dropdown_datepicker = By.XPath("//*[@id='mat-dialog-1']/app-import-data/div/div[2]/div/div[1]/div/mat-form-field/div/div[1]/div[2]/mat-datepicker-toggle/button");
+
+        public static By Calendar_yeararrow = By.XPath("//div[@class='mat-calendar-arrow']");
+        public static By Calendar_dropdown_year = By.XPath("//mat-multi-year-view[@class='ng-star-inserted']//table//tbody//tr/td[3]/div[contains(text(),'2018')]");
+        public static By Calendar_dropdown_month = By.XPath("//div[contains(text(),'JAN')]");
+        public static By Calendar_dropdown_day = By.XPath("//div[contains(text(),'14')]");
+
+        public static By import_ok = By.XPath("//*[@id='mat-dialog-2']/alert-message/div/div[3]/div/mat-dialog-actions/button");
         public static By segmentation_by_ESI_dropdown = By.XPath("//*[@id=\"segmentation-data\"]/div[1]/div/div/div");
         public static By segmentation_by_ESI_value = By.XPath("//*[@id=\"segmentation-data\"]/div[1]/div/div/div[2]/ul/li[1]");
         public static By ESI3_FT = By.XPath("//*[@id=\"segmentation-data\"]/div[2]/table[2]/tbody/tr[2]/td[4]/div/div/input");
@@ -92,10 +101,12 @@ namespace DCM.POM.DCM_Objects
         public static By AE_Actual_Annual_Volume = By.XPath("//*[@id='arrivals-data']/app-actual-monthly-arrival/div[1]/div/div[2]/div/div");
         public static By AE_Forcasted_Annual_Volume = By.XPath("//*[@id='arrivals-data']/app-actual-monthly-arrival/div[2]/app-forecasted-monthly-arrival/div/div/div[2]/div/div");
         public static By JAN_forcasted_monthlyArriavl = By.XPath("//app-forecasted-monthly-arrival//div[@class='row']//div[1]//div[1]//a[contains(text(),'JAN')]/following::input[1]");
-       
-        
-        
-        
+        public static By Area1_24hr = By.XPath("//tr[2]//td[7]//div[1]//div[3]//label[1]//span[1]");
+        public static By Area2_24hr = By.XPath("//tr[3]//td[7]//div[1]//div[3]//label[1]//span[1]");
+
+
+
+
         //Actual Hourly Arrivals By Day Of Week 
 
         public static By sunday_0 = By.XPath("//div[@class='weekly-timeline']//div[1]//div[2]//app-input-child[1]//div[1]//div[1]//div[1]//input[1]");
@@ -291,10 +302,10 @@ namespace DCM.POM.DCM_Objects
 
         public static By lengthofstay_tab = By.XPath("/html/body/app-root/div/div/app-input/div/div[2]/tabset/ul/li[3]/a/span");
         public static By Admit_LOS = By.XPath("//div[@class='col-sm-5']//div[1]//div[1]//div[1]//div[1]//input[1]");
-        public static By Admit_Decision = By.XPath("/html/body/app-root/div/div/app-input/div/div[2]/tabset/div/tab[3]/app-lengthofstay/div/div/div/div/div[1]/div[2]/div/div/div/input");
-        public static By Discharge_Los = By.XPath("/html/body/app-root/div/div/app-input/div/div[2]/tabset/div/tab[3]/app-lengthofstay/div/div/div/div/div[2]/div[1]/div/div/div/input");
-        public static By FT_Discharge_Los = By.XPath("/html/body/app-root/div/div/app-input/div/div[2]/tabset/div/tab[3]/app-lengthofstay/div/div/div/div/div[2]/div[2]/div/div/div/input");
-        public static By PIT_Discharge_Los = By.XPath("/html/body/app-root/div/div/app-input/div/div[2]/tabset/div/tab[3]/app-lengthofstay/div/div/div/div/div[2]/div[3]/div/div/div/input");
+        public static By Admit_Decision = By.XPath("//div[@class='col-sm-5']//div[2]//div[1]//div[1]//div[1]//input[1]");
+        public static By Discharge_Los = By.XPath("//label[contains(text(),'Main Discharge LOS')]//following::div/div/input");
+        public static By FT_Discharge_Los = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/div[1]/app-input[1]/div[1]/div[2]/tabset[1]/div[1]/tab[3]/app-lengthofstay[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/input[1]");
+        public static By PIT_Discharge_Los = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/div[1]/app-input[1]/div[1]/div[2]/tabset[1]/div[1]/tab[3]/app-lengthofstay[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/div[1]/input[1]");
 
         //Shifts 
 
@@ -310,6 +321,16 @@ namespace DCM.POM.DCM_Objects
         public static By saveShiftPopup = By.XPath("//*[starts-with(@id,'mat-dialog-')]/app-add-edit-shift/div/div[3]/div/button[1]");
         public static By dropdownmenu = By.XPath("//div[@class='ng-option ng-star-inserted']");
         public static By Todropdownmenu = By.XPath("//div[@id='a1c36111a55b']");
+        public static By importshiftbtn = By.XPath("//li[1]//button[1]//img[1]");
+        public static By ShiftImportPhyCheckbox = By.XPath("//label[@class='label-checkbx d-inline-block mb-1']//span[contains(text(),'Physician')]");
+        public static By ShiftImportAPPCheckbox = By.XPath("//label[@class='label-checkbx d-inline-block mb-1']//span[contains(text(),'APP')]");
+        public static By ShiftImportScribeCheckbox = By.XPath("//span[contains(text(),'Scribe')]");
+        public static By shiftDatePickerBtn = By.XPath("//div[contains(@class,'col-sm-6')]//div//span[contains(@class,'mat-button-wrapper')]");
+            //("//button[@class='mat-icon-button'][@tabindex='0']");
+            //("//button[@class='mat-icon-button']");
+        public static By ShiftRetrieve = By.XPath("//button[@class='btn btn-primary btn-retrive']");
+        
+
 
 
         //clinician productivity
@@ -319,7 +340,8 @@ namespace DCM.POM.DCM_Objects
         public static By main_app_pph = By.XPath("//input[@id='appCoefficientValue-1']");
 
         //ft
-        public static By FtTab = By.XPath("//div[@class ='mat-tab-label mat-ripple ng-star-inserted'][@id='mat-tab-label-1-1']");
+        public static By FtTab = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/div[1]/app-input[1]/div[1]/div[2]/tabset[1]/div[1]/tab[5]/app-clinicianproductivity[1]/div[1]/div[1]/div[1]/div[1]/mat-tab-group[1]/mat-tab-header[1]/div[2]/div[1]/div[1]/div[2]/div[1]");
+            //("//div[@class ='mat-tab-label mat-ripple ng-star-inserted'][contains(@id,'mat-tab-content-1']");
         public static By FT_Phy_pph = By.XPath("//input[@id='targetedPphValue0']");
         public static By FT_App_PPH = By.XPath("//input[@id='appCoefficientValue0']");
         public static By FT_segment_Tab = By.XPath("//*[@id=\"mat-tab-label-2-1\"]");
@@ -328,7 +350,8 @@ namespace DCM.POM.DCM_Objects
 
         // PIT
 
-        public static By PitTab = By.XPath("//div[@class ='mat-tab-label mat-ripple ng-star-inserted'][@id='mat-tab-label-1-2']");
+        public static By PitTab = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/div[1]/app-input[1]/div[1]/div[2]/tabset[1]/div[1]/tab[5]/app-clinicianproductivity[1]/div[1]/div[1]/div[1]/div[1]/mat-tab-group[1]/mat-tab-header[1]/div[2]/div[1]/div[1]/div[3]/div[1]");
+            //("//div[@class ='mat-tab-label mat-ripple ng-star-inserted'][contains(@id,'mat-tab-label-content-2')]");
 	    public static By PIT_Phy_pph = By.XPath("//input[@id='targetedPphValue1']");
         public static By PIT_App_PPH = By.XPath("//input[@id='appCoefficientValue1']");
         public static By PIT_segment_Tab = By.XPath("//div[@id='mat-tab-label-2-2']");
@@ -367,6 +390,8 @@ namespace DCM.POM.DCM_Objects
         public static By modelName = By.XPath("//input[@placeholder='Enter Model Name']");
         public static By modelSave = By.XPath("//button[@id='popupSaveBtn']");
         public static By Yesbtn = By.XPath("//button[contains(text(),'Yes')]");
+        public static By OK = By.XPath("//button[contains(text(),'OK')]");
+        public static By Ok_Req = By.XPath("//button[@class='btn btn-primary ng-star-inserted']");
 
 
 

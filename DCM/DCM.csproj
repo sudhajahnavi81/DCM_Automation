@@ -305,7 +305,6 @@
     <Compile Include="Specflow\Definitions\CreateModelusingWizardDEF.cs" />
     <Compile Include="Specflow\Definitions\DirectLINKforDCMUsers.cs" />
     <Compile Include="Specflow\Definitions\LogoutDef.cs" />
-    <Compile Include="Specflow\Definitions\ViewAnalysisDef.cs" />
     <Compile Include="Specflow\Features\A_DCM_Header\Headers.feature.cs" />
     <Compile Include="Specflow\Features\B_Dashboard\DCM.feature.cs" />
     <Compile Include="Specflow\Features\Create_Model\createmodel.feature.cs" />
@@ -321,7 +320,6 @@
     <None Include="data\data.xlsx" />
     <None Include="packages.config" />
     <None Include="Specflow\Features\B_Dashboard\DCM.feature" />
-    <None Include="Specflow\Features\ViewAnalysis\ViewAnalysis.feature" />
     <None Include="Specflow\Features\Wizard\CreateModelwithWizard.feature.feature" />
     <None Include="Specflow\Features\Za_DirectLink_To_Model\VerifyDirectLinkforDCMusers.feature" />
     <None Include="Specflow\Features\Z_Logout\Logout.feature" />

@@ -74,11 +74,11 @@ namespace DCM.Specflow.Features.Create_Model
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("01 Create model")]
+        [NUnit.Framework.DescriptionAttribute("02 Create model with Data Benchmarking")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void _01CreateModel()
+        public virtual void _02CreateModelWithDataBenchmarking()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Create model", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 Create model with Data Benchmarking", null, new string[] {
                         "mytag"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);
@@ -155,7 +155,7 @@ this.ScenarioInitialize(scenarioInfo);
             table6.AddRow(new string[] {
                         "1.5",
                         "1",
-                        "1",
+                        "2",
                         "1",
                         "1",
                         "1",
@@ -181,6 +181,110 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("Clinician Cost tab opens enter vlaues into fields and click on next button or cli" +
                     "ck on Save Button", ((string)(null)), table7, "When ");
 #line 32
+ testRunner.Then("Model should be saved with values enter into save model popup.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("01 Create model with import")]
+        public virtual void _01CreateModelWithImport()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Create model with import", null, ((string[])(null)));
+#line 35
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 36
+ testRunner.Given("click on create model tab from dashboard and click on Create Model using Free For" +
+                    "m from popup", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Area2",
+                        "Area3",
+                        "Forecasted_Annual_Arrivals",
+                        "Current_LWBS_rate",
+                        "Admit_Percentage"});
+            table8.AddRow(new string[] {
+                        "FT",
+                        "PIT",
+                        "80000",
+                        "3",
+                        "12"});
+#line 37
+ testRunner.And("enter values into Practice Metrics fields and click on next button or click on Ar" +
+                    "rivals/ESL", ((string)(null)), table8, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                        "FT_ESI_3",
+                        "PIT_ESI_3"});
+            table9.AddRow(new string[] {
+                        "20",
+                        "5"});
+#line 41
+ testRunner.When("Arrivals/ESL tab opens import data and enter values into fields and click on next" +
+                    " button or click on Length of Stay", ((string)(null)), table9, "When ");
+#line hidden
+            TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Overall_Admit_LOS",
+                        "Overall_Arrival_To_Admit_Decision",
+                        "Main_Discharge_LOS",
+                        "FT_Discharge_LOS",
+                        "PIT_Discharge_LOS"});
+            table10.AddRow(new string[] {
+                        "120",
+                        "60",
+                        "90",
+                        "30",
+                        "30"});
+#line 45
+ testRunner.And("Length of Stay tab opens enter values into fields and click on next button or cli" +
+                    "ck on Shifts", ((string)(null)), table10, "And ");
+#line 49
+ testRunner.When("Shifts tab opens import values into fields and click on next button or click on C" +
+                    "linician Productivity", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
+                        "main_phy_pph",
+                        "main_app_pph",
+                        "main_PhyFirstHour",
+                        "main_appFirstHour",
+                        "FT_Phy_pph",
+                        "FT_App_PPH",
+                        "FT_PhyfirstHour",
+                        "FT_AppfirstHour",
+                        "PIT_Phy_pph",
+                        "PIT_App_PPH",
+                        "PIT_PhyfirstHour",
+                        "PIT_AppFirstHour"});
+            table11.AddRow(new string[] {
+                        "1.5",
+                        "1",
+                        "2",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1"});
+#line 52
+ testRunner.And("Clinician Productivity tab opens enter values into fields and click on next butto" +
+                    "n or click on Clinician Cost", ((string)(null)), table11, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Average_Cost_per_Physician_Hour",
+                        "Average_Cost_per_APP_Hour",
+                        "Average_Cost_per_Scribe_Hour"});
+            table12.AddRow(new string[] {
+                        "20",
+                        "60",
+                        "20"});
+#line 55
+ testRunner.When("Clinician Cost tab opens enter vlaues into fields and click on next button or cli" +
+                    "ck on Save Button", ((string)(null)), table12, "When ");
+#line 59
  testRunner.Then("Model should be saved with values enter into save model popup.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

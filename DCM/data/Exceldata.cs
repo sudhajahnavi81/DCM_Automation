@@ -27,7 +27,9 @@ namespace DCM.data
         public static string psw = "Sheridan@4";
         public static string otpKeyStr = "UBEBMMWQ7P5STVNV";
 
-
+        public static string Viewerrole = "sunil.desai@shcr.com";
+        public static string Viewrolepsw = "Sheridan@4";
+        public static string otpKeyStrview = "UBEBMMWQ7P5STVNV";
 
     }
 

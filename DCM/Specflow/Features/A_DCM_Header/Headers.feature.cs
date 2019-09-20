@@ -74,11 +74,11 @@ namespace DCM.Specflow.Features.A_DCM_Header
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("01 login stringo DCM. search and select practice from dashboard")]
+        [NUnit.Framework.DescriptionAttribute("01 login into DCM. search and select practice from dashboard")]
         [NUnit.Framework.CategoryAttribute("test")]
-        public virtual void _01LoginStringoDCM_SearchAndSelectPracticeFromDashboard()
+        public virtual void _01LoginIntoDCM_SearchAndSelectPracticeFromDashboard()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 login stringo DCM. search and select practice from dashboard", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 login into DCM. search and select practice from dashboard", null, new string[] {
                         "test"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);
@@ -87,11 +87,10 @@ this.ScenarioInitialize(scenarioInfo);
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "name"});
             table1.AddRow(new string[] {
-                        "Bay Medical Center-EM 3150"});
+                        "Bay Medical Center - EM 3150"});
 #line 8
- testRunner.Given("Enter practice name stringo search practice textbox and select searched practice." +
-                    "", ((string)(null)), table1, "Given ");
-#line 11
+ testRunner.Given("Enter practice name into search practice textbox and select searched practice.", ((string)(null)), table1, "Given ");
+#line 12
  testRunner.Then("models should show from selected practice", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -102,12 +101,12 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void _02VerifyOperationalModelHistory()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 verify Operational Model History", null, ((string[])(null)));
-#line 14
+#line 15
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 15
- testRunner.Given("click on operational model history", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 16
+ testRunner.Given("click on operational model history", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 17
  testRunner.Then("verify current operational model name and previous operational model names", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -118,12 +117,12 @@ this.ScenarioInitialize(scenarioInfo);
         public virtual void _03VerifyFloorPlanPopupFromDashboard()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03 Verify Floor Plan popup from Dashboard", null, ((string[])(null)));
-#line 19
+#line 20
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 20
- testRunner.Given("click on Floor Plan link and verify View, delete and upload floor plan", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 21
+ testRunner.Given("click on Floor Plan link and verify View, delete and upload floor plan", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 22
  testRunner.Then("verify uploaded image", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

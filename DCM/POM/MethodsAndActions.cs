@@ -11,6 +11,9 @@ using OpenQA.Selenium.Remote;
 using DCM.Specflow.Hooks;
 using OpenQA.Selenium.Interactions;
 using AutoIt;
+using OpenQA.Selenium.Chrome;
+using TechTalk.SpecFlow;
+using OpenQA.Selenium.IE;
 
 namespace DCM.POM
 {
@@ -85,7 +88,7 @@ namespace DCM.POM
             {
 
 
-                WebDriverWait wait = new WebDriverWait(Initialize.driver, TimeSpan.FromMinutes(3));
+                WebDriverWait wait = new WebDriverWait(Initialize.driver, TimeSpan.FromMinutes(1));
                 //IWebElement myDynamicElement = wait.Until<IWebElement>(d => d.FindElement(element));
                 wait.Until(ExpectedConditions.ElementToBeClickable(element));
                 return Initialize.driver.FindElement(element);
@@ -270,9 +273,26 @@ namespace DCM.POM
 
         public static void directlink(string url)
         {
+            if (Initialize.driver == null)
+            {
+
+
+                if (FeatureContext.Current.FeatureInfo.Tags.Contains("chrome"))
+                {
+                    Initialize.driver = new ChromeDriver();
+
+                }
+                else if (FeatureContext.Current.FeatureInfo.Tags.Contains("IE"))
+                {
+                    Initialize.driver = new InternetExplorerDriver();
+
+                }
+
+            }
+
+
             Initialize.driver.Navigate().GoToUrl(url);
             Initialize.driver.Manage().Window.Maximize();
-            
         }
 
         public static string Geturl()
@@ -280,7 +300,11 @@ namespace DCM.POM
             String URL = Initialize.driver.Url;
             return URL;          
         }
-
+        public static void closeBrowser()
+        {
+            Initialize.driver.Quit();
+            Initialize.driver.Dispose();
+        }
 
     }
 }

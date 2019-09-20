@@ -13,6 +13,7 @@ namespace DCM.POM.Page_Steps
     {
         public static void verifyCreateModel()
         {
+            WaitForElement(Page_Objects.Appname);
             click(Page_Objects.Appname);
             Thread.Sleep(10000);
             JSExe(Page_Objects.createModelTab);
@@ -22,6 +23,7 @@ namespace DCM.POM.Page_Steps
 
         public static void patcticeMetrics(string area2, string area3, int F_Annual_arrivals, int LWBS, int admitPercentage)
         {
+           
             WaitForElement(Page_Objects.additem);
            
             for (int i = 0; i < 2; i++)
@@ -64,13 +66,55 @@ namespace DCM.POM.Page_Steps
               
                     clear(Page_Objects.ESI3_PIT);
                     Type(PITESI3.ToString(), Page_Objects.ESI3_PIT);
-              
-
+            WaitForElement(Page_Objects.Area1_24hr);
+            click(Page_Objects.Area1_24hr);
+            click(Page_Objects.Area2_24hr);
 
             JSExe(Page_Objects.ESI_next);
 
         }
-       
+
+        public static void ArrivalESI_import(int FTESI3, int PITESI3)
+        {
+            click(Page_Objects.arrivaldata_dropdown);
+            click(Page_Objects.arrivaldata_dropdown_Import);
+            WaitForElement(Page_Objects.arrivaldata_dropdown_datepicker);
+
+            click(Page_Objects.arrivaldata_dropdown_datepicker);
+
+            click(Page_Objects.Calendar_yeararrow);
+            WaitForElement(Page_Objects.Calendar_dropdown_year);
+
+            click(Page_Objects.Calendar_dropdown_year);
+            WaitForElement(Page_Objects.Calendar_dropdown_month);
+            click(Page_Objects.Calendar_dropdown_month);
+            WaitForElement(Page_Objects.Calendar_dropdown_day);
+            click(Page_Objects.Calendar_dropdown_day);
+            click(Page_Objects.OKbtn);
+            Thread.Sleep(5000);
+            click(Page_Objects.import_ok);
+            Thread.Sleep(5000);
+            click(Page_Objects.segmentation_by_ESI_dropdown);
+            click(Page_Objects.segmentation_by_ESI_value);
+
+
+            clear(Page_Objects.ESI3_FT);
+            Type(FTESI3.ToString(), Page_Objects.ESI3_FT);
+
+            clear(Page_Objects.ESI3_PIT);
+            Type(PITESI3.ToString(), Page_Objects.ESI3_PIT);
+
+            WaitForElement(Page_Objects.Area1_24hr);
+            click(Page_Objects.Area1_24hr);
+            click(Page_Objects.Area2_24hr);
+
+            JSExe(Page_Objects.ESI_next);
+
+        }
+
+
+
+
         public static void LengthDfStay(int OAL, int OAAD,int MDL,int FDL,int PDL)
         {
             WaitForElement(Page_Objects.Admit_LOS);
@@ -104,6 +148,40 @@ namespace DCM.POM.Page_Steps
 
             JSExe(Page_Objects.shifts_next);
         }
+
+        public static void Shifts_Import()
+        {
+            WaitForElement(Page_Objects.importshiftbtn);
+            click(Page_Objects.importshiftbtn);
+            Thread.Sleep(10000);
+            //WaitForElement(Page_Objects.Shiftpopup);
+            //click(Page_Objects.Shiftpopup);
+
+            click(Page_Objects.ShiftImportAPPCheckbox);
+            click(Page_Objects.ShiftImportPhyCheckbox);
+            click(Page_Objects.ShiftImportScribeCheckbox);
+            JSExe(Page_Objects.shiftDatePickerBtn);
+            Thread.Sleep(2000);
+            click(Page_Objects.Calendar_yeararrow);
+            Thread.Sleep(1000);
+            click(Page_Objects.Calendar_dropdown_year);
+            Thread.Sleep(1000);
+            click(Page_Objects.Calendar_dropdown_month);
+            Thread.Sleep(1000);
+            click(Page_Objects.Calendar_dropdown_day);
+            Thread.Sleep(2000);
+            click(Page_Objects.ShiftRetrieve);
+            Thread.Sleep(2000);
+            JSExe(Page_Objects.OKbtn);
+
+
+            JSExe(Page_Objects.shifts_next);
+        }
+
+
+
+
+
 
         public static void ClinicianProductivity(Double MPP, Double MAP, Double MPF, Double MAF, Double FPP, Double FAP, Double FPF, Double FAF, Double PPP, Double PAP, Double PPF, Double PAF)
         {
@@ -144,15 +222,28 @@ namespace DCM.POM.Page_Steps
 
         public static void SaveModel()
         {
-
             click(Page_Objects.save);
+            try
+            {
+                WaitForElement(Page_Objects.Ok_Req);
+                click(Page_Objects.Ok_Req);
+            }
+            catch
+            {
+
+            }
+            WaitForElement(Page_Objects.modelName);
             //click(savepopup);
             DateTime now = DateTime.Now;
             String modelName = "Automation_" + now.ToString("MM/dd/yyyy hh:mm tt");
             Type(modelName.ToString(), Page_Objects.modelName);
             click(Page_Objects.modelSave);
-            Thread.Sleep(20000);
+            Thread.Sleep(40000);
             click(Page_Objects.OKbtn);
+           
+            
+            
+            Thread.Sleep(5000);
         }
 
 

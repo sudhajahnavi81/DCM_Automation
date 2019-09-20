@@ -23,10 +23,10 @@ namespace DCM.POM.Page_Steps
             Type(practice, Page_Objects.practicepopup_txtbox);
             WaitForElement(Page_Objects.practicepopup_linktext);
             JSExe(Page_Objects.practicepopup_linktext);
-            WaitForElement(Page_Objects.viewgraphs);
-            Thread.Sleep(10000);
+            //WaitForElement(Page_Objects.viewgraphs);
+            Thread.Sleep(20000);
             Console.WriteLine("tooltip" + Graphtooltip(Page_Objects.D_hr_graphbarone, Page_Objects.D_hr_graphbarone));
-            Thread.Sleep(10000);
+            Thread.Sleep(20000);
 
         }
 

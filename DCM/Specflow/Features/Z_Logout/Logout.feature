@@ -1,4 +1,5 @@
-﻿Feature: logout DCM
+﻿@chrome
+Feature: logout DCM
 	
 
 @mytag

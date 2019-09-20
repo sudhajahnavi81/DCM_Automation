@@ -346,20 +346,20 @@ namespace DCM.POM.DCM_Objects
         
 
 
-        public static By importshiftbtn = By.XPath("//li[1]//button[1]//img[1]");
-        public static By ShiftImportPhyCheckbox = By.XPath("//label[@class='label-checkbx d-inline-block mb-1']//span[contains(text(),'Physician')]");
-        public static By ShiftImportAPPCheckbox = By.XPath("//label[@class='label-checkbx d-inline-block mb-1']//span[contains(text(),'APP')]");
-        public static By ShiftImportScribeCheckbox = By.XPath("//span[contains(text(),'Scribe')]");
-        public static By shiftDatePickerBtn = By.XPath("//button[@class='mat-icon-button'][@tabindex='0']");
-        //("//button[@class='mat-icon-button']");
-        public static By ShiftRetrieve = By.XPath("//button[@class='btn btn-primary btn-retrive']");
-        public static By arrivaldata_dropdown_Import = By.XPath("//li[contains(text(),'Import Data')]");
-        public static By arrivaldata_dropdown_datepicker = By.XPath("//*[@id='mat-dialog-1']/app-import-data/div/div[2]/div/div[1]/div/mat-form-field/div/div[1]/div[2]/mat-datepicker-toggle/button");
+        //public static By importshiftbtn = By.XPath("//li[1]//button[1]//img[1]");
+        //public static By ShiftImportPhyCheckbox = By.XPath("//label[@class='label-checkbx d-inline-block mb-1']//span[contains(text(),'Physician')]");
+        //public static By ShiftImportAPPCheckbox = By.XPath("//label[@class='label-checkbx d-inline-block mb-1']//span[contains(text(),'APP')]");
+        //public static By ShiftImportScribeCheckbox = By.XPath("//span[contains(text(),'Scribe')]");
+        //public static By shiftDatePickerBtn = By.XPath("//button[@class='mat-icon-button'][@tabindex='0']");
+        ////("//button[@class='mat-icon-button']");
+        //public static By ShiftRetrieve = By.XPath("//button[@class='btn btn-primary btn-retrive']");
+        //public static By arrivaldata_dropdown_Import = By.XPath("//li[contains(text(),'Import Data')]");
+        //public static By arrivaldata_dropdown_datepicker = By.XPath("//*[@id='mat-dialog-1']/app-import-data/div/div[2]/div/div[1]/div/mat-form-field/div/div[1]/div[2]/mat-datepicker-toggle/button");
 
-        public static By Calendar_yeararrow = By.XPath("//div[@class='mat-calendar-arrow']");
-        public static By Calendar_dropdown_year = By.XPath("//mat-multi-year-view[@class='ng-star-inserted']//table//tbody//tr/td[3]/div[contains(text(),'2018')]");
-        public static By Calendar_dropdown_month = By.XPath("//div[contains(text(),'JAN')]");
-        public static By Calendar_dropdown_day = By.XPath("//div[contains(text(),'14')]");
+        //public static By Calendar_yeararrow = By.XPath("//div[@class='mat-calendar-arrow']");
+        //public static By Calendar_dropdown_year = By.XPath("//mat-multi-year-view[@class='ng-star-inserted']//table//tbody//tr/td[3]/div[contains(text(),'2018')]");
+        //public static By Calendar_dropdown_month = By.XPath("//div[contains(text(),'JAN')]");
+        //public static By Calendar_dropdown_day = By.XPath("//div[contains(text(),'14')]");
 
         //clinician productivity
 

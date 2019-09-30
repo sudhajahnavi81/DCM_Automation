@@ -260,6 +260,13 @@ namespace DCM.POM
         }
 
 
+        public static void JSScroll()
+        {
+            IJavaScriptExecutor js = (IJavaScriptExecutor)Initialize.driver;
+            js.ExecuteScript("window.scrollBy(0,1000)");
+
+        }
+
         public static string Graphtooltip(By element, By element1)
         {
             var bar = Initialize.driver.FindElement(element);

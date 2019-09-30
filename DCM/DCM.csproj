@@ -298,12 +298,14 @@
     <Compile Include="POM\Page_Steps\DCMDashboard.cs" />
     <Compile Include="POM\Page_Steps\DCM_Login.cs" />
     <Compile Include="POM\Page_Steps\Directlink.cs" />
+    <Compile Include="POM\Page_Steps\ImportModel.cs" />
     <Compile Include="POM\Page_Steps\ViewAnalysis.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Specflow\Definitions\CreateModelDef.cs" />
     <Compile Include="Specflow\Definitions\CreateModelusingWizardDEF.cs" />
     <Compile Include="Specflow\Definitions\DirectLINKforDCMUsers.cs" />
+    <Compile Include="Specflow\Definitions\ImportModelDef.cs" />
     <Compile Include="Specflow\Definitions\LogoutDef.cs" />
     <Compile Include="Specflow\Features\A_DCM_Header\Headers.feature.cs" />
     <Compile Include="Specflow\Features\B_Dashboard\DCM.feature.cs" />
@@ -320,6 +322,7 @@
     <None Include="data\data.xlsx" />
     <None Include="packages.config" />
     <None Include="Specflow\Features\B_Dashboard\DCM.feature" />
+    <None Include="Specflow\Features\Import Model\ImportModel.feature" />
     <None Include="Specflow\Features\Wizard\CreateModelwithWizard.feature.feature" />
     <None Include="Specflow\Features\Za_DirectLink_To_Model\VerifyDirectLinkforDCMusers.feature" />
     <None Include="Specflow\Features\Z_Logout\Logout.feature" />

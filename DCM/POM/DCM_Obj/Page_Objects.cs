@@ -82,6 +82,12 @@ namespace DCM.POM.DCM_Objects
         public static By createModelTab = By.XPath("//a[contains(text(),'Create Model')]");
         public static By createModelFreeForm = By.XPath("//a[contains(text(),'Create Model using Free Form')]");
         public static By createModelPopUp = By.XPath("//*[@id='mat-dialog-1']");
+        public static By importModelbtn = By.XPath("//a[contains(text(),'Import from Existing Model')]");
+
+        //Import Model
+        public static By searchImportModel = By.XPath("//input[@placeholder='Search for Model Name']");
+        public static By searchmodelbtn = By.XPath("//i[@class='fa fa-search']");
+        public static By selectImportModel = By.XPath("//div[@class='cdk-overlay-container']//tbody//tr[1]/td[1]");
 
         //Practice Metrics
 
@@ -118,8 +124,41 @@ namespace DCM.POM.DCM_Objects
         public static By Area1_24hr = By.XPath("//tr[2]//td[7]//div[1]//div[3]//label[1]//span[1]");
         public static By Area2_24hr = By.XPath("//tr[3]//td[7]//div[1]//div[3]//label[1]//span[1]");
 
+        public static By overallED_ESI1 = By.XPath("//table[starts-with(@class,'segmentation mt-')]//td[2]//div[1]//div[1]//input[1]");
+        public static By overallED_ESI2 = By.XPath("//table[starts-with(@class,'segmentation mt-')]//td[3]//div[1]//div[1]//input[1]");
+        public static By overallED_ESI3 = By.XPath("//table[starts-with(@class,'segmentation mt-')]//td[4]//div[1]//div[1]//input[1]");
+        public static By overallED_ESI4 = By.XPath("//table[starts-with(@class,'segmentation mt-')]//td[5]//div[1]//div[1]//input[1]");
+        public static By overallED_ESI5 = By.XPath("//input[@id='mainesi5']");
+
+        public static By Area1_ESI1 = By.XPath("//*[@id=\"segmentation-data\"]/div[2]/table[2]/tbody/tr[2]/td[2]/div/div/input");
+        public static By Area1_ESI2 = By.XPath("//*[@id=\"segmentation-data\"]/div[2]/table[2]/tbody/tr[2]/td[3]/div/div/input");
+        public static By Area1_ESI3 = By.XPath("//*[@id=\"segmentation-data\"]/div[2]/table[2]/tbody/tr[2]/td[4]/div/div/input");
+        public static By Area1_ESI4 = By.XPath("//*[@id=\"segmentation-data\"]/div[2]/table[2]/tbody/tr[2]/td[5]/div/div/input");
+        public static By Area1_ESI5 = By.XPath("//*[@id=\"segmentation-data\"]/div[2]/table[2]/tbody/tr[2]/td[6]/div/div/input");
+
+        public static By Area2_ESI1 = By.XPath("//*[@id=\"segmentation-data\"]/div[2]/table[2]/tbody/tr[3]/td[2]/div/div/input");
+        public static By Area2_ESI2 = By.XPath("//*[@id=\"segmentation-data\"]/div[2]/table[2]/tbody/tr[3]/td[3]/div/div/input");
+        public static By Area2_ESI3 = By.XPath("//*[@id=\"segmentation-data\"]/div[2]/table[2]/tbody/tr[3]/td[4]/div/div/input");
+        public static By Area2_ESI4 = By.XPath("//*[@id=\"segmentation-data\"]/div[2]/table[2]/tbody/tr[3]/td[5]/div/div/input");
+        public static By Area2_ESI5 = By.XPath("//*[@id=\"segmentation-data\"]/div[2]/table[2]/tbody/tr[3]/td[6]/div/div/input");
 
 
+
+        public static By Arrival_letMeEnterMyOwn = By.XPath("//li[contains(text(),'Let me enter my Own')]");
+        public static By JAN = By.XPath("//input[@id='JAN']");
+        public static By FEB = By.XPath("//input[@id='FEB']");
+        public static By MAR = By.XPath("//input[@id='MAR']");
+        public static By APR = By.XPath("//input[@id='APR']");
+        public static By MAY = By.XPath("//input[@id='MAY']");
+        public static By JUN = By.XPath("//input[@id='JUN']");
+        public static By JUL = By.XPath("//input[@id='JUL']");
+        public static By AUG = By.XPath("//input[@id='AUG']");
+        public static By SEP = By.XPath("//input[@id='SEP']");
+        public static By OCT = By.XPath("//input[@id='OCT']");
+        public static By NOV = By.XPath("//input[@id='NOV']");
+        public static By DEC = By.XPath("//input[@id='DEC']");
+
+        
 
         //Actual Hourly Arrivals By Day Of Week 
 
@@ -426,6 +465,7 @@ namespace DCM.POM.DCM_Objects
         public static By Yesbtn = By.XPath("//button[contains(text(),'Yes')]");
         public static By OK = By.XPath("//button[contains(text(),'OK')]");
         public static By Ok_Req = By.XPath("//button[@class='btn btn-primary ng-star-inserted']");
+        public static By op_model_verification = By.XPath("//div[contains(text(),'Set Model Operational')]");
 
 
 
@@ -533,6 +573,7 @@ namespace DCM.POM.DCM_Objects
         public static By ViewAnalysis_Tab = By.XPath("//a[contains(text(),'View Analysis')]");
         public static By PV_MA_ForcastedMonthlyArrival_Jan = By.XPath("//div[@class='forecasted-monthly-arrival-data pt-4']//label[@class='d-block m-0'][contains(text(),'JAN')]/following::input[1]");
         public static By PV_MA_ActualMonthlyArrival_Jan = By.XPath("//div[@class='actual-monthly-arrival-data pt-4']//label[@class='d-block m-0'][contains(text(),'JAN')]/following::input[1]");
+        
        
 
             // Weekly Arriaval

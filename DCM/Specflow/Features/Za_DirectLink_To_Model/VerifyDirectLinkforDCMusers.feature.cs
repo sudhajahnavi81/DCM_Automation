@@ -84,12 +84,12 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
  testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table42 = new TechTalk.SpecFlow.Table(new string[] {
                         "link"});
-            table28.AddRow(new string[] {
+            table42.AddRow(new string[] {
                         "https://dcmqa.evhc.net/v2/input?modelId=4258"});
 #line 8
- testRunner.And("Click on below link and login to open edit input tab of other\'s private model", ((string)(null)), table28, "And ");
+ testRunner.And("Click on below link and login to open edit input tab of other\'s private model", ((string)(null)), table42, "And ");
 #line 12
  testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -107,12 +107,12 @@ this.ScenarioInitialize(scenarioInfo);
 #line 15
  testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
                         "link"});
-            table29.AddRow(new string[] {
+            table43.AddRow(new string[] {
                         "https://dcmqa.evhc.net/v2/analysis?modelId=4295"});
 #line 16
- testRunner.And("Click on below link and login to open View Analysis tab of other\'s private model", ((string)(null)), table29, "And ");
+ testRunner.And("Click on below link and login to open View Analysis tab of other\'s private model", ((string)(null)), table43, "And ");
 #line 20
  testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -130,13 +130,13 @@ this.ScenarioInitialize(scenarioInfo);
 #line 23
  testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
                         "link"});
-            table30.AddRow(new string[] {
+            table44.AddRow(new string[] {
                         "https://dcmqa.evhc.net/v2/sensitivityanalysis?modelId=4258"});
 #line 24
  testRunner.And("Click on below link and login to open Sensitivity Analysis tab of other\'s private" +
-                    " model", ((string)(null)), table30, "And ");
+                    " model", ((string)(null)), table44, "And ");
 #line 28
  testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -154,13 +154,13 @@ this.ScenarioInitialize(scenarioInfo);
 #line 31
  testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table45 = new TechTalk.SpecFlow.Table(new string[] {
                         "link"});
-            table31.AddRow(new string[] {
+            table45.AddRow(new string[] {
                         "https://dcmqa.evhc.net/v2/executivesummary?modelId=4258"});
 #line 32
  testRunner.And("Click on below link and login to open Executive Summary tab of other\'s private mo" +
-                    "del", ((string)(null)), table31, "And ");
+                    "del", ((string)(null)), table45, "And ");
 #line 36
  testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -180,12 +180,12 @@ this.ScenarioInitialize(scenarioInfo);
 #line 43
  testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table46 = new TechTalk.SpecFlow.Table(new string[] {
                         "link"});
-            table32.AddRow(new string[] {
+            table46.AddRow(new string[] {
                         "https://dcmqa.evhc.net/v2/input?modelId=4258"});
 #line 44
- testRunner.And("Click on below link and login to open edit input tab using Viewer role", ((string)(null)), table32, "And ");
+ testRunner.And("Click on below link and login to open edit input tab using Viewer role", ((string)(null)), table46, "And ");
 #line 48
  testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -203,12 +203,12 @@ this.ScenarioInitialize(scenarioInfo);
 #line 51
  testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
                         "link"});
-            table33.AddRow(new string[] {
+            table47.AddRow(new string[] {
                         "https://dcmqa.evhc.net/v2/analysis?modelId=4295"});
 #line 52
- testRunner.And("Click on below link and login to open View Analysis tab using Viewer role", ((string)(null)), table33, "And ");
+ testRunner.And("Click on below link and login to open View Analysis tab using Viewer role", ((string)(null)), table47, "And ");
 #line 56
  testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -226,12 +226,12 @@ this.ScenarioInitialize(scenarioInfo);
 #line 59
  testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
                         "link"});
-            table34.AddRow(new string[] {
+            table48.AddRow(new string[] {
                         "https://dcmqa.evhc.net/v2/sensitivityanalysis?modelId=4258"});
 #line 60
- testRunner.And("Click on below link and login to open Sensitivity Analysis tab using Viewer role", ((string)(null)), table34, "And ");
+ testRunner.And("Click on below link and login to open Sensitivity Analysis tab using Viewer role", ((string)(null)), table48, "And ");
 #line 64
  testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
@@ -249,12 +249,12 @@ this.ScenarioInitialize(scenarioInfo);
 #line 67
  testRunner.Given("verify current URL", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
                         "link"});
-            table35.AddRow(new string[] {
+            table49.AddRow(new string[] {
                         "https://dcmqa.evhc.net/v2/executivesummary?modelId=4258"});
 #line 68
- testRunner.And("Click on below link and login to open Executive Summary tab using Viewer role", ((string)(null)), table35, "And ");
+ testRunner.And("Click on below link and login to open Executive Summary tab using Viewer role", ((string)(null)), table49, "And ");
 #line 72
  testRunner.Then("Verify edit input tab And logout from DCM and Okta.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

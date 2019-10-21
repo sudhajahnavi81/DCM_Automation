@@ -210,7 +210,7 @@ namespace DCM.Specflow.Definitions
             int esi3 = ESIData.ESI3;
             int esi4 = ESIData.ESI4;
 
-            CreateModelusingWizard.ESIdatamanually(esi1, esi1, esi3, esi4);
+            CreateModelusingWizard.ESIdatamanually(esi1, esi2, esi3, esi4);
 
         }
 
@@ -228,11 +228,11 @@ namespace DCM.Specflow.Definitions
             dynamic Table = table.CreateDynamicInstance();
             //string FThoursFrom = Table.FTHoursFrom;
             //string FTHoursTo = Table.FTHoursTo;
-            string strDateTime = (Table.FTHoursFrom).ToString("MM/dd/yyyy hh:mm tt");
+            string strDateTime = (Table.FTHoursFrom).ToString("MM/dd/yyyy HH:mm tt");
            
             string FromTime = strDateTime.Substring(11, 5);
 
-            string strToTime = (Table.FTHoursTo).ToString("MM/dd/yyyy hh:mm tt");
+            string strToTime = (Table.FTHoursTo).ToString("MM/dd/yyyy HH:mm tt");
            
             string ToTime = strToTime.Substring(11, 5);
 
@@ -259,6 +259,30 @@ namespace DCM.Specflow.Definitions
         {
             CreateModelusingWizard.FtNOThatsall();
         }
+
+        [When(@"Arrivals question displayed then click on Enter data manually and enter monthly data")]
+        public void WhenArrivalsQuestionDisplayedThenClickOnEnterDataManuallyAndEnterMonthlyData(Table table)
+        {
+            dynamic Actual_Monthly_Arrival = table.CreateDynamicInstance();
+
+            int JAN = Actual_Monthly_Arrival.JAN;
+            int FEB = Actual_Monthly_Arrival.FEB;
+            int MAR = Actual_Monthly_Arrival.MAR;
+            int APR = Actual_Monthly_Arrival.APR;
+            int MAY = Actual_Monthly_Arrival.MAY;
+            int JUN = Actual_Monthly_Arrival.JUN;
+            int JUL = Actual_Monthly_Arrival.JUL;
+            int AUG = Actual_Monthly_Arrival.AUG;
+            int SEP = Actual_Monthly_Arrival.SEP;
+            int OCT = Actual_Monthly_Arrival.OCT;
+            int NOV = Actual_Monthly_Arrival.NOV;
+            int DEC = Actual_Monthly_Arrival.DEC;
+
+            CreateModel.Wizard_manual_Actual_Monthly_Arrival(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC);
+        }
+
+
+
 
 
 

@@ -453,7 +453,7 @@ namespace DCM.POM.DCM_Objects
         public static By EMD_Modeltype_public = By.XPath("//span[@class='ng-option-label ng-star-inserted'][contains(text(),'Public')]");
         public static By EMD_ModeCategory_Operational = By.XPath("//span[contains(text(),'Set Model as Current Operational/Deployed model')]");
         public static By EMD_ModelCategory_Edu = By.XPath("//span[contains(text(),'Set Model as Educational or Test model')]");
-        public static By EMD_Modeldetails_Save = By.XPath("/html[1]/body[1]/div[2]/div[2]/div[1]/mat-dialog-container[1]/app-edit-model-dialog[1]/div[1]/div[3]/div[1]/button[1]");
+        public static By EMD_Modeldetails_Save = By.XPath("//button[@class='btn btn-primary']");
         public static By Updatedmodelname = By.XPath("/html/body/app-root/div/div/div/app-dashboard/div/div[2]/app-dashboard-model-list/div/table/tbody/tr[2]/td[1]");
         public static By Updatedmodeltype = By.XPath("/html/body/app-root/div/div/div/app-dashboard/div/div[2]/app-dashboard-model-list/div/table/tbody/tr[2]/td[5]");
         
@@ -496,15 +496,15 @@ namespace DCM.POM.DCM_Objects
         public static By currentwalkoutpercentage = By.XPath("/html/body/app-root/div/div/div/app-wizard/div/div/div/div[3]/div[2]/input");
         public static By addmittedpatientspercentage = By.XPath("//div[@class='qaModule pb-2 ng-star-inserted']//div[3]//input[1]");
         public static By Forecastedannualvolume = By.XPath("//b[contains(text(),'')]");
-        public static By databenchmarkingaverage = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[5]/div/ul/li[3]");
-        public static By enterdatamanually = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[5]/div/ul/li[2]");
-        public static By importdata = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[5]/div[1]/ul[1]/li[1]");
+        public static By databenchmarkingaverage = By.XPath("//div[contains(text(),'How many patients come to your Emergency Departmen')]//following::ul//li[3]");
+        public static By enterdatamanually = By.XPath("//div[contains(text(),'How many patients come to your Emergency Departmen')]//following::ul//li[2]");
+        public static By importdata = By.XPath("//div[contains(text(),'How many patients come to your Emergency Departmen')]//following::ul//li[1]");
         public static By arrivalspopup = By.Id("mat-dialog-5");
         public static By arrivals_missingdataalert = By.XPath("/html[1]/body[1]/div[1]/div[4]/div[1]/mat-dialog-container[1]/alert-message[1]/div[1]/div[3]/div[1]/mat-dialog-actions[1]/button[1]");
         public static By Arrivals_OKbtn = By.XPath("/html[1]/body[1]/div[1]/div[2]/div[1]/mat-dialog-container[1]/app-wizard-arrivals-hourly-monthly-prepopulated[1]/div[1]/div[1]/div[3]/div[1]/mat-dialog-actions[1]/button[1]");
         public static By clktoviewarrivals = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[5]/div/ul/li[4]");
-        public static By ESI_databenchmarking = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[6]/div/ul/li[2]");
-        public static By ESI_entermanually = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[6]/div[1]/ul[1]/li[1]");
+        public static By ESI_databenchmarking = By.XPath("//div[contains(text(),'What is the Emergency Severity Index (ESI) breakdo')]//following::ul//li[2]");
+        public static By ESI_entermanually = By.XPath("//div[contains(text(),'What is the Emergency Severity Index (ESI) breakdo')]//following::ul//li[1]");
         public static By FT_ESI_entermanually = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[20]/div[1]/div[2]/div[1]/ul[1]/li[1]");
         public static By ESI_1 = By.XPath("/html[1]/body[1]/div[1]/div[2]/div[1]/mat-dialog-container[1]/app-wizard-arrivals-esi[1]/div[1]/div[1]/div[2]/app-segmentation-esi-levels[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/input[1]");
         public static By ESI_2 = By.XPath("/html[1]/body[1]/div[1]/div[2]/div[1]/mat-dialog-container[1]/app-wizard-arrivals-esi[1]/div[1]/div[1]/div[2]/app-segmentation-esi-levels[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/div[1]/input[1]");
@@ -516,8 +516,8 @@ namespace DCM.POM.DCM_Objects
         public static By LOSforaddmittedpatients = By.XPath("//div[contains(text(),'What is the Length of Stay (in minutes) for Admitt')]//following::div/input");
         public static By LOSdischargedpatients = By.XPath("//div[contains(text(),'What is the Length of Stay (in minutes) for Discha')]//following::div/input");
         public static By LOSArrivaltoadmitdecisiontime = By.XPath("//div[contains(text(),'What is your Arrival to Admit Decision time (in mi')]//following::div/input");
-        public static By Shft_entermanually = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[10]/div/ul/li[2]");
-        public static By Shift_import = By.XPath("/html/body/app-root/div/div/div/app-wizard/div/div/div/div[10]/div/ul/li[1]");
+        public static By Shft_entermanually = By.XPath("//div[contains(text(),'What is your typical staffing pattern?')]//following::ul//li[2]");
+        public static By Shift_import = By.XPath("//div[contains(text(),'What is your typical staffing pattern?')]//following::ul//li[1]");
         public static By Shft_popup = By.Id("mat-dialog-4");
         public static By Shft_Addbtn = By.XPath("//li[2]//button[1]");
         public static By Shft_Addeditpopup = By.XPath("//mat-dialog-container[@id='mat-dialog-5']");
@@ -609,6 +609,33 @@ namespace DCM.POM.DCM_Objects
         public static By PV_WA_EachDayofWeek_Sun = By.XPath("//tab[@class='active tab-pane']//td[1]//label[contains(text(),'SUN')]/following::input[1]");
 
 
+        //Load Model List
+        public static By Tab_LoadModelList = By.XPath("//a[contains(text(),'Load Model List')]");
+        public static By Searchmodel_txt = By.XPath("//input[@placeholder='Search Model Name']");
+        public static By LastModified_DD = By.XPath("//th[@class='mat-header-cell cdk-column-UpdatedUser mat-column-UpdatedUser ng-star-inserted']//span[@class='selectDrop-table form-control custom-selectbx custom-selectbx-dropArrow field-radius-medium d-inline-block'][contains(text(),'All')]");
+        public static By UncheckSelectAll = By.XPath("//span[contains(text(),'Select All')]");
+        public static By Searchlastmodified_txt = By.XPath("//input[@placeholder='Search Last Modified By']");
+        public static By Selectmodifieduser = By.XPath("//li[@class='ng-star-inserted']//label[@class='label-checkbx']");
+        public static By Modifieduser_OK = By.XPath("//button[@class='btn btn-primary']");
+        public static By FromCale = By.XPath("//div[@class='mat-form-field-suffix ng-tns-c12-10 ng-star-inserted']//*[@class='mat-datepicker-toggle-default-icon ng-star-inserted']");
+        public static By Cal_Prev = By.XPath("//button[@class='mat-calendar-previous-button mat-icon-button']");
+        public static By Selectdate = By.XPath("//div[contains(text(),'15')]");
+        public static By ToCale = By.XPath("//input[@id='mat-input-1']");
+        public static By SearchModelType_txt = By.XPath("//input[@placeholder='Search Model Type']");
+        public static By Searchedmodel = By.XPath("//td[contains(text(),'')]");
+        public static By ViewAnalysis_btn = By.XPath("//tr[1]//td[7]//button[1]");
+        public static By EditInputs_btn = By.XPath("//tr[1]//td[7]//button[2]");
+        public static By LML_EditModelDetails = By.XPath("//tr[1]//td[7]//button[3]");
+        public static By Tab_ViewAnalysis = By.XPath("//a[contains(text(),'View Analysis')]");
+        public static By Tab_EditInput = By.XPath("//a[contains(text(),'Edit Inputs')]");
+        public static By Tab_SA = By.XPath("//a[contains(text(),'Perform Sensitivity Analysis')]");
+        public static By Tab_ExecutiveSummary = By.XPath("//a[contains(text(),'Perform Sensitivity Analysis')]");
+        public static By EditModelDetails_btn = By.XPath("//tr[1]//td[7]//button[3]");
+        public static By LML_Updatedmodelname = By.XPath("//body//tbody//tr[1]//td[1]");
+        public static By LML_Updatedmodeltype = By.XPath("//tr[1]//td[5]");
+        public static By LML_lastModifiedBy = By.XPath("//body//tbody//tr[1]//td[3]");
+        public static By LML_lastModifiedOn = By.XPath("//body//tbody//tr[1]//td[4]");
+        public static By LML_EMD_Modeltype = By.XPath("//div[@class='ng-input']//input");
 
         //logout
 

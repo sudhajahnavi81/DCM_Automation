@@ -272,8 +272,20 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(3000);
             click(Page_Objects.ClinicalWorkDistribution_popupOKbtn);
             //Required fields OK
-            Thread.Sleep(3000);
-            click(Page_Objects.Requiredfields_OK);
+
+            try
+            {
+                Thread.Sleep(3000);
+                click(Page_Objects.Requiredfields_OK);
+            }
+
+            catch
+            {
+
+
+            }
+
+          
 
         }
 
@@ -327,9 +339,13 @@ namespace DCM.POM.Page_Steps
         {
             Thread.Sleep(3000);
             click(Page_Objects.ESI_entermanually);
+            clear(Page_Objects.ESI_1);
             Type(esi1.ToString(), Page_Objects.ESI_1);
+            clear(Page_Objects.ESI_2);
             Type(esi2.ToString(), Page_Objects.ESI_2);
+            clear(Page_Objects.ESI_3);
             Type(esi3.ToString(), Page_Objects.ESI_3);
+            clear(Page_Objects.ESI_4);
             Type(esi4.ToString(), Page_Objects.ESI_4);
             
             click(Page_Objects.ESI_OKbtn);

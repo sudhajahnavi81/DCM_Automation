@@ -301,6 +301,27 @@ namespace DCM.POM.Page_Steps
             Type(DEC.ToString(), Page_Objects.DEC);
         }
 
+        //Manually enter arrivals data from Wziard
+
+        public static void Wizard_manual_Actual_Monthly_Arrival(int JAN, int FEB, int MAR, int APR, int MAY, int JUN, int JUL, int AUG, int SEP, int OCT, int NOV, int DEC)
+        {
+            click(Page_Objects.enterdatamanually);
+            //click(Page_Objects.OKbtn);
+            Thread.Sleep(2000);
+            Type(JAN.ToString(), Page_Objects.JAN);
+            Type(FEB.ToString(), Page_Objects.FEB);
+            Type(MAR.ToString(), Page_Objects.MAR);
+            Type(APR.ToString(), Page_Objects.APR);
+            Type(MAY.ToString(), Page_Objects.MAY);
+            Type(JUN.ToString(), Page_Objects.JUN);
+            Type(JUL.ToString(), Page_Objects.JUL);
+            Type(AUG.ToString(), Page_Objects.AUG);
+            Type(SEP.ToString(), Page_Objects.SEP);
+            Type(OCT.ToString(), Page_Objects.OCT);
+            Type(NOV.ToString(), Page_Objects.NOV);
+            Type(DEC.ToString(), Page_Objects.DEC);
+        }
+
         public static void Sunday_Arrival(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
         {
             Thread.Sleep(2000);
@@ -502,6 +523,15 @@ namespace DCM.POM.Page_Steps
             Type(Hr_21.ToString(), Page_Objects.Saturday_21);
             Type(Hr_22.ToString(), Page_Objects.Saturday_22);
             Type(Hr_23.ToString(), Page_Objects.Saturday_23);
+
+            try
+            {
+                click(Page_Objects.Arrivals_OKbtn);
+            }
+            catch
+            {
+
+            }
         }
 
 

@@ -110,7 +110,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("Click on Edit mnodel details at any non operational model and update model name m" +
                     "odel type and model category and click on save", ((string)(null)), table3, "Given ");
 #line 16
- testRunner.Then("verify model details updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("verify model details update1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

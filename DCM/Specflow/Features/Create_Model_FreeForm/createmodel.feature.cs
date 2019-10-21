@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace DCM.Specflow.Features.Create_Model
+namespace DCM.Specflow.Features.Create_Model_FreeForm
 {
     using TechTalk.SpecFlow;
     

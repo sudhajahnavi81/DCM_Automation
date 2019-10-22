@@ -300,6 +300,7 @@
     <Compile Include="POM\Page_Steps\DCM_Login.cs" />
     <Compile Include="POM\Page_Steps\Directlink.cs" />
     <Compile Include="POM\Page_Steps\ImportModel.cs" />
+    <Compile Include="POM\Page_Steps\SensitivityAnalysis.cs" />
     <Compile Include="POM\Page_Steps\ViewAnalysis.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -309,9 +310,11 @@
     <Compile Include="Specflow\Definitions\ImportModelDef.cs" />
     <Compile Include="Specflow\Definitions\LoadModelListDef.cs" />
     <Compile Include="Specflow\Definitions\LogoutDef.cs" />
+    <Compile Include="Specflow\Definitions\Perform Sensitivity Analysis Def.cs" />
     <Compile Include="Specflow\Features\A_DCM_Header\Headers.feature.cs" />
     <Compile Include="Specflow\Features\B_Dashboard\DCM.feature.cs" />
     <Compile Include="Specflow\Features\Create_Model_FreeForm\createmodel.feature.cs" />
+    <Compile Include="Specflow\Features\D_Sensitivity Analysis\Perform Sensitivity Analysis.feature.cs" />
     <Compile Include="Specflow\Features\Z_Logout\Logout.feature.cs" />
     <Compile Include="Specflow\Hooks\DCMHooks.cs" />
     <Compile Include="Specflow\Definitions\DashboardDef.cs" />
@@ -324,6 +327,7 @@
     <None Include="data\data.xlsx" />
     <None Include="packages.config" />
     <None Include="Specflow\Features\B_Dashboard\DCM.feature" />
+    <None Include="Specflow\Features\D_Sensitivity Analysis\Perform Sensitivity Analysis.feature" />
     <None Include="Specflow\Features\Import Model\ImportModel.feature" />
     <None Include="Specflow\Features\Load Model List\LoadModelList.feature" />
     <None Include="Specflow\Features\Wizard\CreateModelwithWizard.feature.feature" />

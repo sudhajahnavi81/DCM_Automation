@@ -267,6 +267,14 @@ namespace DCM.POM
 
         }
 
+        public static void JSScrollup()
+        {
+            IJavaScriptExecutor js = (IJavaScriptExecutor)Initialize.driver;
+            js.ExecuteScript("window.scrollBy(0,-1000)");
+
+        }
+
+
         public static string Graphtooltip(By element, By element1)
         {
             var bar = Initialize.driver.FindElement(element);
@@ -311,6 +319,14 @@ namespace DCM.POM
         {
             Initialize.driver.Quit();
             Initialize.driver.Dispose();
+        }
+
+
+        public static void MoveToElement(By ele)
+        {
+            var element = Initialize.driver.FindElement(ele);
+            IJavaScriptExecutor js = (IJavaScriptExecutor)Initialize.driver;
+           js.ExecuteScript("arguments[0].scrollIntoView(true);", element);
         }
 
     }

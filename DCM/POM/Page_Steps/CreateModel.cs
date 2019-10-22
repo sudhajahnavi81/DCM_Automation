@@ -92,6 +92,16 @@ namespace DCM.POM.Page_Steps
             click(Page_Objects.Calendar_dropdown_day);
             click(Page_Objects.OKbtn);
             Thread.Sleep(5000);
+            try
+            {
+                WaitForElement(Page_Objects.OK);
+                click(Page_Objects.OK);
+            }
+            catch
+            {
+
+            }
+            WaitForElement(Page_Objects.import_ok);
             click(Page_Objects.import_ok);
             Thread.Sleep(5000);
             click(Page_Objects.segmentation_by_ESI_dropdown);
@@ -223,10 +233,12 @@ namespace DCM.POM.Page_Steps
         public static void SaveModel()
         {
             click(Page_Objects.save);
+            bool Mandatory = false;
             try
             {
                 WaitForElement(Page_Objects.Ok_Req);
                 click(Page_Objects.Ok_Req);
+                Mandatory = true;
             }
             catch
             {
@@ -237,7 +249,10 @@ namespace DCM.POM.Page_Steps
             DateTime now = DateTime.Now;
             String modelName = "Automation_" + now.ToString("MM/dd/yyyy hh:mm tt");
             Type(modelName.ToString(), Page_Objects.modelName);
-            click(Page_Objects.EMD_ModeCategory_Operational);
+            if (!Mandatory)
+            {
+                click(Page_Objects.EMD_ModeCategory_Operational);
+            }
             click(Page_Objects.modelSave);
             try
             {
@@ -260,6 +275,9 @@ namespace DCM.POM.Page_Steps
         public static void EditModelDetail()
         {
             Thread.Sleep(15000);
+            WaitForElement(Page_Objects.Appname);
+            click(Page_Objects.Appname);
+            Thread.Sleep(15000);
             click(Page_Objects.dashboard);
             Thread.Sleep(10000);
             click(Page_Objects.EditEDUModelDetails);
@@ -274,7 +292,14 @@ namespace DCM.POM.Page_Steps
             click(Page_Objects.OKbtn);
             Thread.Sleep(5000);
             //TabKey();
-            click(Page_Objects.Yesbtn);
+            try
+            {
+                click(Page_Objects.Yesbtn);
+            }
+            catch
+            {
+
+            }
             Thread.Sleep(5000);
             DCMDashboard.OperationalHistroy();
         }

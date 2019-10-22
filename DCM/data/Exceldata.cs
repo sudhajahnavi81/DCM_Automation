@@ -24,11 +24,11 @@ namespace DCM.data
         //public static excel.Range x1range = x1WorkSheet.UsedRange;
 
         public static string un1 = "sunil.desai@shcr.com";
-        public static string psw = "Sheridan@4";
+        public static string psw = "Sheridan@13";
         public static string otpKeyStr = "UBEBMMWQ7P5STVNV";
 
         public static string Viewerrole = "sunil.desai@shcr.com";
-        public static string Viewrolepsw = "Sheridan@4";
+        public static string Viewrolepsw = "Sheridan@13";
         public static string otpKeyStrview = "UBEBMMWQ7P5STVNV";
 
     }

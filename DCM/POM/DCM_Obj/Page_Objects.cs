@@ -105,7 +105,7 @@ namespace DCM.POM.DCM_Objects
         public static By arrivaldata_dropdown = By.XPath("//*[@id=\"arrivals-data\"]/div/div[1]/div/div/div[1]");
         public static By arrivaldata_dropdown_value = By.XPath("//*[@id=\"arrivals-data\"]/div/div[1]/div/div/div[2]/ul/li[2]");
         public static By arrivaldata_dropdown_Import = By.XPath("//li[contains(text(),'Import Data')]");
-        public static By arrivaldata_dropdown_datepicker = By.XPath("//*[@id='mat-dialog-1']/app-import-data/div/div[2]/div/div[1]/div/mat-form-field/div/div[1]/div[2]/mat-datepicker-toggle/button");
+        public static By arrivaldata_dropdown_datepicker = By.XPath("//mat-datepicker-toggle[@class='mat-datepicker-toggle']//following::button[4]");
 
         public static By Calendar_yeararrow = By.XPath("//div[@class='mat-calendar-arrow']");
         public static By Calendar_dropdown_year = By.XPath("//mat-multi-year-view[@class='ng-star-inserted']//table//tbody//tr/td[3]/div[contains(text(),'2018')]");
@@ -456,7 +456,11 @@ namespace DCM.POM.DCM_Objects
         public static By EMD_Modeldetails_Save = By.XPath("//button[@class='btn btn-primary']");
         public static By Updatedmodelname = By.XPath("/html/body/app-root/div/div/div/app-dashboard/div/div[2]/app-dashboard-model-list/div/table/tbody/tr[2]/td[1]");
         public static By Updatedmodeltype = By.XPath("/html/body/app-root/div/div/div/app-dashboard/div/div[2]/app-dashboard-model-list/div/table/tbody/tr[2]/td[5]");
-        
+
+        //Edit input
+
+        public static By Editinput = By.XPath("//td[@class='model-name mat-cell cdk-column-ModelName mat-column-ModelName ng-star-inserted']//sub[contains(text(),'(Operational)')]//following::td[5]//button[2]");
+
         //Save
 
         public static By save = By.XPath("//i[@id='saveBtn']"); 
@@ -600,10 +604,26 @@ namespace DCM.POM.DCM_Objects
         public static By ViewAnalysis_Tab = By.XPath("//a[contains(text(),'View Analysis')]");
         public static By PV_MA_ForcastedMonthlyArrival_Jan = By.XPath("//div[@class='forecasted-monthly-arrival-data pt-4']//label[@class='d-block m-0'][contains(text(),'JAN')]/following::input[1]");
         public static By PV_MA_ActualMonthlyArrival_Jan = By.XPath("//div[@class='actual-monthly-arrival-data pt-4']//label[@class='d-block m-0'][contains(text(),'JAN')]/following::input[1]");
-        
-       
 
-            // Weekly Arriaval
+        //Sensitivity Analysis    
+        public static By SensitivityAnalysisTab = By.XPath("//a[contains(text(),'Perform Sensitivity Analysis')]");
+        public static By SA_Forecasted_Annual = By.XPath("//label[contains(text(),'Forecasted Annual Volume')]//following::div/div/div/input");
+        public static By SA_Percentage_Variation = By.XPath("//label[contains(text(),'Percentage Variation')]//following::div/div/div/input");
+        
+
+
+        //fields expands
+        public static By Expand_ActualMonthlyArrival = By.XPath("//a[contains(text(),'Actual Monthly Arrival')]");
+
+        //zoom Graph, clear button, Refresh
+
+        public static By ZoomGraph = By.XPath("//div[@class='section-content sameheight overflow-auto']//i[@class='fa fa-expand']");
+        public static By SA_clear = By.XPath("//span[starts-with(@class,'eraser-icon')]");
+        public static By SA_Refresh = By.XPath("//button[contains(text(),'Refresh')]");
+        public static By GraphCheckbox = By.XPath("//span[contains(text(),\"Saved Model's Patient Volume\")]");
+
+
+        // Weekly Arriaval
 
         public static By Weekly_ArrivalTab = By.XPath("//div[@id='mat-tab-label-2-1']");
         public static By PV_WA_EachDayofWeek_Sun = By.XPath("//tab[@class='active tab-pane']//td[1]//label[contains(text(),'SUN')]/following::input[1]");

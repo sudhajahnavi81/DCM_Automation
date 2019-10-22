@@ -48,7 +48,9 @@ namespace DCM.Specflow.Hooks
 
                     if (FeatureContext.Current.FeatureInfo.Tags.Contains("chrome"))
                     {
-                        driver = new ChromeDriver();
+                        ChromeOptions options = new ChromeOptions();
+                        options.AddAdditionalCapability("useAutomationExtension", false);
+                        driver = new ChromeDriver(options);
 
                     }
                     else if (FeatureContext.Current.FeatureInfo.Tags.Contains("IE"))
@@ -85,7 +87,7 @@ namespace DCM.Specflow.Hooks
             extent.AddSystemInfo("Host Name", "Sunil");
             extent.AddSystemInfo("Environment", "QA");
             extent.AddSystemInfo("User Name", "Sunil Desai");
-            htmlReporter.LoadConfig(@"C:\Users\nehal\Source\Repos\DCMAutomation\DCM\" + "extent-config.xml");
+            htmlReporter.LoadConfig(@"D:\DCMAutomation\DCM\" + "extent-config.xml");
         }
 
         [AfterTestRun]

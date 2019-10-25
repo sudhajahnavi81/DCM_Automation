@@ -73,11 +73,11 @@ namespace DCM.Specflow.Features.D_SensitivityAnalysis
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Verify Forecasted Monthly Arrivals tab in Patient Volume")]
+        [NUnit.Framework.DescriptionAttribute("01 Verify Forecasted Monthly Arrivals tab in Patient Volume")]
         [NUnit.Framework.CategoryAttribute("sanity")]
-        public virtual void VerifyForecastedMonthlyArrivalsTabInPatientVolume()
+        public virtual void _01VerifyForecastedMonthlyArrivalsTabInPatientVolume()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Forecasted Monthly Arrivals tab in Patient Volume", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Verify Forecasted Monthly Arrivals tab in Patient Volume", null, new string[] {
                         "sanity"});
 #line 6
 this.ScenarioInitialize(scenarioInfo);
@@ -155,10 +155,10 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Verify Actual Monthly Arrival  tab in Patient Volume")]
-        public virtual void VerifyActualMonthlyArrivalTabInPatientVolume()
+        [NUnit.Framework.DescriptionAttribute("02 Verify Actual Monthly Arrival  tab in Patient Volume")]
+        public virtual void _02VerifyActualMonthlyArrivalTabInPatientVolume()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Actual Monthly Arrival  tab in Patient Volume", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("02 Verify Actual Monthly Arrival  tab in Patient Volume", null, ((string[])(null)));
 #line 18
  this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -228,6 +228,1729 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("Verify zoom graph for Forecasted Monthly Arrivals by month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 27
  testRunner.Then("Click on Forecasted Weekly Arrivals tab and verified updated tab are highlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("03 Verify Forecasted Weekly Arrivals tab in Patient Volume")]
+        public virtual void _03VerifyForecastedWeeklyArrivalsTabInPatientVolume()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("03 Verify Forecasted Weekly Arrivals tab in Patient Volume", null, ((string[])(null)));
+#line 30
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line hidden
+            TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Forecasted_Annual_Volume",
+                        "Percentage_Variation",
+                        "JAN",
+                        "FEB",
+                        "MAR",
+                        "APR",
+                        "MAY",
+                        "JUN",
+                        "JUL",
+                        "AUG",
+                        "SEP",
+                        "OCT",
+                        "NOV",
+                        "DEC"});
+            table34.AddRow(new string[] {
+                        "77000",
+                        "2",
+                        "5000",
+                        "4000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "4000",
+                        "4000",
+                        "5000"});
+#line 31
+ testRunner.Given("Update data input fields and reset fields by clicking reset button in Forecasted " +
+                    "Weekly Arrivals tab", ((string)(null)), table34, "Given ");
+#line 34
+ testRunner.And("Clear Actual Monthly Arrival fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
+                        "JAN",
+                        "FEB",
+                        "MAR",
+                        "APR",
+                        "MAY",
+                        "JUN",
+                        "JUL",
+                        "AUG",
+                        "SEP",
+                        "OCT",
+                        "NOV",
+                        "DEC"});
+            table35.AddRow(new string[] {
+                        "5000",
+                        "4000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "4000",
+                        "4000",
+                        "5000"});
+#line 35
+ testRunner.When("Clear and Update data input fields for Actual Monthly Arrival", ((string)(null)), table35, "When ");
+#line 38
+ testRunner.And("Clear Actual Hourly Arrivals By Day Of Week fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table36 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table36.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 39
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
+                    "nday fields", ((string)(null)), table36, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table37 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table37.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 42
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
+                    "onday fields", ((string)(null)), table37, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table38 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table38.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 45
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
+                    "uesday fields", ((string)(null)), table38, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table39 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table39.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 48
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
+                    "ednesday fields", ((string)(null)), table39, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table40 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table40.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 51
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
+                    "ursday fields", ((string)(null)), table40, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table41 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table41.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 54
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
+                    "iday fields", ((string)(null)), table41, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table42 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table42.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 57
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
+                    "turday fields", ((string)(null)), table42, "And ");
+#line 60
+ testRunner.And("Refresh data by clicking on refresh button.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 61
+ testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 62
+ testRunner.Then("Click on Actual Weekly Arrivals tab and verified updated tab are highlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("04 Verify Actual Weekly Arrivals tab in Patient Volume")]
+        public virtual void _04VerifyActualWeeklyArrivalsTabInPatientVolume()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04 Verify Actual Weekly Arrivals tab in Patient Volume", null, ((string[])(null)));
+#line 65
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 66
+ testRunner.Given("Clear Actual Hourly Arrivals By Day Of Week fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table43.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 67
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
+                    "nday fields", ((string)(null)), table43, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table44.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 70
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
+                    "onday fields", ((string)(null)), table44, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table45 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table45.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 73
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
+                    "uesday fields", ((string)(null)), table45, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table46 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table46.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 76
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
+                    "ednesday fields", ((string)(null)), table46, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table47.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 79
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
+                    "ursday fields", ((string)(null)), table47, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table48.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 82
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
+                    "iday fields", ((string)(null)), table48, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table49.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 85
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
+                    "turday fields", ((string)(null)), table49, "And ");
+#line 88
+ testRunner.And("Refresh data by clicking on refresh button.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 89
+ testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 90
+ testRunner.Then("Click on Actual Hourly Arrivals tab and verified updated tab are highlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("05 Verify Actual Hourly Arrivals tab in Patient Volume")]
+        public virtual void _05VerifyActualHourlyArrivalsTabInPatientVolume()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05 Verify Actual Hourly Arrivals tab in Patient Volume", null, ((string[])(null)));
+#line 93
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 94
+ testRunner.Given("Clear Actual Hourly Arrivals By Day Of Week fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+            TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table50.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 95
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
+                    "nday fields", ((string)(null)), table50, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table51.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 98
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
+                    "onday fields", ((string)(null)), table51, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table52 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table52.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 101
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
+                    "uesday fields", ((string)(null)), table52, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table53 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table53.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 104
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
+                    "ednesday fields", ((string)(null)), table53, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table54 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table54.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 107
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
+                    "ursday fields", ((string)(null)), table54, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table55 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table55.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 110
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
+                    "iday fields", ((string)(null)), table55, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table56 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table56.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 113
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
+                    "turday fields", ((string)(null)), table56, "And ");
+#line 116
+ testRunner.And("Refresh data by clicking on refresh button.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 117
+ testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 118
+ testRunner.Then("Click on Forecasted Hourly Arrivals tab and verified updated tab are highlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("06 Verify Forecasted Hourly Arrivals tab in Patient Volume")]
+        public virtual void _06VerifyForecastedHourlyArrivalsTabInPatientVolume()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("06 Verify Forecasted Hourly Arrivals tab in Patient Volume", null, ((string[])(null)));
+#line 122
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line hidden
+            TechTalk.SpecFlow.Table table57 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Forecasted_Annual_Volume",
+                        "Percentage_Variation",
+                        "JAN",
+                        "FEB",
+                        "MAR",
+                        "APR",
+                        "MAY",
+                        "JUN",
+                        "JUL",
+                        "AUG",
+                        "SEP",
+                        "OCT",
+                        "NOV",
+                        "DEC"});
+            table57.AddRow(new string[] {
+                        "77000",
+                        "2",
+                        "5000",
+                        "4000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "4000",
+                        "4000",
+                        "5000"});
+#line 123
+ testRunner.Given("Update data input fields and reset fields by clicking reset button in Forecasted " +
+                    "hourly Arrivals tab", ((string)(null)), table57, "Given ");
+#line 126
+ testRunner.And("Clear Actual Monthly Arrival fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table58 = new TechTalk.SpecFlow.Table(new string[] {
+                        "JAN",
+                        "FEB",
+                        "MAR",
+                        "APR",
+                        "MAY",
+                        "JUN",
+                        "JUL",
+                        "AUG",
+                        "SEP",
+                        "OCT",
+                        "NOV",
+                        "DEC"});
+            table58.AddRow(new string[] {
+                        "5000",
+                        "4000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "4000",
+                        "4000",
+                        "5000"});
+#line 127
+ testRunner.When("Clear and Update data input fields for Actual Monthly Arrival", ((string)(null)), table58, "When ");
+#line 130
+ testRunner.And("Clear Actual Hourly Arrivals By Day Of Week fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table59 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table59.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 131
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
+                    "nday fields", ((string)(null)), table59, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table60 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table60.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 134
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
+                    "onday fields", ((string)(null)), table60, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table61 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table61.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 137
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
+                    "uesday fields", ((string)(null)), table61, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table62 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table62.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 140
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
+                    "ednesday fields", ((string)(null)), table62, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table63 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table63.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 143
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
+                    "ursday fields", ((string)(null)), table63, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table64 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table64.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 146
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
+                    "iday fields", ((string)(null)), table64, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table65 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table65.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 149
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
+                    "turday fields", ((string)(null)), table65, "And ");
+#line 152
+ testRunner.And("Refresh data by clicking on refresh button.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 153
+ testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 154
+ testRunner.Then("Click on Provider Staffing vs Calculated WorkLoad tab and verified updated tab ar" +
+                    "e highlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

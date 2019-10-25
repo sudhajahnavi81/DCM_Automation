@@ -48,7 +48,7 @@ namespace DCM.POM.Page_Steps
             {
                 click(Page_Objects.Expand_ActualMonthlyArrival);
             }
-            
+            Thread.Sleep(2000);
             clear(Page_Objects.JAN);
             Type(JAN.ToString(), Page_Objects.JAN);
             clear(Page_Objects.FEB);
@@ -80,19 +80,111 @@ namespace DCM.POM.Page_Steps
             click(Page_Objects.SA_clear);
         }
 
+        public static void ActualweeklyArrivalClearButton()
+        {
+            click(Page_Objects.SAforecatedweekly_clear_ActualHourly);
+        }
+
+        public static void ActualHourlyArrivalClearButton()
+        {
+            click(Page_Objects.SAforecatedHourly_clear_ActualHourly);
+        }
+
+        public static void ActualMonthlyArrivalClearButton()
+        {
+            click(Page_Objects.SAforecatedweekly_clear_ActualMonthly);
+        }
+
         public static void SA_Refresh()
         {
             JSScrollup();
             click(Page_Objects.SA_Refresh);
-            Thread.Sleep(10000);
+            WaitForElement(Page_Objects.SA_Refresh);
+           
         }
+        public static void ZoomGraph_ActualWeeklyArrival()
+        {
+            Thread.Sleep(20000);
+            click(Page_Objects.GraphCheckbox);
+            Thread.Sleep(8000);
+            click(Page_Objects.Zoomgraph_ActualweeklyArrival);
+            Thread.Sleep(6000);
+            click(Page_Objects.OKbtn);
+        }
+
+
         public static void ZoomGraph()
         {
+            Thread.Sleep(20000);
             click(Page_Objects.GraphCheckbox);
-            Thread.Sleep(3000);
+            Thread.Sleep(8000);
             click(Page_Objects.ZoomGraph);
-            Thread.Sleep(4000);
+            Thread.Sleep(6000);
             click(Page_Objects.OKbtn);
+        }
+
+
+        public static void actualMonthlyArrivalTab()
+        {
+           // JSScrollup();
+            Thread.Sleep(6000);
+            click(Page_Objects.SA_actualmonthlyArrivalTab);
+            WaitForElement(Page_Objects.Expand_ActualMonthlyArrival);
+        }
+
+        public static void ForecastedWeeklyArrivalsTab()
+        {
+            Thread.Sleep(6000);
+            click(Page_Objects.SA_ForecastedWeeklyArrivalsTab);
+            WaitForElement(Page_Objects.Expand_ActualMonthlyArrival);
+        }
+
+        public static void ActualWeeklyArrivalsTab()
+        {
+            Thread.Sleep(6000);
+            click(Page_Objects.SA_ActualWeeklyArrivalsTab);
+            //WaitForElement(Page_Objects.Expand_ActualMonthlyArrival);
+        }
+
+
+        public static void ActualHourlyArrivalsTab()
+        {
+            Thread.Sleep(6000);
+            click(Page_Objects.SA_ActualHourlyArrivalsTab);
+            //WaitForElement(Page_Objects.Expand_ActualMonthlyArrival);
+        }
+
+        public static void forcastedHourlyArrivalsTab()
+        {
+            Thread.Sleep(6000);
+            click(Page_Objects.SA_ForcastedHourlyArrivalsTab);
+            //WaitForElement(Page_Objects.Expand_ActualMonthlyArrival);
+        }
+        public static void ProviderStaffing_CalculatedWorkLoadTab()
+        {
+            Thread.Sleep(6000);
+            click(Page_Objects.Provider_Staffing_Calculated_WorkLoadTab);
+            //WaitForElement(Page_Objects.Expand_ActualMonthlyArrival);
+        }
+
+        
+
+        public static void expandActualWeekArrivals()
+        {
+            bool ElementSunday = false;
+            try
+            {
+                Find(Page_Objects.sunday_0);
+                ElementSunday = false;
+            }
+            catch
+            {
+                ElementSunday = true;
+            }
+            if (ElementSunday)
+            {
+                click(Page_Objects.Expand_ActualWeeklyArrival);
+            }
         }
     }
 }

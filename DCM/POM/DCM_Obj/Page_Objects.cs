@@ -609,18 +609,41 @@ namespace DCM.POM.DCM_Objects
         public static By SensitivityAnalysisTab = By.XPath("//a[contains(text(),'Perform Sensitivity Analysis')]");
         public static By SA_Forecasted_Annual = By.XPath("//label[contains(text(),'Forecasted Annual Volume')]//following::div/div/div/input");
         public static By SA_Percentage_Variation = By.XPath("//label[contains(text(),'Percentage Variation')]//following::div/div/div/input");
-        
 
+
+        public static By SA_actualmonthlyArrivalTab = By.XPath("//div[@id='mat-tab-label-2-1']");
+        public static By SA_ForecastedWeeklyArrivalsTab = By.XPath("//div[@id='mat-tab-label-2-2']");
+        public static By SA_ActualWeeklyArrivalsTab = By.XPath("//div[@id='mat-tab-label-2-3']");
+        public static By SA_ActualHourlyArrivalsTab = By.XPath("//div[@id='mat-tab-label-2-4']");
+        public static By SA_ForcastedHourlyArrivalsTab = By.XPath("//div[@id='mat-tab-label-2-5']");
+
+
+
+        public static By Provider_Staffing_Calculated_WorkLoadTab = By.XPath("//span[contains(text(),'Provider Staffing vs Calculated WorkLoad')]");
+
+
+        // SA ___ Forecasted Weekly Arrivals
+
+        public static By SAforecatedweekly_clear_ActualMonthly = By.XPath("//div[@class='s-patient-forecasted-monthlyarrivals s-patient-forecasted-weeklyarrivals pb-4']//div[@class='forecasted-actualmonthlyarrivals pl-2 pr-2 border-bottom-lightblue pb-2']//span[@class='eraser-icon ml-2']");
+        public static By SAforecatedweekly_clear_ActualHourly = By.XPath("//div[@class='forecasted-weeklyarrivalsSec pb-2']//h4[@class='collapse-heading']//span[@class='eraser-icon ml-2']");
+        public static By SAforecatedHourly_clear_ActualHourly = By.XPath("//div[@class='forecasted-weeklyarrivalsSec']//h4[@class='collapse-heading']//span[@class='eraser-icon ml-2']");
+
+
+
+        
 
         //fields expands
         public static By Expand_ActualMonthlyArrival = By.XPath("//a[contains(text(),'Actual Monthly Arrival')]");
+        public static By Expand_ActualWeeklyArrival = By.XPath("//a[contains(text(),'Actual Hourly Arrivals By Day Of Week')]");
 
         //zoom Graph, clear button, Refresh
 
         public static By ZoomGraph = By.XPath("//div[@class='section-content sameheight overflow-auto']//i[@class='fa fa-expand']");
         public static By SA_clear = By.XPath("//span[starts-with(@class,'eraser-icon')]");
-        public static By SA_Refresh = By.XPath("//button[contains(text(),'Refresh')]");
+        public static By SA_Refresh = By.XPath("//button[@class='btn btn-primary-shadow btn-primary-default btn-medium btn-pos']");
         public static By GraphCheckbox = By.XPath("//span[contains(text(),\"Saved Model's Patient Volume\")]");
+
+        public static By Zoomgraph_ActualweeklyArrival = By.XPath("//div[@class='forecasted-dailyarrivals-bymonth text-center p-4']//i[@class='fa fa-expand']");
 
 
         // Weekly Arriaval

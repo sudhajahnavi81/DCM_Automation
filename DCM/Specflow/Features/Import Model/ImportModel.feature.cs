@@ -86,12 +86,12 @@ this.ScenarioInitialize(scenarioInfo);
 #line 8
 testRunner.Given("click on create model tab from dashboard and click on Import from Existing Model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table66 = new TechTalk.SpecFlow.Table(new string[] {
                         "SearchText"});
-            table34.AddRow(new string[] {
+            table66.AddRow(new string[] {
                         "Automation"});
 #line 9
-testRunner.When("Search model and click on searched model name", ((string)(null)), table34, "When ");
+testRunner.When("Search model and click on searched model name", ((string)(null)), table66, "When ");
 #line 12
 testRunner.Then("Save model and verify imported model name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

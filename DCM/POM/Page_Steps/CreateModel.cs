@@ -78,7 +78,7 @@ namespace DCM.POM.Page_Steps
         {
             click(Page_Objects.arrivaldata_dropdown);
             click(Page_Objects.arrivaldata_dropdown_Import);
-            WaitForElement(Page_Objects.arrivaldata_dropdown_datepicker);
+            Thread.Sleep(5000);
 
             click(Page_Objects.arrivaldata_dropdown_datepicker);
 

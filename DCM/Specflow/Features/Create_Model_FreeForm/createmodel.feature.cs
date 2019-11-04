@@ -133,8 +133,8 @@ this.ScenarioInitialize(scenarioInfo);
                         "From_Time",
                         "To_Time"});
             table7.AddRow(new string[] {
-                        "01Hr",
-                        "08Hr"});
+                        "01:00",
+                        "08:00"});
 #line 21
  testRunner.When("Shifts tab opens enter values into fields and click on next button or click on Cl" +
                     "inician Productivity", ((string)(null)), table7, "When ");

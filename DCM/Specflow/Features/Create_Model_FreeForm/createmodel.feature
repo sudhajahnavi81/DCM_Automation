@@ -20,7 +20,7 @@ Scenario: 02 Create model with Data Benchmarking
 	   
 	When Shifts tab opens enter values into fields and click on next button or click on Clinician Productivity
 	| From_Time | To_Time |
-	| 01Hr      | 08Hr    |
+	| 01:00	    | 08:00      |
 
 	And Clinician Productivity tab opens enter values into fields and click on next button or click on Clinician Cost
 	| main_phy_pph | main_app_pph | main_PhyFirstHour | main_appFirstHour | FT_Phy_pph | FT_App_PPH | FT_PhyfirstHour | FT_AppfirstHour | PIT_Phy_pph | PIT_App_PPH | PIT_PhyfirstHour | PIT_AppFirstHour |

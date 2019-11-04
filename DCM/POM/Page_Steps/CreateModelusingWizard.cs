@@ -61,6 +61,7 @@ namespace DCM.POM.Page_Steps
         {
 
             click(Page_Objects.databenchmarkingaverage);
+            Thread.Sleep(2000);
             click(Page_Objects.OKbtn);
 
         }
@@ -69,6 +70,7 @@ namespace DCM.POM.Page_Steps
         {
             Thread.Sleep(3000);
             click(Page_Objects.ESI_databenchmarking);
+            Thread.Sleep(2000);
             click(Page_Objects.OKbtn);
         }
 
@@ -197,6 +199,8 @@ namespace DCM.POM.Page_Steps
         {
             Thread.Sleep(3000);
             click(Page_Objects.FT_Lnknothatsall);
+            Thread.Sleep(3000);
+            //click(Page_Objects.OKbtn);
 
         }
 
@@ -204,7 +208,8 @@ namespace DCM.POM.Page_Steps
         {
             Thread.Sleep(3000);
             click(Page_Objects.Lnknothatsall);
-
+            Thread.Sleep(3000);
+            
         }
 
         public static void Otherareafields(string FTHours, int FTESI3, int FTLOS, int DS, int CTT, int PFT, int PTT, double FTPHYFH, double FTAPPFH, double FTPHYPPH, double FTAPPPPH)
@@ -273,36 +278,50 @@ namespace DCM.POM.Page_Steps
             click(Page_Objects.ClinicalWorkDistribution_popupOKbtn);
             //Required fields OK
 
-            try
-            {
-                Thread.Sleep(3000);
-                click(Page_Objects.Requiredfields_OK);
-            }
-
-            catch
-            {
-
-
-            }
-
-          
+                   
 
         }
 
         public static void SaveModel()
             {
 
-            Thread.Sleep(3000);
+            
+            bool Mandatory = false;
+            try
+            {
+                WaitForElement(Page_Objects.Ok_Req);
+                click(Page_Objects.Ok_Req);
+                Mandatory = true;
+            }
+            catch
+            {
+
+            }
+            WaitForElement(Page_Objects.modelName);
+            //click(savepopup);
             DateTime now = DateTime.Now;
-            string modelName = "Automation_" + now.ToString("MM/dd/yyyy hh:mm tt");
+            String modelName = "Automation_" + now.ToString("MM/dd/yyyy hh:mm tt");
             Type(modelName.ToString(), Page_Objects.modelName);
+            if (!Mandatory)
+            {
+                click(Page_Objects.EMD_ModeCategory_Operational);
+            }
             click(Page_Objects.modelSave);
+            try
+            {
+                WaitForElement(Page_Objects.op_model_verification);
+                click(Page_Objects.Yesbtn);
+            }
+            catch
+            {
+
+            }
 
         }
 
         public static void Successmsg_Clk_OK()
         {
-            //Thread.Sleep(6000);
+            Thread.Sleep(13000);
             click(Page_Objects.OKbtn);
         }
 

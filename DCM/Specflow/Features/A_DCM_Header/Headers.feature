@@ -7,7 +7,7 @@ Feature: Dashboard
 Scenario: 01 login stringo DCM. search and select practice from dashboard
 	Given Enter practice name into search practice textbox and select searched practice.
 	| name                         |
-	| Bay Medical Center - EM 3150 |
+	| Training Practice			   |
 	Then models should show from selected practice
 
 Scenario: 02 Verify search practice with OU, State and City

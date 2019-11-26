@@ -82,28 +82,28 @@ namespace DCM.Specflow.Features.LoadModelList
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line hidden
-            TechTalk.SpecFlow.Table table67 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table101 = new TechTalk.SpecFlow.Table(new string[] {
                         "Modelname",
                         "Modifieduser",
                         "Modeltype"});
-            table67.AddRow(new string[] {
+            table101.AddRow(new string[] {
                         "Automation",
                         "Sunil",
-                        "Private"});
+                        "public"});
 #line 9
  testRunner.Given("Go to Load model list - Models in Selected practice and enter partial model name " +
                     "and click on last modeified by DD and deselect Select all and search one user an" +
-                    "d select that user and enter from and To date and enter model type", ((string)(null)), table67, "Given ");
+                    "d select that user and enter from and To date and enter model type", ((string)(null)), table101, "Given ");
 #line 12
  testRunner.And("verify model displayed accorinf to selected", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table68 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table102 = new TechTalk.SpecFlow.Table(new string[] {
                         "Updatemodelname"});
-            table68.AddRow(new string[] {
+            table102.AddRow(new string[] {
                         "_Updated"});
 #line 13
  testRunner.Then("Click on Edit Model Details update model information and verify updated informati" +
-                    "on", ((string)(null)), table68, "Then ");
+                    "on", ((string)(null)), table102, "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
@@ -117,18 +117,18 @@ this.ScenarioInitialize(scenarioInfo);
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line hidden
-            TechTalk.SpecFlow.Table table69 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table103 = new TechTalk.SpecFlow.Table(new string[] {
                         "Modelname",
                         "Modifieduser",
                         "Modeltype"});
-            table69.AddRow(new string[] {
+            table103.AddRow(new string[] {
                         "Automation",
                         "Sunil",
                         "Private"});
 #line 18
  testRunner.Given("Go to Load model list - Models in Selected practice and enter partial model name " +
                     "and click on last modeified by DD and deselect Select all and search one user an" +
-                    "d select that user and enter from and To date and enter model type", ((string)(null)), table69, "Given ");
+                    "d select that user and enter from and To date and enter model type", ((string)(null)), table103, "Given ");
 #line 21
  testRunner.And("Search model and click on View Analysis and check view analysis tab opened", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 22

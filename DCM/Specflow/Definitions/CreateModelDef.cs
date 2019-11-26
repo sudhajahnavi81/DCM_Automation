@@ -153,8 +153,10 @@ namespace DCM.Specflow.Definitions
         [Then(@"Model should be saved with values enter into save model popup\.")]
         public void ThenModelShouldBeSavedWithValuesEnterIntoSaveModelPopup_()
         {
-            CreateModel.SaveModel();
-            
+            CreateModel.SaveEDUModel();
+           // CreateModel.Dashboardpage();
+
+
         }
 
 

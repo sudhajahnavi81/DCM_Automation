@@ -87,7 +87,7 @@ this.ScenarioInitialize(scenarioInfo);
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "name"});
             table1.AddRow(new string[] {
-                        "Bay Medical Center - EM 3150"});
+                        "Training Practice"});
 #line 8
  testRunner.Given("Enter practice name into search practice textbox and select searched practice.", ((string)(null)), table1, "Given ");
 #line 11

@@ -128,14 +128,28 @@ namespace DCM.POM.Page_Steps
         public static void LengthDfStay(int OAL, int OAAD, int MDL, int FDL, int PDL)
         {
             WaitForElement(Page_Objects.Admit_LOS);
+            clear(Page_Objects.Admit_LOS);
             Type(OAL.ToString(), Page_Objects.Admit_LOS);
+            clear(Page_Objects.Admit_Decision);
             Type(OAAD.ToString(), Page_Objects.Admit_Decision);
+            clear(Page_Objects.Discharge_Los);
             Type(MDL.ToString(), Page_Objects.Discharge_Los);
+            clear(Page_Objects.FT_Discharge_Los);
             Type(FDL.ToString(), Page_Objects.FT_Discharge_Los);
+            clear(Page_Objects.PIT_Discharge_Los);
             Type(PDL.ToString(), Page_Objects.PIT_Discharge_Los);
 
-            JSExe(Page_Objects.lengthofstay_next);
+            try
+            {
+                JSExe(Page_Objects.lengthofstay_next);
+            }
+            catch
+            {
+
+            }
         }
+
+        
 
         public static void Shifts(string FromTime, string ToTime)
         {
@@ -162,11 +176,20 @@ namespace DCM.POM.Page_Steps
         public static void Shifts_Import()
         {
             WaitForElement(Page_Objects.importshiftbtn);
+           
             click(Page_Objects.importshiftbtn);
             Thread.Sleep(10000);
             //WaitForElement(Page_Objects.Shiftpopup);
             //click(Page_Objects.Shiftpopup);
+            try
+            {
+                click(Page_Objects.OKbtn);
+            }
+            catch
+            {
 
+            }
+            Thread.Sleep(5000);
             click(Page_Objects.ShiftImportAPPCheckbox);
             click(Page_Objects.ShiftImportPhyCheckbox);
             click(Page_Objects.ShiftImportScribeCheckbox);
@@ -187,6 +210,9 @@ namespace DCM.POM.Page_Steps
 
             JSExe(Page_Objects.shifts_next);
         }
+
+
+       
 
 
 
@@ -271,6 +297,46 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(5000);
         }
 
+        public static void SaveEDUModel()
+        {
+            click(Page_Objects.save);
+            bool Mandatory = false;
+            try
+            {
+                WaitForElement(Page_Objects.Ok_Req);
+                click(Page_Objects.Ok_Req);
+                Mandatory = true;
+            }
+            catch
+            {
+
+            }
+            WaitForElement(Page_Objects.modelName);
+            //click(savepopup);
+            DateTime now = DateTime.Now;
+            String modelName = "Automation_" + now.ToString("MM/dd/yyyy hh:mm tt");
+            Type(modelName.ToString(), Page_Objects.modelName);
+            if (!Mandatory)
+            {
+                click(Page_Objects.EMD_ModelCategory_Edu);
+            }
+            click(Page_Objects.modelSave);
+            try
+            {
+                WaitForElement(Page_Objects.op_model_verification);
+                click(Page_Objects.Yesbtn);
+            }
+            catch
+            {
+
+            }
+            Thread.Sleep(40000);
+            click(Page_Objects.OKbtn);
+
+
+
+            Thread.Sleep(5000);
+        }
 
         public static void EditModelDetail()
         {
@@ -349,7 +415,7 @@ namespace DCM.POM.Page_Steps
 
         public static void Sunday_Arrival(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
         {
-            Thread.Sleep(2000);
+            Thread.Sleep(5000);
             Type(Hr_00.ToString(), Page_Objects.sunday_0);
             Type(Hr_01.ToString(), Page_Objects.sunday_1);
             Type(Hr_02.ToString(), Page_Objects.sunday_2);
@@ -559,7 +625,217 @@ namespace DCM.POM.Page_Steps
             }
         }
 
+        public static void Sunday_Arrival0(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(5000);
+            Type(Hr_00.ToString(), Page_Objects.sunday_00);
+            Type(Hr_01.ToString(), Page_Objects.sunday_01);
+            Type(Hr_02.ToString(), Page_Objects.sunday_02);
+            Type(Hr_03.ToString(), Page_Objects.sunday_03);
+            Type(Hr_04.ToString(), Page_Objects.sunday_04);
+            Type(Hr_05.ToString(), Page_Objects.sunday_05);
+            Type(Hr_06.ToString(), Page_Objects.sunday_06);
+            Type(Hr_07.ToString(), Page_Objects.sunday_07);
+            Type(Hr_08.ToString(), Page_Objects.sunday_08);
+            Type(Hr_09.ToString(), Page_Objects.sunday_09);
+            Type(Hr_10.ToString(), Page_Objects.sunday_010);
+            Type(Hr_11.ToString(), Page_Objects.sunday_011);
+            Type(Hr_12.ToString(), Page_Objects.sunday_012);
+            Type(Hr_13.ToString(), Page_Objects.sunday_013);
+            Type(Hr_14.ToString(), Page_Objects.sunday_014);
+            Type(Hr_15.ToString(), Page_Objects.sunday_015);
+            Type(Hr_16.ToString(), Page_Objects.sunday_016);
+            Type(Hr_17.ToString(), Page_Objects.sunday_017);
+            Type(Hr_18.ToString(), Page_Objects.sunday_018);
+            Type(Hr_19.ToString(), Page_Objects.sunday_019);
+            Type(Hr_20.ToString(), Page_Objects.sunday_020);
+            Type(Hr_21.ToString(), Page_Objects.sunday_021);
+            Type(Hr_22.ToString(), Page_Objects.sunday_022);
+            Type(Hr_23.ToString(), Page_Objects.sunday_023);
+        }
 
+        public static void Monday_Arrival0(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(2000);
+            Type(Hr_00.ToString(), Page_Objects.Monday_00);
+            Type(Hr_01.ToString(), Page_Objects.Monday_01);
+            Type(Hr_02.ToString(), Page_Objects.Monday_02);
+            Type(Hr_03.ToString(), Page_Objects.Monday_03);
+            Type(Hr_04.ToString(), Page_Objects.Monday_04);
+            Type(Hr_05.ToString(), Page_Objects.Monday_05);
+            Type(Hr_06.ToString(), Page_Objects.Monday_06);
+            Type(Hr_07.ToString(), Page_Objects.Monday_07);
+            Type(Hr_08.ToString(), Page_Objects.Monday_08);
+            Type(Hr_09.ToString(), Page_Objects.Monday_09);
+            Type(Hr_10.ToString(), Page_Objects.Monday_010);
+            Type(Hr_11.ToString(), Page_Objects.Monday_011);
+            Type(Hr_12.ToString(), Page_Objects.Monday_012);
+            Type(Hr_13.ToString(), Page_Objects.Monday_013);
+            Type(Hr_14.ToString(), Page_Objects.Monday_014);
+            Type(Hr_15.ToString(), Page_Objects.Monday_015);
+            Type(Hr_16.ToString(), Page_Objects.Monday_016);
+            Type(Hr_17.ToString(), Page_Objects.Monday_017);
+            Type(Hr_18.ToString(), Page_Objects.Monday_018);
+            Type(Hr_19.ToString(), Page_Objects.Monday_019);
+            Type(Hr_20.ToString(), Page_Objects.Monday_020);
+            Type(Hr_21.ToString(), Page_Objects.Monday_021);
+            Type(Hr_22.ToString(), Page_Objects.Monday_022);
+            Type(Hr_23.ToString(), Page_Objects.Monday_023);
+        }
+
+        public static void Tuesday_Arrival0(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(2000);
+            Type(Hr_00.ToString(), Page_Objects.Tuesday_00);
+            Type(Hr_01.ToString(), Page_Objects.Tuesday_01);
+            Type(Hr_02.ToString(), Page_Objects.Tuesday_02);
+            Type(Hr_03.ToString(), Page_Objects.Tuesday_03);
+            Type(Hr_04.ToString(), Page_Objects.Tuesday_04);
+            Type(Hr_05.ToString(), Page_Objects.Tuesday_05);
+            Type(Hr_06.ToString(), Page_Objects.Tuesday_06);
+            Type(Hr_07.ToString(), Page_Objects.Tuesday_07);
+            Type(Hr_08.ToString(), Page_Objects.Tuesday_08);
+            Type(Hr_09.ToString(), Page_Objects.Tuesday_09);
+            Type(Hr_10.ToString(), Page_Objects.Tuesday_010);
+            Type(Hr_11.ToString(), Page_Objects.Tuesday_011);
+            Type(Hr_12.ToString(), Page_Objects.Tuesday_012);
+            Type(Hr_13.ToString(), Page_Objects.Tuesday_013);
+            Type(Hr_14.ToString(), Page_Objects.Tuesday_014);
+            Type(Hr_15.ToString(), Page_Objects.Tuesday_015);
+            Type(Hr_16.ToString(), Page_Objects.Tuesday_016);
+            Type(Hr_17.ToString(), Page_Objects.Tuesday_017);
+            Type(Hr_18.ToString(), Page_Objects.Tuesday_018);
+            Type(Hr_19.ToString(), Page_Objects.Tuesday_019);
+            Type(Hr_20.ToString(), Page_Objects.Tuesday_020);
+            Type(Hr_21.ToString(), Page_Objects.Tuesday_021);
+            Type(Hr_22.ToString(), Page_Objects.Tuesday_022);
+            Type(Hr_23.ToString(), Page_Objects.Tuesday_023);
+        }
+
+        public static void wednesday_Arrival0(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(2000);
+            Type(Hr_00.ToString(), Page_Objects.wednesday_00);
+            Type(Hr_01.ToString(), Page_Objects.wednesday_01);
+            Type(Hr_02.ToString(), Page_Objects.wednesday_02);
+            Type(Hr_03.ToString(), Page_Objects.wednesday_03);
+            Type(Hr_04.ToString(), Page_Objects.wednesday_04);
+            Type(Hr_05.ToString(), Page_Objects.wednesday_05);
+            Type(Hr_06.ToString(), Page_Objects.wednesday_06);
+            Type(Hr_07.ToString(), Page_Objects.wednesday_07);
+            Type(Hr_08.ToString(), Page_Objects.wednesday_08);
+            Type(Hr_09.ToString(), Page_Objects.wednesday_09);
+            Type(Hr_10.ToString(), Page_Objects.wednesday_010);
+            Type(Hr_11.ToString(), Page_Objects.wednesday_011);
+            Type(Hr_12.ToString(), Page_Objects.wednesday_012);
+            Type(Hr_13.ToString(), Page_Objects.wednesday_013);
+            Type(Hr_14.ToString(), Page_Objects.wednesday_014);
+            Type(Hr_15.ToString(), Page_Objects.wednesday_015);
+            Type(Hr_16.ToString(), Page_Objects.wednesday_016);
+            Type(Hr_17.ToString(), Page_Objects.wednesday_017);
+            Type(Hr_18.ToString(), Page_Objects.wednesday_018);
+            Type(Hr_19.ToString(), Page_Objects.wednesday_019);
+            Type(Hr_20.ToString(), Page_Objects.wednesday_020);
+            Type(Hr_21.ToString(), Page_Objects.wednesday_021);
+            Type(Hr_22.ToString(), Page_Objects.wednesday_022);
+            Type(Hr_23.ToString(), Page_Objects.wednesday_023);
+        }
+
+        public static void Thursday_Arrival0(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(2000);
+            Type(Hr_00.ToString(), Page_Objects.Thursday_00);
+            Type(Hr_01.ToString(), Page_Objects.Thursday_01);
+            Type(Hr_02.ToString(), Page_Objects.Thursday_02);
+            Type(Hr_03.ToString(), Page_Objects.Thursday_03);
+            Type(Hr_04.ToString(), Page_Objects.Thursday_04);
+            Type(Hr_05.ToString(), Page_Objects.Thursday_05);
+            Type(Hr_06.ToString(), Page_Objects.Thursday_06);
+            Type(Hr_07.ToString(), Page_Objects.Thursday_07);
+            Type(Hr_08.ToString(), Page_Objects.Thursday_08);
+            Type(Hr_09.ToString(), Page_Objects.Thursday_09);
+            Type(Hr_10.ToString(), Page_Objects.Thursday_010);
+            Type(Hr_11.ToString(), Page_Objects.Thursday_011);
+            Type(Hr_12.ToString(), Page_Objects.Thursday_012);
+            Type(Hr_13.ToString(), Page_Objects.Thursday_013);
+            Type(Hr_14.ToString(), Page_Objects.Thursday_014);
+            Type(Hr_15.ToString(), Page_Objects.Thursday_015);
+            Type(Hr_16.ToString(), Page_Objects.Thursday_016);
+            Type(Hr_17.ToString(), Page_Objects.Thursday_017);
+            Type(Hr_18.ToString(), Page_Objects.Thursday_018);
+            Type(Hr_19.ToString(), Page_Objects.Thursday_019);
+            Type(Hr_20.ToString(), Page_Objects.Thursday_020);
+            Type(Hr_21.ToString(), Page_Objects.Thursday_021);
+            Type(Hr_22.ToString(), Page_Objects.Thursday_022);
+            Type(Hr_23.ToString(), Page_Objects.Thursday_023);
+        }
+
+        public static void Friday_Arrival0(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(2000);
+            Type(Hr_00.ToString(), Page_Objects.Friday_00);
+            Type(Hr_01.ToString(), Page_Objects.Friday_01);
+            Type(Hr_02.ToString(), Page_Objects.Friday_02);
+            Type(Hr_03.ToString(), Page_Objects.Friday_03);
+            Type(Hr_04.ToString(), Page_Objects.Friday_04);
+            Type(Hr_05.ToString(), Page_Objects.Friday_05);
+            Type(Hr_06.ToString(), Page_Objects.Friday_06);
+            Type(Hr_07.ToString(), Page_Objects.Friday_07);
+            Type(Hr_08.ToString(), Page_Objects.Friday_08);
+            Type(Hr_09.ToString(), Page_Objects.Friday_09);
+            Type(Hr_10.ToString(), Page_Objects.Friday_010);
+            Type(Hr_11.ToString(), Page_Objects.Friday_011);
+            Type(Hr_12.ToString(), Page_Objects.Friday_012);
+            Type(Hr_13.ToString(), Page_Objects.Friday_013);
+            Type(Hr_14.ToString(), Page_Objects.Friday_014);
+            Type(Hr_15.ToString(), Page_Objects.Friday_015);
+            Type(Hr_16.ToString(), Page_Objects.Friday_016);
+            Type(Hr_17.ToString(), Page_Objects.Friday_017);
+            Type(Hr_18.ToString(), Page_Objects.Friday_018);
+            Type(Hr_19.ToString(), Page_Objects.Friday_019);
+            Type(Hr_20.ToString(), Page_Objects.Friday_020);
+            Type(Hr_21.ToString(), Page_Objects.Friday_021);
+            Type(Hr_22.ToString(), Page_Objects.Friday_022);
+            Type(Hr_23.ToString(), Page_Objects.Friday_023);
+        }
+
+        public static void Saturday_Arrival0(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(2000);
+            Type(Hr_00.ToString(), Page_Objects.Saturday_00);
+            Type(Hr_01.ToString(), Page_Objects.Saturday_01);
+            Type(Hr_02.ToString(), Page_Objects.Saturday_02);
+            Type(Hr_03.ToString(), Page_Objects.Saturday_03);
+            Type(Hr_04.ToString(), Page_Objects.Saturday_04);
+            Type(Hr_05.ToString(), Page_Objects.Saturday_05);
+            Type(Hr_06.ToString(), Page_Objects.Saturday_06);
+            Type(Hr_07.ToString(), Page_Objects.Saturday_07);
+            Type(Hr_08.ToString(), Page_Objects.Saturday_08);
+            Type(Hr_09.ToString(), Page_Objects.Saturday_09);
+            Type(Hr_10.ToString(), Page_Objects.Saturday_010);
+            Type(Hr_11.ToString(), Page_Objects.Saturday_011);
+            Type(Hr_12.ToString(), Page_Objects.Saturday_012);
+            Type(Hr_13.ToString(), Page_Objects.Saturday_013);
+            Type(Hr_14.ToString(), Page_Objects.Saturday_014);
+            Type(Hr_15.ToString(), Page_Objects.Saturday_015);
+            Type(Hr_16.ToString(), Page_Objects.Saturday_016);
+            Type(Hr_17.ToString(), Page_Objects.Saturday_017);
+            Type(Hr_18.ToString(), Page_Objects.Saturday_018);
+            Type(Hr_19.ToString(), Page_Objects.Saturday_019);
+            Type(Hr_20.ToString(), Page_Objects.Saturday_020);
+            Type(Hr_21.ToString(), Page_Objects.Saturday_021);
+            Type(Hr_22.ToString(), Page_Objects.Saturday_022);
+            Type(Hr_23.ToString(), Page_Objects.Saturday_023);
+
+            try
+            {
+                click(Page_Objects.Arrivals_OKbtn);
+            }
+            catch
+            {
+
+            }
+        }
         public static void Overall_ED(int ESI1, int ESI2, int ESI3, int ESI4)
         {
             clear(Page_Objects.overallED_ESI1);
@@ -618,5 +894,13 @@ namespace DCM.POM.Page_Steps
             JSExe(Page_Objects.ESI_next);
 
         }
+
+        public static void Dashboardpage()
+        {
+            Thread.Sleep(15000);
+            click(Page_Objects.dashboard);
+            Thread.Sleep(15000);
+        }
+
     }      
 }

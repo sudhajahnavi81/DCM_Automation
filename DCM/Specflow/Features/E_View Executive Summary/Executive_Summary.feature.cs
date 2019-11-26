@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace DCM.Specflow.Features.ImportModel
+namespace DCM.Specflow.Features.E_ViewExecutiveSummary
 {
     using TechTalk.SpecFlow;
     
@@ -18,24 +18,22 @@ namespace DCM.Specflow.Features.ImportModel
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.0.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Import Model")]
+    [NUnit.Framework.DescriptionAttribute("View Executive Summary")]
     [NUnit.Framework.CategoryAttribute("chrome")]
-    [NUnit.Framework.CategoryAttribute("SanityTest")]
-    public partial class ImportModelFeature
+    public partial class ViewExecutiveSummaryFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "ImportModel.feature"
+#line 1 "Executive_Summary.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Import Model", "\t\tDCM login with Chrome browser and Create Model Using Importing Other model", ProgrammingLanguage.CSharp, new string[] {
-                        "chrome",
-                        "SanityTest"});
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "View Executive Summary", "\tVerify Save in View Executive Summary", ProgrammingLanguage.CSharp, new string[] {
+                        "chrome"});
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,26 +72,24 @@ namespace DCM.Specflow.Features.ImportModel
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Create Model Using Importing Other model")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void CreateModelUsingImportingOtherModel()
+        [NUnit.Framework.DescriptionAttribute("01 Verify Save in View Executive Summary")]
+        [NUnit.Framework.CategoryAttribute("sanity")]
+        public virtual void _01VerifySaveInViewExecutiveSummary()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create Model Using Importing Other model", null, new string[] {
-                        "mytag"});
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 Verify Save in View Executive Summary", null, new string[] {
+                        "sanity"});
+#line 6
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 8
-testRunner.Given("click on create model tab from dashboard and click on Import from Existing Model", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table100 = new TechTalk.SpecFlow.Table(new string[] {
-                        "SearchText"});
-            table100.AddRow(new string[] {
-                        "Automation"});
-#line 9
-testRunner.When("Search model and click on searched model name", ((string)(null)), table100, "When ");
-#line 12
-testRunner.Then("Save model and verify imported model name", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+            TechTalk.SpecFlow.Table table99 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Key_Observation"});
+            table99.AddRow(new string[] {
+                        "Automation Testing"});
+#line 7
+testRunner.Given("click on View Executive summary tab and add comment in Key Observations", ((string)(null)), table99, "Given ");
+#line 10
+testRunner.Then("Save Key Observations comments", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -8,7 +8,7 @@ Feature: LoadModelList
 Scenario: 01 Search models with different filters
 	Given Go to Load model list - Models in Selected practice and enter partial model name and click on last modeified by DD and deselect Select all and search one user and select that user and enter from and To date and enter model type
 	| Modelname  | Modifieduser  |  Modeltype	 |
-	| Automation |   Sunil	     |     Private   |
+	| Automation |   Sunil	     |     public    |
 	And verify model displayed accorinf to selected
 	Then Click on Edit Model Details update model information and verify updated information
 	| Updatemodelname |

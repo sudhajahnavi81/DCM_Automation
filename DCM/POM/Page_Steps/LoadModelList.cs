@@ -15,9 +15,25 @@ namespace DCM.POM.Page_Steps
         public static void SearchModelusingFilters(string modelname, string lastmodifiedname, string modeltype)
         {
 
-            Thread.Sleep(15000);
+            Thread.Sleep(20000);
             click(Page_Objects.Appname);
-            Thread.Sleep(15000);
+            Thread.Sleep(20000);
+            
+            bool FacilityIcon = false;
+            try
+            {
+                Find(Page_Objects.practicepopup_txtbox);
+                FacilityIcon = false;
+            }
+            catch
+            {
+                FacilityIcon = true;
+            }
+            if (!FacilityIcon)
+            {
+                click(Page_Objects.practicebutton);
+            }
+            Thread.Sleep(2000);
             click(Page_Objects.Tab_LoadModelList);
             Thread.Sleep(4000);
             click(Page_Objects.Searchmodel_txt);
@@ -78,11 +94,19 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(2000);
             Type(updatedmodelNM, Page_Objects.Searchmodel_txt);
             Thread.Sleep(2000);
-            Console.WriteLine("Updated Model name: " + MethodsAndActions.GetText(Page_Objects.LML_Updatedmodelname));
-            Console.WriteLine("Last Modified By: " + MethodsAndActions.GetText(Page_Objects.LML_lastModifiedBy));
-            Console.WriteLine("Last Modified On: " + MethodsAndActions.GetText(Page_Objects.LML_lastModifiedOn));
-            Console.WriteLine("Updated Model Type: " + MethodsAndActions.GetText(Page_Objects.LML_Updatedmodeltype));
+            try
+            {
 
+
+                Console.WriteLine("Updated Model name: " + MethodsAndActions.GetText(Page_Objects.LML_Updatedmodelname));
+                Console.WriteLine("Last Modified By: " + MethodsAndActions.GetText(Page_Objects.LML_lastModifiedBy));
+                Console.WriteLine("Last Modified On: " + MethodsAndActions.GetText(Page_Objects.LML_lastModifiedOn));
+                Console.WriteLine("Updated Model Type: " + MethodsAndActions.GetText(Page_Objects.LML_Updatedmodeltype));
+            }
+            catch
+            {
+                Console.WriteLine("No result found");
+            }
         }
 
         public static void VerifyViewAnalysistab()

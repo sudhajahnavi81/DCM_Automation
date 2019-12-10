@@ -12,10 +12,10 @@ namespace DCM.POM.Page_Steps
     {
         public static void SA_SensitivityAnalysis()
         {
-            //WaitForElement(Page_Objects.Appname);
-            //click(Page_Objects.Appname);
-            //Thread.Sleep(15000);
-            //JSExe(Page_Objects.Editinput);
+            WaitForElement(Page_Objects.Appname);
+            click(Page_Objects.Appname);
+            Thread.Sleep(15000);
+            JSExe(Page_Objects.Editinput);
             Thread.Sleep(15000);
             WaitForElement(Page_Objects.SensitivityAnalysisTab);
             click(Page_Objects.SensitivityAnalysisTab);
@@ -646,6 +646,7 @@ namespace DCM.POM.Page_Steps
             if (ElementSunday)
             {
                 click(Page_Objects.Expand_ProductivityTarget);
+                Thread.Sleep(3000);
             }
         }
 
@@ -665,6 +666,7 @@ namespace DCM.POM.Page_Steps
             if (ElementSunday)
             {
                 click(Page_Objects.Expand_ProductivityVariation);
+                Thread.Sleep(3000);
             }
         }
 
@@ -684,6 +686,7 @@ namespace DCM.POM.Page_Steps
             if (ElementSunday)
             {
                 click(Page_Objects.Expand_Arrival_ProductivityTarget);
+                Thread.Sleep(3000);
             }
         }
 
@@ -703,6 +706,7 @@ namespace DCM.POM.Page_Steps
             if (ElementSunday)
             {
                 click(Page_Objects.Expand_Arrival_ProductivityVariation);
+                Thread.Sleep(3000);
             }
         }
 
@@ -764,11 +768,11 @@ namespace DCM.POM.Page_Steps
             clear(Page_Objects.SAFT_TargetAPPPPH);
             Type(FT_App_PPH.ToString(), Page_Objects.SAFT_TargetAPPPPH);
             click(Page_Objects.SAPIT_Arrival_TargetTab);
-            Thread.Sleep(2000);
-            clear(Page_Objects.SAPIT_TargetPhyPPH);
-            Type(PIT_Phy_pph.ToString(), Page_Objects.SAPIT_TargetPhyPPH);
-            clear(Page_Objects.SAPIT_TargetAPPPPH);
-            Type(PIT_App_PPH.ToString(), Page_Objects.SAPIT_TargetAPPPPH);
+            Thread.Sleep(5000);
+            clear(Page_Objects.ArrivalPIT_TargetPhyPPH);
+            Type(PIT_Phy_pph.ToString(), Page_Objects.ArrivalPIT_TargetPhyPPH);
+            clear(Page_Objects.ArrivalPIT_TargetAPPPPH);
+            Type(PIT_App_PPH.ToString(), Page_Objects.ArrivalPIT_TargetAPPPPH);
 
         }
 
@@ -787,10 +791,10 @@ namespace DCM.POM.Page_Steps
             Type(SAFT_FirstHr_APP.ToString(), Page_Objects.SAFT_FirstHr_APP);
             click(Page_Objects.SAPIT_Arrival_VariationTab);
             Thread.Sleep(2000);
-            clear(Page_Objects.SAPIT_FirstHr_Phy);
-            Type(SAPIT_FirstHr_Phy.ToString(), Page_Objects.SAPIT_FirstHr_Phy);
-            clear(Page_Objects.SAPIT_FirstHr_APP);
-            Type(SAPIT_FirstHr_APP.ToString(), Page_Objects.SAPIT_FirstHr_APP);
+            clear(Page_Objects.ArrivalPIT_FirstHr_Phy);
+            Type(SAPIT_FirstHr_Phy.ToString(), Page_Objects.ArrivalPIT_FirstHr_Phy);
+            clear(Page_Objects.ArrivalPIT_FirstHr_APP);
+            Type(SAPIT_FirstHr_APP.ToString(), Page_Objects.ArrivalPIT_FirstHr_APP);
 
         }
 

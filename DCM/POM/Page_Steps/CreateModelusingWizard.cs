@@ -321,7 +321,7 @@ namespace DCM.POM.Page_Steps
 
         public static void Successmsg_Clk_OK()
         {
-            Thread.Sleep(13000);
+            Thread.Sleep(25000);
             click(Page_Objects.OKbtn);
         }
 

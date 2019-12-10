@@ -250,7 +250,7 @@ namespace DCM.Specflow.Definitions
             int Hr_22 = Sunday.Hr_22;
             int Hr_23 = Sunday.Hr_23;
 
-            CreateModel.Sunday_Arrival(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
+            CreateModel.Sunday_Arrival_Wizard(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
         }
 
         [When(@"enter values into Actual Hourly Arrivals By Day Of Week for Monday fields")]
@@ -283,7 +283,7 @@ namespace DCM.Specflow.Definitions
             int Hr_22 = Monday.Hr_22;
             int Hr_23 = Monday.Hr_23;
 
-            CreateModel.Monday_Arrival(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
+            CreateModel.Monday_Arrival_Wizard(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
         }
 
         [When(@"enter values into Actual Hourly Arrivals By Day Of Week for Tuesday fields")]
@@ -316,7 +316,7 @@ namespace DCM.Specflow.Definitions
             int Hr_22 = Tuesday.Hr_22;
             int Hr_23 = Tuesday.Hr_23;
 
-            CreateModel.Tuesday_Arrival(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
+            CreateModel.Tuesday_Arrival_Wizard(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
         }
 
         [When(@"enter values into Actual Hourly Arrivals By Day Of Week for Wednesday fields")]
@@ -349,7 +349,7 @@ namespace DCM.Specflow.Definitions
             int Hr_22 = Wednesday.Hr_22;
             int Hr_23 = Wednesday.Hr_23;
 
-            CreateModel.wednesday_Arrival(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
+            CreateModel.wednesday_Arrival_Wizard(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
         }
 
         [When(@"enter values into Actual Hourly Arrivals By Day Of Week for Thursday fields")]
@@ -382,7 +382,7 @@ namespace DCM.Specflow.Definitions
             int Hr_22 = Thursday.Hr_22;
             int Hr_23 = Thursday.Hr_23;
 
-            CreateModel.Thursday_Arrival(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
+            CreateModel.Thursday_Arrival_Wizard(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
         }
 
         [When(@"enter values into Actual Hourly Arrivals By Day Of Week for Friday fields")]
@@ -415,7 +415,7 @@ namespace DCM.Specflow.Definitions
             int Hr_22 = Friday.Hr_22;
             int Hr_23 = Friday.Hr_23;
 
-            CreateModel.Friday_Arrival(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
+            CreateModel.Friday_Arrival_Wizard(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
         }
 
         [When(@"enter values into Actual Hourly Arrivals By Day Of Week for Saturday fields")]
@@ -448,7 +448,7 @@ namespace DCM.Specflow.Definitions
             int Hr_22 = Saturday.Hr_22;
             int Hr_23 = Saturday.Hr_23;
 
-            CreateModel.Saturday_Arrival(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
+            CreateModel.Saturday_Arrival_Wizard(Hr_00, Hr_01, Hr_02, Hr_03, Hr_04, Hr_05, Hr_06, Hr_07, Hr_08, Hr_09, Hr_10, Hr_11, Hr_12, Hr_13, Hr_14, Hr_15, Hr_16, Hr_17, Hr_18, Hr_19, Hr_20, Hr_21, Hr_22, Hr_23);
         }
 
         [When(@"select let me enter my own from dropdown and enter values into Segmentation by ESI Levels fields")]

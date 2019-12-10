@@ -15,7 +15,7 @@ namespace DCM.POM.Page_Steps
         {
             WaitForElement(Page_Objects.Appname);
             click(Page_Objects.Appname);
-            Thread.Sleep(10000);
+            Thread.Sleep(40000);
             JSExe(Page_Objects.createModelTab);
             // WaitForElement(Page_Objects.createModelPopUp);
             JSExe(Page_Objects.createModelFreeForm);
@@ -76,6 +76,7 @@ namespace DCM.POM.Page_Steps
 
         public static void ArrivalESI_import(int FTESI3, int PITESI3)
         {
+            Thread.Sleep(10000);
             click(Page_Objects.arrivaldata_dropdown);
             click(Page_Objects.arrivaldata_dropdown_Import);
             Thread.Sleep(5000);
@@ -836,6 +837,228 @@ namespace DCM.POM.Page_Steps
 
             }
         }
+
+
+        public static void Sunday_Arrival_Wizard(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(5000);
+            Type(Hr_00.ToString(), Page_Objects.sunday_0_wizard);
+            Type(Hr_01.ToString(), Page_Objects.sunday_1_wizard);
+            Type(Hr_02.ToString(), Page_Objects.sunday_2_wizard);
+            Type(Hr_03.ToString(), Page_Objects.sunday_3_wizard);
+            Type(Hr_04.ToString(), Page_Objects.sunday_4_wizard);
+            Type(Hr_05.ToString(), Page_Objects.sunday_5_wizard);
+            Type(Hr_06.ToString(), Page_Objects.sunday_6_wizard);
+            Type(Hr_07.ToString(), Page_Objects.sunday_7_wizard);
+            Type(Hr_08.ToString(), Page_Objects.sunday_8_wizard);
+            Type(Hr_09.ToString(), Page_Objects.sunday_9_wizard);
+            Type(Hr_10.ToString(), Page_Objects.sunday_10_wizard);
+            Type(Hr_11.ToString(), Page_Objects.sunday_11_wizard);
+            Type(Hr_12.ToString(), Page_Objects.sunday_12_wizard);
+            Type(Hr_13.ToString(), Page_Objects.sunday_13_wizard);
+            Type(Hr_14.ToString(), Page_Objects.sunday_14_wizard);
+            Type(Hr_15.ToString(), Page_Objects.sunday_15_wizard);
+            Type(Hr_16.ToString(), Page_Objects.sunday_16_wizard);
+            Type(Hr_17.ToString(), Page_Objects.sunday_17_wizard);
+            Type(Hr_18.ToString(), Page_Objects.sunday_18_wizard);
+            Type(Hr_19.ToString(), Page_Objects.sunday_19_wizard);
+            Type(Hr_20.ToString(), Page_Objects.sunday_20_wizard);
+            Type(Hr_21.ToString(), Page_Objects.sunday_21_wizard);
+            Type(Hr_22.ToString(), Page_Objects.sunday_22_wizard);
+            Type(Hr_23.ToString(), Page_Objects.sunday_23_wizard);
+        }
+
+        public static void Monday_Arrival_Wizard(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(2000);
+            Type(Hr_00.ToString(), Page_Objects.Monday_0_wizard);
+            Type(Hr_01.ToString(), Page_Objects.Monday_1_wizard);
+            Type(Hr_02.ToString(), Page_Objects.Monday_2_wizard);
+            Type(Hr_03.ToString(), Page_Objects.Monday_3_wizard);
+            Type(Hr_04.ToString(), Page_Objects.Monday_4_wizard);
+            Type(Hr_05.ToString(), Page_Objects.Monday_5_wizard);
+            Type(Hr_06.ToString(), Page_Objects.Monday_6_wizard);
+            Type(Hr_07.ToString(), Page_Objects.Monday_7_wizard);
+            Type(Hr_08.ToString(), Page_Objects.Monday_8_wizard);
+            Type(Hr_09.ToString(), Page_Objects.Monday_9_wizard);
+            Type(Hr_10.ToString(), Page_Objects.Monday_10_wizard);
+            Type(Hr_11.ToString(), Page_Objects.Monday_11_wizard);
+            Type(Hr_12.ToString(), Page_Objects.Monday_12_wizard);
+            Type(Hr_13.ToString(), Page_Objects.Monday_13_wizard);
+            Type(Hr_14.ToString(), Page_Objects.Monday_14_wizard);
+            Type(Hr_15.ToString(), Page_Objects.Monday_15_wizard);
+            Type(Hr_16.ToString(), Page_Objects.Monday_16_wizard);
+            Type(Hr_17.ToString(), Page_Objects.Monday_17_wizard);
+            Type(Hr_18.ToString(), Page_Objects.Monday_18_wizard);
+            Type(Hr_19.ToString(), Page_Objects.Monday_19_wizard);
+            Type(Hr_20.ToString(), Page_Objects.Monday_20_wizard);
+            Type(Hr_21.ToString(), Page_Objects.Monday_21_wizard);
+            Type(Hr_22.ToString(), Page_Objects.Monday_22_wizard);
+            Type(Hr_23.ToString(), Page_Objects.Monday_23_wizard);
+        }
+
+        public static void Tuesday_Arrival_Wizard(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(2000);
+            Type(Hr_00.ToString(), Page_Objects.Tuesday_0_wizard);
+            Type(Hr_01.ToString(), Page_Objects.Tuesday_1_wizard);
+            Type(Hr_02.ToString(), Page_Objects.Tuesday_2_wizard);
+            Type(Hr_03.ToString(), Page_Objects.Tuesday_3_wizard);
+            Type(Hr_04.ToString(), Page_Objects.Tuesday_4_wizard);
+            Type(Hr_05.ToString(), Page_Objects.Tuesday_5_wizard);
+            Type(Hr_06.ToString(), Page_Objects.Tuesday_6_wizard);
+            Type(Hr_07.ToString(), Page_Objects.Tuesday_7_wizard);
+            Type(Hr_08.ToString(), Page_Objects.Tuesday_8_wizard);
+            Type(Hr_09.ToString(), Page_Objects.Tuesday_9_wizard);
+            Type(Hr_10.ToString(), Page_Objects.Tuesday_10_wizard);
+            Type(Hr_11.ToString(), Page_Objects.Tuesday_11_wizard);
+            Type(Hr_12.ToString(), Page_Objects.Tuesday_12_wizard);
+            Type(Hr_13.ToString(), Page_Objects.Tuesday_13_wizard);
+            Type(Hr_14.ToString(), Page_Objects.Tuesday_14_wizard);
+            Type(Hr_15.ToString(), Page_Objects.Tuesday_15_wizard);
+            Type(Hr_16.ToString(), Page_Objects.Tuesday_16_wizard);
+            Type(Hr_17.ToString(), Page_Objects.Tuesday_17_wizard);
+            Type(Hr_18.ToString(), Page_Objects.Tuesday_18_wizard);
+            Type(Hr_19.ToString(), Page_Objects.Tuesday_19_wizard);
+            Type(Hr_20.ToString(), Page_Objects.Tuesday_20_wizard);
+            Type(Hr_21.ToString(), Page_Objects.Tuesday_21_wizard);
+            Type(Hr_22.ToString(), Page_Objects.Tuesday_22_wizard);
+            Type(Hr_23.ToString(), Page_Objects.Tuesday_23_wizard);
+        }
+
+        public static void wednesday_Arrival_Wizard(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(2000);
+            Type(Hr_00.ToString(), Page_Objects.wednesday_0_wizard);
+            Type(Hr_01.ToString(), Page_Objects.wednesday_1_wizard);
+            Type(Hr_02.ToString(), Page_Objects.wednesday_2_wizard);
+            Type(Hr_03.ToString(), Page_Objects.wednesday_3_wizard);
+            Type(Hr_04.ToString(), Page_Objects.wednesday_4_wizard);
+            Type(Hr_05.ToString(), Page_Objects.wednesday_5_wizard);
+            Type(Hr_06.ToString(), Page_Objects.wednesday_6_wizard);
+            Type(Hr_07.ToString(), Page_Objects.wednesday_7_wizard);
+            Type(Hr_08.ToString(), Page_Objects.wednesday_8_wizard);
+            Type(Hr_09.ToString(), Page_Objects.wednesday_9_wizard);
+            Type(Hr_10.ToString(), Page_Objects.wednesday_10_wizard);
+            Type(Hr_11.ToString(), Page_Objects.wednesday_11_wizard);
+            Type(Hr_12.ToString(), Page_Objects.wednesday_12_wizard);
+            Type(Hr_13.ToString(), Page_Objects.wednesday_13_wizard);
+            Type(Hr_14.ToString(), Page_Objects.wednesday_14_wizard);
+            Type(Hr_15.ToString(), Page_Objects.wednesday_15_wizard);
+            Type(Hr_16.ToString(), Page_Objects.wednesday_16_wizard);
+            Type(Hr_17.ToString(), Page_Objects.wednesday_17_wizard);
+            Type(Hr_18.ToString(), Page_Objects.wednesday_18_wizard);
+            Type(Hr_19.ToString(), Page_Objects.wednesday_19_wizard);
+            Type(Hr_20.ToString(), Page_Objects.wednesday_20_wizard);
+            Type(Hr_21.ToString(), Page_Objects.wednesday_21_wizard);
+            Type(Hr_22.ToString(), Page_Objects.wednesday_22_wizard);
+            Type(Hr_23.ToString(), Page_Objects.wednesday_23_wizard);
+        }
+
+        public static void Thursday_Arrival_Wizard(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(2000);
+            Type(Hr_00.ToString(), Page_Objects.Thursday_0_wizard);
+            Type(Hr_01.ToString(), Page_Objects.Thursday_1_wizard);
+            Type(Hr_02.ToString(), Page_Objects.Thursday_2_wizard);
+            Type(Hr_03.ToString(), Page_Objects.Thursday_3_wizard);
+            Type(Hr_04.ToString(), Page_Objects.Thursday_4_wizard);
+            Type(Hr_05.ToString(), Page_Objects.Thursday_5_wizard);
+            Type(Hr_06.ToString(), Page_Objects.Thursday_6_wizard);
+            Type(Hr_07.ToString(), Page_Objects.Thursday_7_wizard);
+            Type(Hr_08.ToString(), Page_Objects.Thursday_8_wizard);
+            Type(Hr_09.ToString(), Page_Objects.Thursday_9_wizard);
+            Type(Hr_10.ToString(), Page_Objects.Thursday_10_wizard);
+            Type(Hr_11.ToString(), Page_Objects.Thursday_11_wizard);
+            Type(Hr_12.ToString(), Page_Objects.Thursday_12_wizard);
+            Type(Hr_13.ToString(), Page_Objects.Thursday_13_wizard);
+            Type(Hr_14.ToString(), Page_Objects.Thursday_14_wizard);
+            Type(Hr_15.ToString(), Page_Objects.Thursday_15_wizard);
+            Type(Hr_16.ToString(), Page_Objects.Thursday_16_wizard);
+            Type(Hr_17.ToString(), Page_Objects.Thursday_17_wizard);
+            Type(Hr_18.ToString(), Page_Objects.Thursday_18_wizard);
+            Type(Hr_19.ToString(), Page_Objects.Thursday_19_wizard);
+            Type(Hr_20.ToString(), Page_Objects.Thursday_20_wizard);
+            Type(Hr_21.ToString(), Page_Objects.Thursday_21_wizard);
+            Type(Hr_22.ToString(), Page_Objects.Thursday_22_wizard);
+            Type(Hr_23.ToString(), Page_Objects.Thursday_23_wizard);
+        }
+
+        public static void Friday_Arrival_Wizard(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(2000);
+            Type(Hr_00.ToString(), Page_Objects.Friday_0_wizard);
+            Type(Hr_01.ToString(), Page_Objects.Friday_1_wizard);
+            Type(Hr_02.ToString(), Page_Objects.Friday_2_wizard);
+            Type(Hr_03.ToString(), Page_Objects.Friday_3_wizard);
+            Type(Hr_04.ToString(), Page_Objects.Friday_4_wizard);
+            Type(Hr_05.ToString(), Page_Objects.Friday_5_wizard);
+            Type(Hr_06.ToString(), Page_Objects.Friday_6_wizard);
+            Type(Hr_07.ToString(), Page_Objects.Friday_7_wizard);
+            Type(Hr_08.ToString(), Page_Objects.Friday_8_wizard);
+            Type(Hr_09.ToString(), Page_Objects.Friday_9_wizard);
+            Type(Hr_10.ToString(), Page_Objects.Friday_10_wizard);
+            Type(Hr_11.ToString(), Page_Objects.Friday_11_wizard);
+            Type(Hr_12.ToString(), Page_Objects.Friday_12_wizard);
+            Type(Hr_13.ToString(), Page_Objects.Friday_13_wizard);
+            Type(Hr_14.ToString(), Page_Objects.Friday_14_wizard);
+            Type(Hr_15.ToString(), Page_Objects.Friday_15_wizard);
+            Type(Hr_16.ToString(), Page_Objects.Friday_16_wizard);
+            Type(Hr_17.ToString(), Page_Objects.Friday_17_wizard);
+            Type(Hr_18.ToString(), Page_Objects.Friday_18_wizard);
+            Type(Hr_19.ToString(), Page_Objects.Friday_19_wizard);
+            Type(Hr_20.ToString(), Page_Objects.Friday_20_wizard);
+            Type(Hr_21.ToString(), Page_Objects.Friday_21_wizard);
+            Type(Hr_22.ToString(), Page_Objects.Friday_22_wizard);
+            Type(Hr_23.ToString(), Page_Objects.Friday_23_wizard);
+        }
+
+        public static void Saturday_Arrival_Wizard(int Hr_00, int Hr_01, int Hr_02, int Hr_03, int Hr_04, int Hr_05, int Hr_06, int Hr_07, int Hr_08, int Hr_09, int Hr_10, int Hr_11, int Hr_12, int Hr_13, int Hr_14, int Hr_15, int Hr_16, int Hr_17, int Hr_18, int Hr_19, int Hr_20, int Hr_21, int Hr_22, int Hr_23)
+        {
+            Thread.Sleep(2000);
+            Type(Hr_00.ToString(), Page_Objects.Saturday_0_wizard);
+            Type(Hr_01.ToString(), Page_Objects.Saturday_1_wizard);
+            Type(Hr_02.ToString(), Page_Objects.Saturday_2_wizard);
+            Type(Hr_03.ToString(), Page_Objects.Saturday_3_wizard);
+            Type(Hr_04.ToString(), Page_Objects.Saturday_4_wizard);
+            Type(Hr_05.ToString(), Page_Objects.Saturday_5_wizard);
+            Type(Hr_06.ToString(), Page_Objects.Saturday_6_wizard);
+            Type(Hr_07.ToString(), Page_Objects.Saturday_7_wizard);
+            Type(Hr_08.ToString(), Page_Objects.Saturday_8_wizard);
+            Type(Hr_09.ToString(), Page_Objects.Saturday_9_wizard);
+            Type(Hr_10.ToString(), Page_Objects.Saturday_10_wizard);
+            Type(Hr_11.ToString(), Page_Objects.Saturday_11_wizard);
+            Type(Hr_12.ToString(), Page_Objects.Saturday_12_wizard);
+            Type(Hr_13.ToString(), Page_Objects.Saturday_13_wizard);
+            Type(Hr_14.ToString(), Page_Objects.Saturday_14_wizard);
+            Type(Hr_15.ToString(), Page_Objects.Saturday_15_wizard);
+            Type(Hr_16.ToString(), Page_Objects.Saturday_16_wizard);
+            Type(Hr_17.ToString(), Page_Objects.Saturday_17_wizard);
+            Type(Hr_18.ToString(), Page_Objects.Saturday_18_wizard);
+            Type(Hr_19.ToString(), Page_Objects.Saturday_19_wizard);
+            Type(Hr_20.ToString(), Page_Objects.Saturday_20_wizard);
+            Type(Hr_21.ToString(), Page_Objects.Saturday_21_wizard);
+            Type(Hr_22.ToString(), Page_Objects.Saturday_22_wizard);
+            Type(Hr_23.ToString(), Page_Objects.Saturday_23_wizard);
+
+            try
+            {
+                click(Page_Objects.Arrivals_OKbtn);
+            }
+            catch
+            {
+
+            }
+        }
+
+
+
+
+
+
+
+
+
         public static void Overall_ED(int ESI1, int ESI2, int ESI3, int ESI4)
         {
             clear(Page_Objects.overallED_ESI1);

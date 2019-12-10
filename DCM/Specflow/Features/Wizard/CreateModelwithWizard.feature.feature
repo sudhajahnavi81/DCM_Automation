@@ -271,7 +271,7 @@ Scenario: 01 Create Wizard model using data Benchmarking
 	
 	When Are there any other areas in your Emergency Department?  question appeared then click on  Fast track and answer all the questions
 	| FTHoursFrom | FTHoursTo | FT_LOS | FT_PHY_PPH | FT_APP_PPH | FTesi3 | FTLOS | FTPHYFH | FTAPPFH | Duplicate_Shifts |Current_To_Time |  Proposed_From_Time |  Proposed_To_Time |
-	| 09:00       | 21:00     | 90     | 3.25       | 2.75       | 5      | 90    | 4     | 3     | 2                |18           |  05              |  19             |
+	| 09:00       | 21:00     | 90     | 3.25       | 2.75       | 5      | 90    | 3.25	|2.75	  | 2                |18			  |  05				    |  19			    |
 	
 
 	And click on No,That's All button

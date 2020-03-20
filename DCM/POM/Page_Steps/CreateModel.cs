@@ -102,8 +102,15 @@ namespace DCM.POM.Page_Steps
             {
 
             }
-            WaitForElement(Page_Objects.import_ok);
-            click(Page_Objects.import_ok);
+            try
+            {
+                WaitForElement(Page_Objects.import_ok);
+                click(Page_Objects.import_ok);
+            }
+            catch
+            {
+
+            }
             Thread.Sleep(5000);
             click(Page_Objects.segmentation_by_ESI_dropdown);
             click(Page_Objects.segmentation_by_ESI_value);

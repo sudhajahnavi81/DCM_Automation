@@ -69,9 +69,16 @@ namespace DCM.POM.Page_Steps
             WaitForElement(Page_Objects.OKbtn);
             Console.WriteLine("Previous Operational Model(s) :");
             Console.WriteLine("Current Operational Model :" + GetText(Page_Objects.currentmodelhistory));
-            Console.WriteLine("Previous Operational Model :" + GetText(Page_Objects.Previouslastmodel));
-            Console.WriteLine("Previous Operational Model :" + GetText(Page_Objects.Previous2ndlastmodel));
-            Console.WriteLine("Previous Operational Model :" + GetText(Page_Objects.Previous3rdlastmodel));
+            try
+            {
+                Console.WriteLine("Previous Operational Model :" + GetText(Page_Objects.Previouslastmodel));
+                Console.WriteLine("Previous Operational Model :" + GetText(Page_Objects.Previous2ndlastmodel));
+                Console.WriteLine("Previous Operational Model :" + GetText(Page_Objects.Previous3rdlastmodel));
+            }
+            catch
+            {
+
+            }
 
 
         }
@@ -79,6 +86,7 @@ namespace DCM.POM.Page_Steps
         public static void okbtn()
 
         {
+            Thread.Sleep(3000);
             click(Page_Objects.OKbtn);
         }
 

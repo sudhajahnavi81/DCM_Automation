@@ -827,6 +827,9 @@ namespace DCM.POM.DCM_Objects
         public static By main_phy_pph = By.XPath("//input[@id='targetedPphValue-1']");
         public static By main_app_pph = By.XPath("//input[@id='appCoefficientValue-1']");
 
+        public static By bothPresent = By.XPath("//li[contains(text(),'Both Physician and APP are Present')]");
+        public static By bothPresent2 = By.XPath("//div[@class='areaGroup']//div[5]/div[1]/ul[1]/li[3]"); 
+            //li[@class='nav-item pl-2 pr-2 active'][contains(text(),'Both Physician and APP are Present')]");
         //ft
         public static By FtTab = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/div[1]/app-input[1]/div[1]/div[2]/tabset[1]/div[1]/tab[5]/app-clinicianproductivity[1]/div[1]/div[1]/div[1]/div[1]/mat-tab-group[1]/mat-tab-header[1]/div[2]/div[1]/div[1]/div[2]/div[1]");
             //("//div[@class ='mat-tab-label mat-ripple ng-star-inserted'][contains(@id,'mat-tab-content-1']");
@@ -880,6 +883,7 @@ namespace DCM.POM.DCM_Objects
         //Edit input
 
         public static By Editinput = By.XPath("//td[@class='model-name mat-cell cdk-column-ModelName mat-column-ModelName ng-star-inserted']//sub[contains(text(),'(Operational)')]//following::td[5]//button[2]");
+        public static By Editinput_Edu = By.XPath("//td[@class='model-name mat-cell cdk-column-ModelName mat-column-ModelName ng-star-inserted']//sub[contains(text(),'(Educational)')]//following::td[5]//button[2]");
 
         //Save
 
@@ -929,7 +933,7 @@ namespace DCM.POM.DCM_Objects
         public static By clktoviewarrivals = By.XPath("/html/body/app-root/div/div/app-wizard/div/div/div/div[5]/div/ul/li[4]");
         public static By ESI_databenchmarking = By.XPath("//div[contains(text(),'What is the Emergency Severity Index (ESI) breakdo')]//following::ul//li[2]");
         public static By ESI_entermanually = By.XPath("//div[contains(text(),'What is the Emergency Severity Index (ESI) breakdo')]//following::ul//li[1]");
-        public static By FT_ESI_entermanually = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/div[1]/app-wizard[1]/div[1]/div[1]/div[1]/div[20]/div[1]/div[2]/div[1]/ul[1]/li[1]");
+        public static By FT_ESI_entermanually = By.XPath("//div[@class='qaModule p-1 ng-star-inserted']//li[@class='nav-item pl-2 pr-2 active'][contains(text(),\"I'd like to enter the data manually\")]");
         public static By ESI_1 = By.XPath("/html[1]/body[1]/div[1]/div[2]/div[1]/mat-dialog-container[1]/app-wizard-arrivals-esi[1]/div[1]/div[1]/div[2]/app-segmentation-esi-levels[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/input[1]");
         public static By ESI_2 = By.XPath("/html[1]/body[1]/div[1]/div[2]/div[1]/mat-dialog-container[1]/app-wizard-arrivals-esi[1]/div[1]/div[1]/div[2]/app-segmentation-esi-levels[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/div[1]/input[1]");
         public static By ESI_3 = By.XPath("/html[1]/body[1]/div[1]/div[2]/div[1]/mat-dialog-container[1]/app-wizard-arrivals-esi[1]/div[1]/div[1]/div[2]/app-segmentation-esi-levels[1]/div[1]/div[2]/table[1]/tbody[1]/tr[1]/td[4]/div[1]/div[1]/input[1]");
@@ -984,9 +988,10 @@ namespace DCM.POM.DCM_Objects
         public static By Phy_firsthour = By.XPath("//div[contains(text(),'Do your Physicians have a higher than average PPH')]//following::div/input");
         public static By App_firsthour = By.XPath("//div[contains(text(),'Do your APPs have a higher than average PPH during')]//following::div/input");
 
-        public static By Lnknothatsall = By.XPath("//div[19]//div[1]//ul//li[1]");
-        public static By FT_Lnknothatsall = By.XPath("//div[@class='areaGroup']//div[10]//div//ul//li[1]");
-        
+        public static By Lnknothatsall = By.XPath("//li[contains(text(),\"No, that's all\")]");
+        public static By FT_Lnknothatsall = By.XPath("//ul[@class='nav-list pl-0 pt-3']//li[@class='nav-item pl-2 pr-2'][contains(text(),\"No, that's all\")]");
+
+
         public static By LnkFasttrack = By.XPath("//div[contains(text(),'Are there any other areas in your Emergency Depart')]//following::ul/li[2]");
         public static By FT_Hours = By.XPath("//div[@class='areaGroup']//div[@class='qaModule pb-2']//div[1]//following::div/input");
         public static By FT_ESI = By.XPath("//div[@class='qaModule p-1 ng-star-inserted']//li[@class='nav-item pl-2 pr-2'][contains(text(),'I'd like to enter the data manually')]");
@@ -994,11 +999,11 @@ namespace DCM.POM.DCM_Objects
         public static By FT_LOS = By.XPath("//div[@class='areaGroup']//div[3]//div[2]//input[1]");
         public static By FT_ShiftManually = By.XPath("//div[@class='areaGroup']//div[4]//div//ul//li[2]");
         public static By FT_Shift = By.XPath("//div[@class='mat-tab-label-content'][contains(text(),'Fast Track')]");
-        public static By FT_PHY_PPH = By.XPath("//div[@class='areaGroup']//div[5]//div[2]//input");
-        public static By FT_APP_PPH = By.XPath("//div[@class='areaGroup']//div[6]//div[2]//input");
-        public static By FT_Scribe_Cooff_Cont = By.XPath("//div[@class='areaGroup']//div[7]//div[2]//ul//li[2]");
-        public static By FT_PHY_FirstHour = By.XPath("//div[@class='areaGroup']//div[8]//div[3]/input");
-        public static By FT_APP_FirstHour = By.XPath("//div[@class='areaGroup']//div[9]//div[3]/input");
+        public static By FT_PHY_PPH = By.XPath("//div[6]//div[2]//input[1]");
+        public static By FT_APP_PPH = By.XPath("//div[@class='areaGroup']//div[7]//div[2]//input[1]");
+        public static By FT_Scribe_Cooff_Cont = By.XPath("//li[@class='nav-item pl-2 pr-2'][contains(text(),'No, I want to continue with the default Scribe coe')]");
+        public static By FT_PHY_FirstHour = By.XPath("//div[@class='areaGroup']//div[9]//div[3]/input");
+        public static By FT_APP_FirstHour = By.XPath("//div[@class='areaGroup']//div[10]//div[3]/input");
 
         public static By ClinicalWorkDistribution_popup = By.XPath("//mat-dialog-container[@id='mat-dialog-6']");
         public static By ClinicalWorkDistribution_popupOKbtn = By.XPath("//button[@class='btn btn-primary']");
@@ -1184,7 +1189,7 @@ namespace DCM.POM.DCM_Objects
         //Load Model List
         public static By Tab_LoadModelList = By.XPath("//a[contains(text(),'Load Model List')]");
         public static By Searchmodel_txt = By.XPath("//input[@placeholder='Search Model Name']");
-        public static By LastModified_DD = By.XPath("//th[@class='mat-header-cell cdk-column-UpdatedUser mat-column-UpdatedUser ng-star-inserted']//span[@class='selectDrop-table form-control custom-selectbx custom-selectbx-dropArrow field-radius-medium d-inline-block'][contains(text(),'All')]");
+        public static By LastModified_DD = By.XPath("//th[@class='mat-header-cell cdk-column-UpdatedUser mat-column-UpdatedUser ng-star-inserted']/div/div/span");
         public static By UncheckSelectAll = By.XPath("//span[contains(text(),'Select All')]");
         public static By Searchlastmodified_txt = By.XPath("//input[@placeholder='Search Last Modified By']");
         public static By Selectmodifieduser = By.XPath("//li[@class='ng-star-inserted']//label[@class='label-checkbx']");

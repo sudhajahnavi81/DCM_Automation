@@ -12,10 +12,10 @@ namespace DCM.POM.Page_Steps
     {
         public static void SA_SensitivityAnalysis()
         {
-            WaitForElement(Page_Objects.Appname);
-            click(Page_Objects.Appname);
-            Thread.Sleep(15000);
-            JSExe(Page_Objects.Editinput);
+            //WaitForElement(Page_Objects.Appname);
+            //click(Page_Objects.Appname);
+            //Thread.Sleep(15000);
+            //JSExe(Page_Objects.Editinput_Edu);
             Thread.Sleep(15000);
             WaitForElement(Page_Objects.SensitivityAnalysisTab);
             click(Page_Objects.SensitivityAnalysisTab);
@@ -715,20 +715,20 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(3000);
             clear(Page_Objects.SAMain_TargetPhyPPH);
             Type(main_phy_pph.ToString(), Page_Objects.SAMain_TargetPhyPPH);
-            clear(Page_Objects.SAMain_TargetAPPPPH);
-            Type(main_app_pph.ToString(), Page_Objects.SAMain_TargetAPPPPH);
+           // clear(Page_Objects.SAMain_TargetAPPPPH);
+            //Type(main_app_pph.ToString(), Page_Objects.SAMain_TargetAPPPPH);
             click(Page_Objects.SAFT_TargetTab);
             Thread.Sleep(2000);
             clear(Page_Objects.SAFT_TargetPhyPPH);
             Type(FT_Phy_pph.ToString(), Page_Objects.SAFT_TargetPhyPPH);
-            clear(Page_Objects.SAFT_TargetAPPPPH);
-            Type(FT_App_PPH.ToString(), Page_Objects.SAFT_TargetAPPPPH);
+            //clear(Page_Objects.SAFT_TargetAPPPPH);
+            //Type(FT_App_PPH.ToString(), Page_Objects.SAFT_TargetAPPPPH);
             click(Page_Objects.SAPIT_TargetTab);
             Thread.Sleep(2000);
             clear(Page_Objects.SAPIT_TargetPhyPPH);
             Type(PIT_Phy_pph.ToString(), Page_Objects.SAPIT_TargetPhyPPH);
-            clear(Page_Objects.SAPIT_TargetAPPPPH);
-            Type(PIT_App_PPH.ToString(), Page_Objects.SAPIT_TargetAPPPPH);
+            //clear(Page_Objects.SAPIT_TargetAPPPPH);
+            //Type(PIT_App_PPH.ToString(), Page_Objects.SAPIT_TargetAPPPPH);
 
         }
 
@@ -737,20 +737,20 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(3000);
             clear(Page_Objects.SAMain_FirstHr_Phy);
             Type(SAMain_FirstHr_Phy.ToString(), Page_Objects.SAMain_FirstHr_Phy);
-            clear(Page_Objects.SAMain_FirstHr_APP);
-            Type(SAMain_FirstHr_APP.ToString(), Page_Objects.SAMain_FirstHr_APP);
+            //clear(Page_Objects.SAMain_FirstHr_APP);
+            //Type(SAMain_FirstHr_APP.ToString(), Page_Objects.SAMain_FirstHr_APP);
             click(Page_Objects.SAFT_VariationTab);
             Thread.Sleep(2000);
             clear(Page_Objects.SAFT_FirstHr_Phy);
             Type(SAFT_FirstHr_Phy.ToString(), Page_Objects.SAFT_FirstHr_Phy);
-            clear(Page_Objects.SAFT_FirstHr_APP);
-            Type(SAFT_FirstHr_APP.ToString(), Page_Objects.SAFT_FirstHr_APP);
+            //clear(Page_Objects.SAFT_FirstHr_APP);
+            //Type(SAFT_FirstHr_APP.ToString(), Page_Objects.SAFT_FirstHr_APP);
             click(Page_Objects.SAPIT_VariationTab);
             Thread.Sleep(2000);
             clear(Page_Objects.SAPIT_FirstHr_Phy);
             Type(SAPIT_FirstHr_Phy.ToString(), Page_Objects.SAPIT_FirstHr_Phy);
-            clear(Page_Objects.SAPIT_FirstHr_APP);
-            Type(SAPIT_FirstHr_APP.ToString(), Page_Objects.SAPIT_FirstHr_APP);
+            //clear(Page_Objects.SAPIT_FirstHr_APP);
+            //Type(SAPIT_FirstHr_APP.ToString(), Page_Objects.SAPIT_FirstHr_APP);
 
         }
 
@@ -759,20 +759,20 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(3000);
             clear(Page_Objects.SAMain_Arrival_TargetPhyPPH);
             Type(main_phy_pph.ToString(), Page_Objects.SAMain_Arrival_TargetPhyPPH);
-            clear(Page_Objects.SAMain_Arrival_TargetAPPPPH);
-            Type(main_app_pph.ToString(), Page_Objects.SAMain_Arrival_TargetAPPPPH);
+            //clear(Page_Objects.SAMain_Arrival_TargetAPPPPH);
+            //Type(main_app_pph.ToString(), Page_Objects.SAMain_Arrival_TargetAPPPPH);
             click(Page_Objects.SAFT_Arrival_TargetTab);
             Thread.Sleep(2000);
             clear(Page_Objects.SAFT_TargetPhyPPH);
             Type(FT_Phy_pph.ToString(), Page_Objects.SAFT_TargetPhyPPH);
-            clear(Page_Objects.SAFT_TargetAPPPPH);
-            Type(FT_App_PPH.ToString(), Page_Objects.SAFT_TargetAPPPPH);
+            //clear(Page_Objects.SAFT_TargetAPPPPH);
+            //Type(FT_App_PPH.ToString(), Page_Objects.SAFT_TargetAPPPPH);
             click(Page_Objects.SAPIT_Arrival_TargetTab);
             Thread.Sleep(5000);
             clear(Page_Objects.ArrivalPIT_TargetPhyPPH);
             Type(PIT_Phy_pph.ToString(), Page_Objects.ArrivalPIT_TargetPhyPPH);
-            clear(Page_Objects.ArrivalPIT_TargetAPPPPH);
-            Type(PIT_App_PPH.ToString(), Page_Objects.ArrivalPIT_TargetAPPPPH);
+            //clear(Page_Objects.ArrivalPIT_TargetAPPPPH);
+            //Type(PIT_App_PPH.ToString(), Page_Objects.ArrivalPIT_TargetAPPPPH);
 
         }
 
@@ -781,20 +781,20 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(3000);
             clear(Page_Objects.SAMain_Arrival_FirstHr_Phy);
             Type(SAMain_FirstHr_Phy.ToString(), Page_Objects.SAMain_Arrival_FirstHr_Phy);
-            clear(Page_Objects.SAMain_Arrival_FirstHr_APP);
-            Type(SAMain_FirstHr_APP.ToString(), Page_Objects.SAMain_Arrival_FirstHr_APP);
+            //clear(Page_Objects.SAMain_Arrival_FirstHr_APP);
+            //Type(SAMain_FirstHr_APP.ToString(), Page_Objects.SAMain_Arrival_FirstHr_APP);
             click(Page_Objects.SAFT_Arrival_VariationTab);
             Thread.Sleep(2000);
             clear(Page_Objects.SAFT_FirstHr_Phy);
             Type(SAFT_FirstHr_Phy.ToString(), Page_Objects.SAFT_FirstHr_Phy);
-            clear(Page_Objects.SAFT_FirstHr_APP);
-            Type(SAFT_FirstHr_APP.ToString(), Page_Objects.SAFT_FirstHr_APP);
+            //clear(Page_Objects.SAFT_FirstHr_APP);
+            //Type(SAFT_FirstHr_APP.ToString(), Page_Objects.SAFT_FirstHr_APP);
             click(Page_Objects.SAPIT_Arrival_VariationTab);
             Thread.Sleep(2000);
             clear(Page_Objects.ArrivalPIT_FirstHr_Phy);
             Type(SAPIT_FirstHr_Phy.ToString(), Page_Objects.ArrivalPIT_FirstHr_Phy);
-            clear(Page_Objects.ArrivalPIT_FirstHr_APP);
-            Type(SAPIT_FirstHr_APP.ToString(), Page_Objects.ArrivalPIT_FirstHr_APP);
+            //clear(Page_Objects.ArrivalPIT_FirstHr_APP);
+            //Type(SAPIT_FirstHr_APP.ToString(), Page_Objects.ArrivalPIT_FirstHr_APP);
 
         }
 

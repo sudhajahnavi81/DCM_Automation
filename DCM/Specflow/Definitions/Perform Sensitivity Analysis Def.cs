@@ -654,7 +654,7 @@ namespace DCM.Specflow.Definitions
         public void GivenUpdateDataInputFieldsAndResetFieldsByClickingResetButtonInForecastedHourlyArrivalsTabInProviderStaffingVsCalculatedWorkLoad(Table table)
         {
 
-            SensitivityAnalysis.SA_SensitivityAnalysis();
+            //SensitivityAnalysis.SA_SensitivityAnalysis();
             SensitivityAnalysis.ProviderStaffing_CalculatedWorkLoadTab();
             dynamic Actual_Monthly_Arrival = table.CreateDynamicInstance();
 

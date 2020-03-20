@@ -37,6 +37,7 @@ namespace DCM.POM.Page_Steps
             click(Page_Objects.Tab_LoadModelList);
             Thread.Sleep(4000);
             click(Page_Objects.Searchmodel_txt);
+            clear(Page_Objects.Searchmodel_txt);
             Type(modelname, Page_Objects.Searchmodel_txt);
             click(Page_Objects.LastModified_DD);
             click(Page_Objects.UncheckSelectAll);

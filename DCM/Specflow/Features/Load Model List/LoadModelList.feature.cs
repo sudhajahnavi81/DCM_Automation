@@ -122,7 +122,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "Modifieduser",
                         "Modeltype"});
             table103.AddRow(new string[] {
-                        "Automation",
+                        "Nehal",
                         "Sunil",
                         "Private"});
 #line 18

@@ -110,9 +110,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "State",
                         "City"});
             table2.AddRow(new string[] {
-                        "Southeast",
-                        "Florida",
-                        "Panama City"});
+                        "",
+                        "",
+                        ""});
 #line 14
  testRunner.Given("click on select practice icon and search with OU state and city and select search" +
                     "ed practice", ((string)(null)), table2, "Given ");

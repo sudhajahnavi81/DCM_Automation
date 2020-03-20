@@ -59,7 +59,7 @@ namespace DCM.Specflow.Hooks
 
                     }
 
-                    driver.Navigate().GoToUrl("https://dcmqa.evhc.net/v2");
+                    driver.Navigate().GoToUrl("https://dcmqa.evhc.net/v2/");
                     driver.Manage().Window.Maximize();
                     DCM_Login.LoginDCM();
                     DCM_Login.twofa();
@@ -106,7 +106,7 @@ namespace DCM.Specflow.Hooks
         public static void BeforeFeature()
         {
             //Create dynamic feature name
-            featureName = extent.CreateTest<Feature>(FeatureContext.Current.FeatureInfo.Title);
+            featureName = extent.CreateTest<Feature>(TestContext.CurrentContext.Test.Name);
         }
 
 

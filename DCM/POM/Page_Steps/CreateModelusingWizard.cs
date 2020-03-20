@@ -156,6 +156,16 @@ namespace DCM.POM.Page_Steps
 
         }
 
+        public static void ClinicianAvailability()
+        {
+            Thread.Sleep(2000);
+            click(Page_Objects.bothPresent);
+
+
+        }
+
+        
+
         public static void EnterTPPPH(double TPP)
         {
             Thread.Sleep(1000);
@@ -258,6 +268,8 @@ namespace DCM.POM.Page_Steps
             Thread.Sleep(2000);
             click(Page_Objects.Shft_popupOKbtn);
             Thread.Sleep(3000);
+            Find(Page_Objects.bothPresent2);
+            click(Page_Objects.bothPresent2);
             Type(FTPHYPPH.ToString(), Page_Objects.FT_PHY_PPH);
             Enterkey(Page_Objects.FT_PHY_PPH);
             Type(FTAPPPPH.ToString(), Page_Objects.FT_APP_PPH);

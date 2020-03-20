@@ -54,6 +54,8 @@ Scenario: 01 Create Wizard model using data Benchmarking
 
 	When  We have defaulted your average cost (in dollars) per Scribe hours to $20. Do you want to change?  question appeared then click on  No, I want to continue with the default average cost per Scribe hours.  
 
+	When  Please confirm your Clinician availability for Main area. question appeared then click on Both Physician and APP are Present button
+	
 	When  How many patients does your Physicians see per hour (PPH)?  question appeared, enter the value in textbox and press enter
 	
 	| Targeted_Phy_PPH |
@@ -135,6 +137,8 @@ Scenario: 01 Create Wizard model using data Benchmarking
 	| 300      |
 
 	When  We have defaulted your average cost (in dollars) per Scribe hours to $20. Do you want to change?  question appeared then click on  No, I want to continue with the default average cost per Scribe hours.  
+
+	When  Please confirm your Clinician availability for Main area. question appeared then click on Both Physician and APP are Present button
 
 	When  How many patients does your Physicians see per hour (PPH)?  question appeared, enter the value in textbox and press enter
 	
@@ -246,6 +250,8 @@ Scenario: 01 Create Wizard model using data Benchmarking
 	| 300      |
 
 	When  We have defaulted your average cost (in dollars) per Scribe hours to $20. Do you want to change?  question appeared then click on  No, I want to continue with the default average cost per Scribe hours.  
+
+	When  Please confirm your Clinician availability for Main area. question appeared then click on Both Physician and APP are Present button
 
 	When  How many patients does your Physicians see per hour (PPH)?  question appeared, enter the value in textbox and press enter
 	

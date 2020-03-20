@@ -129,6 +129,15 @@ namespace DCM.Specflow.Definitions
             CreateModelusingWizard.Selectdefaultscribecost();
         }
 
+        [When(@"Please confirm your Clinician availability for Main area\. question appeared then click on Both Physician and APP are Present button")]
+        public void WhenPleaseConfirmYourClinicianAvailabilityForMainArea_QuestionAppearedThenClickOnBothPhysicianAndAPPArePresentButton()
+        {
+            CreateModelusingWizard.ClinicianAvailability();
+        }
+
+
+
+
         [When(@"How many patients does your Physicians see per hour \(PPH\)\?  question appeared, enter the value in textbox and press enter")]
         public void WhenHowManyPatientsDoesYourPhysiciansSeePerHourPPHQuestionAppearedEnterTheValueintextboxAndPressEnter(Table table)
         {

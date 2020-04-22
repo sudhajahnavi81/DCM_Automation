@@ -33,7 +33,7 @@ namespace DCM.Specflow.Hooks
         private static ExtentReports extent;
         private readonly IObjectContainer _objectContainer;
 
-        public static ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(@"D:\DCMAutomation\DCM\ExtentReport.html");
+        public static ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(@"D:\dcm\DCM\ExtentReport.html");
 
         public Initialize(IObjectContainer objectContainer)
         {
@@ -87,7 +87,7 @@ namespace DCM.Specflow.Hooks
             extent.AddSystemInfo("Host Name", "Sunil");
             extent.AddSystemInfo("Environment", "QA");
             extent.AddSystemInfo("User Name", "Sunil Desai");
-            htmlReporter.LoadConfig(@"D:\DCMAutomation\DCM\" + "extent-config.xml");
+            htmlReporter.LoadConfig(@"D:\dcm\DCM\" + "extent-config.xml");
         }
 
         [AfterTestRun]

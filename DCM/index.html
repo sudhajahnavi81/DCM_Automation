@@ -55,7 +55,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">9/26/2019 8:06:56 PM</span>
+                    <span class="badge badge-primary">30-03-2020 16:01:56</span>
                 </a>
             </li>
         </ul>
@@ -110,7 +110,7 @@
 											<i class="fa fa-exclamation-circle"></i>
 										</a>
 										<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>																																																																		<div class="dropdown-divider"></div>
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>											<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																																																							<div class="dropdown-divider"></div>
 											<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 										</ul>
 									</li>
@@ -118,25 +118,25 @@
                             </div>
                             <div class="test-list-wrapper scrollable">
                                 <ul class="test-list-item">
-										<li class="test-item" status="pass" author="" device="" tag=""> 
-											<div class="status-avatar pass-bg">
-												<i class="fa fa-check text-white"></i>
+										<li class="test-item" status="fail" author="" device="" tag=""> 
+											<div class="status-avatar fail-bg">
+												<i class="fa fa-times text-white"></i>
 											</div>
 											<div class="open-test">
 												<div class="test-detail"> 
-													<p class="name">Import Model</p> 
-													<p class="duration text-sm">0h:2m:23s+081ms</p> 
-													<span class="datetime">20:06:57 PM</span>
+													<p class="name">LoadModelList</p> 
+													<p class="duration text-sm">0h:2m:39s+158ms</p> 
+													<span class="datetime">16:01:56 PM</span>
 												</div>
 											</div>
 											<div class="test-contents d-none">
 												<div class="detail-head">
 													<div class="p-v-10 d-inline-block">	
 														<div class="info">
-															<h5 class="test-status text-pass">Import Model</h5>
-															<span class='badge badge-success'>9/26/2019 8:06:57 PM</span>
-															<span class='badge badge-danger'>9/26/2019 8:09:20 PM</span>
-															<span class='badge badge-default'>0h:2m:23s+081ms</span>
+															<h5 class="test-status text-fail">LoadModelList</h5>
+															<span class='badge badge-success'>30-03-2020 16:01:56</span>
+															<span class='badge badge-danger'>30-03-2020 16:04:35</span>
+															<span class='badge badge-default'>0h:2m:39s+158ms</span>
 														</div>
 																											</div>
 												</div>
@@ -145,9 +145,9 @@
 	<div class="card">
 		<div class="card-header" role="tab">
 			<h5 class="card-title pl-3">
-				<div class="node">Create Model Using Importing Other model</div>
-				<div class="status-avatar float-left pass-bg">
-					<i class="fa fa-check text-white"></i>
+				<div class="node">01 Search models with different filters</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
 				</div>
 			</h5>
 		</div>
@@ -157,20 +157,44 @@
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>click on create model tab from dashboard and click on Import from Existing Model</span>
+								<span>Go to Load model list - Models in Selected practice and enter partial model name and click on last modeified by DD and deselect Select all and search one user and select that user and enter from and To date and enter model type</span>
 							</div>
-							<div class="d-flex align-items-center justify-content-start when" title="">
+							<div class="d-flex align-items-center justify-content-start given" title="">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
 								</span>
-								<span>Search model and click on searched model name</span>
+								<span>verify model displayed accorinf to selected</span>
 							</div>
 							<div class="d-flex align-items-center justify-content-start then" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
 								</span>
-								<span>Save model and verify imported model name</span>
+								<span>Click on Edit Model Details update model information and verify updated information</span>
 							</div>
+			<div class="details">no such element: Unable to locate element: {"method":"xpath","selector":"//body//tbody//tr[1]//td[1]"}
+  (Session info: chrome=80.0.3987.149)</div>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<h5 class="card-title pl-3">
+				<div class="node">02 verify View Analysis and Edit input tabs opened</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</h5>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start given" title="">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>Go to Load model list - Models in Selected practice and enter partial model name and click on last modeified by DD and deselect Select all and search one user and select that user and enter from and To date and enter model type</span>
+							</div>
+			<div class="details">no such element: Unable to locate element: {"method":"xpath","selector":"//th[@class='mat-header-cell cdk-column-UpdatedUser mat-column-UpdatedUser ng-star-inserted']//span[@class='selectDrop-table form-control custom-selectbx custom-selectbx-dropArrow field-radius-medium d-inline-block'][contains(text(),'All')]"}
+  (Session info: chrome=80.0.3987.149)</div>
 					</div>
 				</div>
 	</div>

@@ -24,13 +24,14 @@ namespace DCM.POM.Page_Steps
 
         public static void twofa()
         {
-            Thread.Sleep(1000);
+            Thread.Sleep(4000);
             var otpKeyBytes = Base32Encoding.ToBytes(Exceldata.otpKeyStr);
             var totp = new Totp(otpKeyBytes);
             var twoFactorCode = totp.ComputeTotp();
+            Thread.Sleep(2000);
             Type(twoFactorCode,Page_Objects.oktatwofa);
             click(Page_Objects.oktaverify);
-            Thread.Sleep(1000);
+            Thread.Sleep(4000);
 
 
         }

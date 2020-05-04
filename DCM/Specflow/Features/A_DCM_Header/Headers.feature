@@ -4,16 +4,16 @@ Feature: Dashboard
 	DCM login with Chrome browser and verify DCM functionality 
 
 @test
-Scenario: 01 login stringo DCM. search and select practice from dashboard
+Scenario: 01 login into DCM. search and select practice from dashboard
 	Given Enter practice name into search practice textbox and select searched practice.
 	| name							   |
-	|Training Practice				   |
+	|A.O. Fox Hospital - EM 3478	   |
 	Then models should show from selected practice
 
 Scenario: 02 Verify search practice with OU, State and City
 	Given click on select practice icon and search with OU state and city and select searched practice
 	| OU       | State	     | City        |
-	|		   |			 |			   |
+	|EPS	   |New York	 |Oneonta	   |
 	Then Searched practice should get selected
 
 Scenario: 03 verify Operational Model History

@@ -88,7 +88,7 @@ namespace DCM.POM
             {
 
 
-                WebDriverWait wait = new WebDriverWait(Initialize.driver, TimeSpan.FromSeconds(30));
+                WebDriverWait wait = new WebDriverWait(Initialize.driver, TimeSpan.FromSeconds(40));
                 //IWebElement myDynamicElement = wait.Until<IWebElement>(d => d.FindElement(element));
                 wait.Until(ExpectedConditions.ElementToBeClickable(element));
                 return Initialize.driver.FindElement(element);

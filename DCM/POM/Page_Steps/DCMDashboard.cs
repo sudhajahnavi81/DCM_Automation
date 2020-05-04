@@ -17,7 +17,7 @@ namespace DCM.POM.Page_Steps
 
         public static void PracticeSearch(string practice)
         {
-            Thread.Sleep(30000);
+           
             WaitForElement(Page_Objects.practicepopup_txtbox);
             JSExe(Page_Objects.practicepopup_txtbox);
             Type(practice, Page_Objects.practicepopup_txtbox);

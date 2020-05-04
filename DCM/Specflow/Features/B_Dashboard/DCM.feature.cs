@@ -107,8 +107,8 @@ this.ScenarioInitialize(scenarioInfo);
             table3.AddRow(new string[] {
                         "_Updated"});
 #line 13
- testRunner.Given("Click on Edit mnodel details at any non operational model and update model name m" +
-                    "odel type and model category and click on save", ((string)(null)), table3, "Given ");
+ testRunner.Given("Click on Edit model details on any non operational model and update model name mo" +
+                    "del type and model category and click on save", ((string)(null)), table3, "Given ");
 #line 16
  testRunner.Then("verify model details updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

@@ -117,9 +117,10 @@ namespace DCM.Specflow.Definitions
 
         //Update model name, model type and model category from Dashboard
 
-        [Given(@"Click on Edit mnodel details at any non operational model and update model name model type and model category and click on save")]
-        public void GivenClickOnEditMnodelDetailsAtAnyNonOperationalModelAndUpdateModelNameModelTypeAndModelCategoryAndClickOnSave(Table Updatemn)
+        [Given(@"Click on Edit model details on any non operational model and update model name model type and model category and click on save")]
+        public void GivenClickOnEditModelDetailsAtAnyNonOperationalModelAndUpdateModelNameModelTypeAndModelCategoryAndClickOnSave(Table Updatemn)
         {
+            Thread.Sleep(30000);
             dynamic table = Updatemn.CreateDynamicInstance();
             string Modelupdate = table.UpdateMN;
 

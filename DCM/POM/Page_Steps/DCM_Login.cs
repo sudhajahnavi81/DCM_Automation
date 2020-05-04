@@ -19,6 +19,7 @@ namespace DCM.POM.Page_Steps
             Type(Exceldata.psw, Page_Objects.oktapswd);
             click(Page_Objects.oktasubmit);
             Thread.Sleep(1000);
+           // click();
 
         }
 
@@ -32,6 +33,7 @@ namespace DCM.POM.Page_Steps
             Type(twoFactorCode,Page_Objects.oktatwofa);
             click(Page_Objects.oktaverify);
             Thread.Sleep(4000);
+           // click(Page_Objects.DCMoktalogo);
 
 
         }

@@ -74,11 +74,11 @@ namespace DCM.Specflow.Features.A_DCM_Header
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("01 login stringo DCM. search and select practice from dashboard")]
+        [NUnit.Framework.DescriptionAttribute("01 login into DCM. search and select practice from dashboard")]
         [NUnit.Framework.CategoryAttribute("test")]
-        public virtual void _01LoginStringoDCM_SearchAndSelectPracticeFromDashboard()
+        public virtual void _01LoginIntoDCM_SearchAndSelectPracticeFromDashboard()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 login stringo DCM. search and select practice from dashboard", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("01 login into DCM. search and select practice from dashboard", null, new string[] {
                         "test"});
 #line 7
 this.ScenarioInitialize(scenarioInfo);
@@ -87,7 +87,7 @@ this.ScenarioInitialize(scenarioInfo);
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "name"});
             table1.AddRow(new string[] {
-                        "Training Practice"});
+                        "A.O. Fox Hospital - EM 3478"});
 #line 8
  testRunner.Given("Enter practice name into search practice textbox and select searched practice.", ((string)(null)), table1, "Given ");
 #line 11
@@ -110,9 +110,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "State",
                         "City"});
             table2.AddRow(new string[] {
-                        "",
-                        "",
-                        ""});
+                        "EPS",
+                        "New York",
+                        "Oneonta"});
 #line 14
  testRunner.Given("click on select practice icon and search with OU state and city and select search" +
                     "ed practice", ((string)(null)), table2, "Given ");

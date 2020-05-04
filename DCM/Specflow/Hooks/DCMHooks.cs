@@ -35,7 +35,7 @@ namespace DCM.Specflow.Hooks
 
         public static ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(@"D:\dcm\DCM\ExtentReport.html");
 
-        public Initialize(IObjectContainer objectContainer)
+        public  Initialize(IObjectContainer objectContainer)
         {
             _objectContainer = objectContainer;
             
@@ -49,6 +49,7 @@ namespace DCM.Specflow.Hooks
                     if (FeatureContext.Current.FeatureInfo.Tags.Contains("chrome"))
                     {
                         ChromeOptions options = new ChromeOptions();
+                        //options.AddArguments("--incognito");
                         options.AddAdditionalCapability("useAutomationExtension", false);
                         driver = new ChromeDriver(options);
 
@@ -59,11 +60,11 @@ namespace DCM.Specflow.Hooks
 
                     }
 
-                    driver.Navigate().GoToUrl("https://dcmqa.evhc.net/v2/");
+                    driver.Navigate().GoToUrl("https://evhc.okta.com/app/UserHome");
                     driver.Manage().Window.Maximize();
                     DCM_Login.LoginDCM();
                     DCM_Login.twofa();
-                    //DCM_Login.DCMoktalogo();
+                    DCM_Login.DCMoktalogo();
 
                 }
 

@@ -12,10 +12,10 @@ namespace DCM.POM.Page_Steps
     {
         public static void SA_SensitivityAnalysis()
         {
-            //WaitForElement(Page_Objects.Appname);
-            //click(Page_Objects.Appname);
-            //Thread.Sleep(15000);
-            //JSExe(Page_Objects.Editinput_Edu);
+            WaitForElement(Page_Objects.Appname);
+            click(Page_Objects.Appname);
+            Thread.Sleep(15000);
+            JSExe(Page_Objects.Editinput_Edu);
             Thread.Sleep(15000);
             WaitForElement(Page_Objects.SensitivityAnalysisTab);
             click(Page_Objects.SensitivityAnalysisTab);

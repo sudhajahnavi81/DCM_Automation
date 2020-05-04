@@ -10,7 +10,7 @@ Scenario: 02 Edit Model Details
 	Then verify operational model history
 
 Scenario: 01 Update model name, model type and model category from Dashboard
-	Given Click on Edit mnodel details at any non operational model and update model name model type and model category and click on save
+	Given Click on Edit model details on any non operational model and update model name model type and model category and click on save
 	| UpdateMN |
 	| _Updated   |
 	Then verify model details updated

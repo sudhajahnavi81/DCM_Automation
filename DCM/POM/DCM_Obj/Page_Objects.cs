@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -126,8 +127,25 @@ namespace DCM.POM.DCM_Objects
         public static By AE_Actual_Annual_Volume = By.XPath("//*[@id='arrivals-data']/app-actual-monthly-arrival/div[1]/div/div[2]/div/div");
         public static By AE_Forcasted_Annual_Volume = By.XPath("//*[@id='arrivals-data']/app-actual-monthly-arrival/div[2]/app-forecasted-monthly-arrival/div/div/div[2]/div/div");
         public static By JAN_forcasted_monthlyArriavl = By.XPath("//app-forecasted-monthly-arrival//div[@class='row']//div[1]//div[1]//a[contains(text(),'JAN')]/following::input[1]");
-        public static By Area1_24hr = By.XPath("//tr[2]//td[7]//div[1]//div[3]//label[1]//span[1]");
-        public static By Area2_24hr = By.XPath("//tr[3]//td[7]//div[1]//div[3]//label[1]//span[1]");
+        // public static By Area1_24hr = By.XPath("//tr[2]//td[7]//div[1]//div[3]//label[1]//span[1]");
+        public static By Area1_24hr = By.XPath("//td[@class='ng-star-inserted']/div/div/div[@class='linke-ele d-inline-block hourlyArrivalsDetails']/span[contains(text(),'Set Hours of Operations for FT')]");
+        //public static By Area2_24hr = By.XPath("//tr[3]//td[7]//div[1]//div[3]//label[1]//span[1]");    
+        public static By Area2_24hr = By.XPath("//td[@class='ng-star-inserted']/div/div/div[@class='linke-ele d-inline-block hourlyArrivalsDetails']/span[contains(text(),'Set Hours of Operations for PIT')]");
+        public static By Area1Movetoelement = By.XPath("//td[@class='ng-star-inserted']/div/div/div[@class='linke-ele d-inline-block hourlyArrivalsDetails']");
+        public static By Area1Mousehover = By.XPath("//div[@class='OperationHours']/div[@class='table-wrap table-responsive p-2']/div[contains(text(),'Hours of Operations are not set for 'FT'. Click on the link to set the Hours of Operations')]");
+        public static By Area2Movetoelement = By.XPath("//td[@class='ng-star-inserted']/div/div/div[@class='linke-ele d-inline-block hourlyArrivalsDetails']/span");
+
+        public static By HoursOfOperationForFTWindow = By.XPath("//app-esi-working-hours[@class='ng-star-inserted']/div[@class='dialog wizard-arrivalsESI-sec']/div/div/h3[contains(text(),'Hours of Operations for FT')]");
+        public static By FTAllDays_CheckBox = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center']/div[@class='items-center pl-3']/label[@class='label-checkbx d-inline-block']/span[contains(text(),' All Days')]");
+        public static By FTOpen24Hrs = By.XPath("//div[@class='items-center']/div[@class='items-center pl-3']/label[@class='label-checkbx d-inline-block']/span[contains(text(),'Open 24 hours')]");
+        public static By FTOKbutton = By.XPath("//div[@class='dialog-footer dialog-footer-items1']/mat-dialog-actions[@class='mat-dialog-actions']/button[@class='btn btn-primary'][contains(text(),'OK')]");
+        public static By HoursOfOperationForPITWindow = By.XPath("//app-esi-working-hours[@class='ng-star-inserted']/div[@class='dialog wizard-arrivalsESI-sec']/div/div/h3[contains(text(),'Hours of Operations for PIT')]");
+        public static By PITAllDays_CheckBox = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center']/div[@class='items-center pl-3']/label[@class='label-checkbx d-inline-block']/span[contains(text(),' All Days')]");
+        public static By PITOpen24Hrs = By.XPath("//div[@class='items-center']/div[@class='items-center pl-3']/label[@class='label-checkbx d-inline-block']/span[contains(text(),'Open 24 hours')]");
+        public static By PITOKbutton = By.XPath("//div[@class='dialog-footer dialog-footer-items1']/mat-dialog-actions[@class='mat-dialog-actions']/button[@class='btn btn-primary'][contains(text(),'OK')]");
+
+        public static By HrsofOperationforPITAftersetting = By.XPath("//table[@class='w-100 ng-star-inserted']/thread/tr/th[contains(text(),'Day')]");
+        public static By HrsofOperationforFTAftersetting = By.XPath("//table[@class='w-100 ng-star-inserted']/thread/tr/th[contains(text(),'Day')]");
 
         public static By overallED_ESI1 = By.XPath("//table[starts-with(@class,'segmentation mt-')]//td[2]//div[1]//div[1]//input[1]");
         public static By overallED_ESI2 = By.XPath("//table[starts-with(@class,'segmentation mt-')]//td[3]//div[1]//div[1]//input[1]");

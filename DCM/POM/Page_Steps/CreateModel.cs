@@ -1099,8 +1099,18 @@ namespace DCM.POM.Page_Steps
             clear(Page_Objects.Area1_ESI5);
             Type(ESI1.ToString(), Page_Objects.Area1_ESI5);
 
+            MouseHoverOnelement(Page_Objects.Area1Movetoelement);
+            IsElementPresent(Page_Objects.Area1Movetoelement, "Hours of Operations are not set for 'FT'. Click on the link to set the Hours of Operations");
+            MouseHoverOnelement(Page_Objects.Area1_24hr);
             click(Page_Objects.Area1_24hr);
-                               
+            IsElementPresent(Page_Objects.HoursOfOperationForFTWindow, "Hours of Operations for FT");
+            click(Page_Objects.FTAllDays_CheckBox);
+            click(Page_Objects.FTOpen24Hrs);
+            click(Page_Objects.FTOKbutton);
+            MouseHoverOnelement(Page_Objects.Area1Movetoelement);
+            IsElementPresent(Page_Objects.HrsofOperationforFTAftersetting, "Day");
+
+
         }
         public static void Area2_ED(int ESI1, int ESI2, int ESI3, int ESI4, int ESI5)
         {
@@ -1119,7 +1129,17 @@ namespace DCM.POM.Page_Steps
             clear(Page_Objects.Area2_ESI5);
             Type(ESI1.ToString(), Page_Objects.Area2_ESI5);
 
+            
+            MouseHoverOnelement(Page_Objects.Area2Movetoelement);
+            IsElementPresent(Page_Objects.Area2Movetoelement, "Hours of Operations are not set for 'PIT'. Click on the link to set the Hours of Operations");
+            MouseHoverOnelement(Page_Objects.Area2_24hr);
             click(Page_Objects.Area2_24hr);
+            IsElementPresent(Page_Objects.HoursOfOperationForPITWindow, "Hours of Operations for PIT");
+            click(Page_Objects.PITAllDays_CheckBox);
+            click(Page_Objects.PITOpen24Hrs);
+            click(Page_Objects.PITOKbutton);
+            MouseHoverOnelement(Page_Objects.Area2Movetoelement);
+            IsElementPresent(Page_Objects.HrsofOperationforPITAftersetting, "Day");
 
             JSExe(Page_Objects.ESI_next);
 

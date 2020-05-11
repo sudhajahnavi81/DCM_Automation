@@ -329,5 +329,15 @@ namespace DCM.POM
            js.ExecuteScript("arguments[0].scrollIntoView(true);", element);
         }
 
+        public static void MouseHoverOnelement(By ele)
+        {
+            var element = Initialize.driver.FindElement(ele);
+            Actions builder = new Actions(Initialize.driver);
+
+            builder.ClickAndHold().MoveToElement(element);
+            builder.MoveToElement(element).Build().Perform();
+
+        }
+
     }
 }

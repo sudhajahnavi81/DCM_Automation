@@ -33,15 +33,13 @@ namespace DCM.Specflow.Hooks
         private static ExtentReports extent;
         private readonly IObjectContainer _objectContainer;
 
-        public static ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(@"D:\dcm\DCM\ExtentReport.html");
+        public static ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(@"C:\Users\JASU-HYD-01\Desktop\Envision_docs\DCM_KTSessions\DCM_Automation\DCMAutomation\DCM\ExtentReport.html");
 
         public  Initialize(IObjectContainer objectContainer)
         {
             _objectContainer = objectContainer;
             
             {
-
-
                 if (driver == null)
                 {
                  
@@ -88,7 +86,7 @@ namespace DCM.Specflow.Hooks
             extent.AddSystemInfo("Host Name", "Sunil");
             extent.AddSystemInfo("Environment", "QA");
             extent.AddSystemInfo("User Name", "Sunil Desai");
-            htmlReporter.LoadConfig(@"D:\dcm\DCM\" + "extent-config.xml");
+            htmlReporter.LoadConfig(@"C:\Users\JASU-HYD-01\Desktop\Envision_docs\DCM_KTSessions\DCM_Automation\DCMAutomation\DCM\" + "extent-config.xml");
         }
 
         [AfterTestRun]

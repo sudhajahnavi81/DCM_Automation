@@ -82,12 +82,12 @@ namespace DCM.Specflow.Features.E_ViewExecutiveSummary
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line hidden
-            TechTalk.SpecFlow.Table table99 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table100 = new TechTalk.SpecFlow.Table(new string[] {
                         "Key_Observation"});
-            table99.AddRow(new string[] {
+            table100.AddRow(new string[] {
                         "Automation Testing"});
 #line 7
-testRunner.Given("click on View Executive summary tab and add comment in Key Observations", ((string)(null)), table99, "Given ");
+testRunner.Given("click on View Executive summary tab and add comment in Key Observations", ((string)(null)), table100, "Given ");
 #line 10
 testRunner.Then("Save Key Observations comments", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden

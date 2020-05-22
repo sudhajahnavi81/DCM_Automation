@@ -83,7 +83,7 @@ namespace DCM.Specflow.Features.D_SensitivityAnalysis
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line hidden
-            TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
                         "Forecasted_Annual_Volume",
                         "Percentage_Variation",
                         "JAN",
@@ -98,7 +98,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "OCT",
                         "NOV",
                         "DEC"});
-            table30.AddRow(new string[] {
+            table31.AddRow(new string[] {
                         "77000",
                         "2",
                         "5000",
@@ -114,11 +114,11 @@ this.ScenarioInitialize(scenarioInfo);
                         "4000",
                         "5000"});
 #line 7
- testRunner.Given("Update data input fields and reset fields by clicking reset button", ((string)(null)), table30, "Given ");
+ testRunner.Given("Update data input fields and reset fields by clicking reset button", ((string)(null)), table31, "Given ");
 #line 10
  testRunner.And("Clear fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
                         "JAN",
                         "FEB",
                         "MAR",
@@ -131,7 +131,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "OCT",
                         "NOV",
                         "DEC"});
-            table31.AddRow(new string[] {
+            table32.AddRow(new string[] {
                         "5000",
                         "4000",
                         "5000",
@@ -145,7 +145,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "4000",
                         "5000"});
 #line 11
- testRunner.When("Update data input fields and refresh fields by clicking refresh button", ((string)(null)), table31, "When ");
+ testRunner.When("Update data input fields and refresh fields by clicking refresh button", ((string)(null)), table32, "When ");
 #line 14
  testRunner.And("Verify zoom graph for Forecasted Monthly Arrivals by month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 15
@@ -162,38 +162,6 @@ this.ScenarioInitialize(scenarioInfo);
 #line 18
  this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line hidden
-            TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
-                        "JAN",
-                        "FEB",
-                        "MAR",
-                        "APR",
-                        "MAY",
-                        "JUN",
-                        "JUL",
-                        "AUG",
-                        "SEP",
-                        "OCT",
-                        "NOV",
-                        "DEC"});
-            table32.AddRow(new string[] {
-                        "5001",
-                        "4001",
-                        "5001",
-                        "5001",
-                        "5001",
-                        "5001",
-                        "5001",
-                        "5001",
-                        "5001",
-                        "4001",
-                        "4001",
-                        "5001"});
-#line 19
- testRunner.Given("Update Actual Monthly Arrival data input fields and reset fields by clicking rese" +
-                    "t button", ((string)(null)), table32, "Given ");
-#line 22
- testRunner.And("Clear fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
                         "JAN",
@@ -221,9 +189,41 @@ this.ScenarioInitialize(scenarioInfo);
                         "4001",
                         "4001",
                         "5001"});
+#line 19
+ testRunner.Given("Update Actual Monthly Arrival data input fields and reset fields by clicking rese" +
+                    "t button", ((string)(null)), table33, "Given ");
+#line 22
+ testRunner.And("Clear fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
+                        "JAN",
+                        "FEB",
+                        "MAR",
+                        "APR",
+                        "MAY",
+                        "JUN",
+                        "JUL",
+                        "AUG",
+                        "SEP",
+                        "OCT",
+                        "NOV",
+                        "DEC"});
+            table34.AddRow(new string[] {
+                        "5001",
+                        "4001",
+                        "5001",
+                        "5001",
+                        "5001",
+                        "5001",
+                        "5001",
+                        "5001",
+                        "5001",
+                        "4001",
+                        "4001",
+                        "5001"});
 #line 23
  testRunner.When("Update Actual Monthly Arrival data input fields and refresh fields by clicking re" +
-                    "fresh button", ((string)(null)), table33, "When ");
+                    "fresh button", ((string)(null)), table34, "When ");
 #line 26
  testRunner.And("Verify zoom graph for Forecasted Monthly Arrivals by month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 27
@@ -241,7 +241,7 @@ this.ScenarioInitialize(scenarioInfo);
  this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line hidden
-            TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
                         "Forecasted_Annual_Volume",
                         "Percentage_Variation",
                         "JAN",
@@ -256,7 +256,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "OCT",
                         "NOV",
                         "DEC"});
-            table34.AddRow(new string[] {
+            table35.AddRow(new string[] {
                         "77000",
                         "2",
                         "5000",
@@ -273,11 +273,11 @@ this.ScenarioInitialize(scenarioInfo);
                         "5000"});
 #line 31
  testRunner.Given("Update data input fields and reset fields by clicking reset button in Forecasted " +
-                    "Weekly Arrivals tab", ((string)(null)), table34, "Given ");
+                    "Weekly Arrivals tab", ((string)(null)), table35, "Given ");
 #line 34
  testRunner.And("Clear Actual Monthly Arrival fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table36 = new TechTalk.SpecFlow.Table(new string[] {
                         "JAN",
                         "FEB",
                         "MAR",
@@ -290,7 +290,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "OCT",
                         "NOV",
                         "DEC"});
-            table35.AddRow(new string[] {
+            table36.AddRow(new string[] {
                         "5000",
                         "4000",
                         "5000",
@@ -304,63 +304,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "4000",
                         "5000"});
 #line 35
- testRunner.When("Clear and Update data input fields for Actual Monthly Arrival", ((string)(null)), table35, "When ");
+ testRunner.When("Clear and Update data input fields for Actual Monthly Arrival", ((string)(null)), table36, "When ");
 #line 38
  testRunner.And("Clear Actual Hourly Arrivals By Day Of Week fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table36 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Hr_00",
-                        "Hr_01",
-                        "Hr_02",
-                        "Hr_03",
-                        "Hr_04",
-                        "Hr_05",
-                        "Hr_06",
-                        "Hr_07",
-                        "Hr_08",
-                        "Hr_09",
-                        "Hr_10",
-                        "Hr_11",
-                        "Hr_12",
-                        "Hr_13",
-                        "Hr_14",
-                        "Hr_15",
-                        "Hr_16",
-                        "Hr_17",
-                        "Hr_18",
-                        "Hr_19",
-                        "Hr_20",
-                        "Hr_21",
-                        "Hr_22",
-                        "Hr_23"});
-            table36.AddRow(new string[] {
-                        "1",
-                        "1",
-                        "2",
-                        "3",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "2",
-                        "3",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "2",
-                        "3",
-                        "1",
-                        "1",
-                        "1"});
-#line 39
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
-                    "nday fields", ((string)(null)), table36, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table37 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -412,9 +358,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 42
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
-                    "onday fields", ((string)(null)), table37, "And ");
+#line 39
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
+                    "nday fields", ((string)(null)), table37, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table38 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -466,9 +412,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 45
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
-                    "uesday fields", ((string)(null)), table38, "And ");
+#line 42
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
+                    "onday fields", ((string)(null)), table38, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table39 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -520,9 +466,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 48
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
-                    "ednesday fields", ((string)(null)), table39, "And ");
+#line 45
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
+                    "uesday fields", ((string)(null)), table39, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table40 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -574,9 +520,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 51
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
-                    "ursday fields", ((string)(null)), table40, "And ");
+#line 48
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
+                    "ednesday fields", ((string)(null)), table40, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table41 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -628,9 +574,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 54
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
-                    "iday fields", ((string)(null)), table41, "And ");
+#line 51
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
+                    "ursday fields", ((string)(null)), table41, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table42 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -682,29 +628,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 57
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
-                    "turday fields", ((string)(null)), table42, "And ");
-#line 60
- testRunner.And("Refresh data by clicking on refresh button.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 61
- testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 62
- testRunner.Then("Click on Actual Weekly Arrivals tab and verified updated tab are highlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("04 Verify Actual Weekly Arrivals tab in Patient Volume")]
-        public virtual void _04VerifyActualWeeklyArrivalsTabInPatientVolume()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04 Verify Actual Weekly Arrivals tab in Patient Volume", null, ((string[])(null)));
-#line 65
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 66
- testRunner.Given("Clear Actual Hourly Arrivals By Day Of Week fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 54
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
+                    "iday fields", ((string)(null)), table42, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -756,9 +682,29 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 67
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
-                    "nday fields", ((string)(null)), table43, "And ");
+#line 57
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
+                    "turday fields", ((string)(null)), table43, "And ");
+#line 60
+ testRunner.And("Refresh data by clicking on refresh button.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 61
+ testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 62
+ testRunner.Then("Click on Actual Weekly Arrivals tab and verified updated tab are highlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("04 Verify Actual Weekly Arrivals tab in Patient Volume")]
+        public virtual void _04VerifyActualWeeklyArrivalsTabInPatientVolume()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("04 Verify Actual Weekly Arrivals tab in Patient Volume", null, ((string[])(null)));
+#line 65
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 66
+ testRunner.Given("Clear Actual Hourly Arrivals By Day Of Week fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -810,9 +756,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 70
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
-                    "onday fields", ((string)(null)), table44, "And ");
+#line 67
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
+                    "nday fields", ((string)(null)), table44, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table45 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -864,9 +810,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 73
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
-                    "uesday fields", ((string)(null)), table45, "And ");
+#line 70
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
+                    "onday fields", ((string)(null)), table45, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table46 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -918,9 +864,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 76
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
-                    "ednesday fields", ((string)(null)), table46, "And ");
+#line 73
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
+                    "uesday fields", ((string)(null)), table46, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -972,9 +918,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 79
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
-                    "ursday fields", ((string)(null)), table47, "And ");
+#line 76
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
+                    "ednesday fields", ((string)(null)), table47, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1026,9 +972,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 82
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
-                    "iday fields", ((string)(null)), table48, "And ");
+#line 79
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
+                    "ursday fields", ((string)(null)), table48, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1080,29 +1026,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 85
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
-                    "turday fields", ((string)(null)), table49, "And ");
-#line 88
- testRunner.And("Refresh data by clicking on refresh button.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 89
- testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 90
- testRunner.Then("Click on Actual Hourly Arrivals tab and verified updated tab are highlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("05 Verify Actual Hourly Arrivals tab in Patient Volume")]
-        public virtual void _05VerifyActualHourlyArrivalsTabInPatientVolume()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05 Verify Actual Hourly Arrivals tab in Patient Volume", null, ((string[])(null)));
-#line 93
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line 94
- testRunner.Given("Clear Actual Hourly Arrivals By Day Of Week fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 82
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
+                    "iday fields", ((string)(null)), table49, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1154,9 +1080,29 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 95
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
-                    "nday fields", ((string)(null)), table50, "And ");
+#line 85
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
+                    "turday fields", ((string)(null)), table50, "And ");
+#line 88
+ testRunner.And("Refresh data by clicking on refresh button.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 89
+ testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 90
+ testRunner.Then("Click on Actual Hourly Arrivals tab and verified updated tab are highlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("05 Verify Actual Hourly Arrivals tab in Patient Volume")]
+        public virtual void _05VerifyActualHourlyArrivalsTabInPatientVolume()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("05 Verify Actual Hourly Arrivals tab in Patient Volume", null, ((string[])(null)));
+#line 93
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 94
+ testRunner.Given("Clear Actual Hourly Arrivals By Day Of Week fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1208,9 +1154,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 98
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
-                    "onday fields", ((string)(null)), table51, "And ");
+#line 95
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
+                    "nday fields", ((string)(null)), table51, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table52 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1262,9 +1208,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 101
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
-                    "uesday fields", ((string)(null)), table52, "And ");
+#line 98
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
+                    "onday fields", ((string)(null)), table52, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table53 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1316,9 +1262,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 104
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
-                    "ednesday fields", ((string)(null)), table53, "And ");
+#line 101
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
+                    "uesday fields", ((string)(null)), table53, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table54 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1370,9 +1316,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 107
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
-                    "ursday fields", ((string)(null)), table54, "And ");
+#line 104
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
+                    "ednesday fields", ((string)(null)), table54, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table55 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1424,9 +1370,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 110
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
-                    "iday fields", ((string)(null)), table55, "And ");
+#line 107
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
+                    "ursday fields", ((string)(null)), table55, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table56 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1478,96 +1424,11 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 113
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
-                    "turday fields", ((string)(null)), table56, "And ");
-#line 116
- testRunner.And("Refresh data by clicking on refresh button.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 117
- testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 118
- testRunner.Then("Click on Forecasted Hourly Arrivals tab and verified updated tab are highlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("06 Verify Forecasted Hourly Arrivals tab in Patient Volume")]
-        public virtual void _06VerifyForecastedHourlyArrivalsTabInPatientVolume()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("06 Verify Forecasted Hourly Arrivals tab in Patient Volume", null, ((string[])(null)));
-#line 122
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
+#line 110
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
+                    "iday fields", ((string)(null)), table56, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table57 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Forecasted_Annual_Volume",
-                        "Percentage_Variation",
-                        "JAN",
-                        "FEB",
-                        "MAR",
-                        "APR",
-                        "MAY",
-                        "JUN",
-                        "JUL",
-                        "AUG",
-                        "SEP",
-                        "OCT",
-                        "NOV",
-                        "DEC"});
-            table57.AddRow(new string[] {
-                        "77000",
-                        "2",
-                        "5000",
-                        "4000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "4000",
-                        "4000",
-                        "5000"});
-#line 123
- testRunner.Given("Update data input fields and reset fields by clicking reset button in Forecasted " +
-                    "hourly Arrivals tab", ((string)(null)), table57, "Given ");
-#line 126
- testRunner.And("Clear Actual Monthly Arrival fields in Forecasted Hourly Arrivals", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table58 = new TechTalk.SpecFlow.Table(new string[] {
-                        "JAN",
-                        "FEB",
-                        "MAR",
-                        "APR",
-                        "MAY",
-                        "JUN",
-                        "JUL",
-                        "AUG",
-                        "SEP",
-                        "OCT",
-                        "NOV",
-                        "DEC"});
-            table58.AddRow(new string[] {
-                        "5000",
-                        "4000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "4000",
-                        "4000",
-                        "5000"});
-#line 127
- testRunner.When("Clear and Update data input fields for Actual Monthly Arrival", ((string)(null)), table58, "When ");
-#line 130
- testRunner.And("Clear Actual Hourly Arrivals By Day Of Week fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table59 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
                         "Hr_01",
                         "Hr_02",
@@ -1592,7 +1453,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "Hr_21",
                         "Hr_22",
                         "Hr_23"});
-            table59.AddRow(new string[] {
+            table57.AddRow(new string[] {
                         "1",
                         "1",
                         "2",
@@ -1617,9 +1478,94 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 131
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
-                    "nday fields", ((string)(null)), table59, "And ");
+#line 113
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
+                    "turday fields", ((string)(null)), table57, "And ");
+#line 116
+ testRunner.And("Refresh data by clicking on refresh button.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 117
+ testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 118
+ testRunner.Then("Click on Forecasted Hourly Arrivals tab and verified updated tab are highlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("06 Verify Forecasted Hourly Arrivals tab in Patient Volume")]
+        public virtual void _06VerifyForecastedHourlyArrivalsTabInPatientVolume()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("06 Verify Forecasted Hourly Arrivals tab in Patient Volume", null, ((string[])(null)));
+#line 122
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line hidden
+            TechTalk.SpecFlow.Table table58 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Forecasted_Annual_Volume",
+                        "Percentage_Variation",
+                        "JAN",
+                        "FEB",
+                        "MAR",
+                        "APR",
+                        "MAY",
+                        "JUN",
+                        "JUL",
+                        "AUG",
+                        "SEP",
+                        "OCT",
+                        "NOV",
+                        "DEC"});
+            table58.AddRow(new string[] {
+                        "77000",
+                        "2",
+                        "5000",
+                        "4000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "4000",
+                        "4000",
+                        "5000"});
+#line 123
+ testRunner.Given("Update data input fields and reset fields by clicking reset button in Forecasted " +
+                    "hourly Arrivals tab", ((string)(null)), table58, "Given ");
+#line 126
+ testRunner.And("Clear Actual Monthly Arrival fields in Forecasted Hourly Arrivals", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table59 = new TechTalk.SpecFlow.Table(new string[] {
+                        "JAN",
+                        "FEB",
+                        "MAR",
+                        "APR",
+                        "MAY",
+                        "JUN",
+                        "JUL",
+                        "AUG",
+                        "SEP",
+                        "OCT",
+                        "NOV",
+                        "DEC"});
+            table59.AddRow(new string[] {
+                        "5000",
+                        "4000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "4000",
+                        "4000",
+                        "5000"});
+#line 127
+ testRunner.When("Clear and Update data input fields for Actual Monthly Arrival", ((string)(null)), table59, "When ");
+#line 130
+ testRunner.And("Clear Actual Hourly Arrivals By Day Of Week fields", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table60 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1671,9 +1617,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 134
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
-                    "onday fields", ((string)(null)), table60, "And ");
+#line 131
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
+                    "nday fields", ((string)(null)), table60, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table61 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1725,9 +1671,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 137
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
-                    "uesday fields", ((string)(null)), table61, "And ");
+#line 134
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
+                    "onday fields", ((string)(null)), table61, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table62 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1779,9 +1725,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 140
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
-                    "ednesday fields", ((string)(null)), table62, "And ");
+#line 137
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
+                    "uesday fields", ((string)(null)), table62, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table63 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1833,9 +1779,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 143
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
-                    "ursday fields", ((string)(null)), table63, "And ");
+#line 140
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
+                    "ednesday fields", ((string)(null)), table63, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table64 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1887,9 +1833,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 146
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
-                    "iday fields", ((string)(null)), table64, "And ");
+#line 143
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
+                    "ursday fields", ((string)(null)), table64, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table65 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -1941,100 +1887,11 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 149
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
-                    "turday fields", ((string)(null)), table65, "And ");
-#line 152
- testRunner.And("Refresh data by clicking on refresh button.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 153
- testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month in Forcasted hourly arr" +
-                    "ival tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 154
- testRunner.Then("Click on Provider Staffing vs Calculated WorkLoad tab and verified updated tab ar" +
-                    "e highlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("07 Verify Provider Staffing vs Calculated WorkLoad for SA")]
-        public virtual void _07VerifyProviderStaffingVsCalculatedWorkLoadForSA()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("07 Verify Provider Staffing vs Calculated WorkLoad for SA", null, ((string[])(null)));
-#line 156
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
+#line 146
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
+                    "iday fields", ((string)(null)), table65, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table66 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Forecasted_Annual_Volume",
-                        "Percentage_Variation",
-                        "JAN",
-                        "FEB",
-                        "MAR",
-                        "APR",
-                        "MAY",
-                        "JUN",
-                        "JUL",
-                        "AUG",
-                        "SEP",
-                        "OCT",
-                        "NOV",
-                        "DEC"});
-            table66.AddRow(new string[] {
-                        "77000",
-                        "2",
-                        "5000",
-                        "4000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "4000",
-                        "4000",
-                        "5000"});
-#line 157
- testRunner.Given("Update data input fields and reset fields by clicking reset button in Forecasted " +
-                    "hourly Arrivals tab in Provider Staffing vs Calculated WorkLoad", ((string)(null)), table66, "Given ");
-#line 160
- testRunner.And("Clear Actual Monthly Arrival fields in Provider Staffing vs Calculated WorkLoad", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table67 = new TechTalk.SpecFlow.Table(new string[] {
-                        "JAN",
-                        "FEB",
-                        "MAR",
-                        "APR",
-                        "MAY",
-                        "JUN",
-                        "JUL",
-                        "AUG",
-                        "SEP",
-                        "OCT",
-                        "NOV",
-                        "DEC"});
-            table67.AddRow(new string[] {
-                        "5000",
-                        "4000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "4000",
-                        "4000",
-                        "5000"});
-#line 161
- testRunner.When("Clear and Update data input fields for Actual Monthly Arrival in Provider Staffin" +
-                    "g vs Calculated WorkLoad", ((string)(null)), table67, "When ");
-#line 164
- testRunner.And("Clear Actual Hourly Arrivals By Day Of Week fields in Provider Staffing vs Calcul" +
-                    "ated WorkLoad", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table68 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
                         "Hr_01",
                         "Hr_02",
@@ -2059,7 +1916,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "Hr_21",
                         "Hr_22",
                         "Hr_23"});
-            table68.AddRow(new string[] {
+            table66.AddRow(new string[] {
                         "1",
                         "1",
                         "2",
@@ -2084,9 +1941,98 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 165
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
-                    "nday fields in SA", ((string)(null)), table68, "And ");
+#line 149
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
+                    "turday fields", ((string)(null)), table66, "And ");
+#line 152
+ testRunner.And("Refresh data by clicking on refresh button.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 153
+ testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month in Forcasted hourly arr" +
+                    "ival tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 154
+ testRunner.Then("Click on Provider Staffing vs Calculated WorkLoad tab and verified updated tab ar" +
+                    "e highlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("07 Verify Provider Staffing vs Calculated WorkLoad for SA")]
+        public virtual void _07VerifyProviderStaffingVsCalculatedWorkLoadForSA()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("07 Verify Provider Staffing vs Calculated WorkLoad for SA", null, ((string[])(null)));
+#line 156
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line hidden
+            TechTalk.SpecFlow.Table table67 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Forecasted_Annual_Volume",
+                        "Percentage_Variation",
+                        "JAN",
+                        "FEB",
+                        "MAR",
+                        "APR",
+                        "MAY",
+                        "JUN",
+                        "JUL",
+                        "AUG",
+                        "SEP",
+                        "OCT",
+                        "NOV",
+                        "DEC"});
+            table67.AddRow(new string[] {
+                        "77000",
+                        "2",
+                        "5000",
+                        "4000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "4000",
+                        "4000",
+                        "5000"});
+#line 157
+ testRunner.Given("Update data input fields and reset fields by clicking reset button in Forecasted " +
+                    "hourly Arrivals tab in Provider Staffing vs Calculated WorkLoad", ((string)(null)), table67, "Given ");
+#line 160
+ testRunner.And("Clear Actual Monthly Arrival fields in Provider Staffing vs Calculated WorkLoad", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table68 = new TechTalk.SpecFlow.Table(new string[] {
+                        "JAN",
+                        "FEB",
+                        "MAR",
+                        "APR",
+                        "MAY",
+                        "JUN",
+                        "JUL",
+                        "AUG",
+                        "SEP",
+                        "OCT",
+                        "NOV",
+                        "DEC"});
+            table68.AddRow(new string[] {
+                        "5000",
+                        "4000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "4000",
+                        "4000",
+                        "5000"});
+#line 161
+ testRunner.When("Clear and Update data input fields for Actual Monthly Arrival in Provider Staffin" +
+                    "g vs Calculated WorkLoad", ((string)(null)), table68, "When ");
+#line 164
+ testRunner.And("Clear Actual Hourly Arrivals By Day Of Week fields in Provider Staffing vs Calcul" +
+                    "ated WorkLoad", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table69 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -2138,9 +2084,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 168
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
-                    "onday fields in SA", ((string)(null)), table69, "And ");
+#line 165
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
+                    "nday fields in SA", ((string)(null)), table69, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table70 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -2192,9 +2138,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 171
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
-                    "uesday fields in SA", ((string)(null)), table70, "And ");
+#line 168
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
+                    "onday fields in SA", ((string)(null)), table70, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table71 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -2246,9 +2192,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 174
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
-                    "ednesday fields in SA", ((string)(null)), table71, "And ");
+#line 171
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
+                    "uesday fields in SA", ((string)(null)), table71, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table72 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -2300,9 +2246,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 177
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
-                    "ursday fields in SA", ((string)(null)), table72, "And ");
+#line 174
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
+                    "ednesday fields in SA", ((string)(null)), table72, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table73 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -2354,9 +2300,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 180
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
-                    "iday fields in SA", ((string)(null)), table73, "And ");
+#line 177
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
+                    "ursday fields in SA", ((string)(null)), table73, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table74 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -2408,154 +2354,11 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 183
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
-                    "turday fields in SA", ((string)(null)), table74, "And ");
+#line 180
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
+                    "iday fields in SA", ((string)(null)), table74, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table75 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Overall_Admit_LOS",
-                        "Overall_Arrival_To_Admit_Decision",
-                        "Main_Discharge_LOS",
-                        "FT_Discharge_LOS",
-                        "PIT_Discharge_LOS"});
-            table75.AddRow(new string[] {
-                        "121",
-                        "61",
-                        "91",
-                        "31",
-                        "51"});
-#line 186
- testRunner.And("clear Length Of Stay By Area and update with new values in Provider Staffing vs C" +
-                    "alculated WorkLoad", ((string)(null)), table75, "And ");
-#line 189
- testRunner.And("update shifts by importing new shifts in Provider Staffing vs Calculated WorkLoad" +
-                    "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table76 = new TechTalk.SpecFlow.Table(new string[] {
-                        "main_phy_pph",
-                        "main_app_pph",
-                        "FT_Phy_pph",
-                        "FT_App_PPH",
-                        "PIT_Phy_pph",
-                        "PIT_App_PPH"});
-            table76.AddRow(new string[] {
-                        "1.5",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1"});
-#line 190
- testRunner.And("clear and update Productivity Targets by Area", ((string)(null)), table76, "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table77 = new TechTalk.SpecFlow.Table(new string[] {
-                        "main_PhyFirstHour",
-                        "main_appFirstHour",
-                        "FT_PhyfirstHour",
-                        "FT_AppfirstHour",
-                        "PIT_PhyfirstHour",
-                        "PIT_AppFirstHour"});
-            table77.AddRow(new string[] {
-                        "2",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1"});
-#line 193
- testRunner.And("clear and update Targeted Physician PPH", ((string)(null)), table77, "And ");
-#line 196
- testRunner.And("Refresh data by clicking on refresh button in Provider Staffing vs Calculated Wor" +
-                    "kLoad.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 197
- testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month in Forcasted hourly arr" +
-                    "ival tab in Provider Staffing vs Calculated WorkLoad", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 198
- testRunner.Then("Click on Provider Staffing vs Arrival WorkLoad tab and verified updated tab are h" +
-                    "ighlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("08 Verify Provider Staffing vs Arrivals Workload for SA")]
-        public virtual void _08VerifyProviderStaffingVsArrivalsWorkloadForSA()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("08 Verify Provider Staffing vs Arrivals Workload for SA", null, ((string[])(null)));
-#line 201
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line hidden
-            TechTalk.SpecFlow.Table table78 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Forecasted_Annual_Volume",
-                        "Percentage_Variation",
-                        "JAN",
-                        "FEB",
-                        "MAR",
-                        "APR",
-                        "MAY",
-                        "JUN",
-                        "JUL",
-                        "AUG",
-                        "SEP",
-                        "OCT",
-                        "NOV",
-                        "DEC"});
-            table78.AddRow(new string[] {
-                        "77000",
-                        "2",
-                        "5000",
-                        "4000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "4000",
-                        "4000",
-                        "5000"});
-#line 202
- testRunner.Given("Update data input fields and reset fields by clicking reset button in Forecasted " +
-                    "hourly Arrivals tab in Provider Staffing vs Arrivals Workload", ((string)(null)), table78, "Given ");
-#line 205
- testRunner.And("Clear Actual Monthly Arrival fields in Provider Staffing vs Arrivals Workload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table79 = new TechTalk.SpecFlow.Table(new string[] {
-                        "JAN",
-                        "FEB",
-                        "MAR",
-                        "APR",
-                        "MAY",
-                        "JUN",
-                        "JUL",
-                        "AUG",
-                        "SEP",
-                        "OCT",
-                        "NOV",
-                        "DEC"});
-            table79.AddRow(new string[] {
-                        "5000",
-                        "4000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "4000",
-                        "4000",
-                        "5000"});
-#line 206
- testRunner.When("Clear and Update data input fields for Actual Monthly Arrival in Provider Staffin" +
-                    "g vs Arrivals Workload", ((string)(null)), table79, "When ");
-#line 209
- testRunner.And("Clear Actual Hourly Arrivals By Day Of Week fields in Provider Staffing vs Arriva" +
-                    "ls Workload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table80 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
                         "Hr_01",
                         "Hr_02",
@@ -2580,7 +2383,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "Hr_21",
                         "Hr_22",
                         "Hr_23"});
-            table80.AddRow(new string[] {
+            table75.AddRow(new string[] {
                         "1",
                         "1",
                         "2",
@@ -2605,9 +2408,152 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 210
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
-                    "nday fields in SA", ((string)(null)), table80, "And ");
+#line 183
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
+                    "turday fields in SA", ((string)(null)), table75, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table76 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Overall_Admit_LOS",
+                        "Overall_Arrival_To_Admit_Decision",
+                        "Main_Discharge_LOS",
+                        "FT_Discharge_LOS",
+                        "PIT_Discharge_LOS"});
+            table76.AddRow(new string[] {
+                        "121",
+                        "61",
+                        "91",
+                        "31",
+                        "51"});
+#line 186
+ testRunner.And("clear Length Of Stay By Area and update with new values in Provider Staffing vs C" +
+                    "alculated WorkLoad", ((string)(null)), table76, "And ");
+#line 189
+ testRunner.And("update shifts by importing new shifts in Provider Staffing vs Calculated WorkLoad" +
+                    "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table77 = new TechTalk.SpecFlow.Table(new string[] {
+                        "main_phy_pph",
+                        "main_app_pph",
+                        "FT_Phy_pph",
+                        "FT_App_PPH",
+                        "PIT_Phy_pph",
+                        "PIT_App_PPH"});
+            table77.AddRow(new string[] {
+                        "1.5",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1"});
+#line 190
+ testRunner.And("clear and update Productivity Targets by Area", ((string)(null)), table77, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table78 = new TechTalk.SpecFlow.Table(new string[] {
+                        "main_PhyFirstHour",
+                        "main_appFirstHour",
+                        "FT_PhyfirstHour",
+                        "FT_AppfirstHour",
+                        "PIT_PhyfirstHour",
+                        "PIT_AppFirstHour"});
+            table78.AddRow(new string[] {
+                        "2",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1"});
+#line 193
+ testRunner.And("clear and update Targeted Physician PPH", ((string)(null)), table78, "And ");
+#line 196
+ testRunner.And("Refresh data by clicking on refresh button in Provider Staffing vs Calculated Wor" +
+                    "kLoad.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 197
+ testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month in Forcasted hourly arr" +
+                    "ival tab in Provider Staffing vs Calculated WorkLoad", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 198
+ testRunner.Then("Click on Provider Staffing vs Arrival WorkLoad tab and verified updated tab are h" +
+                    "ighlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("08 Verify Provider Staffing vs Arrivals Workload for SA")]
+        public virtual void _08VerifyProviderStaffingVsArrivalsWorkloadForSA()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("08 Verify Provider Staffing vs Arrivals Workload for SA", null, ((string[])(null)));
+#line 201
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line hidden
+            TechTalk.SpecFlow.Table table79 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Forecasted_Annual_Volume",
+                        "Percentage_Variation",
+                        "JAN",
+                        "FEB",
+                        "MAR",
+                        "APR",
+                        "MAY",
+                        "JUN",
+                        "JUL",
+                        "AUG",
+                        "SEP",
+                        "OCT",
+                        "NOV",
+                        "DEC"});
+            table79.AddRow(new string[] {
+                        "77000",
+                        "2",
+                        "5000",
+                        "4000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "4000",
+                        "4000",
+                        "5000"});
+#line 202
+ testRunner.Given("Update data input fields and reset fields by clicking reset button in Forecasted " +
+                    "hourly Arrivals tab in Provider Staffing vs Arrivals Workload", ((string)(null)), table79, "Given ");
+#line 205
+ testRunner.And("Clear Actual Monthly Arrival fields in Provider Staffing vs Arrivals Workload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table80 = new TechTalk.SpecFlow.Table(new string[] {
+                        "JAN",
+                        "FEB",
+                        "MAR",
+                        "APR",
+                        "MAY",
+                        "JUN",
+                        "JUL",
+                        "AUG",
+                        "SEP",
+                        "OCT",
+                        "NOV",
+                        "DEC"});
+            table80.AddRow(new string[] {
+                        "5000",
+                        "4000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "4000",
+                        "4000",
+                        "5000"});
+#line 206
+ testRunner.When("Clear and Update data input fields for Actual Monthly Arrival in Provider Staffin" +
+                    "g vs Arrivals Workload", ((string)(null)), table80, "When ");
+#line 209
+ testRunner.And("Clear Actual Hourly Arrivals By Day Of Week fields in Provider Staffing vs Arriva" +
+                    "ls Workload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table81 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -2659,9 +2605,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 213
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
-                    "onday fields in SA", ((string)(null)), table81, "And ");
+#line 210
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
+                    "nday fields in SA", ((string)(null)), table81, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table82 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -2713,9 +2659,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 216
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
-                    "uesday fields in SA", ((string)(null)), table82, "And ");
+#line 213
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
+                    "onday fields in SA", ((string)(null)), table82, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table83 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -2767,9 +2713,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 219
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
-                    "ednesday fields in SA", ((string)(null)), table83, "And ");
+#line 216
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
+                    "uesday fields in SA", ((string)(null)), table83, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table84 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -2821,9 +2767,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 222
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
-                    "ursday fields in SA", ((string)(null)), table84, "And ");
+#line 219
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
+                    "ednesday fields in SA", ((string)(null)), table84, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table85 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -2875,9 +2821,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 225
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
-                    "iday fields in SA", ((string)(null)), table85, "And ");
+#line 222
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
+                    "ursday fields in SA", ((string)(null)), table85, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table86 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -2929,139 +2875,11 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 228
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
-                    "turday fields in SA", ((string)(null)), table86, "And ");
-#line 231
- testRunner.And("update shifts by importing new shifts in Provider Staffing vs Arrivals Workload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 225
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
+                    "iday fields in SA", ((string)(null)), table86, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table87 = new TechTalk.SpecFlow.Table(new string[] {
-                        "main_phy_pph",
-                        "main_app_pph",
-                        "FT_Phy_pph",
-                        "FT_App_PPH",
-                        "PIT_Phy_pph",
-                        "PIT_App_PPH"});
-            table87.AddRow(new string[] {
-                        "1.5",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1"});
-#line 232
- testRunner.And("clear and update Productivity Targets by Area in Provider Staffing vs Arrivals Wo" +
-                    "rkload", ((string)(null)), table87, "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table88 = new TechTalk.SpecFlow.Table(new string[] {
-                        "main_PhyFirstHour",
-                        "main_appFirstHour",
-                        "FT_PhyfirstHour",
-                        "FT_AppfirstHour",
-                        "PIT_PhyfirstHour",
-                        "PIT_AppFirstHour"});
-            table88.AddRow(new string[] {
-                        "2",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1"});
-#line 235
- testRunner.And("clear and update Targeted Physician PPH in Provider Staffing vs Arrivals Workload" +
-                    "", ((string)(null)), table88, "And ");
-#line 238
- testRunner.And("Refresh data by clicking on refresh button in Provider Staffing vs Arrivals Workl" +
-                    "oad", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 239
- testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month in Forcasted hourly arr" +
-                    "ival tab in Provider Staffing vs Arrivals Workload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 240
- testRunner.Then("Click on Provider Staffing vs Arrival WorkLoad tab and verified updated tab are h" +
-                    "ighlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("09 Verify Practice Productivity & Cost Summary for SA")]
-        public virtual void _09VerifyPracticeProductivityCostSummaryForSA()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("09 Verify Practice Productivity & Cost Summary for SA", null, ((string[])(null)));
-#line 242
- this.ScenarioInitialize(scenarioInfo);
-            this.ScenarioStart();
-#line hidden
-            TechTalk.SpecFlow.Table table89 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Forecasted_Annual_Volume",
-                        "Percentage_Variation",
-                        "JAN",
-                        "FEB",
-                        "MAR",
-                        "APR",
-                        "MAY",
-                        "JUN",
-                        "JUL",
-                        "AUG",
-                        "SEP",
-                        "OCT",
-                        "NOV",
-                        "DEC"});
-            table89.AddRow(new string[] {
-                        "77000",
-                        "2",
-                        "5000",
-                        "4000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "4000",
-                        "4000",
-                        "5000"});
-#line 243
- testRunner.Given("Update data input fields and reset fields by clicking reset button in Forecasted " +
-                    "hourly Arrivals tab in Practice Productivity & Cost Summary", ((string)(null)), table89, "Given ");
-#line 246
- testRunner.And("Clear Actual Monthly Arrival fields in Practice Productivity & Cost Summary", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table90 = new TechTalk.SpecFlow.Table(new string[] {
-                        "JAN",
-                        "FEB",
-                        "MAR",
-                        "APR",
-                        "MAY",
-                        "JUN",
-                        "JUL",
-                        "AUG",
-                        "SEP",
-                        "OCT",
-                        "NOV",
-                        "DEC"});
-            table90.AddRow(new string[] {
-                        "5000",
-                        "4000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "5000",
-                        "4000",
-                        "4000",
-                        "5000"});
-#line 247
- testRunner.When("Clear and Update data input fields for Actual Monthly Arrival in Practice Product" +
-                    "ivity & Cost Summary", ((string)(null)), table90, "When ");
-#line 250
- testRunner.And("Clear Actual Hourly Arrivals By Day Of Week fields in Practice Productivity & Cos" +
-                    "t Summary", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-            TechTalk.SpecFlow.Table table91 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
                         "Hr_01",
                         "Hr_02",
@@ -3086,7 +2904,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "Hr_21",
                         "Hr_22",
                         "Hr_23"});
-            table91.AddRow(new string[] {
+            table87.AddRow(new string[] {
                         "1",
                         "1",
                         "2",
@@ -3111,9 +2929,137 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 251
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
-                    "nday fields in SA", ((string)(null)), table91, "And ");
+#line 228
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
+                    "turday fields in SA", ((string)(null)), table87, "And ");
+#line 231
+ testRunner.And("update shifts by importing new shifts in Provider Staffing vs Arrivals Workload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table88 = new TechTalk.SpecFlow.Table(new string[] {
+                        "main_phy_pph",
+                        "main_app_pph",
+                        "FT_Phy_pph",
+                        "FT_App_PPH",
+                        "PIT_Phy_pph",
+                        "PIT_App_PPH"});
+            table88.AddRow(new string[] {
+                        "1.5",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1"});
+#line 232
+ testRunner.And("clear and update Productivity Targets by Area in Provider Staffing vs Arrivals Wo" +
+                    "rkload", ((string)(null)), table88, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table89 = new TechTalk.SpecFlow.Table(new string[] {
+                        "main_PhyFirstHour",
+                        "main_appFirstHour",
+                        "FT_PhyfirstHour",
+                        "FT_AppfirstHour",
+                        "PIT_PhyfirstHour",
+                        "PIT_AppFirstHour"});
+            table89.AddRow(new string[] {
+                        "2",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1"});
+#line 235
+ testRunner.And("clear and update Targeted Physician PPH in Provider Staffing vs Arrivals Workload" +
+                    "", ((string)(null)), table89, "And ");
+#line 238
+ testRunner.And("Refresh data by clicking on refresh button in Provider Staffing vs Arrivals Workl" +
+                    "oad", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 239
+ testRunner.And("Verify zoom graph for Forecasted Weekly Arrivals by month in Forcasted hourly arr" +
+                    "ival tab in Provider Staffing vs Arrivals Workload", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 240
+ testRunner.Then("Click on Provider Staffing vs Arrival WorkLoad tab and verified updated tab are h" +
+                    "ighlighted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("09 Verify Practice Productivity & Cost Summary for SA")]
+        public virtual void _09VerifyPracticeProductivityCostSummaryForSA()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("09 Verify Practice Productivity & Cost Summary for SA", null, ((string[])(null)));
+#line 242
+ this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line hidden
+            TechTalk.SpecFlow.Table table90 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Forecasted_Annual_Volume",
+                        "Percentage_Variation",
+                        "JAN",
+                        "FEB",
+                        "MAR",
+                        "APR",
+                        "MAY",
+                        "JUN",
+                        "JUL",
+                        "AUG",
+                        "SEP",
+                        "OCT",
+                        "NOV",
+                        "DEC"});
+            table90.AddRow(new string[] {
+                        "77000",
+                        "2",
+                        "5000",
+                        "4000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "4000",
+                        "4000",
+                        "5000"});
+#line 243
+ testRunner.Given("Update data input fields and reset fields by clicking reset button in Forecasted " +
+                    "hourly Arrivals tab in Practice Productivity & Cost Summary", ((string)(null)), table90, "Given ");
+#line 246
+ testRunner.And("Clear Actual Monthly Arrival fields in Practice Productivity & Cost Summary", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table91 = new TechTalk.SpecFlow.Table(new string[] {
+                        "JAN",
+                        "FEB",
+                        "MAR",
+                        "APR",
+                        "MAY",
+                        "JUN",
+                        "JUL",
+                        "AUG",
+                        "SEP",
+                        "OCT",
+                        "NOV",
+                        "DEC"});
+            table91.AddRow(new string[] {
+                        "5000",
+                        "4000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "5000",
+                        "4000",
+                        "4000",
+                        "5000"});
+#line 247
+ testRunner.When("Clear and Update data input fields for Actual Monthly Arrival in Practice Product" +
+                    "ivity & Cost Summary", ((string)(null)), table91, "When ");
+#line 250
+ testRunner.And("Clear Actual Hourly Arrivals By Day Of Week fields in Practice Productivity & Cos" +
+                    "t Summary", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             TechTalk.SpecFlow.Table table92 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -3165,9 +3111,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 254
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
-                    "onday fields in SA", ((string)(null)), table92, "And ");
+#line 251
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Su" +
+                    "nday fields in SA", ((string)(null)), table92, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table93 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -3219,9 +3165,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 257
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
-                    "uesday fields in SA", ((string)(null)), table93, "And ");
+#line 254
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for M" +
+                    "onday fields in SA", ((string)(null)), table93, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table94 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -3273,9 +3219,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 260
- testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
-                    "ednesday fields in SA", ((string)(null)), table94, "And ");
+#line 257
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for T" +
+                    "uesday fields in SA", ((string)(null)), table94, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table95 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -3327,9 +3273,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 263
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
-                    "ursday fields in SA", ((string)(null)), table95, "And ");
+#line 260
+ testRunner.And("click on clear and  enter values into Actual Hourly Arrivals By Day Of Week for W" +
+                    "ednesday fields in SA", ((string)(null)), table95, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table96 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -3381,9 +3327,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 266
- testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
-                    "iday fields in SA", ((string)(null)), table96, "And ");
+#line 263
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Th" +
+                    "ursday fields in SA", ((string)(null)), table96, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table97 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -3435,22 +3381,76 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
+#line 266
+ testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Fr" +
+                    "iday fields in SA", ((string)(null)), table97, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table98 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table98.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
 #line 269
  testRunner.And("click on clear and enter values into Actual Hourly Arrivals By Day Of Week for Sa" +
-                    "turday fields in SA", ((string)(null)), table97, "And ");
+                    "turday fields in SA", ((string)(null)), table98, "And ");
 #line 272
  testRunner.And("update shifts by importing new shifts in Practice Productivity & Cost Summary", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table98 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table99 = new TechTalk.SpecFlow.Table(new string[] {
                         "Cost_Phyhour",
                         "Cost_APPhour",
                         "Cost_Scrbhour"});
-            table98.AddRow(new string[] {
+            table99.AddRow(new string[] {
                         "25",
                         "25",
                         "25"});
 #line 273
- testRunner.And("clear and update Cost Data in Practice Productivity & Cost Summary", ((string)(null)), table98, "And ");
+ testRunner.And("clear and update Cost Data in Practice Productivity & Cost Summary", ((string)(null)), table99, "And ");
 #line 276
  testRunner.And("Refresh data by clicking on refresh button in Practice Productivity & Cost Summar" +
                     "y", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

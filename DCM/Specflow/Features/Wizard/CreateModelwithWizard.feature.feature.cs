@@ -85,30 +85,30 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("click on create model tab from dashboard and click on Create Model using Wizard f" +
                     "rom popup", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table104 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table105 = new TechTalk.SpecFlow.Table(new string[] {
                         "FAA_Wizard"});
-            table104.AddRow(new string[] {
+            table105.AddRow(new string[] {
                         "80000"});
 #line 9
  testRunner.And("enter value into What is the Forecasted Annual Arrivals (walkouts included) of yo" +
-                    "ur Emergency Department? question and hit hit enter", ((string)(null)), table104, "And ");
+                    "ur Emergency Department? question and hit hit enter", ((string)(null)), table105, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table105 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table106 = new TechTalk.SpecFlow.Table(new string[] {
                         "Current_Walkout_Percentage"});
-            table105.AddRow(new string[] {
+            table106.AddRow(new string[] {
                         "3"});
 #line 13
  testRunner.When("What\'s your current walkout (Left without Triage or Left without being seen) perc" +
                     "entage? question appeared then enter the value in textbox and hit enter And veri" +
-                    "fy Your Forecasted Annual Volume", ((string)(null)), table105, "When ");
+                    "fy Your Forecasted Annual Volume", ((string)(null)), table106, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table106 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table107 = new TechTalk.SpecFlow.Table(new string[] {
                         "Admitted_patients_percentage"});
-            table106.AddRow(new string[] {
+            table107.AddRow(new string[] {
                         "20"});
 #line 17
  testRunner.And("What percentage of patients get admitted?  question appeared then enter the value" +
-                    " in text box and hit enter", ((string)(null)), table106, "And ");
+                    " in text box and hit enter", ((string)(null)), table107, "And ");
 #line 21
  testRunner.When(@"How many patients come to your Emergency Department each month? Each hour during the week? question appeared and click on Apply Data Benchmarking Average pattern and Arrivals pop up will get appeared then click on OK button and verify the Click to view Arrival link appeared", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 23
@@ -116,36 +116,36 @@ this.ScenarioInitialize(scenarioInfo);
                     "t?  then click on  Apply Data Benchmarking Average pattern  and ESI pop up displ" +
                     "ayed then click on OK button after click on OK verify  Click to view ESI  link", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table107 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table108 = new TechTalk.SpecFlow.Table(new string[] {
                         "Los_for_Addmitted_patients"});
-            table107.AddRow(new string[] {
+            table108.AddRow(new string[] {
                         "147"});
 #line 25
  testRunner.When("What is the Length of Stay (in minutes) for Admitted patients in your Emergency D" +
-                    "epartment?  question appeared, enter the value in textbox and press enter", ((string)(null)), table107, "When ");
+                    "epartment?  question appeared, enter the value in textbox and press enter", ((string)(null)), table108, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table108 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table109 = new TechTalk.SpecFlow.Table(new string[] {
                         "Los_for_Discharged_patients"});
-            table108.AddRow(new string[] {
+            table109.AddRow(new string[] {
                         "200"});
 #line 29
  testRunner.When("What is the Length of Stay (in minutes) for Discharged patients in your Emergency" +
-                    " Department? question appeared enter the value in textbox and press enter", ((string)(null)), table108, "When ");
+                    " Department? question appeared enter the value in textbox and press enter", ((string)(null)), table109, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table109 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table110 = new TechTalk.SpecFlow.Table(new string[] {
                         "Arrival_to_admit_decision_time"});
-            table109.AddRow(new string[] {
+            table110.AddRow(new string[] {
                         "150"});
 #line 34
  testRunner.When("What is your Arrival to Admit Decision time (in minutes)?  question appeared, ent" +
-                    "er the value in textbox and press enter", ((string)(null)), table109, "When ");
+                    "er the value in textbox and press enter", ((string)(null)), table110, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table110 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table111 = new TechTalk.SpecFlow.Table(new string[] {
                         "Duplicate_Shifts",
                         "Current_To_Time",
                         "Proposed_From_Time",
                         "Proposed_To_Time"});
-            table110.AddRow(new string[] {
+            table111.AddRow(new string[] {
                         "2",
                         "18",
                         "05",
@@ -153,24 +153,24 @@ this.ScenarioInitialize(scenarioInfo);
 #line 39
  testRunner.When("What is your typical staffing pattern? appeared, click on  I\'d like to enter the " +
                     "data manually and Shifts pop up displayed then add shifts manually and click on " +
-                    "OK to close pop up", ((string)(null)), table110, "When ");
+                    "OK to close pop up", ((string)(null)), table111, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table111 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table112 = new TechTalk.SpecFlow.Table(new string[] {
                         "Phy_cost"});
-            table111.AddRow(new string[] {
+            table112.AddRow(new string[] {
                         "350"});
 #line 45
  testRunner.When("What is your average cost (in dollars) per Physician hours? Please enter 0 in cas" +
-                    "e of no cost.  question appeared, enter the value in textbox and press enter", ((string)(null)), table111, "When ");
+                    "e of no cost.  question appeared, enter the value in textbox and press enter", ((string)(null)), table112, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table112 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table113 = new TechTalk.SpecFlow.Table(new string[] {
                         "APP_cost"});
-            table112.AddRow(new string[] {
+            table113.AddRow(new string[] {
                         "300"});
 #line 50
  testRunner.When("If you use Advanced Practice Providers (APPs), what is your average cost (in doll" +
                     "ars) per APP hours? Please enter 0 in case of no cost.  question appeared, enter" +
-                    " the value in textbox and press enter", ((string)(null)), table112, "When ");
+                    " the value in textbox and press enter", ((string)(null)), table113, "When ");
 #line 55
  testRunner.When("We have defaulted your average cost (in dollars) per Scribe hours to $20. Do you " +
                     "want to change?  question appeared then click on  No, I want to continue with th" +
@@ -179,44 +179,44 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("Please confirm your Clinician availability for Main area. question appeared then " +
                     "click on Both Physician and APP are Present button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table113 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table114 = new TechTalk.SpecFlow.Table(new string[] {
                         "Targeted_Phy_PPH"});
-            table113.AddRow(new string[] {
+            table114.AddRow(new string[] {
                         "2.5"});
 #line 59
  testRunner.When("How many patients does your Physicians see per hour (PPH)?  question appeared, en" +
-                    "ter the value in textbox and press enter", ((string)(null)), table113, "When ");
+                    "ter the value in textbox and press enter", ((string)(null)), table114, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table114 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table115 = new TechTalk.SpecFlow.Table(new string[] {
                         "Targeted_APP_PPH"});
-            table114.AddRow(new string[] {
+            table115.AddRow(new string[] {
                         "1.25"});
 #line 64
  testRunner.When("How many patients does your APPs see per hour (PPH)?  question appeared, enter th" +
                     "e value in textbox and press enter and verify the  Your APP coefficient calculat" +
-                    "es to  value", ((string)(null)), table114, "When ");
+                    "es to  value", ((string)(null)), table115, "When ");
 #line 69
  testRunner.When("We have defaulted your Scribe coefficient (efficiency of providers Scribes increa" +
                     "se in percent) to 15%. Do you want to change?  question appeared then click on  " +
                     "No, I want to continue with the default Scribe coefficient.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table115 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table116 = new TechTalk.SpecFlow.Table(new string[] {
                         "Phy_First_hour"});
-            table115.AddRow(new string[] {
+            table116.AddRow(new string[] {
                         "3"});
 #line 71
  testRunner.When("Do your Physicians have a higher than average PPH during their first hour of the " +
                     "work? If YES, please enter the PPH during the first hour. If NO, please enter 0." +
-                    "  question appeared, enter the value in textbox and press enter", ((string)(null)), table115, "When ");
+                    "  question appeared, enter the value in textbox and press enter", ((string)(null)), table116, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table116 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table117 = new TechTalk.SpecFlow.Table(new string[] {
                         "APP_First_hour"});
-            table116.AddRow(new string[] {
+            table117.AddRow(new string[] {
                         "2"});
 #line 76
  testRunner.When("Do your APPs have a higher than average PPH during their first hour of the work? " +
                     "If YES, please enter the PPH during the first hour. If NO, please enter 0.  ques" +
-                    "tion appeared, enter the value in textbox and press enter", ((string)(null)), table116, "When ");
+                    "tion appeared, enter the value in textbox and press enter", ((string)(null)), table117, "When ");
 #line 81
  testRunner.When("Are there any other areas in your Emergency Department?  question appeared then c" +
                     "lick on  NO that\'s all", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -243,39 +243,39 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("click on create model tab from dashboard and click on Create Model using Wizard f" +
                     "rom popup", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table117 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table118 = new TechTalk.SpecFlow.Table(new string[] {
                         "FAA_Wizard"});
-            table117.AddRow(new string[] {
+            table118.AddRow(new string[] {
                         "50000"});
 #line 94
  testRunner.And("enter value into What is the Forecasted Annual Arrivals (walkouts included) of yo" +
-                    "ur Emergency Department? question and hit hit enter", ((string)(null)), table117, "And ");
+                    "ur Emergency Department? question and hit hit enter", ((string)(null)), table118, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table118 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table119 = new TechTalk.SpecFlow.Table(new string[] {
                         "Current_Walkout_Percentage"});
-            table118.AddRow(new string[] {
+            table119.AddRow(new string[] {
                         "3"});
 #line 98
  testRunner.When("What\'s your current walkout (Left without Triage or Left without being seen) perc" +
                     "entage? question appeared then enter the value in textbox and hit enter And veri" +
-                    "fy Your Forecasted Annual Volume", ((string)(null)), table118, "When ");
+                    "fy Your Forecasted Annual Volume", ((string)(null)), table119, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table119 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table120 = new TechTalk.SpecFlow.Table(new string[] {
                         "Admitted_patients_percentage"});
-            table119.AddRow(new string[] {
+            table120.AddRow(new string[] {
                         "20"});
 #line 103
  testRunner.And("What percentage of patients get admitted?  question appeared then enter the value" +
-                    " in text box and hit enter", ((string)(null)), table119, "And ");
+                    " in text box and hit enter", ((string)(null)), table120, "And ");
 #line 107
  testRunner.When("Monthly/hourly arrivals question displayed then do import data", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table120 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table121 = new TechTalk.SpecFlow.Table(new string[] {
                         "ESI1",
                         "ESI2",
                         "ESI 3",
                         "ESI 4"});
-            table120.AddRow(new string[] {
+            table121.AddRow(new string[] {
                         "1",
                         "8",
                         "55",
@@ -284,50 +284,50 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("What is the Emergency Severity Index (ESI) breakdown for your Emergency Departmen" +
                     "t?  then click on  I\'d like to enter the data manually  and ESI pop up displayed" +
                     " then  enter esi values click on OK button after click on OK verify  Click to vi" +
-                    "ew ESI  link", ((string)(null)), table120, "When ");
+                    "ew ESI  link", ((string)(null)), table121, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table121 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table122 = new TechTalk.SpecFlow.Table(new string[] {
                         "Los_for_Addmitted_patients"});
-            table121.AddRow(new string[] {
+            table122.AddRow(new string[] {
                         "147"});
 #line 113
  testRunner.When("What is the Length of Stay (in minutes) for Admitted patients in your Emergency D" +
-                    "epartment?  question appeared, enter the value in textbox and press enter", ((string)(null)), table121, "When ");
+                    "epartment?  question appeared, enter the value in textbox and press enter", ((string)(null)), table122, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table122 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table123 = new TechTalk.SpecFlow.Table(new string[] {
                         "Los_for_Discharged_patients"});
-            table122.AddRow(new string[] {
+            table123.AddRow(new string[] {
                         "200"});
 #line 117
  testRunner.When("What is the Length of Stay (in minutes) for Discharged patients in your Emergency" +
-                    " Department? question appeared enter the value in textbox and press enter", ((string)(null)), table122, "When ");
+                    " Department? question appeared enter the value in textbox and press enter", ((string)(null)), table123, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table123 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table124 = new TechTalk.SpecFlow.Table(new string[] {
                         "Arrival_to_admit_decision_time"});
-            table123.AddRow(new string[] {
+            table124.AddRow(new string[] {
                         "150"});
 #line 122
  testRunner.When("What is your Arrival to Admit Decision time (in minutes)?  question appeared, ent" +
-                    "er the value in textbox and press enter", ((string)(null)), table123, "When ");
+                    "er the value in textbox and press enter", ((string)(null)), table124, "When ");
 #line 127
  testRunner.When("Shifts questions displayed then do import shifts", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table124 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table125 = new TechTalk.SpecFlow.Table(new string[] {
                         "Phy_cost"});
-            table124.AddRow(new string[] {
+            table125.AddRow(new string[] {
                         "350"});
 #line 129
  testRunner.When("What is your average cost (in dollars) per Physician hours? Please enter 0 in cas" +
-                    "e of no cost.  question appeared, enter the value in textbox and press enter", ((string)(null)), table124, "When ");
+                    "e of no cost.  question appeared, enter the value in textbox and press enter", ((string)(null)), table125, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table125 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table126 = new TechTalk.SpecFlow.Table(new string[] {
                         "APP_cost"});
-            table125.AddRow(new string[] {
+            table126.AddRow(new string[] {
                         "300"});
 #line 134
  testRunner.When("If you use Advanced Practice Providers (APPs), what is your average cost (in doll" +
                     "ars) per APP hours? Please enter 0 in case of no cost.  question appeared, enter" +
-                    " the value in textbox and press enter", ((string)(null)), table125, "When ");
+                    " the value in textbox and press enter", ((string)(null)), table126, "When ");
 #line 139
  testRunner.When("We have defaulted your average cost (in dollars) per Scribe hours to $20. Do you " +
                     "want to change?  question appeared then click on  No, I want to continue with th" +
@@ -336,46 +336,46 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("Please confirm your Clinician availability for Main area. question appeared then " +
                     "click on Both Physician and APP are Present button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table126 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table127 = new TechTalk.SpecFlow.Table(new string[] {
                         "Targeted_Phy_PPH"});
-            table126.AddRow(new string[] {
+            table127.AddRow(new string[] {
                         "2.5"});
 #line 143
  testRunner.When("How many patients does your Physicians see per hour (PPH)?  question appeared, en" +
-                    "ter the value in textbox and press enter", ((string)(null)), table126, "When ");
+                    "ter the value in textbox and press enter", ((string)(null)), table127, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table127 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table128 = new TechTalk.SpecFlow.Table(new string[] {
                         "Targeted_APP_PPH"});
-            table127.AddRow(new string[] {
+            table128.AddRow(new string[] {
                         "1.25"});
 #line 148
  testRunner.When("How many patients does your APPs see per hour (PPH)?  question appeared, enter th" +
                     "e value in textbox and press enter and verify the  Your APP coefficient calculat" +
-                    "es to  value", ((string)(null)), table127, "When ");
+                    "es to  value", ((string)(null)), table128, "When ");
 #line 153
  testRunner.When("We have defaulted your Scribe coefficient (efficiency of providers Scribes increa" +
                     "se in percent) to 15%. Do you want to change?  question appeared then click on  " +
                     "No, I want to continue with the default Scribe coefficient.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table128 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table129 = new TechTalk.SpecFlow.Table(new string[] {
                         "Phy_First_hour"});
-            table128.AddRow(new string[] {
+            table129.AddRow(new string[] {
                         "3"});
 #line 155
  testRunner.When("Do your Physicians have a higher than average PPH during their first hour of the " +
                     "work? If YES, please enter the PPH during the first hour. If NO, please enter 0." +
-                    "  question appeared, enter the value in textbox and press enter", ((string)(null)), table128, "When ");
+                    "  question appeared, enter the value in textbox and press enter", ((string)(null)), table129, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table129 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table130 = new TechTalk.SpecFlow.Table(new string[] {
                         "APP_First_hour"});
-            table129.AddRow(new string[] {
+            table130.AddRow(new string[] {
                         "2"});
 #line 160
  testRunner.When("Do your APPs have a higher than average PPH during their first hour of the work? " +
                     "If YES, please enter the PPH during the first hour. If NO, please enter 0.  ques" +
-                    "tion appeared, enter the value in textbox and press enter", ((string)(null)), table129, "When ");
+                    "tion appeared, enter the value in textbox and press enter", ((string)(null)), table130, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table130 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table131 = new TechTalk.SpecFlow.Table(new string[] {
                         "FTHoursFrom",
                         "FTHoursTo",
                         "FT_LOS",
@@ -389,7 +389,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "Current_To_Time",
                         "Proposed_From_Time",
                         "Proposed_To_Time"});
-            table130.AddRow(new string[] {
+            table131.AddRow(new string[] {
                         "09:00",
                         "21:00",
                         "90",
@@ -405,7 +405,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "19"});
 #line 165
  testRunner.When("Are there any other areas in your Emergency Department?  question appeared then c" +
-                    "lick on  Fast track and answer all the questions", ((string)(null)), table130, "When ");
+                    "lick on  Fast track and answer all the questions", ((string)(null)), table131, "When ");
 #line 170
  testRunner.And("click on No,That\'s All button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 172
@@ -431,32 +431,32 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.Given("click on create model tab from dashboard and click on Create Model using Wizard f" +
                     "rom popup", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-            TechTalk.SpecFlow.Table table131 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table132 = new TechTalk.SpecFlow.Table(new string[] {
                         "FAA_Wizard"});
-            table131.AddRow(new string[] {
+            table132.AddRow(new string[] {
                         "50000"});
 #line 183
  testRunner.And("enter value into What is the Forecasted Annual Arrivals (walkouts included) of yo" +
-                    "ur Emergency Department? question and hit hit enter", ((string)(null)), table131, "And ");
+                    "ur Emergency Department? question and hit hit enter", ((string)(null)), table132, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table132 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table133 = new TechTalk.SpecFlow.Table(new string[] {
                         "Current_Walkout_Percentage"});
-            table132.AddRow(new string[] {
+            table133.AddRow(new string[] {
                         "3"});
 #line 187
  testRunner.When("What\'s your current walkout (Left without Triage or Left without being seen) perc" +
                     "entage? question appeared then enter the value in textbox and hit enter And veri" +
-                    "fy Your Forecasted Annual Volume", ((string)(null)), table132, "When ");
+                    "fy Your Forecasted Annual Volume", ((string)(null)), table133, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table133 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table134 = new TechTalk.SpecFlow.Table(new string[] {
                         "Admitted_patients_percentage"});
-            table133.AddRow(new string[] {
+            table134.AddRow(new string[] {
                         "20"});
 #line 192
  testRunner.And("What percentage of patients get admitted?  question appeared then enter the value" +
-                    " in text box and hit enter", ((string)(null)), table133, "And ");
+                    " in text box and hit enter", ((string)(null)), table134, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table134 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table135 = new TechTalk.SpecFlow.Table(new string[] {
                         "JAN",
                         "FEB",
                         "MAR",
@@ -469,7 +469,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "OCT",
                         "NOV",
                         "DEC"});
-            table134.AddRow(new string[] {
+            table135.AddRow(new string[] {
                         "5087",
                         "4752",
                         "5336",
@@ -484,60 +484,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "5030"});
 #line 197
  testRunner.When("Arrivals question displayed then click on Enter data manually and enter monthly d" +
-                    "ata", ((string)(null)), table134, "When ");
-#line hidden
-            TechTalk.SpecFlow.Table table135 = new TechTalk.SpecFlow.Table(new string[] {
-                        "Hr_00",
-                        "Hr_01",
-                        "Hr_02",
-                        "Hr_03",
-                        "Hr_04",
-                        "Hr_05",
-                        "Hr_06",
-                        "Hr_07",
-                        "Hr_08",
-                        "Hr_09",
-                        "Hr_10",
-                        "Hr_11",
-                        "Hr_12",
-                        "Hr_13",
-                        "Hr_14",
-                        "Hr_15",
-                        "Hr_16",
-                        "Hr_17",
-                        "Hr_18",
-                        "Hr_19",
-                        "Hr_20",
-                        "Hr_21",
-                        "Hr_22",
-                        "Hr_23"});
-            table135.AddRow(new string[] {
-                        "1",
-                        "1",
-                        "2",
-                        "3",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "2",
-                        "3",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "1",
-                        "2",
-                        "3",
-                        "1",
-                        "1",
-                        "1"});
-#line 200
- testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Sunday fields", ((string)(null)), table135, "And ");
+                    "ata", ((string)(null)), table135, "When ");
 #line hidden
             TechTalk.SpecFlow.Table table136 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -589,8 +536,8 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 203
- testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Monday fields", ((string)(null)), table136, "And ");
+#line 200
+ testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Sunday fields", ((string)(null)), table136, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table137 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -642,8 +589,8 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 206
- testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Tuesday fields", ((string)(null)), table137, "And ");
+#line 203
+ testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Monday fields", ((string)(null)), table137, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table138 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -695,8 +642,8 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 209
- testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Wednesday fields", ((string)(null)), table138, "And ");
+#line 206
+ testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Tuesday fields", ((string)(null)), table138, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table139 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -748,8 +695,8 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 212
- testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Thursday fields", ((string)(null)), table139, "And ");
+#line 209
+ testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Wednesday fields", ((string)(null)), table139, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table140 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -801,8 +748,8 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 215
- testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Friday fields", ((string)(null)), table140, "And ");
+#line 212
+ testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Thursday fields", ((string)(null)), table140, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table141 = new TechTalk.SpecFlow.Table(new string[] {
                         "Hr_00",
@@ -854,15 +801,68 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 218
- testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Saturday fields", ((string)(null)), table141, "And ");
+#line 215
+ testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Friday fields", ((string)(null)), table141, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table142 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Hr_00",
+                        "Hr_01",
+                        "Hr_02",
+                        "Hr_03",
+                        "Hr_04",
+                        "Hr_05",
+                        "Hr_06",
+                        "Hr_07",
+                        "Hr_08",
+                        "Hr_09",
+                        "Hr_10",
+                        "Hr_11",
+                        "Hr_12",
+                        "Hr_13",
+                        "Hr_14",
+                        "Hr_15",
+                        "Hr_16",
+                        "Hr_17",
+                        "Hr_18",
+                        "Hr_19",
+                        "Hr_20",
+                        "Hr_21",
+                        "Hr_22",
+                        "Hr_23"});
+            table142.AddRow(new string[] {
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "1",
+                        "2",
+                        "3",
+                        "1",
+                        "1",
+                        "1"});
+#line 218
+ testRunner.And("enter values into Actual Hourly Arrivals By Day Of Week for Saturday fields", ((string)(null)), table142, "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table143 = new TechTalk.SpecFlow.Table(new string[] {
                         "ESI1",
                         "ESI2",
                         "ESI 3",
                         "ESI 4"});
-            table142.AddRow(new string[] {
+            table143.AddRow(new string[] {
                         "1",
                         "8",
                         "55",
@@ -871,50 +871,50 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("What is the Emergency Severity Index (ESI) breakdown for your Emergency Departmen" +
                     "t?  then click on  I\'d like to enter the data manually  and ESI pop up displayed" +
                     " then  enter esi values click on OK button after click on OK verify  Click to vi" +
-                    "ew ESI  link", ((string)(null)), table142, "When ");
+                    "ew ESI  link", ((string)(null)), table143, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table143 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table144 = new TechTalk.SpecFlow.Table(new string[] {
                         "Los_for_Addmitted_patients"});
-            table143.AddRow(new string[] {
+            table144.AddRow(new string[] {
                         "147"});
 #line 226
  testRunner.When("What is the Length of Stay (in minutes) for Admitted patients in your Emergency D" +
-                    "epartment?  question appeared, enter the value in textbox and press enter", ((string)(null)), table143, "When ");
+                    "epartment?  question appeared, enter the value in textbox and press enter", ((string)(null)), table144, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table144 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table145 = new TechTalk.SpecFlow.Table(new string[] {
                         "Los_for_Discharged_patients"});
-            table144.AddRow(new string[] {
+            table145.AddRow(new string[] {
                         "200"});
 #line 230
  testRunner.When("What is the Length of Stay (in minutes) for Discharged patients in your Emergency" +
-                    " Department? question appeared enter the value in textbox and press enter", ((string)(null)), table144, "When ");
+                    " Department? question appeared enter the value in textbox and press enter", ((string)(null)), table145, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table145 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table146 = new TechTalk.SpecFlow.Table(new string[] {
                         "Arrival_to_admit_decision_time"});
-            table145.AddRow(new string[] {
+            table146.AddRow(new string[] {
                         "150"});
 #line 235
  testRunner.When("What is your Arrival to Admit Decision time (in minutes)?  question appeared, ent" +
-                    "er the value in textbox and press enter", ((string)(null)), table145, "When ");
+                    "er the value in textbox and press enter", ((string)(null)), table146, "When ");
 #line 240
  testRunner.When("Shifts questions displayed then do import shifts", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table146 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table147 = new TechTalk.SpecFlow.Table(new string[] {
                         "Phy_cost"});
-            table146.AddRow(new string[] {
+            table147.AddRow(new string[] {
                         "350"});
 #line 242
  testRunner.When("What is your average cost (in dollars) per Physician hours? Please enter 0 in cas" +
-                    "e of no cost.  question appeared, enter the value in textbox and press enter", ((string)(null)), table146, "When ");
+                    "e of no cost.  question appeared, enter the value in textbox and press enter", ((string)(null)), table147, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table147 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table148 = new TechTalk.SpecFlow.Table(new string[] {
                         "APP_cost"});
-            table147.AddRow(new string[] {
+            table148.AddRow(new string[] {
                         "300"});
 #line 247
  testRunner.When("If you use Advanced Practice Providers (APPs), what is your average cost (in doll" +
                     "ars) per APP hours? Please enter 0 in case of no cost.  question appeared, enter" +
-                    " the value in textbox and press enter", ((string)(null)), table147, "When ");
+                    " the value in textbox and press enter", ((string)(null)), table148, "When ");
 #line 252
  testRunner.When("We have defaulted your average cost (in dollars) per Scribe hours to $20. Do you " +
                     "want to change?  question appeared then click on  No, I want to continue with th" +
@@ -923,46 +923,46 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.When("Please confirm your Clinician availability for Main area. question appeared then " +
                     "click on Both Physician and APP are Present button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table148 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table149 = new TechTalk.SpecFlow.Table(new string[] {
                         "Targeted_Phy_PPH"});
-            table148.AddRow(new string[] {
+            table149.AddRow(new string[] {
                         "2.5"});
 #line 256
  testRunner.When("How many patients does your Physicians see per hour (PPH)?  question appeared, en" +
-                    "ter the value in textbox and press enter", ((string)(null)), table148, "When ");
+                    "ter the value in textbox and press enter", ((string)(null)), table149, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table149 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table150 = new TechTalk.SpecFlow.Table(new string[] {
                         "Targeted_APP_PPH"});
-            table149.AddRow(new string[] {
+            table150.AddRow(new string[] {
                         "1.25"});
 #line 261
  testRunner.When("How many patients does your APPs see per hour (PPH)?  question appeared, enter th" +
                     "e value in textbox and press enter and verify the  Your APP coefficient calculat" +
-                    "es to  value", ((string)(null)), table149, "When ");
+                    "es to  value", ((string)(null)), table150, "When ");
 #line 266
  testRunner.When("We have defaulted your Scribe coefficient (efficiency of providers Scribes increa" +
                     "se in percent) to 15%. Do you want to change?  question appeared then click on  " +
                     "No, I want to continue with the default Scribe coefficient.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table150 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table151 = new TechTalk.SpecFlow.Table(new string[] {
                         "Phy_First_hour"});
-            table150.AddRow(new string[] {
+            table151.AddRow(new string[] {
                         "3"});
 #line 268
  testRunner.When("Do your Physicians have a higher than average PPH during their first hour of the " +
                     "work? If YES, please enter the PPH during the first hour. If NO, please enter 0." +
-                    "  question appeared, enter the value in textbox and press enter", ((string)(null)), table150, "When ");
+                    "  question appeared, enter the value in textbox and press enter", ((string)(null)), table151, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table151 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table152 = new TechTalk.SpecFlow.Table(new string[] {
                         "APP_First_hour"});
-            table151.AddRow(new string[] {
+            table152.AddRow(new string[] {
                         "2"});
 #line 273
  testRunner.When("Do your APPs have a higher than average PPH during their first hour of the work? " +
                     "If YES, please enter the PPH during the first hour. If NO, please enter 0.  ques" +
-                    "tion appeared, enter the value in textbox and press enter", ((string)(null)), table151, "When ");
+                    "tion appeared, enter the value in textbox and press enter", ((string)(null)), table152, "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table152 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table153 = new TechTalk.SpecFlow.Table(new string[] {
                         "FTHoursFrom",
                         "FTHoursTo",
                         "FT_LOS",
@@ -976,7 +976,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "Current_To_Time",
                         "Proposed_From_Time",
                         "Proposed_To_Time"});
-            table152.AddRow(new string[] {
+            table153.AddRow(new string[] {
                         "09:00",
                         "21:00",
                         "90",
@@ -992,7 +992,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "19"});
 #line 278
  testRunner.When("Are there any other areas in your Emergency Department?  question appeared then c" +
-                    "lick on  Fast track and answer all the questions", ((string)(null)), table152, "When ");
+                    "lick on  Fast track and answer all the questions", ((string)(null)), table153, "When ");
 #line 283
  testRunner.And("click on No,That\'s All button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 285

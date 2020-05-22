@@ -146,6 +146,30 @@ namespace DCM.POM.DCM_Objects
 
         public static By HrsofOperationforPITAftersetting = By.XPath("//table[@class='w-100 ng-star-inserted']/thread/tr/th[contains(text(),'Day')]");
         public static By HrsofOperationforFTAftersetting = By.XPath("//table[@class='w-100 ng-star-inserted']/thread/tr/th[contains(text(),'Day')]");
+        // Dropdown elements to enter the timings in set 
+        public static By Fromdropdownclick = By.XPath("//div[@class='items-center pl-2']/ng-select[@role='listbox']");
+        public static By AllDaysFrom = By.XPath("//div[@class='scrollable-content']/div[@class='ng-option ng-star-inserted ng-option-marked']/span[contains(text(),'08:00')]");
+        public static By waitFortheelement = By.XPath("//ng-dropdown-panel[@id='a955c472820d']/div[@class='ng-dropdown-panel-items scroll-host']/div[@class='scrollable-content']/div[@id='a958aac8aff1']");
+        public static By FromdropdownList = By.XPath("//ng-dropdown-panel[@class='ng-dropdown-panel ng-star-inserted ng-select-bottom']/div/div/div[@class='ng-option ng-star-inserted']");
+        public static By selectTimeFrom = By.XPath("//div[@class='ng-dropdown-panel-items scroll-host']//following::div//div//span[contains(text(),'08:00')]");
+        public static By Todropdownclick = By.XPath("//div[@class='items-center pl-3']/div[@class='d-inline-block pl-2']/ng-select[@role='listbox']");
+        public static By AllDaysTo = By.XPath("//div[@class='ng-option ng-star-inserted ng-option-marked']/span[@class='ng-option-label ng-star-inserted'][contains(text(),'08:00')]");
+        public static By selectTimeTo = By.XPath("//div[@class='ng-dropdown-panel-items scroll-host']//following::div//div//span[contains(text(),'08:00')]");
+        public static By SunselectTimeTo = By.XPath("//div[@class='ng-dropdown-panel-items scroll-host']//following::div//div//span[contains(text(),'12:00')]");
+        public static By SunFromDropdown = By.XPath("//div[@class='items-center ng-star-inserted']/div//following::div//div[@class='items-center pl-2 ng-star-inserted']//ng-select[@role='listbox']");
+        public static By SundropdownTo = By.XPath("//div[@class='d-inline-block pl-2 ng-star-inserted']/ng-select/div");
+        public static By MonFromDropdown = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center ng-star-inserted'][2]/div[2]/div/ng-select");
+        public static By MonToDropdown = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center ng-star-inserted'][2]/div[3]/div/ng-select");
+        public static By TueFromDropdown = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center ng-star-inserted'][3]/div[2]/div/ng-select");
+        public static By TueToDropdown = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center ng-star-inserted'][3]/div[3]/div/ng-select");
+        public static By WedFromDropdown = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center ng-star-inserted'][4]/div[2]/div/ng-select");
+        public static By WedToDropdown = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center ng-star-inserted'][4]/div[3]/div/ng-select");
+        public static By ThuFromDropdown = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center ng-star-inserted'][5]/div[2]/div/ng-select");
+        public static By ThuToDropdown = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center ng-star-inserted'][5]/div[3]/div/ng-select");
+        public static By FriFromDropdown = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center ng-star-inserted'][6]/div[2]/div/ng-select");
+        public static By FriToDropdown = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center ng-star-inserted'][6]/div[3]/div/ng-select");
+        public static By SatFromDropdown = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center ng-star-inserted'][7]/div[2]/div/ng-select");
+        public static By SatToDropdown = By.XPath("//div[@class='dialog-box-content pt-5 pb-5']/div[@class='items-center ng-star-inserted'][7]/div[3]/div/ng-select");
 
         public static By overallED_ESI1 = By.XPath("//table[starts-with(@class,'segmentation mt-')]//td[2]//div[1]//div[1]//input[1]");
         public static By overallED_ESI2 = By.XPath("//table[starts-with(@class,'segmentation mt-')]//td[3]//div[1]//div[1]//input[1]");
@@ -860,8 +884,9 @@ namespace DCM.POM.DCM_Objects
         // PIT
 
         public static By PitTab = By.XPath("/html[1]/body[1]/app-root[1]/div[1]/div[1]/div[1]/app-input[1]/div[1]/div[2]/tabset[1]/div[1]/tab[5]/app-clinicianproductivity[1]/div[1]/div[1]/div[1]/div[1]/mat-tab-group[1]/mat-tab-header[1]/div[2]/div[1]/div[1]/div[3]/div[1]");
-            //("//div[@class ='mat-tab-label mat-ripple ng-star-inserted'][contains(@id,'mat-tab-label-content-2')]");
-	    public static By PIT_Phy_pph = By.XPath("//input[@id='targetedPphValue1']");
+        //("//div[@class ='mat-tab-label mat-ripple ng-star-inserted'][contains(@id,'mat-tab-label-content-2')]");
+        //By.XPath("//div[@class='mat-tab-labels']/div[@id='mat-tab-label-1-2']");
+        public static By PIT_Phy_pph = By.XPath("//input[@id='targetedPphValue1']");
         public static By PIT_App_PPH = By.XPath("//input[@id='appCoefficientValue1']");
         public static By PIT_segment_Tab = By.XPath("//div[@id='mat-tab-label-2-2']");
         public static By PIT_PhyfirstHour = By.XPath("//input[@id='firsthourpph1']");

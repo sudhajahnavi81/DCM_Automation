@@ -490,6 +490,39 @@ namespace DCM.Specflow.Definitions
             CreateModel.Area2_ED(ESI1, ESI2, ESI3, ESI4, ESI5);
         }
 
+        [When(@"enter values in to Hours of operation for Area1 All days and click on ok button")]
+        public void WhenEnterValuesInToHoursOfOperationForAreaAllDaysAndClickOnOkButton(Table table)
+        {
+            dynamic AreaHrs = table.CreateDynamicInstance();
+
+            DateTime From = AreaHrs.From;
+            DateTime To = AreaHrs.To;
+            String from = From.ToString();
+            String to = To.ToString();
+            CreateModel.Area1SetHrsofOperation(from, to);
+        }
+
+        [When(@"enter values in to Hours of operation for Area1 with differrent timings")]
+        public void WhenEnterValuesInToHoursOfOperationForAreaWithDifferrentTimings()
+        {
+            CreateModel.Area1SetHrsofOperationDifferentTimings();
+
+        }
+
+        [When(@"enter values in to Hours of operation for Area2 All days and click on ok button")]
+        public void WhenEnterValuesInToHoursOfOperationForAreaAllDaysAndClickOnOkButton()
+        {
+            CreateModel.Area2SetHrsofOperation();
+        }
+
+        [When(@"enter values in to Hours of operation for Area2 with different timings")]
+        public void WhenEnterValuesInToHoursOfOperationForAreaWithDifferentTimings()
+        {
+            CreateModel.Area2SetHrsofOperationDifferentTimings();
+        }
+
+
+
 
     }
 }

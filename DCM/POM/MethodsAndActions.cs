@@ -14,17 +14,18 @@ using AutoIt;
 using OpenQA.Selenium.Chrome;
 using TechTalk.SpecFlow;
 using OpenQA.Selenium.IE;
+using System.Collections;
 
 namespace DCM.POM
 {
 
-    
-    public  class MethodsAndActions 
+
+    public class MethodsAndActions
     {
 
 
-        
-        
+
+
 
         public static void Type(string element, By element1)
         {
@@ -69,7 +70,7 @@ namespace DCM.POM
         {
             try
             {
-               if (!pageTitle.Equals(Initialize.driver.Title))
+                if (!pageTitle.Equals(Initialize.driver.Title))
                 {
                     throw new InvalidOperationException("This page is not " + pageTitle + ". The title is: " + Initialize.driver.Title);
                 }
@@ -108,22 +109,23 @@ namespace DCM.POM
 
         public static bool IsElementPresent(By locator, string expectedText)
         {
-            try { 
-            IList<IWebElement> subelements = Initialize.driver.FindElements(locator);
-            for (int i = 0; i < subelements.Count; i++)
+            try
             {
-
-                //Console.Write(subelements[i].Text);
-
-                if (subelements[i].Text == expectedText)
+                IList<IWebElement> subelements = Initialize.driver.FindElements(locator);
+                for (int i = 0; i < subelements.Count; i++)
                 {
-                    Console.Write("Element Found " + subelements[i].Text);
-                    return true;
+
+                    //Console.Write(subelements[i].Text);
+
+                    if (subelements[i].Text == expectedText)
+                    {
+                        Console.Write("Element Found " + subelements[i].Text);
+                        return true;
+
+                    }
 
                 }
-
-            }
-            return false;
+                return false;
             }
             catch (NoSuchElementException)
             {
@@ -148,10 +150,11 @@ namespace DCM.POM
         public static IWebElement Find(By locator)
         {
 
-            try { 
-            WebDriverWait wait = new WebDriverWait(Initialize.driver, TimeSpan.FromSeconds(15));
-            wait.Until(ExpectedConditions.ElementIsVisible(locator));
-            return Initialize.driver.FindElement(locator);
+            try
+            {
+                WebDriverWait wait = new WebDriverWait(Initialize.driver, TimeSpan.FromSeconds(15));
+                wait.Until(ExpectedConditions.ElementIsVisible(locator));
+                return Initialize.driver.FindElement(locator);
             }
             catch (NoSuchElementException)
             {
@@ -188,7 +191,7 @@ namespace DCM.POM
             {
                 WebDriverWait wait = new WebDriverWait(Initialize.driver, TimeSpan.FromSeconds(15));
                 wait.Until(ExpectedConditions.ElementToBeClickable(element));
-                
+
             }
             catch (NoSuchElementException)
             {
@@ -197,7 +200,7 @@ namespace DCM.POM
             }
         }
 
-        public static void upload(By element , string path)
+        public static void upload(By element, string path)
         {
             try
             {
@@ -225,7 +228,7 @@ namespace DCM.POM
 
         public static double FieldTextToDouble(By ele)
         {
-           return Convert.ToDouble(FieldText(ele));
+            return Convert.ToDouble(FieldText(ele));
         }
 
         public static string FieldText(By ele)
@@ -313,7 +316,7 @@ namespace DCM.POM
         public static string Geturl()
         {
             String URL = Initialize.driver.Url;
-            return URL;          
+            return URL;
         }
         public static void closeBrowser()
         {
@@ -326,7 +329,7 @@ namespace DCM.POM
         {
             var element = Initialize.driver.FindElement(ele);
             IJavaScriptExecutor js = (IJavaScriptExecutor)Initialize.driver;
-           js.ExecuteScript("arguments[0].scrollIntoView(true);", element);
+            js.ExecuteScript("arguments[0].scrollIntoView(true);", element);
         }
 
         public static void MouseHoverOnelement(By ele)
@@ -339,5 +342,76 @@ namespace DCM.POM
 
         }
 
+        public static void SelectByValue(By ele, string val)
+        {
+            var element = Initialize.driver.FindElement(ele);
+            SelectElement sel = new SelectElement(element);
+            IList<IWebElement> monthList = sel.Options;
+            IEnumerator Ie = monthList.GetEnumerator();
+            while (Ie.MoveNext())
+            {
+                sel.SelectByValue(val);
+                break;
+            }
+
+        }
+        public static void SelectByVisibletext(By ele, string text)
+        {
+            var element = Initialize.driver.FindElement(ele);
+            SelectElement sel = new SelectElement(element);
+            IList<IWebElement> monthList = sel.Options;
+            IEnumerator Ie = monthList.GetEnumerator();
+            foreach (IWebElement monname in monthList)
+            {
+                if (monname.Text.Equals(text))
+                {
+                    sel.SelectByText(text);
+                }
+
+            }
+
+        }
+
+        public static void SelectByIndex(By ele, int index)
+        {
+            var element = Initialize.driver.FindElement(ele);
+            SelectElement sel = new SelectElement(element);
+            IList<IWebElement> monthList = sel.Options;
+            IEnumerator Ie = monthList.GetEnumerator();
+            while (Ie.MoveNext())
+            {
+                sel.SelectByIndex(index);
+                break;
+            }
+
+
+        }
+
+        public static void ClickOnTheSubElementWithText(By ele, String val)
+        {
+            try
+            {
+                IList<IWebElement> subelements = Initialize.driver.FindElements(ele);
+                for (int i = 0; i < subelements.Count; i++)
+                {
+
+                    //Console.Write(subelements[i].Text);
+
+                    if (subelements[i].Text == val)
+                    {
+                        By actualEle = (By)subelements[i];
+                        Initialize.driver.FindElement(actualEle).Click();
+
+                    }
+
+                }
+            }
+            catch (NoSuchElementException)
+            {
+                Console.WriteLine("Element with locator: '" + ele + "' was not found in current context page.");
+                throw;
+            }
+
+        }
     }
 }

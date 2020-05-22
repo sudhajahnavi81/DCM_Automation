@@ -749,40 +749,55 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("enter values into Area1 fields", ((string)(null)), table25, "And ");
 #line hidden
             TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
+                        "From",
+                        "To"});
+            table26.AddRow(new string[] {
+                        "08:00",
+                        "08:00"});
+#line 99
+ testRunner.And("enter values in to Hours of operation for Area1 All days and click on ok button", ((string)(null)), table26, "And ");
+#line 102
+ testRunner.And("enter values in to Hours of operation for Area1 with differrent timings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+            TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
                         "ESI1",
                         "ESI2",
                         "ESI3",
                         "ESI4",
                         "ESI5"});
-            table26.AddRow(new string[] {
+            table27.AddRow(new string[] {
                         "10",
                         "10",
                         "10",
                         "10",
                         "10"});
-#line 99
- testRunner.And("enter values into Area2 fields and click on next button", ((string)(null)), table26, "And ");
+#line 104
+ testRunner.And("enter values into Area2 fields and click on next button", ((string)(null)), table27, "And ");
+#line 107
+ testRunner.And("enter values in to Hours of operation for Area2 All days and click on ok button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 109
+ testRunner.And("enter values in to Hours of operation for Area2 with different timings", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
                         "Overall_Admit_LOS",
                         "Overall_Arrival_To_Admit_Decision",
                         "Main_Discharge_LOS",
                         "FT_Discharge_LOS",
                         "PIT_Discharge_LOS"});
-            table27.AddRow(new string[] {
+            table28.AddRow(new string[] {
                         "120",
                         "60",
                         "90",
                         "30",
                         "30"});
-#line 103
+#line 111
  testRunner.And("Length of Stay tab opens enter values into fields and click on next button or cli" +
-                    "ck on Shifts", ((string)(null)), table27, "And ");
-#line 107
+                    "ck on Shifts", ((string)(null)), table28, "And ");
+#line 115
  testRunner.When("Shifts tab opens import values into fields and click on next button or click on C" +
                     "linician Productivity", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-            TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
                         "main_phy_pph",
                         "main_app_pph",
                         "main_PhyFirstHour",
@@ -795,7 +810,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "PIT_App_PPH",
                         "PIT_PhyfirstHour",
                         "PIT_AppFirstHour"});
-            table28.AddRow(new string[] {
+            table29.AddRow(new string[] {
                         "1.5",
                         "1",
                         "2",
@@ -808,22 +823,22 @@ this.ScenarioInitialize(scenarioInfo);
                         "1",
                         "1",
                         "1"});
-#line 110
+#line 118
  testRunner.And("Clinician Productivity tab opens enter values into fields and click on next butto" +
-                    "n or click on Clinician Cost", ((string)(null)), table28, "And ");
+                    "n or click on Clinician Cost", ((string)(null)), table29, "And ");
 #line hidden
-            TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+            TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
                         "Average_Cost_per_Physician_Hour",
                         "Average_Cost_per_APP_Hour",
                         "Average_Cost_per_Scribe_Hour"});
-            table29.AddRow(new string[] {
+            table30.AddRow(new string[] {
                         "20",
                         "60",
                         "20"});
-#line 113
+#line 121
  testRunner.When("Clinician Cost tab opens enter vlaues into fields and click on next button or cli" +
-                    "ck on Save Button", ((string)(null)), table29, "When ");
-#line 117
+                    "ck on Save Button", ((string)(null)), table30, "When ");
+#line 125
  testRunner.Then("Model should be saved with values enter into save model popup.", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

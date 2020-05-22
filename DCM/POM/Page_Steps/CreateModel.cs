@@ -68,7 +68,20 @@ namespace DCM.POM.Page_Steps
             Type(PITESI3.ToString(), Page_Objects.ESI3_PIT);
             WaitForElement(Page_Objects.Area1_24hr);
             click(Page_Objects.Area1_24hr);
+            IsElementPresent(Page_Objects.HoursOfOperationForFTWindow, "Hours of Operations for FT");
+            click(Page_Objects.FTAllDays_CheckBox);
+            click(Page_Objects.FTOpen24Hrs);
+            click(Page_Objects.FTOKbutton);
+            MouseHoverOnelement(Page_Objects.Area1Movetoelement);
+            IsElementPresent(Page_Objects.HrsofOperationforFTAftersetting, "Day");
             click(Page_Objects.Area2_24hr);
+            IsElementPresent(Page_Objects.HoursOfOperationForPITWindow, "Hours of Operations for PIT");
+            click(Page_Objects.PITAllDays_CheckBox);
+            click(Page_Objects.PITOpen24Hrs);
+            click(Page_Objects.PITOKbutton);
+            Thread.Sleep(10000);
+            MouseHoverOnelement(Page_Objects.Area2Movetoelement);
+            IsElementPresent(Page_Objects.HrsofOperationforPITAftersetting, "Day");
 
             JSExe(Page_Objects.ESI_next);
 
@@ -124,8 +137,19 @@ namespace DCM.POM.Page_Steps
 
             WaitForElement(Page_Objects.Area1_24hr);
             click(Page_Objects.Area1_24hr);
+            IsElementPresent(Page_Objects.HoursOfOperationForFTWindow, "Hours of Operations for FT");
+            click(Page_Objects.FTAllDays_CheckBox);
+            click(Page_Objects.FTOpen24Hrs);
+            click(Page_Objects.FTOKbutton);
+            MouseHoverOnelement(Page_Objects.Area1Movetoelement);
+            IsElementPresent(Page_Objects.HrsofOperationforFTAftersetting, "Day");
             click(Page_Objects.Area2_24hr);
-
+            IsElementPresent(Page_Objects.HoursOfOperationForPITWindow, "Hours of Operations for PIT");
+            click(Page_Objects.PITAllDays_CheckBox);
+            click(Page_Objects.PITOpen24Hrs);
+            click(Page_Objects.PITOKbutton);
+            MouseHoverOnelement(Page_Objects.Area2Movetoelement);
+            IsElementPresent(Page_Objects.HrsofOperationforPITAftersetting, "Day");
             JSExe(Page_Objects.ESI_next);
 
         }
@@ -157,7 +181,7 @@ namespace DCM.POM.Page_Steps
             }
         }
 
-        
+
 
         public static void Shifts(string FromTime, string ToTime)
         {
@@ -184,7 +208,7 @@ namespace DCM.POM.Page_Steps
         public static void Shifts_Import()
         {
             WaitForElement(Page_Objects.importshiftbtn);
-           
+
             click(Page_Objects.importshiftbtn);
             Thread.Sleep(10000);
             //WaitForElement(Page_Objects.Shiftpopup);
@@ -220,7 +244,7 @@ namespace DCM.POM.Page_Steps
         }
 
 
-       
+
 
 
 
@@ -261,7 +285,7 @@ namespace DCM.POM.Page_Steps
         {
             Type(CPPH.ToString(), Page_Objects.Cost_Per_Phy_Hour);
             Type(CPAH.ToString(), Page_Objects.Cost_Per_App_Hour);
-            Type(CPSH.ToString(), Page_Objects.Cost_Per_Scribe_Hour);
+            //Type(CPSH.ToString(), Page_Objects.Cost_Per_Scribe_Hour);
         }
 
         public static void SaveModel()
@@ -1129,7 +1153,7 @@ namespace DCM.POM.Page_Steps
             clear(Page_Objects.Area2_ESI5);
             Type(ESI1.ToString(), Page_Objects.Area2_ESI5);
 
-            
+
             MouseHoverOnelement(Page_Objects.Area2Movetoelement);
             IsElementPresent(Page_Objects.Area2Movetoelement, "Hours of Operations are not set for 'PIT'. Click on the link to set the Hours of Operations");
             MouseHoverOnelement(Page_Objects.Area2_24hr);
@@ -1138,10 +1162,11 @@ namespace DCM.POM.Page_Steps
             click(Page_Objects.PITAllDays_CheckBox);
             click(Page_Objects.PITOpen24Hrs);
             click(Page_Objects.PITOKbutton);
+            Thread.Sleep(10000);
             MouseHoverOnelement(Page_Objects.Area2Movetoelement);
             IsElementPresent(Page_Objects.HrsofOperationforPITAftersetting, "Day");
 
-            JSExe(Page_Objects.ESI_next);
+            
 
         }
 
@@ -1151,6 +1176,130 @@ namespace DCM.POM.Page_Steps
             click(Page_Objects.dashboard);
             Thread.Sleep(15000);
         }
+        public static void Area1SetHrsofOperation(String From, String To)
+        {
+            Thread.Sleep(10000);
+            MouseHoverOnelement(Page_Objects.Area1Movetoelement);
+            MouseHoverOnelement(Page_Objects.Area1_24hr);
+            click(Page_Objects.Area1_24hr);
+            IsElementPresent(Page_Objects.HoursOfOperationForFTWindow, "Hours of Operations for FT");
+            click(Page_Objects.FTOpen24Hrs);
+            click(Page_Objects.FTAllDays_CheckBox);
+            click(Page_Objects.FTAllDays_CheckBox);
+            click(Page_Objects.Fromdropdownclick);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.Todropdownclick);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.FTOKbutton);
 
-    }      
+        }
+
+        public static void Area1SetHrsofOperationDifferentTimings()
+        {
+            Thread.Sleep(10000);
+            MouseHoverOnelement(Page_Objects.Area1Movetoelement);
+            MouseHoverOnelement(Page_Objects.Area1_24hr);
+            click(Page_Objects.Area1_24hr);
+            IsElementPresent(Page_Objects.HoursOfOperationForFTWindow, "Hours of Operations for FT");
+            click(Page_Objects.FTOpen24Hrs);
+            click(Page_Objects.FTAllDays_CheckBox);
+            click(Page_Objects.FTAllDays_CheckBox);
+            click(Page_Objects.FTAllDays_CheckBox);
+            click(Page_Objects.SunFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.SundropdownTo);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.MonFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.MonToDropdown);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.TueFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.TueToDropdown);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.WedFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.WedToDropdown);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.ThuFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.ThuToDropdown);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.FriFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.FriToDropdown);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.SatFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.SatToDropdown);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.FTOKbutton);
+        }
+
+        public static void Area2SetHrsofOperation()
+        {
+            Thread.Sleep(10000);
+            MouseHoverOnelement(Page_Objects.Area2Movetoelement);
+            MouseHoverOnelement(Page_Objects.Area2_24hr);
+            click(Page_Objects.Area2_24hr);
+            IsElementPresent(Page_Objects.HoursOfOperationForPITWindow, "Hours of Operations for PIT");
+            Thread.Sleep(10000);
+            click(Page_Objects.PITOpen24Hrs);
+            click(Page_Objects.PITAllDays_CheckBox);
+            click(Page_Objects.PITAllDays_CheckBox);
+            click(Page_Objects.Fromdropdownclick);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.Todropdownclick);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.PITOKbutton);
+
+        }
+
+        public static void Area2SetHrsofOperationDifferentTimings()
+        {
+            Thread.Sleep(10000);
+            MouseHoverOnelement(Page_Objects.Area2Movetoelement);
+            MouseHoverOnelement(Page_Objects.Area2_24hr);
+            click(Page_Objects.Area2_24hr);
+            IsElementPresent(Page_Objects.HoursOfOperationForPITWindow, "Hours of Operations for PIT");
+            click(Page_Objects.PITOpen24Hrs);
+            click(Page_Objects.PITAllDays_CheckBox);
+            click(Page_Objects.PITAllDays_CheckBox);
+            click(Page_Objects.PITAllDays_CheckBox);
+            click(Page_Objects.SunFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.SundropdownTo);
+            Thread.Sleep(10000);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.MonFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.MonToDropdown);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.TueFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.TueToDropdown);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.WedFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.WedToDropdown);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.ThuFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.ThuToDropdown);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.FriFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.FriToDropdown);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.SatFromDropdown);
+            click(Page_Objects.selectTimeFrom);
+            click(Page_Objects.SatToDropdown);
+            click(Page_Objects.selectTimeTo);
+            click(Page_Objects.PITOKbutton);
+
+            JSExe(Page_Objects.ESI_next);
+
+
+        }
+    }
 }

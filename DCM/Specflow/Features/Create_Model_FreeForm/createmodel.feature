@@ -96,10 +96,18 @@ Scenario: 02 Create model with Data Benchmarking
 	And enter values into Area1 fields
 	| ESI1 | ESI2 | ESI3 | ESI4 | ESI5 |
 	| 10   | 10   | 10   | 10   | 10   |
+	And enter values in to Hours of operation for Area1 All days and click on ok button
+	| From | To |
+	| 08:00 | 08:00  |
+	And enter values in to Hours of operation for Area1 with differrent timings
+	
 	And enter values into Area2 fields and click on next button
 	| ESI1 | ESI2 | ESI3 | ESI4 | ESI5 |
 	| 10   | 10   | 10   | 10   | 10   |
-
+	And enter values in to Hours of operation for Area2 All days and click on ok button
+	
+	And enter values in to Hours of operation for Area2 with different timings
+	
 	And Length of Stay tab opens enter values into fields and click on next button or click on Shifts
 	| Overall_Admit_LOS | Overall_Arrival_To_Admit_Decision| Main_Discharge_LOS | FT_Discharge_LOS | PIT_Discharge_LOS |
 	| 120               | 60                               | 90                 | 30               | 30                |

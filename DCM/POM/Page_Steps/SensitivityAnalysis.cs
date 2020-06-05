@@ -258,6 +258,8 @@ namespace DCM.POM.Page_Steps
 
         public static void clearField()
         {
+            Thread.Sleep(5000);
+            JSScrollupElement(Page_Objects.ActualMonthlyArrivalScrollUp);
             click(Page_Objects.SA_clear);
         }
 
@@ -889,9 +891,11 @@ namespace DCM.POM.Page_Steps
             Type(MDL.ToString(), Page_Objects.Discharge_Los);
             clear(Page_Objects.FTWorkload_Discharge_Los);
             Type(FDL.ToString(), Page_Objects.FTWorkload_Discharge_Los);
-            clear(Page_Objects.PITWorkload_Discharge_Los);
-            Type(PDL.ToString(), Page_Objects.PITWorkload_Discharge_Los);
-
+            if (IsElementPresent(Page_Objects.PITWorkload_Discharge_Los, "PIT Discharge LOS"))
+            {
+                clear(Page_Objects.PITWorkload_Discharge_Los);
+                Type(PDL.ToString(), Page_Objects.PITWorkload_Discharge_Los);
+            }
 
         }
 

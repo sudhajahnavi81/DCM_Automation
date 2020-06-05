@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
@@ -51,6 +52,10 @@ namespace DCM.POM.DCM_Objects
         public static By Previous2ndlastmodel = By.XPath("//*[starts-with(@id,'mat-dialog-')]/app-operational-model-history/div/div[2]/div/div[3]/div[2]/table/tbody/tr[2]/td[1]");
         public static By Previous3rdlastmodel = By.XPath("//*[starts-with(@id,'mat-dialog-')]/app-operational-model-history/div/div[2]/div/div[3]/div[2]/table/tbody/tr[3]/td[1]");
         public static By OKbtn = By.XPath("//button[@class='btn btn-primary']");
+            //div[@class='dialog-footer']/mat-dialog-actions[@class='mat-dialog-actions']/button[contains(text(),'OK')]");
+            //button[@class='btn btn-primary']");
+                    
+        
 
         // dashboard graph
 
@@ -1036,6 +1041,9 @@ namespace DCM.POM.DCM_Objects
 
 
         public static By LnkFasttrack = By.XPath("//div[contains(text(),'Are there any other areas in your Emergency Depart')]//following::ul/li[2]");
+       // AddingNewEventArgs the locators for the Fast track operational hrs 
+        public static By FastTrackOperationalHrs = By.XPath("//div[@class='linke-ele d-inline-block hourlyArrivalsDetails']/li[contains(text(),'Enter Operational Hours for Fast Track')]");
+
         public static By FT_Hours = By.XPath("//div[@class='areaGroup']//div[@class='qaModule pb-2']//div[1]//following::div/input");
         public static By FT_ESI = By.XPath("//div[@class='qaModule p-1 ng-star-inserted']//li[@class='nav-item pl-2 pr-2'][contains(text(),'I'd like to enter the data manually')]");
         public static By FT_ESI3 = By.XPath("/html[1]/body[1]/div[1]/div[2]/div[1]/mat-dialog-container[1]/app-wizard-arrivals-esi[1]/div[1]/div[1]/div[2]/app-segmentation-esi-levels[1]/div[1]/div[2]/table[2]/tbody[1]/tr[2]/td[4]/div[1]/div[1]/input[1]");
@@ -1208,7 +1216,10 @@ namespace DCM.POM.DCM_Objects
         //zoom Graph, clear button, Refresh
 
         public static By ZoomGraph = By.XPath("//div[@class='section-content sameheight overflow-auto']//i[@class='fa fa-expand']");
-        public static By SA_clear = By.XPath("//span[starts-with(@class,'eraser-icon')]");
+        public static By SA_clear = By.XPath("//h4/span[@class='eraser-icon ml-2']");
+        public static By ActualMonthlyArrivalScrollUp = By.XPath("//div[@class='forecasted-actualmonthlyarrivals pl-2 pr-2']");
+        //span[starts-with(@class,'eraser-icon')]");
+
         public static By SA_Refresh = By.XPath("//button[@class='btn btn-primary-shadow btn-primary-default btn-medium btn-pos']");
         public static By GraphCheckbox = By.XPath("//span[contains(text(),\"Saved Model's Patient Volume\")]");
 

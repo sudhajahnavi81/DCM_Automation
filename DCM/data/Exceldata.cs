@@ -23,13 +23,13 @@ namespace DCM.data
 
         //public static excel.Range x1range = x1WorkSheet.UsedRange;
 
-        public static string un1 = "nehal.prajapati@shcr.com";
-        public static string psw = "Sheridan100";
-        public static string otpKeyStr = "W76PVRBRHAGTUKZW";
+        public static string un1 = "manali.hukkeri@emsc.root01.org";
+        public static string psw = "Feb@2020";
+        public static string otpKeyStr = "UHRUQQ2AJCHF6VKL";
 
-        public static string Viewerrole = "nehal.prajapati@shcr.com";
-        public static string Viewrolepsw = "Sheridan100";
-        public static string otpKeyStrview = "W76PVRBRHAGTUKZW";
+        public static string Viewerrole = "manali.hukkeri@emsc.root01.org";
+        public static string Viewrolepsw = "Feb@2020";
+        public static string otpKeyStrview = "UHRUQQ2AJCHF6VKL";
 
     }
 

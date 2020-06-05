@@ -225,8 +225,13 @@ namespace DCM.POM.Page_Steps
         public static void Otherareafields(string FTHours, int FTESI3, int FTLOS, int DS, int CTT, int PFT, int PTT, double FTPHYFH, double FTAPPFH, double FTPHYPPH, double FTAPPPPH)
         {
             click(Page_Objects.LnkFasttrack);
-            Type(FTHours, Page_Objects.FT_Hours);
-            Enterkey(Page_Objects.FT_Hours);
+            MouseHoverOnelement(Page_Objects.LnkFasttrack);
+            IsElementPresent(Page_Objects.LnkFasttrack, "Hours of Operations are not set for 'Fast Track'. Click on the link to set the Hours of Operations");
+            click(Page_Objects.FastTrackOperationalHrs);
+            IsElementPresent(Page_Objects.HoursOfOperationForFTWindow, "Hours of Operations for Fast Track");
+            click(Page_Objects.FTAllDays_CheckBox);
+            click(Page_Objects.FTOpen24Hrs);
+            click(Page_Objects.FTOKbutton);
             Thread.Sleep(3000);
             click(Page_Objects.FT_ESI_entermanually);
             clear(Page_Objects.FT_ESI3);

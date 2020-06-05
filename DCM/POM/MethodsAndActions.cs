@@ -277,6 +277,14 @@ namespace DCM.POM
 
         }
 
+        public static void JSScrollupElement(By element)
+        {
+            IWebElement element1 = Initialize.driver.FindElement(element);
+            IJavaScriptExecutor js = (IJavaScriptExecutor)Initialize.driver;        
+            js.ExecuteScript("arguments[0].scrollIntoView();", element1);
+
+        }
+
 
         public static string Graphtooltip(By element, By element1)
         {
